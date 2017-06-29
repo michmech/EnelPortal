@@ -10,9 +10,9 @@
 		<link rel="image_src" href="http://www.dictionaryportal.eu/preview.gif" />
 		<meta property="og:image" content="http://www.dictionaryportal.eu/preview.gif" />
 		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-		<script type="text/javascript" src="/furniture/catalog.js?2017-06-22"></script>
-		<link type="text/css" rel="stylesheet" href="/furniture/template.css?2017-06-22" />
-		<link type="text/css" rel="stylesheet" href="/furniture/markdown.css?2017-06-22" />
+		<script type="text/javascript" src="/furniture/catalog.js?2017-06-29"></script>
+		<link type="text/css" rel="stylesheet" href="/furniture/template.css?2017-06-29" />
+		<link type="text/css" rel="stylesheet" href="/furniture/markdown.css?2017-06-29" />
 		<script type="text/javascript">
 		$(document).ready(function(){
 			$("a[href='#']").click(function(){
@@ -202,6 +202,7 @@
                         </ul>
                     </li>
 				</ul>
+                <div class="github"><a href="https://github.com/michmech/EnelPortal" target="_blank"><img src="/furniture/github.png" alt="GitHub" /></a></div>
 			</div>
 			<div class="block right">
 				<%string foot1=L("foot1");%>

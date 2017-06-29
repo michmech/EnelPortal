@@ -12,8 +12,8 @@
 		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 		<script src="http://code.jquery.com/ui/1.8.19/jquery-ui.min.js"></script>
  		<script type="text/javascript" src="/furniture/jquery.pulse.js"></script>
-		<script type="text/javascript" src="/furniture/catalog.js?2017-06-22"></script>
-		<link type="text/css" rel="stylesheet" href="/furniture/template.css?2017-06-22" />
+		<script type="text/javascript" src="/furniture/catalog.js?2017-06-29"></script>
+		<link type="text/css" rel="stylesheet" href="/furniture/template.css?2017-06-29" />
 		<script type="text/javascript">
 		$(document).ready(function(){
 			$(document).keyup(function(e){
@@ -300,6 +300,7 @@
                         </ul>
                     </li>
 				</ul>
+                <div class="github"><a href="https://github.com/michmech/EnelPortal" target="_blank"><img src="/furniture/github.png" alt="GitHub" /></a></div>
 			</div>
 			<div class="block right">
 				<%string foot1=L("foot1");%>

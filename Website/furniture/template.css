@@ -266,3 +266,5 @@ div.loginContainer { margin-top: 50px; font-size: 11px; line-height: 1.75em; }
 .markdown-body form input.sbm:hover { color: #555555; }
 .markdown-body form div.checkum {margin-bottom: 20px;}
 .markdown-body form div.checkum a {font-weight: bold;}
+
+div.github { margin-top: 15px; }
