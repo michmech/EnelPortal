@@ -1,0 +1,22 @@
+To be included in the European Dictionary Portal, a dictionary must be:
+
+- **Trustworthy.** Users must be able to trust the dictionary. The dictionary does not contain errors, inaccuracies or misunderstandings (a few honest typos do not count).
+
+- **Authoritative.** The dictionary has been written by somebody whose judgmenent on questions of language is respected by the language community.
+	
+- **Large.** The dictionary is considerable in size and coverage. What this means in concrete numbers depends on the dictionary's intended or implied scope. Dictionaries of general (non-specialized) vocabulary should normally count their entries upwards of 10,000.
+	
+- **Detailed.** The dictionary does not skim over important details. Words are complicated things, explaining their meanings and uses sometimes requires depth and nuance. Dictionaries and glossaries which merely list things off, as opposed to explaining things, are excluded.
+	
+- **Original**. The dictionary is an original artefact. This definition does not exclude newer or reworked editions of older dictionaries, but does exclude dictionary aggregator websites and glossaries based on harvested data from the Internet.
+	
+- **Intended for humans.** In other words, it is not primarily a machine-readable lexical resource for computational linguistics. This means that various lexical databases such as WordNet and FrameNet are excluded, and so are lexical databases extracted automatically from a corpus.
+
+- **Focused on a single language**. The dictionary must be intended to describe one particular language. Monolingual dictionaries meet this criterion by default, but bilingual or monolingual dictionaries must make a clear dictinction between the language they are describing &ndash; the *object language* &ndash; and the language(s) they using to describe it &ndash; the *metalanguage(s)*.
+	
+- **Identifiable.** The dictionary has a name (as opposed to merely a description) and has its own identity which makes it distinct from other dictionaries. In practical terms this means that the dictionary has its own website, or its own section in a larger website, where it can be found and consulted in isolation from others.
+	 
+- **Usable.** The dictionary can be searched and consulted online and offers a reasonably pleasant user experience. Superficially digitized dictionaries which only have static facsimiles and no significant additional features are excluded by this definition. Dictionaries which require login or are behind paywalls are not excluded but are labelled as such.
+	
+These criteria are intended as guides and do not confer any entitlements. The inclusion or otherwise of any particular dictionary is at the curators' discretion. In exceptional cases one or more of the criteria can be relaxed, for example when a dictionary is the only one available for its language.
+

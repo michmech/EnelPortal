@@ -1,0 +1,5 @@
+﻿The European Dictionary Portal's dictionary catalog is available here for download as raw data in XML format. It is an open-source dataset and can be reused, without prior permission, under the terms of the [Open Database License](http://opendatacommons.org/licenses/odbl/summary/). If you publicly reuse it, this license obliges you to attribute the source (quoting the European Dictionary Portal and providing a link to this website will suffice).
+
+<a class="button xml" href="/catalog.xml">catalog.xml&nbsp;»</a>
+
+To understand the structure of the XML file, it is recommended that you read the [Curator's Manual](/en/curators/).

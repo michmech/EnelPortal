@@ -1,0 +1,175 @@
+$edp	Európai Szótárportál
+$home	Főoldal
+$find	Válasszon egy szótárt!
+$blurb	Az Európai Szótárportál az európai nyelvek minőségi online szótárainak gyűjtőhelye, melyet a [European Network of e-Lexicography] szakértői gondoznak. [[További információ...]]
+$moment	A nap szótára
+$filter	Szűrő
+$objLang	TÁRGYNYELV
+$objLangBlurb	A szótár által leírt nyelv.
+$metaLang	METANYELV
+$metaLangBlurb	A szótárban található definíciók és magyarázatok nyelve. Ha megegyezik a tárgynyelvvel, akkor egynyelvű szótárról van szó, ellenkező esetben kétnyelvű szótárról.
+$dicType	TÍPUS, MŰFAJ
+$dicTypeBlurb	Milyen típusú szótárat keres?
+$anyLang	bármilyen nyelven
+$anyDicType	bármilyen típusú, műfajú
+$search	Keresés
+$notyet	Olyan nyelvek, amelyeknek nincs még szótáruk
+$signlangs	Jelnyelvek
+$toomany	A megadott keresési feltételeknek több mint 50 szótár felel meg. A lista csak az első 50 találatot mutatja.
+$nojoy	Sajnos nincs olyan szótár, ami megfelel a keresési feltételeknek.
+$anglo	Sajnos a kért tartalom csak angol nyelven érhető el.
+$about-more	Lásd még
+$top	Vissza az oldal tetejére
+$toc	A honlap tartalma
+$foot1	Az Európai Szótárportál a [European Network of e-Lexicography] kezdeményezésére jött létre.
+$foot2	A [COST]-ot támogatja a [[Horizon 2020]] EU Keretprogram.
+$foot3	A szótára megtalálható az Európai Szótárportálon? Használja [minősítő pecsétünket]
+$mbm	A honlapot létrehozta 
+$ivdnt	A honlapot üzemelteti
+$shots	A képernyőképek forrása
+$icons	Az ikonok forrása
+$login	Belépés kurátoroknak
+$moreDicts	Még több szótár ezen a nyelven
+$loginRequired	BE KELL JELENTKEZNIE
+$searchIn	KERESÉS ITT 
+$tsRequired	Kérjük, hogy első látogatásakor fogadja el a használati feltételeket!
+$language	nyelv
+$searchbox	Keresés több szótárban
+$included	Elérhető szótárak
+$about1	A szótárak fontos részét képezik nemzetközi, soknyelvű világunknak. Az Európai Szótárportál segít önnek abban, hogy az európai nyelvek minőségi, megbízható online szótáraiban keressen,  attól függetlenül, hogy ön kutató, fordító vagy nyelvtanár, vagy egyszerűen csak olyan valaki, aki lelkesedik a nyelvekért. A portálon megtalálható szótárak mindegyikét  a [European Network of e-Lexicography] tapasztalt lexikográfusai válogatták be a jól meghatározott [[bekerülési feltételek]] alapján. 
+$prop1	Tud olyan szótárról, aminek itt kellene lennie? [Írja meg nekünk!]
+$prop2	Az ön által javasolt és beküldött szótárat szakértőink egyike átnézi, és ha az megfelel a szótárportál által megadott feltételeknek, felkerül a portálra. A honlap tulajdonosa jogosult lesz [minősítő pecsétünk] használatára a weboldalán.
+$error1	Hiba
+$error2	Sajnáljuk, úgy tűnik, hogy valami hiba történt. Ha a hiba tartósan fennáll, akkor kérjük, jelentse azt [e-mailben a honlap üzemeltetőjének].
+$thanks	Köszönjük
+$backhome	Vissza a főoldalra
+$select	válasszon 
+$prop-name	A SZÓTÁR NEVE
+$prop-name-error	A "név" mezőt kötelező kitölteni.
+$prop-url	A SZÓTÁR WEBCÍME
+$prop-url-error	A "webcím" mezőt kötelező kitölteni, és "http://" vagy "https://"-vel kell kezdődnie.
+$objLang-error	Válasszon egy nyelvet!
+$prop-email	AZ ÖN E-MAIL CÍME
+$prop-email-legend	Fel fogjuk venni a kapcsolatot önnel, amellyiben további információra van szükségünk. Nem fogjuk megosztani az ön címét senkivel.
+$prop-email-error	Ez a címsor nem maradhat üresen, és kérjük, hogy érvényes e-mail címet adjon meg.
+$prop-comments	MEGJEGYZÉSEK (NEM KÖTELEZŐ KITÖLTENI)
+$prop-crit	Mielőtt beküldene egy szótárt, kérjük győződjön meg róla, hogy az megfelel-e az Európai Szótárportál által megadott [feltételeknek]!
+$submit	Küldés
+$about-info	Rólunk
+$about-prop	Javasoljon szótárat
+$about-crit	A szótárportálra való bekerülés feltételei
+$about-crtr	Kurátorok szabályzata
+$about-stmp	Minősítő pecsét
+$about-dnld	Letöltés
+$gen-name	Általános értelmező szótárak
+$lrn-name	Tanulói szótárak
+$ety-name	Etimológiai szótárak
+$spe-name	Sajátos rendeltetésű szótárak
+$his-name	Történeti szótárak
+$por-name	Portálok és gyűjtőoldalak
+$gen-legend	Az [általános értelmező szótárak] az irodalmi és a köznyelv elemeit magyarázzák elsősorban az anyanyelvi beszélők számára.
+$lrn-legend	A [tanulói szótárak] a nyelvtanulóknak nyújtanak segítséget.
+$ety-legend	Az [etimológiai szótárak] olyan szótárak, amelyek megmagyarázzák az egyes szavak eredetét.
+$spe-legend	A [sajátos rendeltetésű szótárak] a szókincs egy-egy rétegét egyedi szempontok alapján mutatják be (mint például az új szavakat vagy a vonzatos igéket), vagy egy-egy nyelvjárást, illetve nyelvváltozatot dolgoznak fel.
+$his-legend	A [történeti szótárak] olyan szótárak, amelyek a nyelv korábbi, történelmi állapotát dokumentálják.
+$por-legend	A [portálok és gyűjtőoldalak] több szótárhoz engednek hozzáférést, amelyekben egyidejűleg lehet keresni.
+$lang-sq	albán
+$lang-hy	örmény
+$lang-rup	aromán
+$lang-ast	asztúriai
+$lang-eu	baszk
+$lang-bg	bolgár
+$lang-ca	katalán
+$lang-kw	korni
+$lang-hr	horvát
+$lang-cs	cseh
+$lang-da	dán
+$lang-nl	holland
+$lang-en	angol
+$lang-et	észt
+$lang-fo	feröeri
+$lang-fi	finn
+$lang-fr	francia
+$lang-gl	galego
+$lang-de	német
+$lang-el	görög
+$lang-he	héber
+$lang-hu	magyar
+$lang-is	izlandi
+$lang-ga	ír
+$lang-it	olasz
+$lang-krl	karjalai
+$lang-kom	komi
+$lang-la	latin
+$lang-lv	lett
+$lang-lt	litván
+$lang-lb	luxemburgi
+$lang-mk	macedón
+$lang-mt	máltai
+$lang-gv	manx
+$lang-mord	mordvin
+$lang-no	norvég
+$lang-pl	lengyel
+$lang-pt	portugál
+$lang-ro	román
+$lang-rm	romans
+$lang-ru	orosz
+$lang-smi	számi
+$lang-sc	szárd
+$lang-sco	skót
+$lang-gd	skót gael
+$lang-sr	szerb
+$lang-sk	szlovák
+$lang-sl	szlovén
+$lang-wen	szorb
+$lang-es	spanyol
+$lang-sv	svéd
+$lang-tr	török
+$lang-uk	ukrán
+$lang-vep	vepsze
+$lang-cy	walesi
+$lang-fy	fríz
+$lang-yi	jiddis
+$lang-br	breton
+$lang-sqk	albán jelnyelv
+$lang-aen	örmény jelnyelv
+$lang-asq	osztrák jelnyelv
+$lang-bfi	brit jelnyelv
+$lang-bqn	bolgár jelnyelv
+$lang-csc	katalán jelnyelv
+$lang-csq	horvát jelnyelv
+$lang-cse	cseh jelnyelv
+$lang-dsl	dán jelnyelv
+$lang-eso	észt jelnyelv
+$lang-fss	finnországi svéd jelnyelv
+$lang-fse	finn jelnyelv
+$lang-vgt	flamand jelnyelv
+$lang-sfb	francia belga jelnyelv
+$lang-fsl	francia jelnyelv
+$lang-gsg	német jelnyelv
+$lang-gss	görög jelnyelv
+$lang-hsh	magyar jelnyelv
+$lang-icl	izlandi jelnyelv
+$lang-isg	ír jelnyelv
+$lang-isr	izraeli jelnyelv
+$lang-ise	olasz jelnyelv
+$lang-lsl	lett jelnyelv
+$lang-lls	litván jelnyelv
+$lang-mdl	máltai jelnyelv
+$lang-vsi	moldáv jelnyelv
+$lang-nsl	norvég jelnyelv
+$lang-pso	lengyel jelnyelv
+$lang-psr	portugál jelnyelv
+$lang-rms	román jelnyelv
+$lang-rsl	orosz jelnyelv
+$lang-dse	holland jelnyelv
+$lang-svk	szlovák jelnyelv
+$lang-ssp	spanyol jelnyelv
+$lang-swl	svéd jelnyelv
+$lang-ssr	svájci francia jelnyelv
+$lang-sgg	svájci német jelnyelv
+$lang-slf	svájci olasz jelnyelv
+$lang-tsm	török jelnyelv
+$lang-ukl	ukrán jelnyelv
+$lang-vsv	valenciai jelnyelv
+$lang-ysl	jugoszláv jelnyelv

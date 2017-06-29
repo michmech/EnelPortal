@@ -1,0 +1,175 @@
+$edp	Europees Woordenboekportaal
+$home	Home
+$find	Woordenboek zoeken
+$blurb	Het Europees Woordenboekportaal, verzorgd door experts van het [European Network of e-Lexicography], helpt u goede woordenboeken voor de Europese talen te vinden. [[Meer informatie …]]
+$moment	Het actuele woordenboek
+$filter	Filter
+$objLang	OBJECTTAAL
+$objLangBlurb	De taal die in het woordenboek beschreven wordt, de taal waar het woordenboek over gaat.
+$metaLang	METATAAL
+$metaLangBlurb	De taal waarin het woordenboek definities en beschrijvingen geeft. Indien deze dezelfde is als de objecttaal dan is het woordenboek eentalig. Als deze anders is dan is het woordenboek tweetalig.
+$dicType	GENRE
+$dicTypeBlurb	Welk soort woordenboek zoekt u?
+$anyLang	elke taal
+$anyDicType	elke soort
+$search	Zoek
+$notyet	Talen die nog geen woordenboek hebben
+$signlangs	Gebarentalen
+$toomany	Meer dan 50 woordenboeken komen overeen met uw zoekcriteria. Alleen de eerste 50 worden hier weergegeven.
+$nojoy	Sorry, we hebben geen woordenboeken die overeenkomen met uw zoekcriteria.
+$anglo	Onze excuses. Deze tekst is alleen beschikbaar in het Engels.
+$about-more	Zie ook
+$top	Boven
+$toc	Op deze website
+$foot1	Het Europees Woordenboekportaal is een initiatief van het [European Network of e-Lexicography].
+$foot2	[COST] wordt gesteund door het Europese subsidieprogramma [[Horizon 2020]].
+$foot3	Is uw woordenboek te vinden in het Europees Woordenboekportaal? Toon dan ons [stamp of approval]
+$mbm	Website gebouwd door
+$ivdnt	Gehost door
+$shots	Screenshots afkomstig van
+$icons	Iconen afkomstig van
+$login	Curator login
+$moreDicts	Meer woordenboeken in deze taal
+$loginRequired	LOGIN VEREIST
+$searchIn	ZOEK IN
+$tsRequired	Deze website zal u vragen om akkoord te gaan met voorwaarden bij het eerste bezoek.
+$language	taal
+$searchbox	Zoek in meerdere woordenboeken
+$included	Inbegrepen woordenboeken
+$about1	Woordenboeken zijn een belangrijk onderdeel van onze huidige internationale en meertalige wereld. Het Europees Woordenboekportaal help u om de weg te vinden naar goede en betrouwbare online woordenboeken voor de Europese talen, ongeacht of u een wetenschapper, vertaler, taaldocent of gewoon een enthousiaste taalgebruiker bent. Alle woordenboeken op onze lijst zijn zorgvuldig uitgezocht door curators uit het [European Network of e-Lexicography] die deskundige lexicografen zijn en die daarbij duidelijke [[criteria]] hanteren om te beslissen welke woordenboeken wel of niet op deze lijst thuishoren.
+$prop1	Kent u een woordenboek dat hier ontbreekt? [Laat het ons weten!]
+$prop2	Uw suggestie zal worden beoordeeld door een van onze curators en zal, indien goed bevonden, worden toegevoegd aan het Europees Woordenboekportaal. De eigenaar van het woordenboek zal worden uitgenodigd om het [stamp of approval] op hun website te plaatsen.
+$error1	Fout
+$error2	Onze excuses, er is blijkbaar een fout opgetreden. Als dit probleem aanhoudt stuur dan een [e-mail naar de websitebeheerder] om het te rapporteren.
+$thanks	Dank u
+$backhome	Terug naar de homepage
+$select	kies
+$prop-name	NAAM VAN HET WOORDENBOEK
+$prop-name-error	De naam mag geen lege string zijn.
+$prop-url	WOORDENBOEK URL
+$prop-url-error	De URL mag geen lege string zijn en moet beginnen met "http://" of "https://".
+$objLang-error	U dient een taal te kiezen.
+$prop-email	UW E-MAILADRES
+$prop-email-legend	We nemen contact met u op indien we verdere informatie nodig hebben. Uw e-mailadres wordt niet met anderen gedeeld.
+$prop-email-error	Het adres mag niet leeg zijn en moet een geldig e-mailadres zijn.
+$prop-comments	COMMENTAAR (OPTIONEEL)
+$prop-crit	Conroleer, voordat u de gegevens opstuurt, of uw woordenboek voldoet aan de [criteria voor opname] in het Europees Woordenboekportaal.
+$submit	Opsturen
+$about-info	Achtergrond
+$about-prop	Draag een woordenboek aan
+$about-crit	Criteria voor opname
+$about-crtr	Handleiding voor curators
+$about-stmp	Stamp of approval
+$about-dnld	Download
+$gen-name	Algemene woordenboeken
+$lrn-name	Woordenboeken voor taalleerders
+$ety-name	Etymologische woordenboeken
+$spe-name	Speciale woordenboeken
+$his-name	Historische woordenboeken
+$por-name	Portalen en zoekmachines
+$gen-legend	[Algemene woordenboeken] zijn woordenboeken waarin het hedendaagse woordenschat is beschreven en die bedoeld zijn als naslag voor moedertaalsprekers en degenen die de taal vloeiend spreken.
+$lrn-legend	[Woordenboeken voor taalleerders] zijn bedoeld voor personen die de taal als tweede taal willen leren.
+$ety-legend	[Etymologische woordenboeken] zijn woordenboeken die de herkomst van woorden verklaren.
+$spe-legend	[Special woordenboeken] zijn woordenboeken die zich richten op een specifiek onderdeel van de woordenschat (zoals neologismen) of die zich richten op een specifiek dialect of andere taalvariëteit.
+$his-legend	[Historische woordenboeken] zijn woordenboeken die de woordenschat uit een vroegere periode vastleggen.
+$por-legend	[Portalen en zoekmachines] zijn websites die toegang bieden tot meer dan één woordenboek waarbij het mogelijk is om meerdere daarvan gelijktijdig te doorzoeken.
+$lang-sq	Albanees
+$lang-hy	Armeens
+$lang-rup	Aroemeens
+$lang-ast	Asturisch
+$lang-eu	Baskisch
+$lang-bg	Bulgaars
+$lang-ca	Catalaans
+$lang-kw	Cornisch
+$lang-hr	Kroatisch
+$lang-cs	Tsjechisch
+$lang-da	Deens
+$lang-nl	Nederlands
+$lang-en	Engels
+$lang-et	Estisch
+$lang-fo	Faeröers
+$lang-fi	Fins
+$lang-fr	Frans
+$lang-gl	Galicisch
+$lang-de	Duits
+$lang-el	Grieks
+$lang-he	Hebreews
+$lang-hu	Hongaars
+$lang-is	IJslands
+$lang-ga	Iers
+$lang-it	Italiaans
+$lang-krl	Karelisch
+$lang-kom	Komi
+$lang-la	Latijn
+$lang-lv	Lets
+$lang-lt	Litouws
+$lang-lb	Luxemburgs
+$lang-mk	Macedonisch
+$lang-mt	Maltees
+$lang-gv	Manx
+$lang-mord	Mordwiens
+$lang-no	Noors
+$lang-pl	Pools
+$lang-pt	Portugees
+$lang-ro	Roemeens
+$lang-rm	Reto-Romaans
+$lang-ru	Russisch
+$lang-smi	Samisch
+$lang-sc	Sardijns
+$lang-sco	Schots
+$lang-gd	Schots-Gaelisch
+$lang-sr	Servisch
+$lang-sk	Slowaaks
+$lang-sl	Sloveens
+$lang-wen	Sorbisch
+$lang-es	Spaans
+$lang-sv	Zweeds
+$lang-tr	Turks
+$lang-uk	Oekraïens
+$lang-vep	Wepsisch
+$lang-cy	Welsh
+$lang-fy	Fries
+$lang-yi	Jiddisch
+$lang-br	Bretons
+$lang-sqk	Albaanse gebarentaal
+$lang-aen	Armeense gebarentaal
+$lang-asq	Oostenrijkse gebarentaal
+$lang-bfi	Britse gebarentaal
+$lang-bqn	Bulgaarse gebarentaal
+$lang-csc	Catalaanse gebarentaal
+$lang-csq	Kroatische gebarentaal
+$lang-cse	Tsjechische gebarentaal
+$lang-dsl	Deense gebarentaal
+$lang-eso	Estlandse gebarentaal
+$lang-fss	Fins-Zweedse gebarentaal
+$lang-fse	Finse gebarentaal
+$lang-vgt	Vlaamse gebarentaal
+$lang-sfb	Frans-Belgische gebarentaal
+$lang-fsl	Franse gebarentaal
+$lang-gsg	Duitse gebarentaal
+$lang-gss	Griekse gebarentaal
+$lang-hsh	Hongaarse gebarentaal
+$lang-icl	IJslandse gebarentaal
+$lang-isg	Ierse gebarentaal
+$lang-isr	Israëlische gebarentaal
+$lang-ise	Italiaanse gebarentaal
+$lang-lsl	Letse gebarentaal
+$lang-lls	Litouwse gebarentaal
+$lang-mdl	Maltese gebarentaal
+$lang-vsi	Moldavische gebarentaal
+$lang-nsl	Noorse gebarentaal
+$lang-pso	Poolse gebarentaal
+$lang-psr	Portugese gebarentaal
+$lang-rms	Roemeense gebarentaal
+$lang-rsl	Russische gebarentaal
+$lang-dse	Nederlandse gebarentaal
+$lang-svk	Slovaakse gebarentaal
+$lang-ssp	Spaanse gebarentaal
+$lang-swl	Zweedse gebarentaal
+$lang-ssr	Zwitsers-Franse gebarentaal
+$lang-sgg	Zwitsers-Duitse gebarentaal
+$lang-slf	Zwitsers-Italiaanse gebarentaal
+$lang-tsm	Turkse gebarentaal
+$lang-ukl	Oekraïense gebarentaal
+$lang-vsv	Valenciaanse gebarentaal
+$lang-ysl	Joegoslavische gebarentaal

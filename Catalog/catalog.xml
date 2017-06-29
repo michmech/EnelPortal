@@ -1,0 +1,1846 @@
+<dictionaries>
+
+<!--Exported from the European Dictionary Portal on 2017-06-29
+Available under Open Database Licence, http://opendatacommons.org/licenses/odbl/summary/
+If you use this, do not forget to attribute the European Dictionary Portal, http://www.dictionaryportal.eu/-->
+
+<dictionary prominence="0" loginRequired="0" tcRequired="0" id="140">
+  <objLang code="tr" />
+  <dicType code="por" />
+  <metaLang code="tr" />
+  <title lang="tr">Türk Dil Kurumu</title>
+  <title lang="en">Turkish Language Association</title>
+  <homepage>http://www.tdk.gov.tr/</homepage>
+  <dictionary prominence="0" loginRequired="0" tcRequired="0" id="141" parentID="140">
+    <objLang code="tr" />
+    <dicType code="gen" />
+    <metaLang code="tr" />
+    <title lang="tr">Güncel Türkçe Sözlük</title>
+    <title lang="en">Contemporary Turkish Dictionary</title>
+    <homepage>http://www.tdk.gov.tr/index.php?option=com_gts&amp;arama=gts</homepage>
+  </dictionary>
+  <dictionary prominence="3" loginRequired="0" tcRequired="0" id="142" parentID="140">
+    <objLang code="tr" />
+    <dicType code="spe" />
+    <metaLang code="tr" />
+    <title lang="tr">Sesli Türkçe Sözlük</title>
+    <title lang="en">Audio Dictionary of Turkish</title>
+    <homepage>http://www.tdk.gov.tr/index.php?option=com_seslissozluk&amp;arama=seslissozluk</homepage>
+  </dictionary>
+  <dictionary prominence="0" loginRequired="0" tcRequired="0" id="143" parentID="140">
+    <objLang code="tr" />
+    <dicType code="gen" />
+    <metaLang code="tr" />
+    <title lang="tr">Büyük Türkçe Sözlük</title>
+    <title lang="en">Grand Turkish Dictionary</title>
+    <homepage>http://www.tdk.gov.tr/index.php?option=com_bts&amp;arama=bts</homepage>
+  </dictionary>
+  <dictionary prominence="3" loginRequired="0" tcRequired="0" id="144" parentID="140">
+    <objLang code="tr" />
+    <dicType code="spe" />
+    <metaLang code="tr" />
+    <title lang="tr">Kişi Adları Sözlüğü</title>
+    <title lang="en">Names Dictionary</title>
+    <homepage>http://www.tdk.gov.tr/index.php?option=com_kisiadlari&amp;arama=kisiadlari</homepage>
+  </dictionary>
+  <dictionary prominence="3" loginRequired="0" tcRequired="0" id="145" parentID="140">
+    <objLang code="tr" />
+    <dicType code="spe" />
+    <metaLang code="tr" />
+    <title lang="tr">Türk Lehçeleri Sözlüğü</title>
+    <title lang="en">Turkish Dialects Dictionary</title>
+    <homepage>http://www.tdk.gov.tr/index.php?option=com_lehceler&amp;arama=lehceler</homepage>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="146" parentID="140">
+    <objLang code="tr" />
+    <dicType code="spe" />
+    <metaLang code="tr" />
+    <title lang="tr">Türkçede Batı Kökenli Kelimeler Sözlüğü</title>
+    <title lang="en">Dictionary of Loanwords from Western Languages</title>
+    <homepage>http://www.tdk.gov.tr/index.php?option=com_bati&amp;arama=bati</homepage>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="147" parentID="140">
+    <objLang code="tr" />
+    <dicType code="spe" />
+    <metaLang code="tr" />
+    <title lang="tr">Bilim ve Sanat Terimleri Ana Sözlüğü</title>
+    <title lang="en">The Main Dictionary of Sciences and Arts Terms</title>
+    <homepage>http://www.tdk.gov.tr/index.php?option=com_bilimsanat&amp;arama=bilimsanat</homepage>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="148" parentID="140">
+    <objLang code="tr" />
+    <dicType code="spe" />
+    <metaLang code="tr" />
+    <title lang="tr">Türkiye Türkçesi Ağızları Sözlüğü'nde Söz Arama</title>
+    <title lang="en">Dictionary of Local Dialects of Turkey Turkish</title>
+    <homepage>http://www.tdk.gov.tr/index.php?option=com_ttas&amp;arama=ttas</homepage>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="149" parentID="140">
+    <objLang code="tr" />
+    <dicType code="spe" />
+    <metaLang code="tr" />
+    <title lang="tr">Atasözleri ve Deyimler Sözlüğü</title>
+    <title lang="en">Dictionary of Proverbs and Idioms</title>
+    <homepage>http://www.tdk.gov.tr/index.php?option=com_atasozleri&amp;arama=atasozleri</homepage>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="150" parentID="140">
+    <objLang code="tr" />
+    <dicType code="spe" />
+    <metaLang code="tr" />
+    <title lang="tr">Tarama Sözlüğü</title>
+    <title lang="en">Dictionary of Manually Collected Local Dialect Usage</title>
+    <homepage>http://www.tdk.gov.tr/index.php?option=com_tarama&amp;arama=tarama</homepage>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="151" parentID="140">
+    <objLang code="tr" />
+    <dicType code="spe" />
+    <metaLang code="tr" />
+    <title lang="tr">Uluslararası Metroloji Sözlüğü</title>
+    <title lang="en">International Metrology Dictionary</title>
+    <homepage>http://www.tdk.gov.tr/index.php?option=com_metroloji&amp;arama=metroloji</homepage>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="152" parentID="140">
+    <objLang code="tr" />
+    <dicType code="spe" />
+    <metaLang code="tr" />
+    <title lang="tr">İlaç ve Eczacılık Terimleri Sözlüğü</title>
+    <title lang="en">Dictionary of Medicine and Pharmacy</title>
+    <homepage>http://www.tdk.gov.tr/index.php?option=com_eczacilik&amp;arama=eczacilik</homepage>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="153" parentID="140">
+    <objLang code="tr" />
+    <dicType code="spe" />
+    <metaLang code="tr" />
+    <title lang="tr">Yazım Kılavuzu</title>
+    <title lang="en">Spelling Dictionary</title>
+    <homepage>http://www.tdk.gov.tr/index.php?option=com_yazimkilavuzu&amp;arama=yazimkilavuzu</homepage>
+  </dictionary>
+</dictionary>
+
+<dictionary prominence="1" loginRequired="0" tcRequired="0" id="159">
+  <objLang code="ro" />
+  <dicType code="gen" />
+  <metaLang code="ro" />
+  <title lang="ro">Corpus lexicografic românesc în format electronic <abbrev>CLRE</abbrev></title>
+  <title lang="en">Electronic Romanian lexicographic corpus</title>
+  <homepage>http://clre.philippide.ro/</homepage>
+</dictionary>
+
+<dictionary prominence="1" loginRequired="0" tcRequired="0" id="154">
+  <objLang code="tr" />
+  <dicType code="gen" />
+  <metaLang code="tr" />
+  <title lang="tr">Dil Derneği - Türkçe Sözlük</title>
+  <title lang="en">The Turkish Monolingual Dictionary of "Dil Derneği"</title>
+  <homepage>http://www.dildernegi.org.tr/TR,274/turkce-sozluk-ara-bul.html</homepage>
+</dictionary>
+
+<dictionary prominence="1" loginRequired="0" tcRequired="0" id="58">
+  <objLang code="ga" />
+  <dicType code="gen" />
+  <metaLang code="en" />
+  <title lang="ga">Foclóir Nua Béarla-Gaeilge <abbrev>FNGB</abbrev></title>
+  <title lang="en">New English-Irish Dictionary <abbrev>NEID</abbrev></title>
+  <homepage>http://www.focloir.ie/</homepage>
+  <search lang="en">http://www.focloir.ie/ga/search/ei/direct/?q=<word /></search>
+  <search lang="ga">http://www.focloir.ie/en/search/ei/adv?q=<word /></search>
+</dictionary>
+
+<dictionary prominence="1" loginRequired="0" tcRequired="0" id="155">
+  <objLang code="tr" />
+  <dicType code="gen" />
+  <metaLang code="tr" />
+  <title lang="tr">Kubbealtı Lugatı</title>
+  <homepage>http://kubbealtilugati.com/</homepage>
+</dictionary>
+
+<dictionary prominence="1" loginRequired="0" tcRequired="0" id="127">
+  <objLang code="de" />
+  <dicType code="por" />
+  <metaLang code="de" />
+  <title lang="de">Online-Wortschatz-Informationssystem Deutsch <abbrev>OWID</abbrev></title>
+  <title lang="en">Online vocabulary system of the German language</title>
+  <homepage>http://www.owid.de/</homepage>
+  <search>http://www.owid.de/nav/gehezu/<word />?module=ctx.all</search>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="128" parentID="127">
+    <objLang code="de" />
+    <dicType code="spe" />
+    <metaLang code="de" />
+    <title lang="de">elexiko: Online-Wörterbuch zur deutschen Gegenwartssprache</title>
+    <title lang="en">elexiko: Online dictionary for contemporary German</title>
+    <homepage>http://www.owid.de/wb/elexiko/start.html</homepage>
+    <search>http://www.owid.de/nav/gehezu/<word />?module=elex</search>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="129" parentID="127">
+    <objLang code="de" />
+    <dicType code="spe" />
+    <metaLang code="de" />
+    <title lang="de">Feste Wortverbindungen</title>
+    <title lang="en">Dictionary of collocations</title>
+    <homepage>http://www.owid.de/wb/uwv/start.html</homepage>
+    <search>http://www.owid.de/nav/gehezu/<word />?module=uwv</search>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="130" parentID="127">
+    <objLang code="de" />
+    <dicType code="spe" />
+    <metaLang code="de" />
+    <title lang="de">Neologismenwörterbuch</title>
+    <title lang="en">Dictionary of neologism</title>
+    <homepage>http://www.owid.de/wb/neo/start.html</homepage>
+    <search>http://www.owid.de/nav/gehezu/<word />?module=neo</search>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="131" parentID="127">
+    <objLang code="de" />
+    <dicType code="spe" />
+    <metaLang code="de" />
+    <title lang="de">Protestdiskurs 1967/68</title>
+    <title lang="en">Discourse dictionary of the 1967/68 protest discourse</title>
+    <homepage>http://www.owid.de/wb/disk68/start.html</homepage>
+    <search>http://www.owid.de/nav/gehezu/<word />?module=disk68</search>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="132" parentID="127">
+    <objLang code="de" />
+    <dicType code="spe" />
+    <metaLang code="de" />
+    <title lang="de">Schlüsselwörter der Wendezeit 1989/90</title>
+    <title lang="en">Dictionary of keywords in language use 1989/90</title>
+    <homepage>http://www.owid.de/wb/swwz/start.html</homepage>
+    <search>http://www.owid.de/nav/gehezu/<word />?module=swwz</search>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="133" parentID="127">
+    <objLang code="de" />
+    <dicType code="spe" />
+    <metaLang code="de" />
+    <title lang="de">Schulddiskurs 1945-55</title>
+    <title lang="en">Discourse dictionary of the post-war (1945-55) period</title>
+    <homepage>http://www.owid.de/wb/disk45/einleitung.html</homepage>
+    <search>http://www.owid.de/nav/gehezu/<word />?module=disk45</search>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="134" parentID="127">
+    <objLang code="de" />
+    <dicType code="spe" />
+    <metaLang code="de" />
+    <title lang="de">Sprichwörterbuch</title>
+    <title lang="en">Dictionary of German proverbs</title>
+    <homepage>http://www.owid.de/wb/sprw/start.html</homepage>
+    <search>http://www.owid.de/nav/gehezu/<word />?module=sprw</search>
+  </dictionary>
+</dictionary>
+
+<dictionary prominence="1" loginRequired="0" tcRequired="0" id="163">
+  <objLang code="en" />
+  <dicType code="gen" />
+  <metaLang code="en" />
+  <title lang="en">OxfordDictionaries.com</title>
+  <homepage>https://en.oxforddictionaries.com/</homepage>
+  <search>https://en.oxforddictionaries.com/search?utf8=%E2%9C%93&amp;filter=dictionary&amp;query=<word /></search>
+</dictionary>
+
+<dictionary prominence="2" loginRequired="0" tcRequired="0" id="135">
+  <objLang code="de" />
+  <dicType code="gen" />
+  <dicType code="por" />
+  <metaLang code="de" />
+  <title lang="de">Das Digitale Wörterbuch der deutschen Sprache <abbrev>DWDS</abbrev></title>
+  <title lang="en">The digital dictionary of the German language</title>
+  <homepage>http://www.dwds.de/</homepage>
+</dictionary>
+
+<dictionary prominence="2" loginRequired="0" tcRequired="0" id="160">
+  <objLang code="ro" />
+  <dicType code="gen" />
+  <metaLang code="ro" />
+  <title lang="ro">Dicționare ale limbii române <abbrev>DEXonline</abbrev></title>
+  <title lang="en">Romanian Language Dictionaries</title>
+  <homepage>http://dexonline.ro/</homepage>
+</dictionary>
+
+<dictionary prominence="2" loginRequired="0" tcRequired="1" id="109">
+  <objLang code="cy" />
+  <dicType code="gen" />
+  <metaLang code="en" />
+  <title lang="cy" xml:space="preserve">Geiriadur yr Academi</title>
+  <title lang="en" xml:space="preserve">The Welsh Academy English-Welsh Dictionary Online</title>
+  <homepage xml:space="preserve">http://www.geiriaduracademi.org/</homepage>
+</dictionary>
+
+<dictionary prominence="2" loginRequired="0" tcRequired="0" id="156">
+  <objLang code="tr" />
+  <dicType code="gen" />
+  <metaLang code="en" />
+  <title lang="tr">Tureng</title>
+  <homepage>http://tureng.com/en/turkish-english</homepage>
+</dictionary>
+
+<dictionary prominence="3" loginRequired="0" tcRequired="0" id="161">
+  <objLang code="ro" />
+  <dicType code="gen" />
+  <metaLang code="ro" />
+  <title lang="ro">Dicționarul limbii române în format electronic <abbrev>eDTLR</abbrev></title>
+  <title lang="en">Romanian Language Dictionary in electronic format</title>
+  <homepage>http://edtlr.philippide.ro/</homepage>
+</dictionary>
+
+<dictionary prominence="3" loginRequired="0" tcRequired="0" id="126">
+  <objLang code="de" />
+  <dicType code="gen" />
+  <metaLang code="de" />
+  <title lang="de">Duden Online-Wörterbuch</title>
+  <homepage>http://www.duden.de/woerterbuch</homepage>
+  <search>http://www.duden.de/suchen/dudenonline?s=<word />&amp;scope=dudenonline</search>
+</dictionary>
+
+<dictionary prominence="3" loginRequired="0" tcRequired="0" id="157">
+  <objLang code="tr" />
+  <dicType code="gen" />
+  <metaLang code="en" />
+  <title lang="tr">Sesli Sözlük</title>
+  <homepage>https://www.seslisozluk.net/en/</homepage>
+</dictionary>
+
+<dictionary prominence="3" loginRequired="0" tcRequired="0" id="158">
+  <objLang code="tr" />
+  <dicType code="gen" />
+  <metaLang code="tr" />
+  <title lang="tr">Zargan</title>
+  <homepage>http://www.zargan.com/en/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="54">
+  <objLang code="hu" />
+  <dicType code="gen" />
+  <metaLang code="hu" />
+  <title lang="hu" xml:space="preserve">A magyar nyelv nagyszótára</title>
+  <title lang="en" xml:space="preserve">Comprehensive Dictionary of Hungary</title>
+  <homepage xml:space="preserve">http://nagyszotar.nytud.hu</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="23">
+  <objLang code="nl" />
+  <dicType code="gen" />
+  <metaLang code="nl" />
+  <title lang="nl">Algemeen Nederlands Woordenboek</title>
+  <title lang="en">Dictionary of contemporary standard Dutch</title>
+  <homepage>http://anw.inl.nl</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="74">
+  <objLang code="no" />
+  <dicType code="gen" />
+  <metaLang code="no" />
+  <title lang="no" xml:space="preserve">Bokmålsordboka</title>
+  <title lang="en" xml:space="preserve">The Bokmål Dictionary</title>
+  <homepage xml:space="preserve">http://ordbok.uib.no/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="186">
+  <objLang code="fr" />
+  <dicType code="gen" />
+  <metaLang code="fr" />
+  <title lang="fr" xml:space="preserve">CNRTL – Centre National des Ressources Textuelles et Lexicales </title>
+  <homepage xml:space="preserve">http://www.cnrtl.fr/definition/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="279">
+  <objLang code="fr" />
+  <dicType code="por" />
+  <metaLang code="fr" />
+  <title lang="fr" xml:space="preserve">Délégation Générale à la Langue Française et aux Langues de France</title>
+  <homepage xml:space="preserve">http://www.culturecommunication.gouv.fr/Politiques-ministerielles/Langue-francaise-et-langues-de-France/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="15">
+  <objLang code="da" />
+  <dicType code="gen" />
+  <metaLang code="da" />
+  <title lang="da">Den Danske Ordbog. Moderne Dansk sprog.</title>
+  <title lang="en">The Danish Dictionary. Contemporary Danish language</title>
+  <homepage>http://ordnet.dk/ddo</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="72">
+  <objLang code="no" />
+  <dicType code="gen" />
+  <metaLang code="no" />
+  <title lang="no">Det Norske Akademis Store Ordbok</title>
+  <title lang="en">The Norwegian Academy's Dictionary</title>
+  <homepage>http://www.naob.no/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="9">
+  <objLang code="ca" />
+  <dicType code="gen" />
+  <metaLang code="ca" />
+  <title lang="ca">Diccionari de la Llengua Catalana</title>
+  <title lang="en">Dictionary of the Catalan language</title>
+  <homepage>http://dlc.iec.cat/</homepage>
+  <search>http://dlc.iec.cat/results.asp?txtEntrada=<word />&amp;operEntrada=0</search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="185">
+  <objLang code="es" />
+  <dicType code="gen" />
+  <metaLang code="es" />
+  <title lang="es" xml:space="preserve">Diccionario Clave - Diccionario de uso del español actual</title>
+  <homepage xml:space="preserve">http://clave.smdiccionarios.com/app.php</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="45">
+  <objLang code="gl" />
+  <dicType code="gen" />
+  <metaLang code="es" />
+  <title lang="gl">Diccionario da Real Academia Galega</title>
+  <title lang="en">Dictionary of the Real Academia Galega</title>
+  <homepage>http://www.realacademiagalega.org/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="102">
+  <objLang code="es" />
+  <dicType code="gen" />
+  <metaLang code="es" />
+  <title lang="es">Diccionario de la lengua Española</title>
+  <title lang="en">Dictionary of the Royal Spanish Academy</title>
+  <homepage>http://www.rae.es/recursos/diccionarios/drae</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="202">
+  <objLang code="es" />
+  <dicType code="por" />
+  <metaLang code="es" />
+  <title lang="es" xml:space="preserve">Diccionarios.com</title>
+  <homepage xml:space="preserve">http://www.diccionarios.com/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="82">
+  <objLang code="pt" />
+  <dicType code="gen" />
+  <metaLang code="pt" />
+  <title lang="pt">Dicionário online de Português</title>
+  <title lang="en">Online dictionary of Portuguese</title>
+  <homepage>http://www.dicio.com.br/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="188">
+  <objLang code="fr" />
+  <dicType code="gen" />
+  <metaLang code="fr" />
+  <title lang="fr" xml:space="preserve">Dictionnaire de français Larousse</title>
+  <homepage xml:space="preserve">http://www.larousse.fr/dictionnaires/francais</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="84">
+  <objLang code="rm" />
+  <dicType code="gen" />
+  <metaLang code="rm" />
+  <title lang="rm">Dicziunari Rumantsch Grischun</title>
+  <homepage>http://www.drg.ch/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="69">
+  <objLang code="lt" />
+  <dicType code="gen" />
+  <metaLang code="lt" />
+  <title lang="lt">Didysis lietuvių kalbos žodynas or Akademinis lietuvių kalbos žodynas</title>
+  <title lang="en">Dictionary of the Lithuanian language</title>
+  <homepage>http://www.lkz.lt/startas.htm</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="101">
+  <objLang code="wen" />
+  <dicType code="gen" />
+  <metaLang code="wen" />
+  <metaLang code="de" />
+  <title lang="wen">Dolnoserbsko-nimski słownik</title>
+  <title lang="en">Sorbian-German dictionary</title>
+  <homepage>http://www.dolnoserbski.de/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="32">
+  <objLang code="et" />
+  <dicType code="gen" />
+  <metaLang code="et" />
+  <title lang="et">Eesti keele seletav sõnaraamat</title>
+  <title lang="en">The Explanatory Dictionary of Estonian</title>
+  <homepage>http://eki.ee/dict/ekss/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="33">
+  <objLang code="et" />
+  <dicType code="gen" />
+  <metaLang code="et" />
+  <title lang="et">Eesti õigekeelsussõnaraamat</title>
+  <title lang="en">The Dictionary of Standard Estonian</title>
+  <homepage>http://eki.ee/dict/qs/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="2">
+  <objLang code="eu" />
+  <dicType code="gen" />
+  <metaLang code="eu" />
+  <title lang="eu">Egungo Euskararen Hiztegia</title>
+  <title lang="en">Dictionary of Contemporary Basque</title>
+  <homepage>http://www.ehu.eus/eeh/</homepage>
+  <search>http://www.ehu.eus/eeh/cgi/bila?z=<word /></search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="34">
+  <objLang code="fo" />
+  <dicType code="gen" />
+  <metaLang code="fo" />
+  <title lang="fo">Føroysk orðabók</title>
+  <homepage>http://www.obg.fo/fob/fob.php</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="10">
+  <objLang code="kw" />
+  <dicType code="gen" />
+  <metaLang code="en" />
+  <title lang="kw" xml:space="preserve">Gerlyver Kernewek MAGA</title>
+  <title lang="en" xml:space="preserve">MAGA Cornish dictionary</title>
+  <homepage xml:space="preserve">http://www.cornishdictionary.org.uk/</homepage>
+  <search lang="kw" xml:space="preserve">http://www.cornishdictionary.org.uk/browse?field_word_value=<word /></search>
+  <search lang="en" xml:space="preserve">http://www.cornishdictionary.org.uk/english-wordz?populate=<word /></search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="83">
+  <objLang code="pt" />
+  <dicType code="gen" />
+  <metaLang code="pt" />
+  <title lang="pt">Grande dicionário Houaiss da língua Portuguese</title>
+  <title lang="en">Houaiss Dictionary of the Portuguese Language</title>
+  <homepage>http://houaiss.uol.com.br/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="11">
+  <objLang code="hr" />
+  <dicType code="gen" />
+  <metaLang code="hr" />
+  <title lang="hr">Hrvatski jezični portal</title>
+  <title lang="en">Croatian Language Portal</title>
+  <homepage>http://hjp.znanje.hr/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="61">
+  <objLang code="it" />
+  <dicType code="gen" />
+  <metaLang code="it" />
+  <title lang="it">Il Sabatini Coletti. Dizionario della Lingua Italiana</title>
+  <title lang="en">The Sabatini Coletti. Dictionary of the Italian Language</title>
+  <homepage>http://dizionari.corriere.it/dizionario_italiano/index.shtml</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="56">
+  <objLang code="is" />
+  <dicType code="gen" />
+  <metaLang code="is" />
+  <title lang="is" xml:space="preserve">Íslensk nútímamálsorðabók</title>
+  <title lang="en" xml:space="preserve">A Dictionary of Modern Icelandic</title>
+  <homepage xml:space="preserve">http://islenskordabok.arnastofnun.is/islob</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="55">
+  <objLang code="is" />
+  <dicType code="gen" />
+  <metaLang code="is" />
+  <title lang="is" xml:space="preserve">ISLEX-orðabókin</title>
+  <title lang="en" xml:space="preserve">The ISLEX Dictionary</title>
+  <homepage xml:space="preserve">http://islex.is</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="112">
+  <objLang code="krl" />
+  <dicType code="gen" />
+  <metaLang code="kar" />
+  <title lang="krl">Karjalan kielen verkkosanakirja <abbrev>KKS</abbrev></title>
+  <title lang="en">Online Dictionary of the Karelian Language</title>
+  <homepage>http://kaino.kotus.fi/cgi-bin/kks/kks_etusivu.cgi</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="35">
+  <objLang code="fi" />
+  <dicType code="gen" />
+  <metaLang code="fi" />
+  <title lang="fi">Kielitoimiston sanakirja</title>
+  <title lang="en">Dictionary of Contemporary Finnish</title>
+  <homepage>http://www.kielitoimistonsanakirja.fi</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="91">
+  <objLang code="smi" />
+  <dicType code="gen" />
+  <metaLang code="fi" />
+  <metaLang code="de" />
+  <title lang="smi">Koltan-ja Kuolanlapin Sanakirja</title>
+  <title lang="en">Dictionary of the Skolt and Kola Lapp Languages</title>
+  <homepage>http://www.sgr.fi/lexica/lexicaxv.html</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="98">
+  <objLang code="sk" />
+  <dicType code="gen" />
+  <metaLang code="sk" />
+  <title lang="sk">Krátky slovník slovenského jazyka</title>
+  <title lang="en">Concise Dictionary of the Slovak Language</title>
+  <year>2003</year>
+  <homepage>http://www.juls.savba.sk/kssj_4.html</homepage>
+  <search>http://slovniky.juls.savba.sk/?w=<word />&amp;s=exact&amp;c=Db44&amp;d=kssj4&amp;ie=utf-8&amp;oe=utf-8</search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="209">
+  <objLang code="fr" />
+  <dicType code="por" />
+  <metaLang code="fr" />
+  <title lang="fr" xml:space="preserve">Larousse - Dictionnaires bilingues</title>
+  <homepage xml:space="preserve">http://www.larousse.fr/dictionnaires/bilingues</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="65">
+  <objLang code="lv" />
+  <dicType code="gen" />
+  <metaLang code="lv" />
+  <title lang="lv">Latviešu literārās valodas vārdnīca</title>
+  <title lang="en">Latvian Literary Language Dictionary</title>
+  <homepage>http://www.tezaurs.lv/llvv</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="66">
+  <objLang code="lv" />
+  <dicType code="gen" />
+  <metaLang code="lv" />
+  <title lang="lv">Latviešu valodas vārdnīca</title>
+  <title lang="en">Latvian Dictionary</title>
+  <homepage>http://www.tezaurs.lv/lvv/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="184">
+  <objLang code="fr" />
+  <dicType code="gen" />
+  <metaLang code="fr" />
+  <title lang="fr" xml:space="preserve">Le grand dictionnaire terminologique (GDT)</title>
+  <homepage xml:space="preserve">http://gdt.oqlf.gouv.qc.ca/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="1" tcRequired="0" id="41">
+  <objLang code="fr" />
+  <dicType code="gen" />
+  <metaLang code="fr" />
+  <title lang="fr">Le Grand Robert de la langue française</title>
+  <homepage>http://lerobert.demarque.com/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="1" tcRequired="0" id="278">
+  <objLang code="fr" />
+  <dicType code="gen" />
+  <metaLang code="fr" />
+  <title lang="fr" xml:space="preserve">Le petit Robert de la langue française</title>
+  <homepage xml:space="preserve">http://www.lerobert.com/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="122">
+  <objLang code="ga" />
+  <dicType code="por" />
+  <title lang="ga">Leabharlann Teanga agus Foclóireachta</title>
+  <title lang="en">Dictionary and Language Library</title>
+  <homepage>http://www.teanglann.ie/</homepage>
+  <search>http://www.teanglann.ie/ga/_search/<word /></search>
+  <dictionary prominence="3" loginRequired="0" tcRequired="0" id="123" parentID="122">
+    <objLang code="ga" />
+    <dicType code="gen" />
+    <metaLang code="en" />
+    <title lang="en">English-Irish Dictionary <abbrev>EID</abbrev></title>
+    <year>1959</year>
+    <homepage>http://www.teanglann.ie/en/eid/</homepage>
+    <search>http://www.teanglann.ie/en/eid/<word /></search>
+  </dictionary>
+  <dictionary prominence="2" loginRequired="0" tcRequired="0" id="124" parentID="122">
+    <objLang code="ga" />
+    <dicType code="gen" />
+    <metaLang code="en" />
+    <title lang="ga">Foclóir Gaeilge-Béarla <abbrev>FGB</abbrev></title>
+    <title lang="en">Irish-English Dictionary</title>
+    <year>1977</year>
+    <homepage>http://www.teanglann.ie/en/fgb/</homepage>
+    <search>http://www.teanglann.ie/en/fgb/<word /></search>
+  </dictionary>
+  <dictionary prominence="4" loginRequired="0" tcRequired="0" id="125" parentID="122">
+    <objLang code="ga" />
+    <dicType code="gen" />
+    <metaLang code="ga" />
+    <title lang="ga">An Foclóir Beag</title>
+    <title lang="en">The Little Dictionary</title>
+    <year>1991</year>
+    <homepage>http://www.teanglann.ie/ga/fb/</homepage>
+    <search>http://www.teanglann.ie/ga/fb/<word /></search>
+  </dictionary>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="70">
+  <objLang code="lb" />
+  <dicType code="gen" />
+  <metaLang code="de" />
+  <title lang="lb">Luxemburger Wörterbuch</title>
+  <homepage>http://engelmann.uni.lu:8080/portal/WBB2009/LWB//wbgui_py</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="67">
+  <objLang code="lv" />
+  <dicType code="gen" />
+  <metaLang code="de" />
+  <title lang="lv">Mīlenbaha - Endzelīna latviešu valodas vārdnīca</title>
+  <title lang="en">Mīlenbaha - Endzelīna Dictionary of Latvian</title>
+  <homepage>http://www.tezaurs.lv/mev/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="68">
+  <objLang code="lv" />
+  <dicType code="gen" />
+  <metaLang code="lv" />
+  <title lang="lv">Mūsdienu latviešu valodas vārdnīca</title>
+  <title lang="en">Modern Latvian Dictionary</title>
+  <homepage>http://www.tezaurs.lv/mlvv/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="309">
+  <objLang code="smi" />
+  <dicType code="gen" />
+  <metaLang code="no" />
+  <metaLang code="fi" />
+  <title lang="smi" xml:space="preserve">Neahttadigisánit</title>
+  <title lang="en" xml:space="preserve">North Saami dictionary</title>
+  <homepage xml:space="preserve">http://sanit.oahpa.no/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="73">
+  <objLang code="no" />
+  <dicType code="gen" />
+  <metaLang code="no" />
+  <title lang="no">Norsk Ordbok. Ordbok over det norske folkemålet og det nynorske skriftmålet</title>
+  <title lang="en">Dictionary of Norwegian. Dictionary of the Norwegian vernacular and the Nynorsk written standard</title>
+  <homepage>http://no2014.uio.no/perl/ordbok/no2014.cgi</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="75">
+  <objLang code="no" />
+  <dicType code="gen" />
+  <metaLang code="no" />
+  <title lang="no" xml:space="preserve">Nynorskordboka</title>
+  <title lang="en" xml:space="preserve">The Nynorsk Dictionary</title>
+  <homepage xml:space="preserve">http://ordbok.uib.no/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="3">
+  <objLang code="eu" />
+  <dicType code="gen" />
+  <metaLang code="eu" />
+  <title lang="eu">Orotariko Euskal Hiztegia</title>
+  <title lang="en">General Basque Dictionary</title>
+  <homepage>http://www.euskaltzaindia.net/index.php?option=com_content&amp;view=article&amp;id=276&amp;Itemid=413&amp;lang=eu</homepage>
+  <search>http://www.euskaltzaindia.eus/index.php?option=com_oeh&amp;view=frontpage&amp;Itemid=413&amp;lang=eu&amp;sarrera=<word /></search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="139">
+  <objLang code="rm" />
+  <dicType code="gen" />
+  <metaLang code="rm" />
+  <title lang="rm">Pledari Grond</title>
+  <homepage>http://www.pledarigrond.ch/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="12">
+  <objLang code="cs" />
+  <dicType code="gen" />
+  <metaLang code="cs" />
+  <title lang="cs" xml:space="preserve">Příruční slovník jazyka českého <abbrev xml:space="preserve">PSJČ</abbrev></title>
+  <title lang="en" xml:space="preserve">Reference dictionary of the Czech language</title>
+  <year xml:space="preserve">1935–1957</year>
+  <homepage xml:space="preserve">http://bara.ujc.cas.cz/psjc/search.php</homepage>
+  <search xml:space="preserve">http://bara.ujc.cas.cz/psjc/search.php?hledej=Hledej&amp;heslo=<word />&amp;where=hesla&amp;zobraz_ps=ps&amp;zobraz_cards=cards&amp;pocet_karet=3&amp;numcchange=no&amp;not_initial=1</search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="113">
+  <objLang code="sl" />
+  <dicType code="por" />
+  <title lang="sl">Slovarji Inštituta za slovenski jezik Frana Ramovša ZRC SAZU <abbrev>Fran</abbrev></title>
+  <title lang="en">Dictionaries of the Fran Ramovš Institute of the Slovenian Language</title>
+  <homepage>http://www.fran.si/</homepage>
+  <search>http://www.fran.si/iskanje?View=1&amp;Query=<word /></search>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="114" parentID="113">
+    <objLang code="sl" />
+    <dicType code="gen" />
+    <metaLang code="sl" />
+    <title lang="sl">Slovar slovenskega knjižnega jezika <abbrev>SSKJ</abbrev></title>
+    <title lang="en">The Dictionary of Standard Slovene</title>
+    <homepage>http://www.fran.si/130/sskj-slovar-slovenskega-knjiznega-jezika</homepage>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="1" tcRequired="0" id="115" parentID="113">
+    <objLang code="sl" />
+    <dicType code="gen" />
+    <metaLang code="sl" />
+    <title lang="sl">Slovar slovenskega knjižnega jezika: druga, dopolnjena in deloma prenovljena izdaja</title>
+    <title lang="en">The Dictionary of Standard Slovene: 2nd edition</title>
+    <homepage>http://www.fran.si/133/sskj2-slovar-slovenskega-knjiznega-jezika-2</homepage>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="116" parentID="113">
+    <objLang code="sl" />
+    <dicType code="spe" />
+    <metaLang code="sl" />
+    <title lang="sl">Slovenski pravopis</title>
+    <title lang="en">Slovene Orthography</title>
+    <year>2001</year>
+    <homepage>http://www.fran.si/134/slovenski-pravopis</homepage>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="117" parentID="113">
+    <objLang code="sl" />
+    <dicType code="spe" />
+    <metaLang code="sl" />
+    <title lang="sl">Slovar novejšega besedja slovenskega jezika <abbrev>SNB</abbrev></title>
+    <title lang="en">Dictionary of Neologisms in Slovene</title>
+    <homepage>http://www.fran.si/131/snb-slovar-novejsega-besedja</homepage>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="118" parentID="113">
+    <objLang code="sl" />
+    <dicType code="gen" />
+    <metaLang code="sl" />
+    <title lang="sl">Sprotni slovar slovenskega jezika <abbrev>SSSJ</abbrev></title>
+    <homepage>http://www.fran.si/132/sssj-sprotni-slovar-slovenskega-jezika</homepage>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="119" parentID="113">
+    <objLang code="sl" />
+    <dicType code="ety" />
+    <metaLang code="sl" />
+    <title lang="sl">Slovenski etimološki slovar</title>
+    <title lang="en">Slovene Etymological Dictionary</title>
+    <homepage>http://www.fran.si/193/marko-snoj-slovenski-etimoloski-slovar</homepage>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="120" parentID="113">
+    <objLang code="sl" />
+    <dicType code="his" />
+    <metaLang code="de" />
+    <title lang="sl">Maks Pleteršnik: Slovensko-nemški slovar</title>
+    <title lang="en">Slovene-German Dictionary</title>
+    <year>1894–1895</year>
+    <homepage>http://www.fran.si/136/maks-pletersnik-slovensko-nemski-slovar</homepage>
+  </dictionary>
+  <dictionary prominence="5" loginRequired="0" tcRequired="0" id="121" parentID="113">
+    <objLang code="sl" />
+    <dicType code="spe" />
+    <metaLang code="sl" />
+    <title lang="sl">Slovar stare knjižne prekmurščine</title>
+    <title lang="en">Dictionary of the Old Standard Language of the Prekmurje Region</title>
+    <homepage>http://www.fran.si/137/slovar-stare-knjizne-prekmurscine</homepage>
+  </dictionary>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="99">
+  <objLang code="sk" />
+  <dicType code="gen" />
+  <metaLang code="sk" />
+  <title lang="sk">Slovník slovenského jazyka</title>
+  <title lang="en">Dictionary of the Slovak Language</title>
+  <year>1959–1968</year>
+  <homepage>http://www.juls.savba.sk/ssj_peciar.html</homepage>
+  <search>http://slovniky.juls.savba.sk/?w=<word />&amp;s=exact&amp;c=V5a3&amp;d=peciar&amp;ie=utf-8&amp;oe=utf-8</search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="110">
+  <objLang code="cs" />
+  <dicType code="gen" />
+  <metaLang code="cs" />
+  <title lang="cs" xml:space="preserve">Slovník současné češtiny</title>
+  <title lang="en" xml:space="preserve">Dictionary of Contemporary Czech</title>
+  <homepage xml:space="preserve">http://www.nechybujte.cz/slovnik-soucasne-cestiny</homepage>
+  <search xml:space="preserve">http://www.nechybujte.cz/slovnik-soucasne-cestiny/<word /></search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="13">
+  <objLang code="cs" />
+  <dicType code="gen" />
+  <metaLang code="cs" />
+  <title lang="cs" xml:space="preserve">Slovník spisovného jazyka českého <abbrev xml:space="preserve">SSJČ</abbrev></title>
+  <title lang="en" xml:space="preserve">Dictionary of Written Czech</title>
+  <year xml:space="preserve">1960-1971</year>
+  <homepage xml:space="preserve">http://ssjc.ujc.cas.cz/</homepage>
+  <search xml:space="preserve">http://ssjc.ujc.cas.cz/search.php?hledej=Hledat&amp;heslo=<word />&amp;sti=EMPTY&amp;where=hesla&amp;hsubstr=no</search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="100">
+  <objLang code="sk" />
+  <dicType code="gen" />
+  <metaLang code="sk" />
+  <title lang="sk">Slovník súčasného slovenského jazyka</title>
+  <title lang="en">Dictionary of Contemporary Slovak Language</title>
+  <year>2006-2011</year>
+  <homepage>http://www.juls.savba.sk/pub_sssj_2.html</homepage>
+  <search>http://slovniky.juls.savba.sk/?w=<word />&amp;c=g722&amp;d=sssj2&amp;d=sssj</search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="78">
+  <objLang code="pl" />
+  <dicType code="gen" />
+  <metaLang code="pl" />
+  <title lang="pl">Słownik języka polskiego</title>
+  <title lang="en">Dictionary of Polish</title>
+  <homepage>http://sjpd.pwn.pl/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="57">
+  <objLang code="is" />
+  <dicType code="gen" />
+  <metaLang code="is" />
+  <title lang="is">Stóra orðabókin um íslenska málnotkun</title>
+  <title lang="en">The Big Dictionary of Icelandic Language Use</title>
+  <homepage>https://snara.is/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="107">
+  <objLang code="sv" />
+  <dicType code="gen" />
+  <metaLang code="sv" />
+  <title lang="sv">Svensk ordbok</title>
+  <title lang="en">Swedish dictionary published by the Swedish Academy</title>
+  <homepage>http://svenska.gu.se/forskning/li/projekt/so</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="183">
+  <objLang code="fr" />
+  <dicType code="gen" />
+  <metaLang code="fr" />
+  <title lang="fr" xml:space="preserve">Trésor de la Langue Française Informatisé </title>
+  <homepage xml:space="preserve">http://atilf.atilf.fr/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="1" tcRequired="0" id="301">
+  <objLang code="dse" />
+  <dicType code="gen" />
+  <metaLang code="nl" />
+  <title lang="nl" xml:space="preserve">Van Dale NGT Uitgebreid</title>
+  <homepage xml:space="preserve">https://www.gebarencentrum.nl/gebaren/van-dale-ngt-uitgebreid/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="62">
+  <objLang code="it" />
+  <dicType code="gen" />
+  <metaLang code="it" />
+  <title lang="it">Virgilio Parole Vocabolario di Italiano</title>
+  <title lang="en">Virgilio's Italian Vocabulary Words</title>
+  <homepage>http://parole.virgilio.it/parole/vocabolario/index.html</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="96">
+  <objLang code="sr" />
+  <dicType code="gen" />
+  <metaLang code="sr" />
+  <title lang="sr">Vokabular</title>
+  <homepage>http://www.vokabular.org/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="79">
+  <objLang code="pl" />
+  <dicType code="gen" />
+  <metaLang code="pl" />
+  <title lang="pl">Wielki słownik języka polskiego</title>
+  <title lang="en">Great Dictionary of Polish</title>
+  <homepage>http://www.wsjp.pl</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="49">
+  <objLang code="el" />
+  <dicType code="gen" />
+  <metaLang code="el" />
+  <title lang="el" xml:space="preserve">Λεξικό της κοινής νεοελληνικής</title>
+  <title lang="en" xml:space="preserve">Dictionary of Standard Modern Greek</title>
+  <homepage xml:space="preserve">http://www.greek-language.gr/greekLang/modern_greek/tools/lexica/triantafyllides/index.html</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="173">
+  <objLang code="la" />
+  <objLang code="el" />
+  <dicType code="por" />
+  <metaLang code="en" />
+  <title lang="el" xml:space="preserve">ΛΟΓΕΙΟΝ</title>
+  <title lang="en" xml:space="preserve">LOGEION</title>
+  <homepage xml:space="preserve">http://logeion.uchicago.edu/index.html</homepage>
+  <search xml:space="preserve">http://logeion.uchicago.edu/index.html#<word /></search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="85">
+  <objLang code="ru" />
+  <dicType code="gen" />
+  <metaLang code="ru" />
+  <title lang="ru">Большой Толковый Словарь</title>
+  <title lang="en">Explanatory Dictionary of Russian (Kuznetsov)</title>
+  <homepage>http://www.btslovar.ru/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="71">
+  <objLang code="mk" />
+  <dicType code="gen" />
+  <metaLang code="mk" />
+  <title lang="mk">Дигитален речник на македонскиот јазик</title>
+  <title lang="en">Digitial Dictionary of the Macedonian language</title>
+  <homepage>http://www.makedonski.info/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="5">
+  <objLang code="bg" />
+  <dicType code="gen" />
+  <metaLang code="bg" />
+  <title lang="bg">Речник на българския език</title>
+  <title lang="en">Dictionary of the Bulgarian Language</title>
+  <homepage>http://ibl.bas.bg/rbe/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="86">
+  <objLang code="ru" />
+  <dicType code="gen" />
+  <metaLang code="ru" />
+  <title lang="ru">Словaрь русского языка под ред. Ожегова С.И.</title>
+  <title lang="en">Dictionary of the Russian Language (Ozhegov)</title>
+  <homepage>http://www.slovonline.ru/slovar_ojegov/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="87">
+  <objLang code="ru" />
+  <dicType code="gen" />
+  <metaLang code="ru" />
+  <title lang="ru">Словари Онлайн</title>
+  <title lang="en">Online Russian dictionaries</title>
+  <homepage>http://slovonline.ru/slovar_dal/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="88">
+  <objLang code="ru" />
+  <dicType code="gen" />
+  <metaLang code="ru" />
+  <title lang="ru">Толковый словарь русского языка под ред. Ожегова С.И., Шведовой Н.Ю.</title>
+  <title lang="en">Explanatory Dictionary of the Russian Language (Ozhegov &amp; Shvedova)</title>
+  <homepage>http://www.lib.ru/DIC/OZHEGOW/ozhegow_p_r.txt</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="89">
+  <objLang code="ru" />
+  <dicType code="gen" />
+  <metaLang code="ru" />
+  <title lang="ru">Толковый словарь русского языка под ред. Ушакова Д.Н.</title>
+  <title lang="en">Explanatory Dictionary of the Russian Language (Ushakov Dictionary)</title>
+  <homepage>http://ushakovdictionary.ru/</homepage>
+</dictionary>
+
+<dictionary prominence="6" loginRequired="1" tcRequired="0" id="303">
+  <objLang code="nl" />
+  <dicType code="gen" />
+  <metaLang code="nl" />
+  <title lang="nl" xml:space="preserve">Van Dale</title>
+  <homepage xml:space="preserve">https://www.vandale.nl/inloggen</homepage>
+</dictionary>
+
+<dictionary prominence="7" loginRequired="0" tcRequired="0" id="304">
+  <objLang code="nl" />
+  <dicType code="gen" />
+  <metaLang code="nl" />
+  <title lang="nl" xml:space="preserve">Van Dale (free)</title>
+  <homepage xml:space="preserve">http://www.vandale.nl/opzoeken</homepage>
+  <search xml:space="preserve">http://www.vandale.nl/opzoeken?pattern=<word />&amp;lang=nn</search>
+</dictionary>
+
+<dictionary prominence="10" loginRequired="1" tcRequired="0" id="77">
+  <objLang code="no" />
+  <dicType code="por" />
+  <metaLang code="no" />
+  <title lang="no">Ordnett.no</title>
+  <homepage>https://www.ordnett.no/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="31">
+  <objLang code="et" />
+  <dicType code="lrn" />
+  <metaLang code="et" />
+  <title lang="et">Eesti keele põhisõnavara sõnastik</title>
+  <title lang="en">The Basic Estonian Dictionary</title>
+  <homepage>http://eki.ee/dict/psv/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="1" tcRequired="0" id="136">
+  <objLang code="de" />
+  <dicType code="lrn" />
+  <metaLang code="it" />
+  <title lang="de">Elektronisches Lernerwörterbuch Deutsch-Italienisch <abbrev>ELDIT</abbrev></title>
+  <title lang="it">Dizionario elettronico per apprendenti Italiano-Tedesco</title>
+  <title lang="en">Electronic Learner's Dictionary of German and Italian</title>
+  <homepage>http://eldit.eurac.edu/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="165">
+  <objLang code="en" />
+  <dicType code="lrn" />
+  <metaLang code="en" />
+  <title lang="en" xml:space="preserve">Longman Dictionary of Contemporary English <abbrev xml:space="preserve">LDOCE</abbrev></title>
+  <homepage xml:space="preserve">http://www.ldoceonline.com</homepage>
+  <search xml:space="preserve">http://www.ldoceonline.com/search/?q=<word /></search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="164">
+  <objLang code="en" />
+  <dicType code="lrn" />
+  <metaLang code="en" />
+  <title lang="en" xml:space="preserve">Macmillan English Dictionary <abbrev xml:space="preserve">MED</abbrev></title>
+  <homepage xml:space="preserve">http://www.macmillandictionary.com</homepage>
+  <search xml:space="preserve">http://www.macmillandictionary.com/dictionary/british/<word /></search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="111">
+  <objLang code="ga" />
+  <dicType code="lrn" />
+  <metaLang code="en" />
+  <title lang="ga">Pota Focal</title>
+  <homepage>http://www.potafocal.com/</homepage>
+  <search>http://www.potafocal.com/?s=<word /></search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="106">
+  <objLang code="sv" />
+  <dicType code="lrn" />
+  <metaLang code="sv" />
+  <title lang="sv">Svenska ord (LEXIN)</title>
+  <title lang="en">Lexin - a Dictionary for immigrant education</title>
+  <homepage>http://spraakbanken.gu.se/swe/resurs/lexin</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="180">
+  <objLang code="fr" />
+  <dicType code="spe" />
+  <metaLang code="es" />
+  <title lang="es" xml:space="preserve">Actualicemos nuestro vocabulario - Diccionario español-francés ejemplificado y comentado</title>
+  <homepage xml:space="preserve">http://memolengua.free.fr/Recherche/Ouvrages/Actualicemos_nuestro_vocabulario/index.html</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="179">
+  <objLang code="es" />
+  <dicType code="spe" />
+  <metaLang code="fr" />
+  <title lang="fr" xml:space="preserve">Actualisons notre vocabulaire - Dictionnaire français-espagnol exemplifié et commenté</title>
+  <homepage xml:space="preserve">http://memolengua.free.fr/Recherche/Ouvrages/Actualisons_notre_vocabulaire/index.html</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="59">
+  <objLang code="ga" />
+  <dicType code="spe" />
+  <metaLang code="ga" />
+  <metaLang code="en" />
+  <title lang="ga">Bunachar Náisiúnta Téarmaíochta don Ghaeilge</title>
+  <title lang="en">National Terminology Database for Irish</title>
+  <homepage>http://www.tearma.ie/</homepage>
+  <search>http://www.tearma.ie/Search.aspx?term=<word /></search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="178">
+  <objLang code="fr" />
+  <dicType code="spe" />
+  <metaLang code="es" />
+  <title lang="es" xml:space="preserve">Coloquialmente hablando - Diccionario español-francés de la lengua actual</title>
+  <homepage xml:space="preserve">http://memolengua.free.fr/Recherche/Ouvrages/Coloquialmente_hablando/index.html</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="8">
+  <objLang code="ca" />
+  <dicType code="spe" />
+  <metaLang code="ca" />
+  <title lang="ca">Diccionari català-valencià-balear</title>
+  <title lang="en">Dictionary Catalan-Valencian-Balearic</title>
+  <homepage>http://dcvb.iec.cat/</homepage>
+  <search>http://dcvb.iec.cat/results.asp?search=<word /></search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="187">
+  <objLang code="es" />
+  <dicType code="spe" />
+  <metaLang code="es" />
+  <title lang="es" xml:space="preserve">Diccionario del español coloquial </title>
+  <homepage xml:space="preserve">http://coloquial.es/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="293">
+  <objLang code="es" />
+  <dicType code="spe" />
+  <metaLang code="es" />
+  <title lang="es" xml:space="preserve">Diccionario informático</title>
+  <homepage xml:space="preserve">http://www.lawebdelprogramador.com/diccionario/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="292">
+  <objLang code="es" />
+  <dicType code="spe" />
+  <metaLang code="es" />
+  <title lang="es" xml:space="preserve">Diccionario médico-biológico, histórico y etimológico</title>
+  <homepage xml:space="preserve">http://dicciomed.eusal.es/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="246">
+  <objLang code="es" />
+  <dicType code="spe" />
+  <metaLang code="es" />
+  <title lang="es" xml:space="preserve">Diccionario panhispánico de dudas</title>
+  <homepage xml:space="preserve">http://www.rae.es/recursos/diccionarios/dpd</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="239">
+  <objLang code="es" />
+  <dicType code="spe" />
+  <metaLang code="es" />
+  <title lang="es" xml:space="preserve">Diccionario visual</title>
+  <homepage xml:space="preserve">http://www.ikonet.com/es/diccionariovisual/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="46">
+  <objLang code="gl" />
+  <dicType code="spe" />
+  <metaLang code="es" />
+  <title lang="gl">Dicionario de dicionarios. Corpus lexicográfico da lingua galega</title>
+  <homepage>http://sli.uvigo.es/ddd/index.html</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="299">
+  <objLang code="fr" />
+  <dicType code="spe" />
+  <metaLang code="fr" />
+  <title lang="fr" xml:space="preserve">Dictionnaire médical - Doctissimo</title>
+  <homepage xml:space="preserve">http://dictionnaire.doctissimo.fr/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="240">
+  <objLang code="fr" />
+  <dicType code="spe" />
+  <metaLang code="fr" />
+  <title lang="fr" xml:space="preserve">Dictionnaire visuel </title>
+  <homepage xml:space="preserve">http://www.ikonet.com/fr/ledictionnairevisuel/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="255">
+  <objLang code="es" />
+  <dicType code="spe" />
+  <metaLang code="es" />
+  <title lang="es" xml:space="preserve">DIRAE</title>
+  <homepage xml:space="preserve">http://dirae.es/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="288">
+  <objLang code="fr" />
+  <dicType code="spe" />
+  <metaLang code="fr" />
+  <title lang="fr" xml:space="preserve">Expressio - Les expressions françaises décortiquées</title>
+  <homepage xml:space="preserve">http://www.expressio.fr/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="177">
+  <objLang code="es" />
+  <dicType code="spe" />
+  <metaLang code="fr" />
+  <title lang="fr" xml:space="preserve">Familièrement parlant - Dictionnaire français-espagnol de la langue actuelle</title>
+  <homepage xml:space="preserve">http://memolengua.free.fr/Recherche/Ouvrages/Familierement_parlant/index.html</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="1">
+  <objLang code="sq" />
+  <dicType code="spe" />
+  <metaLang code="sq" />
+  <title lang="sq">Fjalor I Gjuhës së sotme shqipe</title>
+  <title lang="en">The dictionary of the Albanian Language</title>
+  <homepage>http://www.fjalori.shkenca.org/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="43">
+  <objLang code="fr" />
+  <dicType code="spe" />
+  <metaLang code="fr" />
+  <title lang="fr">Glossaire des patois de la Suisse Romande</title>
+  <homepage>http://www.glossaire-romand.ch/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="206">
+  <objLang code="en" />
+  <dicType code="spe" />
+  <metaLang code="en" />
+  <title lang="en" xml:space="preserve">IATE – InterActive Terminology for Europe </title>
+  <homepage xml:space="preserve">http://iate.europa.eu/switchLang.do?success=mainPage&amp;lang=en</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="16">
+  <objLang code="da" />
+  <dicType code="spe" />
+  <metaLang code="da" />
+  <title lang="da">Jysk Ordbog</title>
+  <title lang="en">Dictionary of the dialects of Jutland</title>
+  <homepage>http://www.jyskordbog.dk</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="42">
+  <objLang code="fr" />
+  <dicType code="spe" />
+  <metaLang code="fr" />
+  <title lang="fr">Le Trésor de la langue française informatisé</title>
+  <homepage>http://atilf.atilf.fr/tlfi.htm</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="234">
+  <objLang code="fr" />
+  <dicType code="spe" />
+  <metaLang code="fr" />
+  <title lang="fr" xml:space="preserve">Lexique de la comptabilité </title>
+  <homepage xml:space="preserve">http://www.lexique-comptable.info/lcab.html</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="237">
+  <objLang code="fr" />
+  <dicType code="spe" />
+  <metaLang code="fr" />
+  <title lang="fr" xml:space="preserve">Lintern@ute - Dictionnaire des noms propres </title>
+  <homepage xml:space="preserve">http://www.linternaute.com/dictionnaire/noms-propres/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="181">
+  <objLang code="es" />
+  <dicType code="spe" />
+  <metaLang code="fr" />
+  <title lang="fr" xml:space="preserve">Néologismes courants - Dictionnaire français-espagnol avec exemples concrets et maintes observations</title>
+  <homepage xml:space="preserve">http://memolengua.free.fr/Recherche/Ouvrages/Neologismes_courants/index.html</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="182">
+  <objLang code="fr" />
+  <dicType code="spe" />
+  <metaLang code="es" />
+  <title lang="es" xml:space="preserve">Neologismos corrientes - Diccionario español-francés con ejemplos concretos y muchas observaciones</title>
+  <homepage xml:space="preserve">http://memolengua.free.fr/Recherche/Ouvrages/Neologismos_corrientes/index.html</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="1" tcRequired="0" id="302">
+  <objLang code="dse" />
+  <dicType code="spe" />
+  <metaLang code="nl" />
+  <metaLang code="en" />
+  <title lang="en" xml:space="preserve">NGT Signbank</title>
+  <homepage xml:space="preserve">http://signbank.science.ru.nl/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="104">
+  <objLang code="sv" />
+  <dicType code="spe" />
+  <metaLang code="sv" />
+  <title lang="sv">Ordbok över Finlands svenska folkmål <abbrev>FO</abbrev></title>
+  <title lang="en">Dictionary of the Swedish dialects in Finland</title>
+  <homepage>http://kaino.kotus.fi/fo/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="48">
+  <objLang code="de" />
+  <dicType code="spe" />
+  <metaLang code="de" />
+  <title lang="de">Schweizerisches Idiotikon: Schweizerdeutsches Wörterbuch</title>
+  <title lang="en">Swiss Idiotikon: Swiss German Dictionary</title>
+  <homepage>http://www.idiotikon.ch/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="36">
+  <objLang code="fi" />
+  <dicType code="spe" />
+  <metaLang code="fi" />
+  <title lang="fi">Suomen murteiden sanakirja</title>
+  <title lang="en">Dictionary of Finnish Dialects</title>
+  <homepage>http://kaino.kotus.fi/sms</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="168">
+  <objLang code="fr" />
+  <dicType code="spe" />
+  <dicType code="his" />
+  <metaLang code="en" />
+  <title lang="en" xml:space="preserve">The Anglo-Norman Dictionary <abbrev xml:space="preserve">AND</abbrev></title>
+  <homepage xml:space="preserve">http://www.anglo-norman.net/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="64">
+  <objLang code="it" />
+  <dicType code="spe" />
+  <metaLang code="it" />
+  <title lang="it">Vocabolario del dialetti della Svizzera italiana</title>
+  <title lang="en">Vocabulary of the dialects of Italian Switzerland</title>
+  <homepage>http://www4.ti.ch/decs/dcsu/ac/cde/pubblicazioni/vocabolario-dei-dialetti-della-svizzera-italiana</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="6">
+  <objLang code="bg" />
+  <dicType code="spe" />
+  <metaLang code="bg" />
+  <title lang="bg">Речник на новите думи в бългрския език</title>
+  <title lang="en">Dictionary of the New Words in Bulgarian</title>
+  <homepage>http://infolex.ibl.bas.bg/PhrasThes/searchNeologPage.seam</homepage>
+</dictionary>
+
+<dictionary prominence="6" loginRequired="0" tcRequired="0" id="138">
+  <objLang code="nl" />
+  <dicType code="spe" />
+  <metaLang code="nl" />
+  <title lang="nl" xml:space="preserve">Elektronische Woordenbank van de Nederlandse dialecten <abbrev xml:space="preserve">eWND</abbrev></title>
+  <homepage xml:space="preserve">http://www.meertens.knaw.nl/ewnd/</homepage>
+</dictionary>
+
+<dictionary prominence="9" loginRequired="0" tcRequired="0" id="305">
+  <objLang code="nl" />
+  <dicType code="spe" />
+  <metaLang code="nl" />
+  <title lang="nl" xml:space="preserve">Van Dale Rijmwoordenboek</title>
+  <homepage xml:space="preserve">http://rijmwoordenboek.vandale.nl/rijm</homepage>
+  <search xml:space="preserve">http://rijmwoordenboek.vandale.nl/rijm/<word /></search>
+</dictionary>
+
+<dictionary prominence="10" loginRequired="1" tcRequired="0" id="24">
+  <objLang code="nl" />
+  <dicType code="spe" />
+  <metaLang code="nl" />
+  <title lang="nl">Pinkhof Geneeskundig woordenboek</title>
+  <homepage>http://www.pinkhof.eu/</homepage>
+</dictionary>
+
+<dictionary prominence="10" loginRequired="0" tcRequired="0" id="25">
+  <objLang code="nl" />
+  <dicType code="spe" />
+  <metaLang code="nl" />
+  <title lang="nl">Uitleenwoordenbank van het Nederlands</title>
+  <homepage>http://www.meertens.knaw.nl/uitleenwoordenbank/</homepage>
+</dictionary>
+
+<dictionary prominence="1" loginRequired="0" tcRequired="0" id="92">
+  <objLang code="sco" />
+  <dicType code="his" />
+  <dicType code="gen" />
+  <metaLang code="en" />
+  <title lang="sco" xml:space="preserve">Dictionar o the Scots Leid</title>
+  <title lang="en" xml:space="preserve">Dictionary of the Scots Language <abbrev xml:space="preserve">DOST &amp; SND</abbrev></title>
+  <homepage xml:space="preserve">http://www.dsl.ac.uk/</homepage>
+  <search xml:space="preserve">http://www.dsl.ac.uk/results/<word /></search>
+</dictionary>
+
+<dictionary prominence="1" loginRequired="0" tcRequired="0" id="108">
+  <objLang code="cy" />
+  <dicType code="his" />
+  <dicType code="gen" />
+  <metaLang code="cy" />
+  <metaLang code="en" />
+  <title lang="cy" xml:space="preserve">Geiriadur Prifysgol Cymru <abbrev xml:space="preserve">GPC</abbrev></title>
+  <title lang="en" xml:space="preserve">The University of Wales Dictionary of the Welsh Language <abbrev xml:space="preserve">GPC</abbrev></title>
+  <homepage xml:space="preserve">http://geiriadur.ac.uk/gpc/gpc.html</homepage>
+  <search xml:space="preserve">http://geiriadur.ac.uk/gpc/gpc.html?<word /></search>
+</dictionary>
+
+<dictionary prominence="1" loginRequired="1" tcRequired="0" id="26">
+  <objLang code="en" />
+  <dicType code="his" />
+  <dicType code="gen" />
+  <metaLang code="en" />
+  <title lang="en" xml:space="preserve">Oxford English Dictionary <abbrev xml:space="preserve">OED</abbrev></title>
+  <homepage xml:space="preserve">http://www.oed.com</homepage>
+  <search lang="en" xml:space="preserve">http://www.oed.com/search?searchType=dictionary&amp;q=<word />&amp;_searchBtn=Search</search>
+</dictionary>
+
+<dictionary prominence="3" loginRequired="0" tcRequired="0" id="19">
+  <objLang code="nl" />
+  <dicType code="his" />
+  <metaLang code="nl" />
+  <title lang="nl" xml:space="preserve">Woordenboek der Nederlandsche Taal</title>
+  <title lang="en" xml:space="preserve">Dictionary of the Dutch Language</title>
+  <homepage xml:space="preserve">http://gtb.inl.nl/?owner=WNT</homepage>
+</dictionary>
+
+<dictionary prominence="4" loginRequired="1" tcRequired="0" id="162">
+  <objLang code="ro" />
+  <dicType code="his" />
+  <metaLang code="ro" />
+  <title lang="ro">Lesicon romanescu-latinescu-ungurescu-mențescu <abbrev>LB</abbrev></title>
+  <title lang="en">The Romanian-Latin-Hungarian-German Lexicon</title>
+  <homepage>http://www.bcucluj.ro/lexiconuldelabuda/site/login.php</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="94">
+  <objLang code="gd" />
+  <dicType code="ety" />
+  <metaLang code="en" />
+  <metaLang code="ga" />
+  <title lang="gd" xml:space="preserve">An Etymological Dictionary of the Gaelic Language <abbrev xml:space="preserve">MacBain</abbrev></title>
+  <year xml:space="preserve">1911 (1982)</year>
+  <homepage xml:space="preserve">http://www.ceantar.org/Dicts/MB2/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="14">
+  <objLang code="da" />
+  <dicType code="ety" />
+  <metaLang code="da" />
+  <title lang="da">Dansk etymologisk Ordbog</title>
+  <title lang="en">Danish etymological dictionary</title>
+  <homepage>http://runeberg.org/danetym/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="47">
+  <objLang code="de" />
+  <dicType code="his" />
+  <metaLang code="de" />
+  <title lang="de">Deutsches Wörterbuch von Jacob Grimm und Wilhelm Grimm</title>
+  <title lang="en">German dictionary by Jacob Grimm and Wilhelm Grimm</title>
+  <homepage>http://dwb.uni-trier.de/de/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="52">
+  <objLang code="el" />
+  <dicType code="his" />
+  <metaLang code="es" />
+  <title lang="el">Diccionario Griego-Español</title>
+  <title lang="en">Greek-Spanish Dictionary</title>
+  <homepage>http://dge.cchs.csic.es/xdge/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="1" tcRequired="0" id="171">
+  <objLang code="la" />
+  <dicType code="his" />
+  <dicType code="spe" />
+  <metaLang code="en" />
+  <title lang="en" xml:space="preserve">Dictionary of Medieval Latin 
+from Celtic Sources <abbrev xml:space="preserve">DMLCS</abbrev></title>
+  <title lang="ga" xml:space="preserve">Foclóir den Laidin Mheánaoiseach
+ó Fhoinsí Ceilteacha</title>
+  <homepage xml:space="preserve">http://journals.eecs.qub.ac.uk/DMLCS/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="1" tcRequired="0" id="172">
+  <objLang code="la" />
+  <dicType code="his" />
+  <dicType code="spe" />
+  <metaLang code="en" />
+  <title lang="en" xml:space="preserve">Dictionary of Medieval Latin from British Sources 
+<abbrev xml:space="preserve">DMLBS</abbrev></title>
+  <homepage xml:space="preserve">http://www.dmlbs.ox.ac.uk/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="29">
+  <objLang code="en" />
+  <dicType code="his" />
+  <metaLang code="en" />
+  <title lang="en" xml:space="preserve">Dictionary of Old English <abbrev xml:space="preserve">DOE</abbrev></title>
+  <homepage xml:space="preserve">http://www.doe.utoronto.ca/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="38">
+  <objLang code="fr" />
+  <dicType code="his" />
+  <metaLang code="fr" />
+  <title lang="fr">Dictionnaire de la langue française, par É. Littré</title>
+  <year>1863–1877</year>
+  <homepage>http://www.littre.org/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="170">
+  <objLang code="fr" />
+  <dicType code="his" />
+  <metaLang code="fr" />
+  <title lang="fr" xml:space="preserve">Dictionnaire du Moyen Français (1330-1500) <abbrev xml:space="preserve">DMF</abbrev></title>
+  <homepage xml:space="preserve">http://www.atilf.fr/dmf/</homepage>
+  <search xml:space="preserve">http://atilf.atilf.fr/scripts/dmfX.exe?LIEN_DMF;LEMME=<word /></search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="40">
+  <objLang code="fr" />
+  <dicType code="ety" />
+  <metaLang code="fr" />
+  <title lang="fr">Dictionnaire étymologique CNRTL/ATILF</title>
+  <homepage>http://www.cnrtl.fr/etymologie/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="169">
+  <objLang code="fr" />
+  <dicType code="ety" />
+  <metaLang code="fr" />
+  <title lang="fr" xml:space="preserve">Dictionnaire Étymologique de l'Ancien Français <abbrev xml:space="preserve">DEAF</abbrev></title>
+  <homepage xml:space="preserve">http://www.deaf-page.de/fr/index.php</homepage>
+  <search xml:space="preserve">http://deaf-server.adw.uni-heidelberg.de/lemme/<word /></search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="30">
+  <objLang code="et" />
+  <dicType code="ety" />
+  <metaLang code="et" />
+  <title lang="et">Eesti etümoloogiasõnaraamat</title>
+  <title lang="en">Etymological Dictionary of Estonian</title>
+  <homepage>http://eki.ee/dict/ety/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="60">
+  <objLang code="ga" />
+  <dicType code="his" />
+  <metaLang code="en" />
+  <title lang="en">Electronic Dictionary of the Irish Language <abbrev>eDIL</abbrev></title>
+  <homepage>http://edil.qub.ac.uk</homepage>
+  <search>http://edil.qub.ac.uk/search?q=<word /></search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="81">
+  <objLang code="pl" />
+  <dicType code="his" />
+  <metaLang code="pl" />
+  <title lang="pl">Elektroniczny słownik języka polskiego XVII i XVIII wieku</title>
+  <title lang="en">Electronic Dictionary of the 17th and 18th-century Polish</title>
+  <homepage>http://sxvii.pl/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="137">
+  <objLang code="nl" />
+  <dicType code="ety" />
+  <metaLang code="nl" />
+  <title lang="nl">Etymologiebank.nl</title>
+  <homepage>http://www.etymologiebank.nl/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="95">
+  <objLang code="gd" />
+  <dicType code="his" />
+  <dicType code="gen" />
+  <metaLang code="en" />
+  <title lang="gd" xml:space="preserve">Faclair na Gàidhlig</title>
+  <title lang="en" xml:space="preserve">Dictionary of the Scottish Gaelic Language</title>
+  <homepage xml:space="preserve">http://www.faclair.ac.uk/english/index.html</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="166">
+  <objLang code="br" />
+  <dicType code="his" />
+  <metaLang code="br" />
+  <title lang="br" xml:space="preserve">Geriadur istorel Meurgorf</title>
+  <title lang="fr" xml:space="preserve">Dictionnaire historique Meurgorf</title>
+  <year xml:space="preserve">2014-</year>
+  <homepage xml:space="preserve">http://meurgorf.brezhoneg.bzh/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="93">
+  <objLang code="sco" />
+  <dicType code="ety" />
+  <metaLang code="en" />
+  <title lang="sco">Jamieson's Etymological Dictionary of the Scottish Language Online</title>
+  <homepage>http://www.scotsdictionary.com/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="20">
+  <objLang code="nl" />
+  <dicType code="his" />
+  <metaLang code="nl" />
+  <title lang="nl">Middelnederlandsch Woordenboek</title>
+  <title lang="en">Middle Dutch Dictionary</title>
+  <homepage>http://gtb.inl.nl/?owner=MNW</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="28">
+  <objLang code="en" />
+  <dicType code="his" />
+  <metaLang code="en" />
+  <title lang="en" xml:space="preserve">Middle English Dictionary <abbrev xml:space="preserve">MED</abbrev></title>
+  <homepage xml:space="preserve">http://quod.lib.umich.edu/m/med/</homepage>
+  <search xml:space="preserve">http://quod.lib.umich.edu/cgi/m/mec/med-idx?size=First+100&amp;type=headword&amp;q1=<word />&amp;rgxp=constrained</search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="176">
+  <objLang code="no" />
+  <dicType code="his" />
+  <metaLang code="no" />
+  <title lang="no" xml:space="preserve">Norsk Ordbog med dansk Forklaring <abbrev xml:space="preserve">Ivar Aasen</abbrev></title>
+  <title lang="en" xml:space="preserve">Norwegian dictionary with Explanation in Danish</title>
+  <year xml:space="preserve">1873</year>
+  <homepage xml:space="preserve">http://www.edd.uio.no/aasen/aasen1873.html</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="76">
+  <objLang code="no" />
+  <dicType code="ety" />
+  <metaLang code="no" />
+  <title lang="no">Nynorsk etymologisk ordbok</title>
+  <title lang="en">Nynorsk etymological dictionary</title>
+  <homepage>http://www.edd.uio.no/perl/search/search.cgi?appid=208&amp;tabid=2320</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="27">
+  <objLang code="en" />
+  <dicType code="ety" />
+  <metaLang code="en" />
+  <title lang="en" xml:space="preserve">Online Etymology Dictionary</title>
+  <homepage xml:space="preserve">http://www.etymonline.com/</homepage>
+  <search xml:space="preserve">http://www.etymonline.com/index.php?allowed_in_frame=0&amp;search=<word /></search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="17">
+  <objLang code="da" />
+  <dicType code="his" />
+  <metaLang code="da" />
+  <title lang="da">Ordbog over det Danske Sprog. Historisk Ordbog</title>
+  <title lang="en">Dictionary of the Danish Language</title>
+  <year>1700–1950</year>
+  <homepage>http://ordnet.dk/ods</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="18">
+  <objLang code="da" />
+  <dicType code="his" />
+  <metaLang code="da" />
+  <title lang="da">Ordbog til det ældre danske sprog</title>
+  <title lang="en">Dictionary of the older Danish Language (1300-1700)</title>
+  <year>1300–1700</year>
+  <homepage>http://www.hist.uib.no/kalkar/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="22">
+  <objLang code="nl" />
+  <dicType code="his" />
+  <metaLang code="nl" />
+  <title lang="nl">Oudnederlands Woordenboek</title>
+  <title lang="en">Dictionary of Old Dutch</title>
+  <homepage>http://gtb.inl.nl/?owner=ONW</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="80">
+  <objLang code="pl" />
+  <dicType code="his" />
+  <metaLang code="pl" />
+  <title lang="pl">Słownik staropolski</title>
+  <title lang="en">Old Polish Dictionary</title>
+  <homepage>http://www.rcin.org.pl/publication/39990</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="105">
+  <objLang code="sv" />
+  <dicType code="ety" />
+  <metaLang code="sv" />
+  <title lang="sv">Svensk Etymologysk Ordbok</title>
+  <title lang="en">Swedish Etymological Dictionary</title>
+  <homepage>http://runeberg.org/svetym/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="51">
+  <objLang code="el" />
+  <dicType code="his" />
+  <metaLang code="en" />
+  <title lang="el">The Brill Dictionary of Ancient Greek</title>
+  <homepage>http://dictionaries.brillonline.com/montanari</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="306">
+  <objLang code="en" />
+  <dicType code="his" />
+  <metaLang code="en" />
+  <title lang="en" xml:space="preserve">The Historical Thesaurus of English <abbrev xml:space="preserve">HTE</abbrev></title>
+  <year xml:space="preserve">2008</year>
+  <homepage xml:space="preserve">http://historicalthesaurus.arts.gla.ac.uk/</homepage>
+  <search xml:space="preserve">http://historicalthesaurus.arts.gla.ac.uk/category-selection/?qsearch=<word /></search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="307">
+  <objLang code="sco" />
+  <dicType code="his" />
+  <metaLang code="en" />
+  <title lang="en" xml:space="preserve">The Historical Thesaurus of Scots <abbrev xml:space="preserve">HTE</abbrev></title>
+  <year xml:space="preserve">2015</year>
+  <homepage xml:space="preserve">http://scotsthesaurus.org/</homepage>
+  <search xml:space="preserve">http://scotsthesaurus.org/thesaurus-search/?submit=Y&amp;qsearch=<word /></search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="53">
+  <objLang code="el" />
+  <dicType code="his" />
+  <metaLang code="en" />
+  <title lang="el">The Online Liddell-Scott-Jones Greek-English Lexicon</title>
+  <homepage>http://www.tlg.uci.edu/lsj/#eid=1&amp;context=lsj</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="37">
+  <objLang code="fi" />
+  <dicType code="his" />
+  <metaLang code="fi" />
+  <title lang="fi">Vanhan kirjasuomen sanakirja</title>
+  <title lang="en">Dictionary of Old Literary Finnish</title>
+  <homepage>http://kaino.kotus.fi/vks</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="63">
+  <objLang code="it" />
+  <dicType code="ety" />
+  <metaLang code="it" />
+  <title lang="it">Vocabolario Etimologico della Lingua Italiana</title>
+  <title lang="en">Etymological Dictionary of the Italian Language</title>
+  <homepage>http://www.etimo.it/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="21">
+  <objLang code="nl" />
+  <dicType code="his" />
+  <metaLang code="nl" />
+  <title lang="nl">Vroegmiddelnederlands Woordenboek</title>
+  <title lang="en">Early Middle Dutch Dictionary</title>
+  <homepage>http://gtb.inl.nl/?owner=VMNW</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="44">
+  <objLang code="fy" />
+  <dicType code="his" />
+  <metaLang code="nl" />
+  <title lang="fy" xml:space="preserve">Woordenboek der Friese taal</title>
+  <title lang="en" xml:space="preserve">Dictionary of the Frisian language</title>
+  <homepage xml:space="preserve">http://gtb.inl.nl/?owner=wft</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="50">
+  <objLang code="el" />
+  <dicType code="his" />
+  <metaLang code="el" />
+  <title lang="el">Βασικό Λεξικό της Αρχαίας Ελληνικής</title>
+  <title lang="en">Basic Lexicon of Ancient Greek</title>
+  <homepage>http://www.greek-language.gr/greekLang/ancient_greek/tools/lexicon/index.html</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="4">
+  <objLang code="bg" />
+  <dicType code="ety" />
+  <metaLang code="bg" />
+  <title lang="bg">Български етимологичен речник</title>
+  <title lang="en">Bulgarian Etymological Dictionary</title>
+  <homepage>http://ibl.bas.bg/en/balgarski-etimologitchen-retchnik/</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="97">
+  <objLang code="sr" />
+  <dicType code="ety" />
+  <metaLang code="sr" />
+  <title lang="sr">Етимолошки речник српског језика 1-3</title>
+  <title lang="en">Etymological dictionary of the Serbian language 1-3</title>
+  <homepage>http://ibis.mi.sanu.ac.rs/RecentlyPublished.html</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="7">
+  <objLang code="bg" />
+  <dicType code="his" />
+  <metaLang code="bg" />
+  <title lang="bg">Старобългарски речник</title>
+  <title lang="en">Old-Bulgarian Dictionary</title>
+  <homepage>http://ibl.bas.bg/lib/Starobalgarski_rechnik_uvod_tom1/#page/1/mode/1up</homepage>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="90">
+  <objLang code="ru" />
+  <dicType code="ety" />
+  <metaLang code="ru" />
+  <title lang="ru">Этимологичеcкий словарь русского языка</title>
+  <title lang="en">Etymological dictionary of the Russian language</title>
+  <homepage>http://vasmer.slovaronline.com/</homepage>
+</dictionary>
+
+<dictionary prominence="6" loginRequired="0" tcRequired="0" id="308">
+  <objLang code="en" />
+  <dicType code="his" />
+  <metaLang code="en" />
+  <title lang="en" xml:space="preserve">Lexicons of Early Modern English <abbrev xml:space="preserve">LEME</abbrev></title>
+  <homepage xml:space="preserve">http://leme.library.utoronto.ca/wordsmodern/</homepage>
+</dictionary>
+
+</dictionaries>

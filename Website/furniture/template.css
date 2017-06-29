@@ -1,0 +1,268 @@
+﻿body { margin: 0; padding: 0; background-color: #eeeeee; font-family: Verdana, Arial, sans-serif; font-size: 12px; overflow-y: auto; }
+img { border: 0; }
+a, label { color: #006699; text-decoration: none; cursor: pointer; }
+a:hover, label:hover { color: #2288bb; }
+input, select, button, option, optgroup { font-family: inherit; font-size: inherit; font-style: normal; }
+option { margin: 2px 0px; }
+
+.cms { color: #999999; font-size: 11px; }
+a.cms:hover { color: #dd0000; }
+span.cms a:hover { color: #dd0000 !important; }
+.cms span.dot { width: 20px; height: 20px; display: block; border-radius: 10px; background-color: #dd9999; margin: -2px 0px 0px 0px; box-shadow: 1px 1px 0px #dddddd; }
+a.cms:hover span.dot { background-color: #dd0000; }
+@media (max-width: 800px) {
+	.cms { display: none; }
+}
+
+div#envelope { position: relative; max-width: 900px; padding: 30px 30px 90px 30px; margin: 0px auto; background-color: #ffffff; border-radius: 0 0 4px 4px; box-shadow: 0px 0px 5px #999999; }
+div#footer { position: relative; max-width: 900px; padding: 45px 30px; margin: 0px auto; }
+div#envelope div.clear, div#footer div.clear { clear: both; }
+@media (max-width: 550px) {}
+
+div#menubar { position: relative; z-index: 10; background-color: #d5d997; padding: 20px 30px; margin: -30px -30px 30px -30px; text-shadow: 1px 1px 0px #dddddd; height: 1em; }
+
+a#hamburger { background-image: url(hamburger.png); width: 22px; height: 18px; display: block; position: absolute; top: 18px; left: 18px; display: none; }
+ul#sitemenu { display: block; padding: 0; margin: 0; z-index: 2; }
+ul#sitemenu li { display: inline; padding: 0; margin: 0; }
+ul#sitemenu li a { padding: 7px 5px; border-radius: 4px; margin-right: 15px; }
+ul#sitemenu li a:hover { }
+ul#sitemenu li.current a { padding: 7px 15px; background-color: #ffffff; color: #006699; font-weight: bold; text-shadow: 0 0 0 transparent; }
+@media (max-width: 800px) {
+	a#hamburger { display: block; }
+	ul#sitemenu { display: none; margin-left: 20px; }
+	ul#sitemenu li { display: block; margin-bottom: 20px; }
+	ul#sitemenu li a {  background-color: #d5d997; padding: 7px 15px; border: 1px solid #ffffff; box-shadow: 0px 0px 5px #666666; }
+}
+
+ul#uilang { display: block; padding: 0px 0; margin: 0; position: absolute; top: 0px; right: 0px; z-index: 1; }
+ul#uilang li { display: block; padding: 0; margin: 0; padding: 10px 30px; text-align: center; background-color: #d5d997; border-top: 1px solid #e1e9bc; box-shadow: -1px 1px 1px #999999; }
+ul#uilang li.more { display: none; }
+ul#uilang li.current { display: block; font-weight: bold; padding: 20px 30px 15px 30px; text-align: right; border: 0; box-shadow: 0 0 0 transparent; }
+ul#uilang li:last-child { border-radius: 0 0 0 4px; }
+ul#uilang li.current span.arrow { margin-left: 0.25em; text-shadow: 0 0 0 transparent; }
+
+/*delete this style when we have more than one UI language*/
+/*ul#uilang li.current a { color: #eaedc8; text-shadow: 0 0 0 transparent; cursor: not-allowed; }*/
+
+div#footer div.block { float: left; text-shadow: 1px 1px 0px #ffffff; color: #666666; line-height: 1.75em; margin-bottom: 30px; }
+div#footer div.block.left { width: 29%; font-weight: bold; }
+div#footer div.block.right { width: 70%; }
+div#footer div.block div.title { margin-bottom: 10px; }
+div#footer div.block ul { display: block; margin: 0px; padding: 0px; }
+div#footer div.block ul li { display: block; margin: 0px 0px 10px 0px; padding: 0px; }
+div#footer div.block ul li ul {font-weight: normal; }
+div#footer div.logos { margin-top: 35px; margin-bottom: 20px; }
+div#footer div.logos a { vertical-align: middle; display: inline-block; margin-right: 25px; }
+div#footer div.logos a:last-child { margin-right: 0px; }
+div#footer div.credits { color: #999999; font-size: 11px; margin-top: 20px; line-height: 1.75em; }
+div#footer div.stamp { margin: 50px 0px 30px 0px; }
+div#footer div.stamp > div { margin-top: 5px; }
+@media (max-width: 800px) {
+	div#footer div.block { float: none; width: auto !important; }
+}
+
+h1.tab { position: relative; clear: both; font-size: 18px; font-weight: normal; margin: 50px 0 5px 0; color: #333333; border-bottom: 1px dotted #79531e; padding: 15px 0 15px 0; height: 1em; overflow-y: hidden; }
+h1.tab span { background-color: #d5d997; padding: 10px 20px; border-radius: 10px 10px 0 0; text-shadow: 1px 1px 0px #ffffff; white-space: nowrap; }
+h1.tab div.socials { position: absolute; bottom: 2px; right: 5px; }
+h1.tab div.socials a { width: 30px; height: 30px; border-radius: 20px; display: block; float: left; margin-left: 2px; background-position: center center; background-repeat: no-repeat; }
+h1.tab div.socials a:hover { background-color: #eeeeee; }
+h1.tab div.socials a.twitter { background-image: url(share-twitter.png); }
+h1.tab div.socials a.facebook { background-image: url(share-facebook.png); }
+h1.tab div.socials a.gplus { background-image: url(share-gplus.png); }
+@media (max-width: 450px) {
+	h1.tab { font-size: 14px; }
+}
+
+div.dow {  }
+div.dow .dictionary { margin-top: 10px; }
+div.dow div.filter { width: 250px; float: right; margin-top: 0px; background-color: #eaedc8; padding: 20px 20px 20px 20px; border-radius: 4px; text-shadow: 1px 1px 0px #ffffff; line-height: 1.5em; }
+@media (max-width: 800px) {
+	div.dow div.filter { display: none; }
+}
+
+
+div#logoContainer { margin: 75px auto 25px auto; text-align: center; }
+div#logoContainer img { max-width: 291px; width: 100%; }
+@media (max-width: 800px) {
+	div#logoContainer { margin-top: 50px; }
+}
+
+form.search { max-width: 550px; margin: 30px auto 30px auto; border: 1px inset; background-color: #ffffff; border-radius: 4px; position: relative; }
+form.search input.txt { width: 90%; border: 0px; padding: 10px 10px; border-radius: 4px; font-size: 16px;  }
+form.search input.sbm { position: absolute; top: 0px; right: 0px; bottom: 0px; width: 40px; border: 0px; background-color: #dddddd; font-size: 14px; padding: 5px; color: #333333; text-shadow: 1px 1px 0px #ffffff; font-weight: bold; cursor: pointer; border-radius: 0px 4px 4px 0px;
+	background-image: url(bullet_go.png); background-repeat: no-repeat; background-position: center center; }
+form.search input.sbm:hover { color: #2288bb; background-color: #e3e3e3; }
+form.search select.lng { position: absolute; top: 8px; right: 50px; bottom: 8px; padding: 0px 5px; border: 0px; color: #006699; border-left: 1px solid #aaaaaa; max-width: 100px; cursor: pointer; }
+form.search select.lng option { padding: 3px 5px; }
+form.search select.lng option.title { border-bottom: 1px solid #dddddd; padding-top: 0px; padding-bottom: 0px; font-size: 1px; visibility: hidden; }
+@media (max-width: 450px) {
+	form.search select.lng { max-width: 75px; }
+}
+
+div.greeting { max-width: 500px; margin: 30px auto 100px auto; color: #999999; line-height: 2em;  }
+div.greeting div.socials { margin-top: 15px; margin-left: -10px; }
+div.greeting div.socials a { width: 30px; height: 30px; border-radius: 20px; display: block; float: left; margin-right: 2px; background-position: center center; background-repeat: no-repeat; }
+div.greeting div.socials a:hover { background-color: #eeeeee; }
+div.greeting div.socials a.twitter { background-image: url(share-twitter.png); }
+div.greeting div.socials a.facebook { background-image: url(share-facebook.png); }
+div.greeting div.socials a.gplus { background-image: url(share-gplus.png); }
+
+@media (max-width: 800px) {
+	div.greeting { margin-bottom: 75px; margin-left: 5px; }
+}
+
+form.filter { width: 250px; float: right; margin-top: 0px; background-color: #eaedc8; padding: 20px 20px 1px 20px; border-radius: 4px; text-shadow: 1px 1px 0px #ffffff; }
+form.filter > div.title { background-color: #d5d997; margin: -20px -20px 20px -20px; padding: 10px 20px; font-weight: bold; border-radius: 4px 4px 0 0; }
+form.filter div.datum { margin: 20px 0px; }
+form.filter div.datum.extra { display: none; }
+form.filter div.datum div.title { color: #3300cc; margin-bottom: 7px; }
+form.filter div.datum div.legend { margin-top: 7px; color: #666666; font-size: 11px; line-height: 1.25em; }
+form.filter div.datum div.field { margin-left: -5px; }
+form.filter div.datum div.field select { width: 100%; border: 1px inset; background-color: #ffffff; padding: 5px; border-radius: 4px; text-shadow: 0 0 0 transparent; }
+form.filter div.datum div.field select option { padding: 3px 5px; }
+form.filter input.sbm { width: 100%; border: 1px outset; background-color: #dddddd; font-size: 14px; padding: 5px; color: #333333; text-shadow: 1px 1px 0px #ffffff; font-weight: bold; cursor: pointer; border-radius: 4px; }
+form.filter input.sbm:hover { color: #555555; }
+form.filter div.moreTitle { margin-top: 30px; margin-bottom: 30px; font-weight: bold; text-align: center; border-bottom: 1px solid #cccccc; }
+form.filter div.moreTitle span { background-color: #eaedc8; padding: 5px 15px; position: relative; top: 0.5em; }
+@media (max-width: 800px) {
+	form.filter { display: none; }
+}
+
+div.breadcrumbs { margin: 5px 310px 10px 0px; border-bottom: 1px dotted #cccccc; padding: 10px; }
+div.breadcrumbs a { margin: 0px 0.5em; }
+div.breadcrumbs a:first-child { margin-left: 0px; }
+div.breadcrumbs span.count { color: #999999; margin-left: -0.5em; }
+@media (max-width: 800px) {
+	div.breadcrumbs { margin-right: 0px; padding-left: 5px; padding-right: 5px; }
+	div.breadcrumbs a { margin: 0px; }
+	div.breadcrumbs span.count { margin-left: 0em; }
+}
+
+div.minihierarchy { margin: 0px 310px 10px 0px; border-bottom: 1px dotted #cccccc; padding: 1px 10px 15px 10px; }
+div.minihierarchy > div.block { float: left; width: 50%; }
+div.minihierarchy > div.clear { clear: left !important; }
+div.minihierarchy div.item { margin-top: 5px; }
+div.minihierarchy div.item span.count { color: #999999; }
+@media (max-width: 800px) {
+	div.minihierarchy { margin-right: 0px; padding-left: 5px; padding-right: 5px; }
+	div.minihierarchy > div.block { float: none; width: auto; }
+	div.minihierarchy > div.block:nth-child(2) { margin-top: 15px; }
+}
+
+div.dicTypeLegend { background-image: url(information.png); background-position: 5px 2px; background-repeat: no-repeat; color: #777777; line-height: 1.5em; border-bottom: 1px dotted #cccccc; padding: 0px 0px 10px 30px; margin-right: 310px; }
+@media (max-width: 800px) {
+	div.dicTypeLegend { margin-right: 0px; padding-right: 5px; }
+}
+
+div.hierarchies { margin-top: -5px; margin-left: -5px; margin-right: -5px; }
+div.hierarchies div.hierarchy { background-color: #f3f3f3; margin: 10px 5px 0px 5px; padding: 10px 10px; width: 273px; float: left; height: 9em; border-radius: 4px; }
+div.hierarchies div.hierarchy div.title { font-size: 20px; font-weight: bold; }
+div.hierarchies div.hierarchy div.body { margin-top: 5px; line-height: 1.5em; }
+div.hierarchies div.hierarchy span.count { color: #999999; font-size: 12px; font-weight: normal;}
+div.hierarchies.catalogHome { margin-right: 290px; }
+div.hierarchies.catalogHome div.hierarchy { width: auto !important; float: none !important; height: auto !important; margin-top: 5px; margin-bottom: 0px; }
+div.hierarchies.catalogHome div.hierarchy:first-child { margin-top: 10px; }
+@media (max-width: 950px) {
+	div.hierarchies div.hierarchy { width: auto !important; float: none !important; height: auto; margin-top: 10px; }
+}
+@media (max-width: 800px) {
+	div.hierarchies.catalogHome { margin-right: -5px; }
+}
+
+div.orphans { clear: left; padding: 30px 5px 0px 5px; line-height: 2.5em; margin-bottom: -50px; }
+div.orphans span.title { font-weight: bold; color: #666666; background-color: #f1f1f1; padding: 6px 8px; border-radius: 2px; margin-left: -5px; }
+div.orphans span.language { margin-left: 0.75em; }
+div.orphans span.language a { white-space: nowrap; }
+div.orphans span.subtitle { color: #666666; margin-left: 0.75em; background-color: #f1f1f1; padding: 6px 8px; border-radius: 2px; }
+
+.dictionary span.clear { display: block; clear: left; }
+.dictionary a.editLink { float: right; margin-top: 5px; margin-left: 10px; }
+.dictionary { display: block; padding: 10px 10px 10px 160px; margin: 20px 300px -10px 0px; color: #333333; min-height: 150px; position: relative; }
+.dictionary a.screenshot { display: block; position: absolute; top: 15px; left: 5px; border: 5px solid #dddddd; border-radius: 5px; box-shadow: 0px 0px 5px #000000; }
+.dictionary a.stamp { display: block; position: absolute; top: 130px; left: 10px; }
+.dictionary a.screenshot:hover { border-color: #d3d3d3; }
+.dictionary a.screenshot img { display: block; }
+.dictionary div.titleContainer { line-height: 1.25em; display: block; font-size: 20px; margin-bottom: 5px; } 
+.dictionary div.titleContainer a.title { color: #006699; font-weight: bold; } 
+.dictionary div.titleContainer a.title:hover { color: #2288bb; }
+.dictionary div.titleContainer a.title span.abbrev { font-weight: normal; }
+.dictionary div.titleContainer a.title span.year { font-weight: normal; color: #999999; }
+.dictionary span.subtitle { line-height: 1.25em; display: block; margin-top: -3px; margin-bottom: 5px; color: #666666; } 
+.dictionary span.subtitle span.abbrev { color: #999999; }
+.dictionary div.loginRequired { background-image: url(lock.png); background-position: 0px 0px; background-repeat: no-repeat; margin-top: 5px; padding: 4px 0px 0px 20px; color: #ff9900; font-size: 11px; }
+.dictionary div.tcRequired { background-image: url(information.png); background-position: 0px 0px; background-repeat: no-repeat; margin-top: 10px; padding: 0px 0px 10px 25px; color: #999999; font-size: 11px; }
+.dictionary form { position: relative; }
+.dictionary form .inside { max-width: 250px; margin-left: -5px; position: relative; background-color: #eaedc8; border-radius: 4px; padding: 5px; margin-top: 10px; position: relative; height: 29px; }
+.dictionary form div.textboxContainer { border: 1px inset; font-size: 15px; left: 5px; top: 5px; bottom: 5px; right: 55px; padding: 5px; border-radius: 4px; background-color: #ffffff; border-radius: 4px; }
+.dictionary form div.textboxContainer input.textbox { width: 100%; padding: 0px; border: 0px; background-color: #ffffff; border-radius: 4px; }
+.dictionary form input.button { position: absolute; top: 6px; right: 6px; bottom: 5px; padding: 0px 15px; border: 0px; border-radius: 0px 4px 4px 0px; background-color: #dddddd; color: #333333; text-shadow: 1px 1px 0px #ffffff; cursor: pointer;
+	background-image: url(bullet_go.png); background-repeat: no-repeat; background-position: center center; }
+.dictionary form input.button:hover { color: #2288bb; background-color: #e3e3e3; }
+.dictionary form div.dirselect { font-size: 11px; color: #666666; background-color: #eaedc8; border-radius: 0px 0px 4px 4px; padding: 3px 5px 6px 8px; margin-left: -5px; margin-top: -5px; max-width: 247px; }
+.dictionary form div.dirselect input { position: relative; top: 2px; }
+.dictionary form div.dirselect label { margin-left: 0.25em; }
+.dictionary span.data { display: block; margin-top: 7px; line-height: 1.35em;  }
+.dictionary span.datum { display: block;  } 
+.dictionary span.datum span.label { font-size: 11px; color: #3300cc; }
+.dictionary span.datum span.value { color: #666666; }
+.dictionary span.url { display: block; margin-top: 5px; margin-bottom: 5px; color: #1a9900; font-size: 11px; } 
+.dictionary span.url a { color: #1a9900;  }
+.dictionary span.url a:hover { color: #21c400; }
+.dictionary div.revealerContainer { margin: 25px 0px 20px -3px; font-size: 11px; }
+.dictionary div.revealerContainer a.revealer { background-color: #f3f3f3; padding: 10px 20px 10px 35px; border-radius: 4px; text-shadow: 1px 1px 0px #ffffff; background-position: 15px 12px; background-repeat: no-repeat; }
+.dictionary div.revealerContainer a.revealer.collapsed { background-image: url(plus.gif); }
+.dictionary div.revealerContainer a.revealer.expanded { background-image: url(minus.gif); }
+.dictionary .dictionary { display: block; padding: 0px 0px 0px 0px; margin: 30px 0px -10px 0px; min-height: 0px; position: relative; }
+.dictionary .dictionary div.titleContainer { font-size: 15px; } 
+.dictionary .dictionary:last-child { margin-bottom: 30px; }
+
+@media (max-width: 800px) {
+	.dictionary { margin: 0px 0px 10px 0px; }
+}
+@media (max-width: 550px) {
+	.dictionary { margin: 0px 0px 10px 0px; padding: 10px 5px 10px 5px; min-height: 0px; }
+	.dictionary a.screenshot { position: relative; width: 120px; margin-bottom: 30px; }
+	.dictionary a.stamp { display: none; }
+	.dictionary div.titleContainer { font-size: 15px; line-height: 1.15em; }
+}
+
+div.nojoy { margin: 15px 0px; padding: 0px 10px; color: #666666; }
+@media (max-width: 800px) {
+	div.nojoy { padding: 0px 5px; }
+}
+
+div.suggestContainer { margin: 50px 0px 10px 0px; padding: 0px 0px; color: #666666; position: absolute; bottom: 30px; left: 30px; right: 340px; }
+div.suggestContainer a.button { background-color: #dddddd; padding: 10px 20px; border-radius: 4px; text-shadow: 1px 1px 0px #eeeeee; }
+div.suggestContainer a.addLink { float: right; }
+div.suggestContainer a.addLink span.dot { float: right; margin: -2px 0px 0px 7px; }
+@media (max-width: 800px) {
+	div.suggestContainer { right: 0px; }
+}
+
+div#courtain { position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: #000000; opacity: 0.5; z-index: 100; cursor: pointer; }
+div#incourtain { position: fixed; background-color: #ffffff; opacity: 1; z-index: 101; box-shadow: 0px 0px 5px #ffffff; border: 1px solid #dd9999; border-radius: 2px; }
+div#incourtain.large { top: 50px; bottom: 50px; left: 50px; right: 50px;  }
+div#incourtain.small { top: 100px; bottom: 200px; height: 400px; left: 0; right: 0; max-width: 500px; margin: 0px auto; }
+iframe#editorFrame { height: 100%; width: 100%; border: 0px; background-color: #ffffff; }
+
+div.loginContainer { margin-top: 50px; font-size: 11px; line-height: 1.75em; }
+.loginLink { }
+.loginLink span.dot { float: left; margin-right: 7px; margin-top: 1px; }
+
+.markdown-body a.button { background-color: #dddddd; padding: 10px 20px 10px 20px; border-radius: 4px; text-shadow: 1px 1px 0px #eeeeee; display: inline-block;}
+.markdown-body a.button.xml {padding-left: 65px; border-radius: 4px; background-image: url(xml.gif); background-position: 15px center; background-repeat: no-repeat; }
+
+.noloc { margin: 15px 0px 10px 0px; color: #3300cc; border-bottom: 1px dotted #79531e; padding: 0px 5px 10px 5px; font-weight: bold; }
+
+.markdown-body form {margin-top: 25px;}
+.markdown-body form div.datum {margin-bottom: 20px;}
+.markdown-body form div.datum div.title {color: #3300cc; margin-bottom: 7px; }
+.markdown-body form div.datum div.legend {margin-top: -5px; margin-bottom: 7px; color: #666666; line-height: 1.25em;}
+.markdown-body form div.datum input { width: 100%; border: 1px inset; background-color: #ffffff; padding: 5px; border-radius: 4px; text-shadow: 0 0 0 transparent; }
+.markdown-body form div.datum select { width: 100%; border: 1px inset; background-color: #ffffff; padding: 5px; border-radius: 4px; text-shadow: 0 0 0 transparent; }
+.markdown-body form div.datum textarea { width: 100%; border: 1px inset; background-color: #ffffff; padding: 5px; border-radius: 4px; text-shadow: 0 0 0 transparent; resize: vertical; }
+.markdown-body form div.datum div.error {margin-top: 5px; color: #dd0000; }
+.markdown-body form input.sbm { border: 1px outset; background-color: #dddddd; font-size: 14px; padding: 5px 20px; color: #333333; text-shadow: 1px 1px 0px #ffffff; font-weight: bold; cursor: pointer; border-radius: 4px; }
+.markdown-body form input.sbm:hover { color: #555555; }
+.markdown-body form div.checkum {margin-bottom: 20px;}
+.markdown-body form div.checkum a {font-weight: bold;}

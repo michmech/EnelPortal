@@ -1,0 +1,20 @@
+﻿Being included in the European Dictionary Portal is a recognition of quality. Dictionaries included here are invited to display one of these stamps of approval on their websites. Feel free to include this stamp in the footer of your website or anywhere else you see fit. Please provide a link to [dictionaryportal.eu](http://www.dictionaryportal.eu/) as well.
+
+Large size (350 × 58 pixels)
+------------------------------
+
+![Stamp of approval, large size](/stamp-large.gif)  
+[http://www.dictionaryportal.eu/stamp-large.gif](/stamp-large.gif)
+
+Regular size (250 × 42 pixels)
+------------------------------
+
+![Stamp of approval, regular size](/stamp.gif)  
+[http://www.dictionaryportal.eu/stamp.gif](/stamp.gif)
+
+Tiny size (120 × 20 pixels)
+------------------------------
+
+![Stamp of approval, tiny size](/stamp-tiny.gif)  
+[http://www.dictionaryportal.eu/stamp-tiny.gif](/stamp-tiny.gif)
+

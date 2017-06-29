@@ -1,0 +1,175 @@
+$edp	Portal Europeo de Diccionarios		
+$home	Inicio		
+$find	Encuentre un diccionario		
+$blurb	El Portal Europeo de Diccionarios, curado por expertos en la [Red Europea de e-Lexicografía], es su guía para buenos diccionarios en línea de idiomas europeos. [[Más información…]]		
+$moment	Diccionario del momento		
+$filter	Filtro		
+$objLang	LENGUA OBJETO		
+$objLangBlurb	La lengua que describe el diccionario; la lengua de la que va el diccionario. 		
+$metaLang	METALENGUAJE		
+$metaLangBlurb	La lengua en la que el diccionario da definiciones y explicaciones. Si es la misma que la lengua objeto, entonces el diccionario es monolingüe. Si es diferente, entonces el diccionario es bilingüe. 		
+$dicType	GÉNERO		
+$dicTypeBlurb	¿Qué tipo de diccionario está buscando? 		
+$anyLang	cualquier idioma		
+$anyDicType	cualquier género		
+$search	Busque		
+$notyet	Lenguas sin diccionarios aún 		
+$signlangs	Lenguas de signos 		
+$toomany	Más de 50 diccionarios se ajustan a sus criterios. Solo los primeros 50 están listados aquí. 		
+$nojoy	Lo sentimos, no tenemos diccionarios que se ajusten a sus criterios. 		
+$anglo	Nuestras disculpas, este contenido solo está disponible en inglés. 		
+$about-more	Vea también		
+$top	Arriba		
+$toc	En esta página web		
+$foot1	El Portal Europeo de Diccionarios es una iniciativa de la [Red Europea de e-Lexicografía].  		
+$foot2	[COST] está apoyado por el Programa Marco de la Unión Europea [[Horizon 2020]]		
+$foot3	¿Está su diccionario en el Portal Europeo de Diccionarios? Muestre nuestro [sello de aprobación]		
+$mbm	Página web creada por		
+$ivdnt	Patrocinada por 		
+$shots	Capturas de pantalla proporcionadas por 		
+$icons	Iconos por		
+$login	Usuario y contraseña del curador		
+$moreDicts	Más diccionarios en este idioma		
+$loginRequired	USUARIO Y CONTRASEÑA REQUERIDOS		
+$searchIn	BUSQUE EN 		
+$tsRequired	Esta página web le pedirá que acepte sus términos y condiciones en su primera visita. 		
+$language	idioma		
+$searchbox	Busque en múltiples diccionarios 		
+$included	Diccionarios incluidos 		
+$about1	Los diccionarios son una parte importante de la vida en el mundo actual internacional y multilingüe. El Portal Europeo de Diccionarios está aquí para ayudarle a encontrar su camino hacia diccionarios en línea buenos y fiables, al margen de si es usted académico, traductor, profesor de idiomas o simplemente un entusiasta del lenguaje. Todos los diccionarios aquí listados han sido cuidadosamente seleccionados por curadores de la [Red Europea de e-Lexicografía] que son expertos lexicógrafos y que siguen [[criterios]] bien definidos para decidir qué diccionarios se incluyen y cuáles no. 		
+$prop1	¿Conoce un diccionario que debería estar aquí? [¡Cuéntenos sobre ello!]		
+$prop2	Su propuesta será revisada por uno de nuestros curadores y, si se considera adecuada, el diccionario será incluido en el Portal Europeo de Diccionarios. El dueño de la página web será invitado a mostrar un [sello de aprobación] en su web. 		
+$error1	Error		
+$error2	Nuestras disculpas, parece que ha ocurrido un error. Si este problema persiste, por favor [envíe un email al administrador de la página web] para informar del mismo. 		
+$thanks	Gracias		
+$backhome	Regreso a la página inicial		
+$select	seleccione		
+$prop-name	NOMBRE DEL DICCIONARIO		
+$prop-name-error	El nombre no debe estar vacío. 		
+$prop-url	URL DEL DICCIONARIO		
+$prop-url-error	La URL no debe estar vacía y debe comenzar con "http://" o "https://". 		
+$objLang-error	Necesita seleccionar un idioma. 		
+$prop-email	SU DIRECCIÓN DE CORREO ELECTRÓNICO		
+$prop-email-legend	Contactaremos con usted si necesita más información. No compartiremos su dirección con nadie. 		
+$prop-email-error	La dirección no debe estar vacía y debe ser una dirección de correo electrónico válida. 		
+$prop-comments	COMENTARIOS (OPTATIVOS)		
+$prop-crit	Antes de presentar el diccionario por favor asegúrese de que cumple con los [criterios de inclusión] del Portal Europeo de Diccionarios. 		
+$submit	Presente		
+$about-info	Acerca de 		
+$about-prop	Sugiera un diccionario		
+$about-crit	Criterios de inclusión		
+$about-crtr	El manual del curador		
+$about-stmp	Sello de aprobación		
+$about-dnld	Descargue		
+$gen-name	Diccionarios generales		
+$lrn-name	Diccionarios del aprendiz		
+$ety-name	Diccionarios etimológicos		
+$spe-name	Diccionarios sobre temas especiales		
+$his-name	Diccionarios históricos		
+$por-name	Portales y agregadores		
+$gen-legend	[Los diccionarios generales] son diccionarios que documentan vocabulario contemporáneo y están destinados a ser referencia diaria por hablantes nativos y fluídos. 		
+$lrn-legend	[Los diccionarios del aprendiz] están destinados a personas que están aprendiendo el idioma como segunda lengua. 		
+$ety-legend	[Los diccionarios etimológicos] son diccionarios que explican el origen de las palabras. 		
+$spe-legend	[Los diccionarios sobre temas especiales] son diccionarios que se centran en un subconjunto específico del vocabulario (tales como palabras nuevas o verbos frasales) o que se centran en un dialecto o variante específicos del idioma. 		
+$his-legend	[Los diccionarios históricos] son diccionarios que documentan previos estados históricos del lenguaje. 		
+$por-legend	[Los portales y agregadores] son páginas webs que proporcionan acceso a más de un diccionario y le permiten buscarlos todos inmediatamente. 		
+$lang-sq	albano		
+$lang-hy	armenio		
+$lang-rup	arumano		
+$lang-ast	asturiano		
+$lang-eu	vasco		
+$lang-bg	búlgaro		
+$lang-ca	catalán		
+$lang-kw	córnico		
+$lang-hr	croata		
+$lang-cs	checo		
+$lang-da	danés		
+$lang-nl	neerlandés		
+$lang-en	inglés		
+$lang-et	estonio		
+$lang-fo	feroés		
+$lang-fi	finlandés		
+$lang-fr	francés		
+$lang-gl	gallego		
+$lang-de	alemán		
+$lang-el	griego		
+$lang-he	hebreo		
+$lang-hu	húngaro		
+$lang-is	islandés		
+$lang-ga	irlandés		
+$lang-it	italiano		
+$lang-krl	carelio		
+$lang-kom	komi		
+$lang-la	latín		
+$lang-lv	letón		
+$lang-lt	lituano		
+$lang-lb	luxemburgués		
+$lang-mk	macedonio		
+$lang-mt	maltés		
+$lang-gv	manés		
+$lang-mord	mordvino		
+$lang-no	noruego		
+$lang-pl	polaco		
+$lang-pt	portugués		
+$lang-ro	rumano		
+$lang-rm	romanche		
+$lang-ru	ruso		
+$lang-smi	sami		
+$lang-sc	sardo		
+$lang-sco	escocés		
+$lang-gd	gaélico escocés		
+$lang-sr	serbio		
+$lang-sk	eslovaco		
+$lang-sl	esloveno		
+$lang-wen	sorbio		
+$lang-es	español		
+$lang-sv	sueco		
+$lang-tr	turco		
+$lang-uk	ucraniano		
+$lang-vep	vepsio		
+$lang-cy	galés		
+$lang-fy	frisón		
+$lang-yi	yiddish		
+$lang-br	bretón		
+$lang-sqk	Lengua de Signos de Albania 		
+$lang-aen	Lengua de Signos de Armenia		
+$lang-asq	Lengua de Signos de Austria		
+$lang-bfi	Lengua de Signos de Gran Bretaña		
+$lang-bqn	Lengua de Signos de Bulgaria		
+$lang-csc	Lengua de Signos de Cataluña		
+$lang-csq	Lengua de Signos de Croacia		
+$lang-cse	Lengua de Signos de la República Checa		
+$lang-dsl	Lengua de Signos de Dinamarca 		
+$lang-eso	Lengua de Signos de Estonia		
+$lang-fss	Lengua de Signos de los finlando-suecos		
+$lang-fse	Lengua de Signos de Finlandia 		
+$lang-vgt	Lengua de Signos de los flamencos		
+$lang-sfb	Lengua de Signos de los franco-belgas		
+$lang-fsl	Lengua de Signos de Francia		
+$lang-gsg	Lengua de Signos de Alemania		
+$lang-gss	Lengua de Signos de Grecia		
+$lang-hsh	Lengua de Signos de Hungría		
+$lang-icl	Lengua de Signos de Islandia		
+$lang-isg	Lengua de Signos de Irlanda		
+$lang-isr	Lengua de Signos de Israel 		
+$lang-ise	Lengua de Signos de Italia		
+$lang-lsl	Lengua de Signos de Letonia		
+$lang-lls	Lengua de Signos de Lituania		
+$lang-mdl	Lengua de Signos de Malta		
+$lang-vsi	Lengua de Signos de Moldova		
+$lang-nsl	Lengua de Signos de Noruega		
+$lang-pso	Lengua de Signos de Polonia		
+$lang-psr	Lengua de Signos de Portugal		
+$lang-rms	Lengua de Signos de Rumanía		
+$lang-rsl	Lengua de Signos de Rusia		
+$lang-dse	Lengua de Signos de los Países Bajos		
+$lang-svk	Lengua de Signos de Eslovaquia		
+$lang-ssp	Lengua de Signos de España		
+$lang-swl	Lengua de Signos de Suecia		
+$lang-ssr	Lengua de Signos de los suizo-franceses		
+$lang-sgg	Lengua de Signos de los suizo-alemanes		
+$lang-slf	Lengua de Signos de los suizo-italianos		
+$lang-tsm	Lengua de Signos de Turquía		
+$lang-ukl	Lengua de Signos de Ucrania		
+$lang-vsv	Lengua de Signos de Valencia		
+$lang-ysl	Lengua de Signos de Yugoslavia 		

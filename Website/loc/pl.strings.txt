@@ -1,0 +1,175 @@
+$edp	Europejski portal słownikowy
+$home	Strona główna
+$find	Znajdź słownik
+$blurb	Europejski portal słownikowy, stworzony pod pieczą ekspertów z [Europejskiej sieci e-leksykografii], to przewodnik po dostępnych w sieci słownikach języków europejskich o sprawdzonej jakości [[Więcej informacji…]]
+$moment	Słownik dnia
+$filter	Filtr
+$objLang	JĘZYK OPISYWANY
+$objLangBlurb	Język, który opisuje słownik.
+$metaLang	METAJĘZYK
+$metaLangBlurb	Język opisu i objaśnień dla danego słownika. Jeśli jest to ten sam język, co język opisywany, mówimy o słowniku jednojęzycznym. Jeśli te języki są różne, mamy do czynienia ze słownikiem dwujęzycznym.
+$dicType	GATUNEK
+$dicTypeBlurb	Jakiego typu słownika poszukujesz?
+$anyLang	dowolny język
+$anyDicType	dowolny gatunek
+$search	Szukaj
+$notyet	Języki, dla których nie ma jeszcze słowników
+$signlangs	Języki migowe
+$toomany	Liczba słowników spełniających kryteria przekracza 50. Wyświetlono pierwszych 50 wyników.
+$nojoy	Brak słowników spełniających kryteria.
+$anglo	Ta część portalu dostępna jest tylko w języku angielskim.
+$about-more	Zobacz też
+$top	Do góry
+$toc	Spis treści
+$foot1	Europejski portal słownikowy jest inicjatywą [Europejskiej sieci e-leksykografii].
+$foot2	[COST] finansowany jest w ramach Programu Ramowego UE [[Horyzont 2020]].
+$foot3	Czy Państwa słownik jest w Europejskim portalu słownikowym? Możecie Państwo umieścić na stronie [pieczęć Europejskiego portalu słownikowego]
+$mbm	Stronę stworzył:
+$ivdnt	Hosting: 
+$shots	Zrzuty ekranowe:
+$icons	Ikony:
+$login	Dostęp dla kuratora
+$moreDicts	Więcej słowników w tym języku
+$loginRequired	WYMAGA ZALOGOWANIA
+$searchIn	SZUKAJ W
+$tsRequired	Strona wymaga akceptacji warunków przy pierwszych odwiedzinach.
+$language	język
+$searchbox	Szukaj w wielu słownikach
+$included	Słowniki składowe
+$about1	Słowniki są ważnym elementem dzisiejszego zglobalizowanego i wielojęzycznego świata. Europejski portal słownikowy ma pomóc Państwu odnaleźć wiarygodne słowniki dla języków Europy. Słowniki tu zgromadzone uzyskały akceptację ekspertów [Europejskiej sieci e-leksykografii] na podstawie starannie dobranych kryteriów.
+$prop1	Czy znasz słownik, który powinien się tu znaleźć? [Powiedz nam o tym!]
+$prop2	Państwa zgłoszenie zostanie przesłane do kuratorów Portalu, którzy podejmą decyzję o ewentualnym umieszczeniu słownika w Portalu. W przypadku pozytywnej decyzji, gospodarz słownika zostanie poinformowany i będzie mógł umieścić [pieczęć Europejskiego portalu słownikowego] na stronie słownika.
+$error1	Błąd
+$error2	Wystąpił błąd. Jeśli błąd będzie się powtarzał, prosimy o [email do administratora strony].
+$thanks	Dziękujemy
+$backhome	Wróć do strony głównej
+$select	wybierz
+$prop-name	TYTUŁ SŁOWNIKA
+$prop-name-error	Tytuł nie może być pusty.
+$prop-url	Adres URL słownika.
+$prop-url-error	Adres nie może być pusty i musi zaczynać się  od "http://" lub "https://".
+$objLang-error	Wybierz język.
+$prop-email	TWÓJ ADRES EMAIL
+$prop-email-legend	W razie potrzeby skontaktujemy się z Państwem pod tym adresem. Adres nie będzie udostępniany osobom trzecim.
+$prop-email-error	Pole nie może być puste i musi zawierać prawidłowy adres email.
+$prop-comments	KOMENTARZ (OPCJONALNIE)
+$prop-crit	Przed zgłoszeniem słownika prosimy sprawdzić, czy spełnia on [kryteria przyjęcia] Europejskiego portalu słownikowego.
+$submit	Zapisz
+$about-info	Informacje
+$about-prop	Zasugeruj słownik
+$about-crit	Kryteria przyjęcia
+$about-crtr	Podręcznik kuratora
+$about-stmp	Pieczęć Europejskiego portalu słownikowego
+$about-dnld	Pobierz
+$gen-name	Słowniki ogólne
+$lrn-name	Słowniki pedagogiczne
+$ety-name	Słowniki etymologiczne
+$spe-name	Słowniki specjalistyczne
+$his-name	Słowniki historyczne
+$por-name	Portale i agregatory
+$gen-legend	[Słowniki ogólne] dokumentują współczesne słownictwo ogólne i przeznaczone są do codziennego użytku rodzimych użytkowników języka.
+$lrn-legend	[Słowniki pedagogiczne] przeznaczone są dla osób uczących się języka.
+$ety-legend	[Słowniki etymologiczne] podają pochodzenie wyrazów.
+$spe-legend	[Słowniki specjalistyczne] opisują określony podzbiór słownictwa (na przykład neologizmy czy idiomy) albo dialekt czy określoną odmianę języka.
+$his-legend	[Słowniki historyczne] opisują język czasów minionych.
+$por-legend	[Portale i agregatory] to strony internetowe oferujące dostęp do wielu słowników i umożliwiające jednoczesne wyszukiwanie w wielu źródłach.
+$lang-sq	albański
+$lang-hy	ormiański
+$lang-rup	arumuński
+$lang-ast	asturyjski
+$lang-eu	baskijski
+$lang-bg	bułgarski
+$lang-ca	kataloński
+$lang-kw	kornijski
+$lang-hr	chorwacki
+$lang-cs	czeski
+$lang-da	duński
+$lang-nl	holenderski
+$lang-en	angielski
+$lang-et	estoński
+$lang-fo	farerski
+$lang-fi	fiński
+$lang-fr	francuski
+$lang-gl	galicyjski
+$lang-de	niemiecki
+$lang-el	nowogrecki
+$lang-he	hebrajski
+$lang-hu	węgierski
+$lang-is	islandzki
+$lang-ga	irlandzki
+$lang-it	włoski
+$lang-krl	karelski
+$lang-kom	komi-jaźwiński
+$lang-la	łaciński
+$lang-lv	łotewski
+$lang-lt	litewski
+$lang-lb	luksemburski
+$lang-mk	macedoński
+$lang-mt	maltański
+$lang-gv	manx
+$lang-mord	mordwiński
+$lang-no	norweski
+$lang-pl	polski
+$lang-pt	portugalski
+$lang-ro	rumuński
+$lang-rm	retroromański
+$lang-ru	rosyjski
+$lang-smi	sami
+$lang-sc	sardyński
+$lang-sco	szkocki
+$lang-gd	gaelicki szkocki
+$lang-sr	serbski
+$lang-sk	słowacki
+$lang-sl	słoweński
+$lang-wen	łużycki
+$lang-es	hiszpański
+$lang-sv	szwedzki
+$lang-tr	turecki
+$lang-uk	ukraiński
+$lang-vep	wepski
+$lang-cy	walijski
+$lang-fy	fryzyjski
+$lang-yi	jidysz
+$lang-br	bretoński
+$lang-sqk	albański język migowy
+$lang-aen	ormiański język migowy
+$lang-asq	austriacki język migowy
+$lang-bfi	brytyjski język migowy
+$lang-bqn	bułgarski język migowy
+$lang-csc	kataloński język migowy
+$lang-csq	chorwacki język migowy
+$lang-cse	czeski język migowy
+$lang-dsl	duński język migowy
+$lang-eso	estoński język migowy
+$lang-fss	finlandzko-szwedzki język migowy
+$lang-fse	fiński język migowy
+$lang-vgt	flamandzki język migowy
+$lang-sfb	francusko-belgijski język migowy
+$lang-fsl	francuski język migowy
+$lang-gsg	niemiecki język migowy
+$lang-gss	grecki język migowy
+$lang-hsh	węgierski język migowy
+$lang-icl	islandzki język migowy
+$lang-isg	irlandzki język migowy
+$lang-isr	izraelski język migowy
+$lang-ise	włoski język migowy
+$lang-lsl	łotewski język migowy
+$lang-lls	litewski język migowy
+$lang-mdl	maltański język migowy
+$lang-vsi	mołdawski język migowy
+$lang-nsl	norweski język migowy
+$lang-pso	polski język migowy
+$lang-psr	portugalski język migowy
+$lang-rms	rumuński język migowy
+$lang-rsl	rosyjski język migowy
+$lang-dse	holenderski języki migowy
+$lang-svk	słowacki język migowy
+$lang-ssp	hiszpański język migowy
+$lang-swl	szwedzki język migowy
+$lang-ssr	szwajcarsko-francuski język migowy
+$lang-sgg	szwajcarsko-niemiecki język migowy
+$lang-slf	szwajcarsko-włoski język migowy
+$lang-tsm	turecki język migowy
+$lang-ukl	ukraiński język migowy
+$lang-vsv	walencjański język migowy
+$lang-ysl	jugosłowiański język migowy

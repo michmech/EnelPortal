@@ -1,0 +1,18 @@
+﻿body { margin: 0; padding: 20px; background-color: #ffffff; font-family: Verdana, Arial, sans-serif; font-size: 12px; overflow-y: auto; }
+img { border: 0; }
+a { color: #006699; text-decoration: none; cursor: pointer; }
+a:hover { color: #2288bb; }
+input, select, button, option, optgroup { font-family: inherit; font-size: inherit; font-style: normal; }
+option { margin: 2px 0px; }
+
+div.dialog { max-width: 400px; text-align: center; margin: 50px auto 0px auto; }
+
+div.dialog div.message { margin: 20px 0px; }
+div.dialog div.message.good {  }
+
+div.formline { margin: 20px 0px; }
+div.formline label { display: block; margin-bottom: 10px; }
+div.formline input { border-radius: 4px; padding: 10px; width: 200px; }
+
+input.action, button.action { background-color: #dddddd; padding: 10px 20px; border-radius: 4px; text-shadow: 1px 1px 0px #eeeeee; border: 0px; cursor: pointer; color: #006699; }
+input.action:hover, button.action:hover { color: #2288bb; }

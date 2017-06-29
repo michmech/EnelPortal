@@ -1,0 +1,175 @@
+$edp	European Dictionary Portal
+$home	Home
+$find	Find a dictionary
+$blurb	The European Dictionary Portal, curated by experts in the [European Network of e-Lexicography], is your guide to good online dictionaries of European languages. [[More information...]]
+$moment	Dictionary of the moment
+$filter	Filter
+$objLang	OBJECT LANGUAGE
+$objLangBlurb	The language the dictionary describes; the language the dictionary is about.
+$metaLang	METALANGUAGE
+$metaLangBlurb	The language in which the dictionary gives definitions and explanations. If same as object language, then the dictionary is monolingual. If different, then the dictionary is bilingual.
+$dicType	GENRE
+$dicTypeBlurb	What kind of dictionary are you looking for?
+$anyLang	any language
+$anyDicType	any genre
+$search	Search
+$notyet	Languages with no dictionaries yet
+$signlangs	Sign languages
+$toomany	Over 50 dictionaries match your criteria. Only the first 50 are listed here.
+$nojoy	Sorry, we have no dictionaries that match your criteria.
+$anglo	Our apologies, this content is only available in English.
+$about-more	See also
+$top	Top
+$toc	On this website
+$foot1	The European Dictionary Portal is an initiative of the [European Network of e-Lexicography].
+$foot2	[COST] is supported by the EU Framework Programme [[Horizon 2020]].
+$foot3	Is your dictionary in the European Dictionary Portal? Display our [stamp of approval]
+$mbm	Website built by
+$ivdnt	Hosted by
+$shots	Screenshots provided by
+$icons	Icons by
+$login	Curator login
+$moreDicts	More dictionaries in this language
+$loginRequired	LOGIN REQUIRED
+$searchIn	SEARCH IN
+$tsRequired	This website will ask you to accept their terms and conditions on your first visit.
+$language	language
+$searchbox	Search in multiple dictionaries
+$included	Included dictionaries
+$about1	Dictionaries are an important part of life in today's international, multilingual world. The European Dictionary Portal is here to help you find your way to good, trustworthy online dictionaries of European languages, regardless of whether you are an academic, a translator, a language teacher or simply a language enthusiast. All dictionaries listed here have been handpicked by curators from the [European Network of e-Lexicography] who are expert lexicographers themselves and who follow well-defined [[criteria]] in deciding which dictionaries are included and which not.
+$prop1	Do you know a dictionary which should be here? [Tell us about it!]
+$prop2	Your submission will be reviewed by one of our curators and, if deemed suitable, the dictionary will be included in the European Dictionary Portal. The website owner will be invited to display a [stamp of approval] on their website.
+$error1	Error
+$error2	Our apologies, it seems that an error has occurred. If this problem persists please [e-mail the website administrator] to report it.
+$thanks	Thank you
+$backhome	Back to home page
+$select	select
+$prop-name	DICTIONARY NAME
+$prop-name-error	The name must not be empty.
+$prop-url	DICTIONARY URL
+$prop-url-error	The URL must not be empty and must start with "http://" or "https://".
+$objLang-error	You need to select a language.
+$prop-email	YOUR E-MAIL ADDRESS
+$prop-email-legend	We will contact you if we need more information. We will not share your address with anyone.
+$prop-email-error	The address must not be empty and must be a valid e-mail address.
+$prop-comments	COMMENTS (OPTIONAL)
+$prop-crit	Before you submit the dictionary please make sure it complies with the European Dictionary Portal's [criteria for inclusion].
+$submit	Submit
+$about-info	About
+$about-prop	Suggest a dictionary
+$about-crit	Criteria for inclusion
+$about-crtr	Curator's manual
+$about-stmp	Stamp of approval
+$about-dnld	Download
+$gen-name	General dictionaries
+$lrn-name	Learner's dictionaries
+$ety-name	Etymological dictionaries
+$spe-name	Dictionaries on special topics
+$his-name	Historical dictionaries
+$por-name	Portals and aggregators
+$gen-legend	[General dictionaries] are dictionaries that document contemporary vocabulary and are intended for everyday reference by native and fluent speakers.
+$lrn-legend	[Learner's dictionaries] are intended for people who are learning the language as a second language.
+$ety-legend	[Etymological dictionaries] are dictionaries that explain the origins of words.
+$spe-legend	[Dictionaries on special topics] are dictionaries that focus on a specific subset of the vocabulary (such as new words or phrasal verbs) or which focus on a specific dialect or variant of the language.
+$his-legend	[Historical dictionaries] are dictionaries that document previous historical states of the language.
+$por-legend	[Portals and aggregators] are websites that provide access to more than one dictionary and allow you to search them all at once.
+$lang-sq	Albanian
+$lang-hy	Armenian
+$lang-rup	Aromanian
+$lang-ast	Asturian
+$lang-eu	Basque
+$lang-bg	Bulgarian
+$lang-ca	Catalan
+$lang-kw	Cornish
+$lang-hr	Croatian
+$lang-cs	Czech
+$lang-da	Danish
+$lang-nl	Dutch
+$lang-en	English
+$lang-et	Estonian
+$lang-fo	Faroese
+$lang-fi	Finnish
+$lang-fr	French
+$lang-gl	Galician
+$lang-de	German
+$lang-el	Greek
+$lang-he	Hebrew
+$lang-hu	Hungarian
+$lang-is	Icelandic
+$lang-ga	Irish
+$lang-it	Italian
+$lang-krl	Karelian
+$lang-kom	Komi
+$lang-la	Latin
+$lang-lv	Latvian
+$lang-lt	Lithuanian
+$lang-lb	Luxembourgish
+$lang-mk	Macedonian
+$lang-mt	Maltese
+$lang-gv	Manx
+$lang-mord	Mordvinian
+$lang-no	Norwegian
+$lang-pl	Polish
+$lang-pt	Portuguese
+$lang-ro	Romanian
+$lang-rm	Romansh
+$lang-ru	Russian
+$lang-smi	Sami
+$lang-sc	Sardinian
+$lang-sco	Scots
+$lang-gd	Scottish Gaelic
+$lang-sr	Serbian
+$lang-sk	Slovak
+$lang-sl	Slovene
+$lang-wen	Sorbian
+$lang-es	Spanish
+$lang-sv	Swedish
+$lang-tr	Turkish
+$lang-uk	Ukrainian
+$lang-vep	Vepsian
+$lang-cy	Welsh
+$lang-fy	Frisian
+$lang-yi	Yiddish
+$lang-br	Breton
+$lang-sqk	Albanian Sign Language
+$lang-aen	Armenian Sign Language
+$lang-asq	Austrian Sign Language
+$lang-bfi	British Sign Language
+$lang-bqn	Bulgarian Sign Language
+$lang-csc	Catalan Sign Language
+$lang-csq	Croatia Sign Language
+$lang-cse	Czech Sign Language
+$lang-dsl	Danish Sign Language
+$lang-eso	Estonian Sign Language
+$lang-fss	Finland-Swedish Sign Language
+$lang-fse	Finnish Sign Language
+$lang-vgt	Flemish Sign Language
+$lang-sfb	French Belgian Sign Language
+$lang-fsl	French Sign Language
+$lang-gsg	German Sign Language
+$lang-gss	Greek Sign Language
+$lang-hsh	Hungarian Sign Language
+$lang-icl	Icelandic Sign Language
+$lang-isg	Irish Sign Language
+$lang-isr	Israeli Sign Language
+$lang-ise	Italian Sign Language
+$lang-lsl	Latvian Sign Language
+$lang-lls	Lithuanian Sign Language
+$lang-mdl	Maltese Sign Language
+$lang-vsi	Moldova Sign Language
+$lang-nsl	Norwegian Sign Language
+$lang-pso	Polish Sign Language
+$lang-psr	Portuguese Sign Language
+$lang-rms	Romanian Sign Language
+$lang-rsl	Russian Sign Language
+$lang-dse	Sign Language of the Netherlands
+$lang-svk	Slovak Sign Language
+$lang-ssp	Spanish Sign Language
+$lang-swl	Swedish Sign Language
+$lang-ssr	Swiss-French Sign Language
+$lang-sgg	Swiss-German Sign Language
+$lang-slf	Swiss-Italian Sign Language
+$lang-tsm	Turkish Sign Language
+$lang-ukl	Ukrainian Sign Language
+$lang-vsv	Valencian Sign Language
+$lang-ysl	Yugoslavian Sign Language

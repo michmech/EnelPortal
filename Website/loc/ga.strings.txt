@@ -1,0 +1,181 @@
+$edp	Tairseach Eorpach na bhFoclóirí
+$home	Baile
+$find	Aimsigh foclóir
+$blurb	Cuireann [Líonra Eorpach na Ríomhfhoclóireachta] fáilte romhat chuig Tairseach Eorpach na bhFoclóirí, suíomh a threoróidh thú chuig rogha is togha foclóirí sna teangacha Eorpacha. [[Tuilleadh eolais...]]
+$moment	Foclóir na huaire
+$filter	Scagaire
+$objLang	SPRIOCTHEANGA
+$objLangBlurb	An teanga a ndéanann an foclóir cur síos uirthi; an teanga is ábhar don fhoclóir.
+$metaLang	MEITEATHEANGA
+$metaLangBlurb	An teanga ina dtugann an foclóir míniú agus treoir. Más ionann an mheiteatheanga agus an sprioctheanga, is foclóir aonteangach é. Murab ionann, is foclóir dátheangach é.
+$dicType	SEÁNRA
+$dicTypeBlurb	Cén cineál foclóra atá uait?
+$anyLang	teanga ar bith
+$anyDicType	seánra ar bith
+$search	Cuardaigh
+$notyet	Teangacha fós gan foclóir
+$signlangs	Teangacha comharthaíochta
+$toomany	Aimsíodh breis is 50 foclóir a fhreagraíonn do do chuardach. Níl ar taispeáint anseo ach na chéad 50 ceann.
+$nojoy	Ár leithscéal, níl aon fhoclóirí againn a fhreagraíonn do do chuardach.
+$anglo	Ár leithscéal, níl an t-ábhar seo ar fáil ach i mBéarla.
+$about-more	Féach freisin
+$top	Barr
+$toc	Ar an suíomh seo
+$foot1	Togra de chuid [Líonra Eorpach na Ríomhfhoclóireachta] é Tairseach Eorpach na bhFoclóirí.
+$foot2	Faigheann [COST] maoiniú ó chreatchlár an Aontais Eorpaigh [[Fís 2020]].
+$foot3	Foclóirí atá liostaithe ar an suíomh seo, tá fáilte rompu ár [lipéad faofa a thaispeáint]
+$mbm	Suíomh cruthaithe ag
+$ivdnt	Á óstáil ag
+$shots	Seatanna na scáileán:
+$icons	Íocóin:
+$login	Eagarthóireacht
+$moreDicts	Tuilleadh foclóirí sa teanga seo
+$loginRequired	CLÁRÚCHÁN DE DHÍTH
+$searchIn	CUARDAIGH IN
+$tsRequired	Iarrfaidh an suíomh seo ort glacadh lena chuid téarmaí agus coinníollacha.
+$language	teanga
+$searchbox	Cuardaigh in iliomad foclóirí
+$included	Foclóirí atá istigh
+
+$about1	Cuid thábhachtach den saol is ea an foclóir sa domhan ilteangach ina maireann muid inniu. Tá Tairseach Eorpach na bhFoclóirí anseo chun tú a threorú chuig foclóirí maithe, iontaofa de theangacha Eorpacha ar líne. Na foclóirí go léir atá liostaithe ar an suíomh seo, saineolaithe de chuid [Líonra Eorpach na Ríomhfhoclóireachta] a roghnaigh iad de réir [[critéar soiléir]].
+$prop1	An bhfuil foclóir ar eolas agat a bheadh oiriúnach do Thairseach Eorpach na bhFoclóirí? [Abair linn!]
+$prop2	Déanfaidh duine dár n-eagarthóirí do mholadh a mheas agus, má tá an foclóir oiriúnach, cuirfear le Tairseach Eorpach na bhFoclóirí é. Beidh fáilte roimh úinéirí an fhoclóra [lipéad faofa] a chur ar a suíomh féin ansin.
+$error1	Earráid
+$error2	Ár leithscéal, tá earráid tar éis tarlú. Bain triail eile as i gceann tamaill. Má bhíonn an fhadhb fós ann, cuir scéala chuig [riarthóir an tsuímh], le do thoil.
+$thanks	Go raibh maith agat
+$backhome	Ar ais chuig an leathanach baile
+$select	roghnaigh
+$prop-name	AIM AN FHOCLÓRA
+$prop-name-error	Ní cheadaítear an t-ainm a bheith bán.
+$prop-url	URL AN FHOCLÓRA
+$prop-url-error	Ní cheadaítear an URL a bheith bán, agus caithfidh "http://" nó "https://" a bheith ag an tús.
+$objLang-error	Caithfidh tú teanga a roghnú.
+$prop-email	DO SHEOLADH RÍOMHPHOIST
+$prop-email-legend	Rachaidh muid i dteagmháil leat má theastaíonn tuilleadh eolais uainn. Coimeádfar do sheoladh faoi rún.
+$prop-email-error	Ní cheadaítear an seoladh a bheith bán, agus caithfidh seoladh bailí ríomhphoist a bheith ann.
+$prop-comments	AON EOLAS EILE (ROGHNACH)
+$prop-crit	Sula seolfaidh tú é, déan cinnte, le do thoil, go gcomhlíonann an foclóir na [critéir chun foclóir a liostú].
+$submit	Seol
+
+$about-info	Eolas
+$about-prop	Mol foclóir dúinn
+$about-crit	Critéir chun foclóir a liostú
+$about-crtr	Lámhleabhar na n-eagarthóirí
+$about-stmp	Lipéad faofa
+$about-dnld	Íoslódáil
+
+$gen-name	Foclóirí ginearálta
+$lrn-name	Foclóirí don fhoghlaimeoir
+$ety-name	Foclóirí sanasaíochta
+$spe-name	Foclóirí ar ábhair faoi leith
+$his-name	Foclóirí stairiúla
+$por-name	Tairsigh agus cnuasaigh
+
+$gen-legend	Foclóir é [foclóir ginearálta] a dhéanann cur síos ar stór na bhfocal comhaimseartha sa teanga, agus é ceaptha mar áis thagartha laethúil don chainteoir dúchais.
+$lrn-legend	Foclóir é [foclóir don fhoghlaimeoir] atá ceaptha mar thaca don té atá ag foghlaim teanga nach í a theanga dhúchais í.
+$ety-legend	Foclóir é [foclóir sanasaíochta] a mhíníonn cá as do na focail atá sa teanga.
+$spe-legend	Foclóir é [foclóir ar ábhar faoi leith] atá dírithe ar fhothacar den stór focal atá sa teanga (mar shampla focail nua nó briathra frásacha), nó ar leagan faoi leith na teanga (mar shampla canúint faoi leith).
+$his-legend	Foclóir é [foclóir stairiúil] a dhéanann cur síos ar stór focal na teanga mar a bhíodh sé san am atá caite.
+$por-legend	Rangaítear suíomh idirlín mar [thairseach nó cnuasach] má thugann sé rochtain ar iliomad foclóirí san áit chéanna.
+
+$lang-sq	Albáinis
+$lang-hy	Airméinis
+$lang-rup	Arómáinis
+$lang-ast	Astúiris
+$lang-eu	Bascais
+$lang-bg	Bulgáiris
+$lang-ca	Catalóinis
+$lang-kw	Coirnis
+$lang-hr	Cróitis
+$lang-cs	Seicis
+$lang-da	Danmhairgis
+$lang-nl	Ollainnis
+$lang-en	Béarla
+$lang-et	Eastóinis
+$lang-fo	Faróis
+$lang-fi	Fionlainnis
+$lang-fr	Fraincis
+$lang-gl	Gailísis
+$lang-de	Gearmáinis
+$lang-el	Gréigis
+$lang-he	Eabhrais
+$lang-hu	Ungáiris
+$lang-is	Íoslainnis
+$lang-ga	Gaeilge
+$lang-it	Iodáilis
+$lang-krl	Cairéilis
+$lang-kom	Coimis
+$lang-la	Laidin
+$lang-lv	Laitvis
+$lang-lt	Liotuáinis
+$lang-lb	Lucsambuirgis
+$lang-mk	Macadóinis
+$lang-mt	Máltais
+$lang-gv	Manainnis
+$lang-mord	Mordvinis
+$lang-no	Ioruais
+$lang-pl	Polainnis
+$lang-pt	Portaingéilis
+$lang-ro	Rómáinis
+$lang-rm	Rómainis
+$lang-ru	Rúisis
+$lang-smi	Sáimis
+$lang-sc	Sairdínis
+$lang-sco	Albainis
+$lang-gd	Gaeilge na hAlban
+$lang-sr	Seirbis
+$lang-sk	Slóvaicis
+$lang-sl	Slóivéinis
+$lang-wen	Sorbais
+$lang-es	Spáinnis
+$lang-sv	Sualainnis
+$lang-tr	Tuircis
+$lang-uk	Úcráinis
+$lang-vep	Veps
+$lang-cy	Breatnais
+$lang-fy	Freaslainnis
+$lang-yi	Giúdais
+$lang-br	Briotáinis
+
+$lang-sqk	TC na hAlbáine
+$lang-aen	TC na hAirméine
+$lang-asq	TC na hOstaire
+$lang-bfi	TC na Breataine
+$lang-bqn	TC na Bulgáire
+$lang-csc	TC na Catalóine
+$lang-csq	TC na Cróite
+$lang-cse	TC na Seice
+$lang-dsl	TC na Danmhairge
+$lang-eso	TC na hEastóine
+$lang-fss	TC Shualannach na Fionlainne
+$lang-fse	TC na Fionlainne
+$lang-vgt	TC Fhlóndras
+$lang-sfb	TC Fhrancach na Beilge
+$lang-fsl	TC na Fraince
+$lang-gsg	TC na Gearmáine
+$lang-gss	TC na Gréige
+$lang-hsh	TC na hUngáire
+$lang-icl	TC na hÍoslainne
+$lang-isg	TC na hÉireann
+$lang-isr	TC Iosrael
+$lang-ise	TC na hIodáile
+$lang-lsl	TC na Laitvia
+$lang-lls	TC na Liotuáine
+$lang-mdl	TC Mhálta
+$lang-vsi	TC na Moldáive
+$lang-nsl	TC na hIorua
+$lang-pso	TC na Polainne
+$lang-psr	TC na Portaingéile
+$lang-rms	TC na Rómáine
+$lang-rsl	TC na Rúise
+$lang-dse	TC na hÍsiltíre
+$lang-svk	TC na Slóvaice
+$lang-ssp	TC na Spáinne
+$lang-swl	TC na Sualainne
+$lang-ssr	TC Fhrancach na hEilvéise
+$lang-sgg	TC Ghearmánach na hEilvéise
+$lang-slf	TC Iodálach na hEilvéise
+$lang-tsm	TC na Tuirce
+$lang-ukl	TC na hÚcráine
+$lang-vsv	TC Valencia
+$lang-ysl	TC Iúgslavach

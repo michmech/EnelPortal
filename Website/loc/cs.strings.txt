@@ -1,0 +1,175 @@
+$edp	Evropský slovníkový portál
+$home	Hlavní stránka
+$find	Najít slovník
+$blurb	[Evropská síť pro e-lexikografii] vám přináší Evropský slovníkový portál, váš průvodce po kvalitních internetových slovnících evropských jazyků. [[Více informací...]]
+$moment	Slovník pro tento moment
+$filter	Filtr
+$objLang	CÍLOVÝ JAZYK
+$objLangBlurb	Ten jazyk, který slovník popisuje; ten jazyk, o který ve slovníku jde.
+$metaLang	METAJAZYK
+$metaLangBlurb	Ten jazyk, ve kterém slovník podává definice a vysvětlení. U jednojazyčných slovníků je stejný jako cílový jazyk, u dvojjazyčných slovníků je jiný.
+$dicType	ŽÁNR
+$dicTypeBlurb	Jaký druh slovníku hledáte?
+$anyLang	jakýkoliv jazyk
+$anyDicType	jakýkoliv žánr
+$search	Hledat
+$notyet	Jazyky, které jsou zatím bez slovníků
+$signlangs	Znakové jazyky
+$toomany	Vaším kritériím odpovídá více než 50 slovníků. Zde se ukazuje jen prvních 50.
+$nojoy	Bohužel nemáme žádné slovníky, které by odpovídaly vaším kritériím.
+$anglo	Je nám líto, ale tento text je k dispozici jen v angličtině.
+$about-more	Vizte také
+$top	začátek
+$toc	Obsah
+$foot1	Evropský slovníkový portál je iniciativa [Evropské sítě pro e-lexikografii].
+$foot2	[COST] je podporován rámcovým programem Evropské unie [[Horizont 2020]].
+$foot3	Je váš slovník v Evropském slovníkovém portálu? Ozdobte si ho [odznakem pro zařazené slovníky]
+$mbm	Autor stránek:
+$ivdnt	Web hosting:
+$shots	Sejmuté obrazovky:
+$icons	Ikony:
+$login	Vstup pro kurátory
+$moreDicts	Další slovníky v tomto jazyce
+$loginRequired	JEN PRO REGISTROVANÉ
+$searchIn	HLEDAT V
+$tsRequired	Na těchto stránkách budete muset při první návštěvě odsouhlasit určité podmínky.
+$language	jazyk
+$searchbox	Prohledat vícero slovníků najednou
+$included	Obsažené slovníky
+$about1	Slovníky jsou důležitá součást života v dnešním globalizovaném multilingvním světě. Evropský slovníkový portál je tu proto, aby vás zavedl ke kvalitním a spolehlivým slovníkům evropských jazyků na Internetu. Všechny slovníky zařazené do Evropského jazykového portálu byly vybrány kurátory [Evropské sítě pro e-lexikografii], kteří jsou odborníky na lexikografii, mluví daným jazykem a při výběru se řídí jasně definovanými [[kritérii]].
+$prop1	Víte o slovníku, který sem patří? [Dejte nám o něm vědět!]
+$prop2	Váš návrh bude posouzen jedním z našich kurátorů. Bude-li vyhovovat, zařadíme ho do Evropského slovníkového portálu. Uvítáme, když slovník na oplátku na své stránky umístí [odznak pro zařazené slovníky].
+$error1	Chyba
+$error2	Bohužel nastal nějaký problém. Zkuste to za chvíli znova a bude-li se to opakovat, [napište e-mail správci stránek].
+$thanks	Děkujeme
+$backhome	Zpátky na hlavní stránku
+$select	vybrat
+$prop-name	JMÉNO SLOVNÍKU
+$prop-name-error	Jméno nesmí být prázdné.
+$prop-url	URL SLOVNÍKU
+$prop-url-error	URL nesmí být prázdné a musí začínat na "http://" nebo "https://".
+$objLang-error	Musíte vybrat jazyk.
+$prop-email	VAŠE E-MAILOVÁ ADRESA
+$prop-email-legend	Budeme-li potřebovat více informací, budeme vás kontaktovat. Adresu s nikým sdílet nebudeme.
+$prop-email-error	Adresa nesmí být prázdná a musí to být platná e-mailová adresa.
+$prop-comments	KOMENTÁŘ (VOLITELNÉ)
+$prop-crit	Před odesláním s ujistěte, že slovník vyhovuje [kritériím pro zařazení].
+$submit	Odeslat
+$about-info	Informace
+$about-prop	Doporučit slovník
+$about-crit	Kritéria pro zařazení slovníku
+$about-crtr	Manuál kurátora
+$about-stmp	Odznak pro zařazené slovníky
+$about-dnld	Download
+$gen-name	všeobecné slovníky
+$lrn-name	pedagogické slovníky
+$ety-name	etymologické slovníky
+$spe-name	specializované slovníky
+$his-name	historické slovníky
+$por-name	portály a agregátory
+$gen-legend	[Všeobecné slovníky] jsou takové slovníky, které dokumentují současnou slovní zásobu a jsou určeny pro každodenní potřeby rodilých mluvčích.
+$lrn-legend	[Pedagogické slovníky] jsou určeny těm, kdo se jazyk učí jako cizí jazyk.
+$ety-legend	[Etymologické slovníky] jsou takové slovníky, které vysvětlují původ slov.
+$spe-legend	[Specializované slovníky] jsou takové slovníky, které se zaměřují na určitou podmnožinu slovní zásoby (například neologismy nebo frázová slovesa) nebo na určitou variantu (nářečí) jazyka.
+$his-legend	[Historické slovníky] jsou takové slovníky, které dokumentují slovní zásobu dřívějších vývojových fází jazyka.
+$por-legend	[Portály a agregátory] jsou internetové stránky, které zprostředkovávají přístup k několika slovníkům najednou.
+$lang-sq	albánština
+$lang-hy	arménština
+$lang-rup	arumunština
+$lang-ast	asturština
+$lang-eu	baskičtina
+$lang-bg	bulharština
+$lang-ca	katalánština
+$lang-kw	kornština
+$lang-hr	chorvatština
+$lang-cs	čeština
+$lang-da	dánština
+$lang-nl	nizozemština
+$lang-en	angličtina
+$lang-et	estonština
+$lang-fo	faerština
+$lang-fi	finština
+$lang-fr	francouzština
+$lang-gl	galicijština
+$lang-de	němčina
+$lang-el	řečtina
+$lang-he	hebrejština
+$lang-hu	maďarština
+$lang-is	islandština
+$lang-ga	irština
+$lang-it	italština
+$lang-krl	karelština
+$lang-kom	komi
+$lang-la	latina
+$lang-lv	lotyština
+$lang-lt	litevština
+$lang-lb	lucemburština
+$lang-mk	makedonština
+$lang-mt	maltština
+$lang-gv	manština
+$lang-mord	mordvinština
+$lang-no	norština
+$lang-pl	polština
+$lang-pt	portugalština
+$lang-ro	rumunština
+$lang-rm	rétorománština
+$lang-ru	ruština
+$lang-smi	sámština
+$lang-sc	sardština
+$lang-sco	skotština
+$lang-gd	skotská gaelština
+$lang-sr	srbština
+$lang-sk	slovenština
+$lang-sl	slovinština
+$lang-wen	lužická srbština
+$lang-es	španělština
+$lang-sv	švédština
+$lang-tr	turečtina
+$lang-uk	ukrajinština
+$lang-vep	vepština
+$lang-cy	velština
+$lang-fy	fríština
+$lang-yi	jidiš
+$lang-br	bretonština
+$lang-sqk	albánský znakový jazyk
+$lang-aen	arménský znakový jazyk
+$lang-asq	rakouský znakový jazyk
+$lang-bfi	britský znakový jazyk
+$lang-bqn	bulharský znakový jazyk
+$lang-csc	katalánský znakový jazyk
+$lang-csq	chorvatský znakový jazyk
+$lang-cse	český znakový jazyk
+$lang-dsl	dánský znakový jazyk
+$lang-eso	estonský znakový jazyk
+$lang-fss	finsko-švédský znakový jazyk
+$lang-fse	finský znakový jazyk
+$lang-vgt	vlámský znakový jazyk
+$lang-sfb	francouzsko-belgický znakový jazyk
+$lang-fsl	francouzský znakový jazyk
+$lang-gsg	německý znakový jazyk
+$lang-gss	řecký znakový jazyk
+$lang-hsh	maďarský znakový jazyk
+$lang-icl	islandský znakový jazyk
+$lang-isg	irský znakový jazyk
+$lang-isr	izraelský znakový jazyk
+$lang-ise	italský znakový jazyk
+$lang-lsl	lotyšský znakový jazyk
+$lang-lls	litevský znakový jazyk
+$lang-mdl	maltský znakový jazyk
+$lang-vsi	moldavský znakový jazyk
+$lang-nsl	norský znakový jazyk
+$lang-pso	polský znakový jazyk
+$lang-psr	portugalský znakový jazyk
+$lang-rms	rumunský znakový jazyk
+$lang-rsl	ruský znakový jazyk
+$lang-dse	nizozemský znakový jazyk
+$lang-svk	slovenský znakový jazyk
+$lang-ssp	španělský znakový jazyk
+$lang-swl	švédský znakový jazyk
+$lang-ssr	švýcarsko-francouzský znakový jazyk
+$lang-sgg	švýcarsko-německý znakový jazyk
+$lang-slf	švýcarsko-italský znakový jazyk
+$lang-tsm	turecký znakový jazyk
+$lang-ukl	ukrajinský znakový jazyk
+$lang-vsv	valencijský znakový jazyk
+$lang-ysl	jugoslávský znakový jazyk

@@ -1,0 +1,175 @@
+$edp	Portail Européen de Dictionnaires
+$home	Accueil
+$find	Trouver un dictionnaire
+$blurb	Le Portail Européen de Dictionnaires, élaboré par des experts du [Réseau Européen de Lexicoghraphie], est un guide de dictionnaires de langues européennes en ligne de qualité mis à votre disposition. [[En savoir plus...]]
+$moment	Dictionnaire du moment
+$filter	Filtre
+$objLang	LANGAGE OBJET
+$objLangBlurb	Langue décrite par le dictionnaire; langue à laquelle le dictionnaire est consacré
+$metaLang	MÉTALANGAGE
+$metaLangBlurb	Langue dans laquelle le dictionnaire propose des définitions et des explications. Si identique au langage objet, le dictionnaire est monolingue. Si différente, alors le dictionnaire est bilingue.
+$dicType	GENRE
+$dicTypeBlurb	Quel type de dictionnaire recherchez-vous?
+$anyLang	Toutes les langues
+$anyDicType	Tous les genres
+$search	Rechercher
+$notyet	Langues sans dictionnaire pour l'instant
+$signlangs	Langues des signes
+$toomany	Plus de 50 dictionnaires correspondent à vos critères. Seuls les 50 premiers sont listés ici.
+$nojoy	Désolé, aucun dictionnaire ne correspond à vos critères.
+$anglo	Nous sommes désolés, ce contenu est uniquement disponible en anglais.
+$about-more	Voir également
+$top	Haut
+$toc	Sur ce site
+$foot1	Le Portail Européen de Dictionnaires est une initiative du [Réseau Européen de Lexicoghraphie].
+$foot2	[COST] est financé par le Programme-Cadre de l'UE [[Horizon 2020]].
+$foot3	Votre dictionnaire se trouve-t-il sur le Portail Européen de Dictionnaires? Afficher notre [cachet d'autorisation]
+$mbm	Site élaboré par
+$ivdnt	Hébergé par
+$shots	Captures d'écran fournies par
+$icons	Icone de
+$login	Ouverture de session curateur
+$moreDicts	Plus de dictionnaires dans cette langue
+$loginRequired	IDENTIFIANT REQUIS
+$searchIn	RECHERCHER DANS
+$tsRequired	Il vous sera proposé d'accepter les termes et conditions du site lors de votre première visite.
+$language	langue
+$searchbox	Rechercher dans de multiples dictionnaires
+$included	Dictionnaires inclus
+$about1	Les dictionnaires font partie intégrante de notre vie dans le monde multilingue, international d'aujourd'hui. Le Portail Européen de Dictionnaires est là pour vous aider à trouver des dictionnaires de langues Européennes en ligne fiables, de qualité que vous soyez universitaire, traducteur, professeur ou simplement passionné de langues. Tous les dictionnaires répertoriés ici ont été soigneusement sélectionnés par les curateurs du [Réseau Européen de Lexicoghraphie] eux-mêmes lexicographes experts suivant des [[critères]] bien définis pour évaluer quels dictionnaires inclure ou non.
+$prop1	Avez-vous un dictionnaire à recommander? [Contactez-nous!]
+$prop2	Votre proposition sera examinée par l'un de nos curateurs et, s'il est jugé approprié, le dictionnaire sera intégré au Portail Européen de Dictionnaires. Les propriétaires du site seront invités à afficher un [cachet d'autorisation] sur leur site.
+$error1	Erreur
+$error2	Nous sommes désolés, il semblerait qu'une erreur se soit produite. Si le problème persiste, veuillez [envoyer un e-mail à l'administrateur du site] pour nous en informer.
+$thanks	Merci
+$backhome	Retour à la page d'accueil
+$select	sélectionner
+$prop-name	NOM DU DICTIONNAIRE
+$prop-name-error	Le nom ne doit pas être vide.
+$prop-url	URL DU DICTIONNAIRE
+$prop-url-error	L'URL ne doit pas être vide et doit commencer par "http://" ou "https://".
+$objLang-error	Vous devez sélectionner une langue.
+$prop-email	VOTRE ADRESSE E-MAIL
+$prop-email-legend	Nous vous contacterons si nous avons besoin de plus amples informations. Nous ne divulguerons votre adresse à aucun tiers.
+$prop-email-error	L'adresse ne doit pas être vide et doit être une adresse e-mail valide.
+$prop-comments	COMMENTAIRES (FACULTATIF)
+$prop-crit	Avant de nous soumettre un dictionnaire assurez-vous qu'il soit conforme aux [critères d'inclusion] du Portail Européen de Dictionnaires.
+$submit	Soumettre
+$about-info	Qui sommes-nous?
+$about-prop	Suggérer un dictionnaire
+$about-crit	Critères d'inclusion
+$about-crtr	Manuel du curateur
+$about-stmp	Cachet d'autorisation
+$about-dnld	Télécharger
+$gen-name	Dictionnaires généraux
+$lrn-name	Dictionnaires d'apprentissage
+$ety-name	Dictionnaires étymologiques
+$spe-name	Dictionnaires spécialisés
+$his-name	Dictionnaires historiques
+$por-name	Portails et agrégateurs
+$gen-legend	[Les dictionnaires généraux] sont des dictionnaires contenant du vocabulaire contemporain et conçus pour apporter des références du quotidien aux personnes de langue maternelle ou parlant avec aisance.
+$lrn-legend	[Les dictionnaires d'apprentissage] sont conçus pour les personnes apprenant la langue en tant que deuxième langue.
+$ety-legend	[Les dictionnaires étymologiques] sont des dictionnaires expliquant l'origine des mots.
+$spe-legend	[Les dictionnaires spécialisés] sont des dictionnaires se concentrant sur un sous-ensemble spécifique du vocabulaire (tels les mots nouveaux ou verbes à particules) ou sur un dialecte spécifique ou une variante de la langue.
+$his-legend	[Les dictionnaires historiques] sont des dictionnaires rassemblant des aspects historiques anciens de la langue.
+$por-legend	[Les portails et agrégateurs] sont des sites offrant un accès à plusieurs dictionnaires et vous permettant d'effectuer des recherches simultanées sur ces derniers.
+$lang-sq	albanais
+$lang-hy	arménien
+$lang-rup	aroumain
+$lang-ast	asturien
+$lang-eu	basque
+$lang-bg	bulgare
+$lang-ca	catalan
+$lang-kw	cornique
+$lang-hr	croate
+$lang-cs	tchèque
+$lang-da	danois
+$lang-nl	néerlandais
+$lang-en	anglais
+$lang-et	estonien
+$lang-fo	féroïen
+$lang-fi	finnois
+$lang-fr	français
+$lang-gl	galicien
+$lang-de	allemand
+$lang-el	grec
+$lang-he	hébreu
+$lang-hu	hongrois
+$lang-is	islandais
+$lang-ga	irlandais
+$lang-it	italien
+$lang-krl	carélien
+$lang-kom	komi
+$lang-la	latin
+$lang-lv	letton
+$lang-lt	lituanien
+$lang-lb	luxembourgeois
+$lang-mk	macédonien
+$lang-mt	maltais
+$lang-gv	mannois
+$lang-mord	mordve
+$lang-no	norvégien
+$lang-pl	polonais
+$lang-pt	portugais
+$lang-ro	roumain
+$lang-rm	romanche
+$lang-ru	russe
+$lang-smi	same
+$lang-sc	sarde
+$lang-sco	écossais
+$lang-gd	gaélique écossais
+$lang-sr	serbe
+$lang-sk	slovaque
+$lang-sl	slovène
+$lang-wen	sorabe
+$lang-es	espagnol
+$lang-sv	suédois
+$lang-tr	turque
+$lang-uk	ukrainien
+$lang-vep	vepse
+$lang-cy	gallois
+$lang-fy	frison
+$lang-yi	yiddish
+$lang-br	breton
+$lang-sqk	Langue des Signes d'Albanie
+$lang-aen	Langue des Signes d'Arménie
+$lang-asq	Langue des Signes d'Autriche
+$lang-bfi	Langue des Signes de Grande-Bretagne
+$lang-bqn	Langue des Signes de Bulgarie
+$lang-csc	Langue des Signes de Catalogne
+$lang-csq	Langue des Signes de Croatie
+$lang-cse	Langue des Signes de République tchèque
+$lang-dsl	Langue des Signes du Danemark
+$lang-eso	Langue des Signes d'Estonie
+$lang-fss	Langue des Signes de Suède et de Finlande
+$lang-fse	Langue des Signes de Finlande
+$lang-vgt	Langue des Signes de Belgique néerlandophone
+$lang-sfb	Langue des Signes de Belgique francophone
+$lang-fsl	Langue des Signes de France
+$lang-gsg	Langue des Signes d'Allemagne
+$lang-gss	Langue des Signes de Grèce
+$lang-hsh	Langue des Signes de Hongrie
+$lang-icl	Langue des Signes d'Islande
+$lang-isg	Langue des Signes d'Irlande
+$lang-isr	Langue des Signes d'Israël
+$lang-ise	Langue des Signes d'Italie
+$lang-lsl	Langue des Signes de Lettonie
+$lang-lls	Langue des Signes de Lituanie
+$lang-mdl	Langue des Signes de Malte
+$lang-vsi	Langue des Signes de Moldavie
+$lang-nsl	Langue des Signes de Norvège
+$lang-pso	Langue des Signes de Pologne
+$lang-psr	Langue des Signes du Portugal
+$lang-rms	Langue des Signes de Roumanie
+$lang-rsl	Langue des Signes de Russie
+$lang-dse	Langue des Signes des Pays-Bas
+$lang-svk	Langue des Signes de Slovaquie
+$lang-ssp	Langue des Signes d'Espagne
+$lang-swl	Langue des Signes de Suède
+$lang-ssr	Langue des Signes de Suisse romande
+$lang-sgg	Langue des Signes de Suisse alémanique
+$lang-slf	Langue des Signes de Suisse italienne
+$lang-tsm	Langue des Signes de Turquie
+$lang-ukl	Langue des Signes d'Ukraine
+$lang-vsv	Langue des Signes de la Communauté valencienne
+$lang-ysl	Langue des Signes de Yougoslavie
