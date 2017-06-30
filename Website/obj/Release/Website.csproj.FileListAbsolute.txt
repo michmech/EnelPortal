@@ -1,6 +1,0 @@
-C:\MBM\EnelPortal\Website\bin\Website.dll
-C:\MBM\EnelPortal\Website\bin\Website.pdb
-C:\MBM\EnelPortal\Website\obj\Release\Website.dll
-C:\MBM\EnelPortal\Website\obj\Release\Website.pdb
-C:\MBM\EnelPortal\Website\bin\Website.dll.config
-C:\MBM\EnelPortal\Website\obj\Release\Website.csprojResolveAssemblyReference.cache
