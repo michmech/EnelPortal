@@ -77,6 +77,7 @@ namespace Website
 
 			this.languages=new List<Language>();
 			this.languages.Add(new Language("cs", "Czech", "česky", true));
+			this.languages.Add(new Language("el", "Greek", "ελληνικά", true));
 			this.languages.Add(new Language("en", "English", "English", true));
 			this.languages.Add(new Language("es", "Spanish", "español", true));
 			this.languages.Add(new Language("fr", "French", "français", true));
@@ -100,7 +101,6 @@ namespace Website
 			this.languages.Add(new Language("fi", "Finnish", "", false));
 			this.languages.Add(new Language("gl", "Galician", "", false));
 			this.languages.Add(new Language("de", "German", "Deutsch", false));
-			this.languages.Add(new Language("el", "Greek", "", false));
 			this.languages.Add(new Language("he", "Hebrew", "", false));
 			this.languages.Add(new Language("is", "Icelandic", "", false));
 			this.languages.Add(new Language("it", "Italian", "", false));

@@ -92,7 +92,7 @@ form.search input.txt { width: 90%; border: 0px; padding: 10px 10px; border-radi
 form.search input.sbm { position: absolute; top: 0px; right: 0px; bottom: 0px; width: 40px; border: 0px; background-color: #dddddd; font-size: 14px; padding: 5px; color: #333333; text-shadow: 1px 1px 0px #ffffff; font-weight: bold; cursor: pointer; border-radius: 0px 4px 4px 0px;
 	background-image: url(bullet_go.png); background-repeat: no-repeat; background-position: center center; }
 form.search input.sbm:hover { color: #2288bb; background-color: #e3e3e3; }
-form.search select.lng { position: absolute; top: 8px; right: 50px; bottom: 8px; padding: 0px 5px; border: 0px; color: #006699; border-left: 1px solid #aaaaaa; max-width: 100px; cursor: pointer; }
+form.search select.lng { position: absolute; top: 8px; right: 50px; bottom: 8px; padding: 0px 5px; border: 0px; color: #006699; border-left: 1px solid #aaaaaa; max-width: 100px; cursor: pointer; background-color: #ffffff; }
 form.search select.lng option { padding: 3px 5px; }
 form.search select.lng option.title { border-bottom: 1px solid #dddddd; padding-top: 0px; padding-bottom: 0px; font-size: 1px; visibility: hidden; }
 @media (max-width: 450px) {
