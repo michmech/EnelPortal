@@ -88,7 +88,7 @@ div#logoContainer img { max-width: 291px; width: 100%; }
 }
 
 form.search { max-width: 550px; margin: 30px auto 30px auto; border: 1px inset; background-color: #ffffff; border-radius: 4px; position: relative; }
-form.search input.txt { width: 90%; border: 0px; padding: 10px 10px; border-radius: 4px; font-size: 16px;  }
+form.search input.txt { width: 90%; border: 0px; padding: 10px 10px; border-radius: 4px; font-size: 16px; background-color: #ffffff; }
 form.search input.sbm { position: absolute; top: 0px; right: 0px; bottom: 0px; width: 40px; border: 0px; background-color: #dddddd; font-size: 14px; padding: 5px; color: #333333; text-shadow: 1px 1px 0px #ffffff; font-weight: bold; cursor: pointer; border-radius: 0px 4px 4px 0px;
 	background-image: url(bullet_go.png); background-repeat: no-repeat; background-position: center center; }
 form.search input.sbm:hover { color: #2288bb; background-color: #e3e3e3; }

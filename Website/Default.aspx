@@ -12,8 +12,8 @@
 		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 		<script src="http://code.jquery.com/ui/1.8.19/jquery-ui.min.js"></script>
  		<script type="text/javascript" src="/furniture/jquery.pulse.js"></script>
-		<script type="text/javascript" src="/furniture/catalog.js?2017-07-05"></script>
-		<link type="text/css" rel="stylesheet" href="/furniture/template.css?2017-07-05" />
+		<script type="text/javascript" src="/furniture/catalog.js?2017-07-06"></script>
+		<link type="text/css" rel="stylesheet" href="/furniture/template.css?2017-07-06" />
 		<script type="text/javascript">
 		$(document).ready(function(){
 			$(document).keyup(function(e){
@@ -324,8 +324,11 @@
 				</div>
 				<div class="stamp">
 					<a href="/<%=uilang%>/stmp/"><img src="/stamp.gif" alt="Stamp of approval"/></a>
-				    <%string foot3=L("foot3");%>
-                    <%foot3=Regex.Replace(foot3, @"\[([^\]]+)\]", "<a href='/"+uilang+"/stmp/'>$1&nbsp;»</a>");%>
+				    <%
+                    string foot3=L("foot3");
+                    if(foot3.EndsWith("]")) foot3=Regex.Replace(foot3, @"\[([^\]]+)\]", "<a href='/"+uilang+"/stmp/'>$1&nbsp;»</a>");
+                    else foot3=Regex.Replace(foot3, @"\[([^\]]+)\]", "<a href='/"+uilang+"/stmp/'>$1</a>")+".";
+                    %>
                     <div><%=foot3%></div>
 					<div></div>
 				</div>

@@ -1,0 +1,175 @@
+$edp	Europeesk Wurdboekportaal
+$home	Thús
+$find	Wurdboek sykje
+$blurb	It Europeesk Wurdboekportaal, ûnderholden troch saakkundigen fan it [European Network of e-Lexicography], helpt jo om goede online wurdboeken fan Europeeske talen te finen [[Mear ynformaasje...]]
+$moment	Wurdboek fan de dei
+$filter	Filter
+$objLang	DOELTAAL
+$objLangBlurb	De taal dy't it wurdboek beskriuwt; de taal dêr't it wurdboek oer giet.
+$metaLang	METATAAL
+$metaLangBlurb	De taal dy't it wurdboek brûkt foar definysjes en útlis. As dat itselde is as de doeltaal, dan is it in ientalich wurdboek. As it oars is, dan is it in twatalich wurdboek.
+$dicType	TYPE
+$dicTypeBlurb	Watfoar soarte fan wurdboek sykje jo om?
+$anyLang	elke taal
+$anyDicType	elk type
+$search	Sykje
+$notyet	Talen dy't noch gjin wurdboek hawwe
+$signlangs	Gebeartetaal
+$toomany	Mear as 50 wurdboeken komme oerien mei jo kritearia. Wy jouwe hjir de earste 50.
+$nojoy	Spitich, mar der binne gjin wurdboeken dy't mei jo kritearia oerienkomme.
+$anglo	It muoit ús. Dizze tekst is allinnich yn it Ingelsk beskikber.
+$about-more	Sjoch ek
+$top	Top
+$toc	Op dizze website
+$foot1	It Europeesk Wurdboekportaal is in inisjatyf fan it [European Network of e-Lexicography].
+$foot2	[COST] wurdt stipe troch it Europeesk subsydzjeprogramma [[Horizon 2020]].
+$foot3	Is jo wurdboek opnommen yn it Europeesk Wurdboekportaal? Set dan ús [stamp of approval] derop
+$mbm	Website boud troch
+$ivdnt	Hoste troch
+$shots	Screenshots levere troch
+$icons	Tekentsjes troch
+$login	Underhâlders-login
+$moreDicts	Mear wurdboeken yn dizze taal
+$loginRequired	YNLOGGEN FEREASKE
+$searchIn	SYKJE YN
+$tsRequired	Dizze website freget jo om akkoart te gean mei betingsten by jo besite.
+$language	taal
+$searchbox	Yn mear wurdboeken tagelyk sykje
+$included	Opnommen wurdboeken
+$about1	Wurdboeken binne in belangryk ûnderdiel fan ús tsjintwurdige ynternasjonale en meartalige wrâld. It Europeesk Wurdboekportaal wol jo helpe om in paad te finen nei goede en fertroude online wurdboeken foar de Europeeske talen, oft jo no wittenskipper, oersetter, taaldosint of gewoan in entûsjast taalleafhawwer binne. Alle wurdboeken yn de list binne soarchfâldich útsocht troch listbehearders fan it [European Network of e-Lexicography] dy't saakkundige wurdboekmakkers binne en dy't dêrby dúdlike [[criteria]] brûke om te besluten hokker wurdboeken wol of net yn dizze list thúshearre.
+$prop1	Hawwe jo in wurdboek dat der ek by heart? [Tell us about it!]
+$prop2	Jo bydrage sil beoardiele wurde troch ien fan ús listbehearders en sil as it deryn past, sil it wurdboek opnommen wurde yn it Europeesk Wurdboekportaal. De website-eigner wurdt útnûge om in [stamp of approval] op syn website te setten.
+$error1	Flater
+$error2	It muoit ús. It liket derop dat der wat ferkeard gien is. As dit probleem faker foarkomt, mail dan de [e-mail the website administrator] om it troch te jaan.
+$thanks	Tige tank
+$backhome	Werom nei thússide
+$select	selektearje
+$prop-name	NAMME WURDBOEK
+$prop-name-error	De namme moat net leech wêze
+$prop-url	WURDBOEK URL
+$prop-url-error	De URL mei net leech wêze en moat begjinne mei "http://" of "https://".
+$objLang-error	Jo moatte in taal kieze.
+$prop-email	JO E-MAILADRES
+$prop-email-legend	Wy nimme kontakt mei jo op as wy mear ynformaasje nedich hawwe. Wy jouwe jo adres net oan oaren troch.
+$prop-email-error	It adres mei net leech wêze en moat in jildich e-mailadres wêze.
+$prop-comments	OPMERKINGEN (NET FERPLICHTE)
+$prop-crit	Gean foardat jo it wurdboek taheakje nei oft it oerienkomt mei de [criteria for inclusion] fan it Europeesk Wurdboekportaal.
+$submit	Yntsjinje
+$about-info	Oer
+$about-prop	Stel in wurdboek foar
+$about-crit	Kritearia foar opnimmen
+$about-crtr	Beheardershanboek
+$about-stmp	Stamp of approval
+$about-dnld	Ynlade
+$gen-name	Algemiene wurdboeken
+$lrn-name	Wurdboeken foar taallearders
+$ety-name	Etymologyske wurdboeken
+$spe-name	Spesjale wurdboeken
+$his-name	Histoaryske wurdboeken
+$por-name	Portalen en sykmasinen
+$gen-legend	[General dictionaries] binne wurdboeken dy't de hjoeddeistige taal beskriuwe, dy't bedoeld binne as neislach foar (memmetaal)sprekkers dy't de taal floeiend prate.
+$lrn-legend	[Learner's dictionaries] binne bedoeld foar lju dy't de taal as twadde taal leare.
+$ety-legend	[Etymological dictionaries] binne wurdboeken dy't de oarsprong fan wurden ferklearje.
+$spe-legend	[Dictionaries on special topics] binne wurdboeken dy't har rjochtsje op in apart domein fan de wurdskat (bgl. neologismen of boeretaal) of dy't har rjochtsje op in apart dialekt of aparte taalfariant.
+$his-legend	[Historical dictionaries] binne wurdboeken dy't in âldere faze fan in taal beskriuwe.
+$por-legend	[Portals and aggregators] binne websites dy't tagong jouwe ta mear as ien wurdboek dêr't jo tagelyk yn sykje kinne.
+$lang-sq	Albaneesk
+$lang-hy	Armeensk
+$lang-rup	Aroemeensk
+$lang-ast	Astuerysk
+$lang-eu	Baskysk
+$lang-bg	Bulgaarsk
+$lang-ca	Katalaansk
+$lang-kw	Kornysk
+$lang-hr	Kroätysk
+$lang-cs	Tsjechysk
+$lang-da	Deensk
+$lang-nl	Nederlânsk
+$lang-en	Ingelsk
+$lang-et	Estlânsk
+$lang-fo	Faeröersk
+$lang-fi	Finsk
+$lang-fr	Frânsk
+$lang-gl	Galisysk
+$lang-de	Dútsk
+$lang-el	Gryksk
+$lang-he	Hebriuwsk
+$lang-hu	Hongaarsk
+$lang-is	Yslânsk
+$lang-ga	Iersk
+$lang-it	Italiaansk
+$lang-krl	Karelysk
+$lang-kom	Komi
+$lang-la	Latyn
+$lang-lv	Letsk
+$lang-lt	Litousk
+$lang-lb	Lúksemboarchk
+$lang-mk	Masedoanysk
+$lang-mt	Malteesk
+$lang-gv	Manksk
+$lang-mord	Mordvinysk
+$lang-no	Noarsk
+$lang-pl	Poalsk
+$lang-pt	Portugeesk
+$lang-ro	Roemeensk
+$lang-rm	Reto-Romaansk
+$lang-ru	Russysk
+$lang-smi	Samysk
+$lang-sc	Sardynsk
+$lang-sco	Skotsk
+$lang-gd	Skotsk-Gaelysk
+$lang-sr	Servysk
+$lang-sk	Slowaaksk
+$lang-sl	Sloveensk
+$lang-wen	Sorbysk
+$lang-es	Spaansk
+$lang-sv	Sweedsk
+$lang-tr	Turksk
+$lang-uk	Oekraynsk
+$lang-vep	Vepsiaansk
+$lang-cy	Welsk
+$lang-fy	Frysk
+$lang-yi	Jiddysk
+$lang-br	Bretonsk
+$lang-sqk	Albaneeske gebeartetaal
+$lang-aen	Armeenske gebeartetaal
+$lang-asq	Eastenrykske gebeartetaal
+$lang-bfi	Britske gebeartetaal
+$lang-bqn	Bulgaarske gebeartetaal
+$lang-csc	Katalaanske gebeartetaal
+$lang-csq	Kroätyske gebeartetaal
+$lang-cse	Tsjechyske gebeartetaal
+$lang-dsl	Deenske gebeartetaal
+$lang-eso	Estlânske gebeartetaal
+$lang-fss	Finlân-Sweedske gebeartetaal
+$lang-fse	Finske gebeartetaal
+$lang-vgt	Flaamske gebeartetaal
+$lang-sfb	Frânsk-Belgyske gebeartetaal
+$lang-fsl	Franske gebeartetaal
+$lang-gsg	Dútske gebeartetaal
+$lang-gss	Grykske gebeartetaal
+$lang-hsh	Hongaarske gebeartetaal
+$lang-icl	Yslânske gebeartetaal
+$lang-isg	Ierske gebeartetaal
+$lang-isr	Israelyske gebeartetaal
+$lang-ise	Italiaanske gebeartetaal
+$lang-lsl	Letske gebeartetaal
+$lang-lls	Litouske gebeartetaal
+$lang-mdl	Malteeske gebeartetaal
+$lang-vsi	Moldavyske gebeartetaal
+$lang-nsl	Noarkse gebeartetaal
+$lang-pso	Poalske gebeartetaal
+$lang-psr	Portugeeske gebeartetaal
+$lang-rms	Roemeenske gebeartetaal
+$lang-rsl	Russyske gebeartetaal
+$lang-dse	Nederlânske gebeartetaal
+$lang-svk	Slowaakske gebeartetaal
+$lang-ssp	Spaanske gebeartetaal
+$lang-swl	Sweedske gebeartetaal
+$lang-ssr	Switsersk-Frânske gebeartetaal
+$lang-sgg	Switsersk-Dútske gebeartetaal
+$lang-slf	Switsersk-Italiaanske gebeartetaal
+$lang-tsm	Turkske gebeartetaal
+$lang-ukl	Oekraynske gebeartetaal
+$lang-vsv	Falensiaanske gebeartetaal
+$lang-ysl	Joegoslavyske gebeartetaal
