@@ -62,13 +62,13 @@ $about-crtr	Curator's manual
 $about-stmp	Stamp of approval
 $about-dnld	Download
 $gen-name	General dictionaries
-$lrn-name	Learner's dictionaries
+$lrn-name	Learners' dictionaries
 $ety-name	Etymological dictionaries
 $spe-name	Dictionaries on special topics
 $his-name	Historical dictionaries
 $por-name	Portals and aggregators
 $gen-legend	[General dictionaries] are dictionaries that document contemporary vocabulary and are intended for everyday reference by native and fluent speakers.
-$lrn-legend	[Learner's dictionaries] are intended for people who are learning the language as a second language.
+$lrn-legend	[Learners' dictionaries] are intended for people who are learning the language as a second language.
 $ety-legend	[Etymological dictionaries] are dictionaries that explain the origins of words.
 $spe-legend	[Dictionaries on special topics] are dictionaries that focus on a specific subset of the vocabulary (such as new words or phrasal verbs) or which focus on a specific dialect or variant of the language.
 $his-legend	[Historical dictionaries] are dictionaries that document previous historical states of the language.

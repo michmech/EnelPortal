@@ -12,8 +12,8 @@
 		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 		<script src="http://code.jquery.com/ui/1.8.19/jquery-ui.min.js"></script>
  		<script type="text/javascript" src="/furniture/jquery.pulse.js"></script>
-		<script type="text/javascript" src="/furniture/catalog.js?2017-07-06"></script>
-		<link type="text/css" rel="stylesheet" href="/furniture/template.css?2017-07-06" />
+		<script type="text/javascript" src="/furniture/catalog.js?2017-07-12"></script>
+		<link type="text/css" rel="stylesheet" href="/furniture/template.css?2017-07-12" />
 		<script type="text/javascript">
 		$(document).ready(function(){
 			$(document).keyup(function(e){

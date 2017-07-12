@@ -10,9 +10,9 @@
 		<link rel="image_src" href="http://www.dictionaryportal.eu/preview.gif" />
 		<meta property="og:image" content="http://www.dictionaryportal.eu/preview.gif" />
 		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-		<script type="text/javascript" src="/furniture/catalog.js?2017-07-06"></script>
-		<link type="text/css" rel="stylesheet" href="/furniture/template.css?2017-07-06" />
-		<link type="text/css" rel="stylesheet" href="/furniture/markdown.css?2017-07-06" />
+		<script type="text/javascript" src="/furniture/catalog.js?2017-07-12"></script>
+		<link type="text/css" rel="stylesheet" href="/furniture/template.css?2017-07-12" />
+		<link type="text/css" rel="stylesheet" href="/furniture/markdown.css?2017-07-12" />
 		<script type="text/javascript">
 		$(document).ready(function(){
 			$("a[href='#']").click(function(){

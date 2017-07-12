@@ -34,13 +34,15 @@ ul#sitemenu li.current a { padding: 7px 15px; background-color: #ffffff; color: 
 	ul#sitemenu li a {  background-color: #d5d997; padding: 7px 15px; border: 1px solid #ffffff; box-shadow: 0px 0px 5px #666666; }
 }
 
-ul#uilang { display: block; padding: 0px 0; margin: 0; position: absolute; top: 0px; right: 0px; z-index: 1; }
-ul#uilang li { display: block; padding: 0; margin: 0; padding: 10px 30px; text-align: center; background-color: #d5d997; border-top: 1px solid #e1e9bc; box-shadow: -1px 1px 1px #999999; }
-ul#uilang li.more { display: none; }
+ul#uilang { display: block; padding: 0px 0; margin: 0; position: absolute; top: 0px; right: 0px; z-index: 1; max-width: 400px; }
+ul#uilang li { display: block; padding: 0; margin: 0; padding: 10px 0px; text-align: center; background-color: #d5d997; border-top: 1px solid #e1e9bc; border-left: 1px solid #e1e9bc; box-shadow: 0px 0px 2px #666666; }
+ul#uilang li.more { display: none; float: left; width: 199px; }
+ul#uilang li.more a {display: block;}
 ul#uilang li.current { display: block; font-weight: bold; padding: 20px 30px 15px 30px; text-align: right; border: 0; box-shadow: 0 0 0 transparent; }
-ul#uilang li:last-child { border-radius: 0 0 0 4px; }
 ul#uilang li.current span.arrow { margin-left: 0.25em; text-shadow: 0 0 0 transparent; }
-
+@media (max-width: 800px) {
+	ul#uilang li.more { float: none; width: auto; }
+}
 /*delete this style when we have more than one UI language*/
 /*ul#uilang li.current a { color: #eaedc8; text-shadow: 0 0 0 transparent; cursor: not-allowed; }*/
 

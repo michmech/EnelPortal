@@ -1,0 +1,175 @@
+$edp	Porth Geiriaduron Ewropeaidd
+$home	Hafan
+$find	Chwilio am eiriadur
+$blurb	Mae'r Porth Geiriaduron Ewropeaidd, a gaiff ei guradu gan arbenigwyr yn y [Rhwydwaith e-Eiriadura Ewropeaidd], yn ganllaw i eiriaduron da ar lein mewn ieithoedd Ewropeaidd.  [[Rhagor o wybodaeth...]]
+$moment	Geiriadur y funud
+$filter	Hidlydd
+$objLang	IAITH I'W CHWILIO
+$objLangBlurb	Yr iaith y mae'r geiriadur yn ei disgrifio; yr iaith y mae'r geiriadur yn ymwneud â hi.
+$metaLang	IAITH Y DIFFINIAD
+$metaLangBlurb	Yr iaith y mae'r geiriadur yn ei defnyddio i ddiffinio ac egluro. Os yw'r un fath â'r  iaith I'w chwilio, mae'r geiriadur yn unieithog. Os yw'n wahanol, mae'r geiriadur yn ddwyieithog.
+$dicType	MATH
+$dicTypeBlurb	Pa fath o eiriadur ydych chi'n chwilio amdano?
+$anyLang	unrhyw iaith
+$anyDicType	unrhyw fath
+$search	Chwilio
+$notyet	Ieithoedd heb eiriaduron hyd yma
+$signlangs	Ieithoedd arwyddo
+$toomany	Mae dros 50 o eiriaduron yn cwrdd â'ch meini prawf. Dim ond y 50 cyntaf a restrir yma.
+$nojoy	Yn anffodus, nid oes gennym unrhyw eiriadur sy'n cwrdd â'ch meini prawf.
+$anglo	Ymddiheuriadau, dim ond yn Saesneg y mae'r cynnwys hwn ar gael.
+$about-more	Gweler hefyd
+$top	Brig
+$toc	Ar y wefan hon
+$foot1	Menter gan y [Rhwydwaith e-Eiriadura Ewropeaidd] yw'r Porth Geiriaduron Ewropeaidd.
+$foot2	Mae [COST] yn derbyn cefnogaeth gan Raglen Fframwaith yr UE  [[Horizon 2020]].
+$foot3	A yw eich geiriadur yn y Porth Geiriaduron Ewropeaidd? Dangoswch ein [nod cymeradwyaeth]
+$mbm	Crewyd y wefan gan
+$ivdnt	Lletyir gan
+$shots	Sgrinluniau wedi eu darparu gan
+$icons	Eiconau gan
+$login	Man mewngofnodi i guraduron
+$moreDicts	Rhagor o eiriaduron yn yr iaith hon
+$loginRequired	ANGEN MEWNGOFNODI
+$searchIn	CHWILIER YN
+$tsRequired	Bydd y wefan hon yn gofyn i chi dderbyn ei thelerau a'i hamodau ar yr ymweliad cyntaf.
+$language	iaith
+$searchbox	Chwilio mewn nifer o eiriaduron
+$included	Y geiriaduron a gynhwysir
+$about1	Mae geiriaduron yn rhan bwysig o fywyd yn y byd rhyngwladol amlieithog sydd ohoni heddiw. Mae'r Porth Geiriaduron Ewropeaidd yma i'ch helpu i ddod o hyd i eiriaduron da, ar lein, y gellir dibynnu arnynt ar gyfer ieithoedd Ewropeaidd, waeth a ydych yn academydd, yn gyfieithydd, yn athro iaith neu'n syml yn ymddiddori mewn ieithoedd. Mae pob geiriadur a restrir yma wedi ei ddethol yn ofalus gan guraduron y [Rhwydwaith e-Eiriadura Ewropeaidd] sy'n eiriadurwyr arbenigol eu hunain ac sy'n dilyn [[meini prawf]] pendant wrth benderfynu pa eiriaduron i'w cynnwys a pha rai i'w gwrthod. 
+$prop1	Ydych chi'n gwybod am eiriadur a ddylai fod fan hyn?  [Rhowch wybod i ni amdano!]
+$prop2	Caiff eich argymhelliad ei adolygu gan un o'n curaduron ac, os ystyrir ei fod yn addas, caiff y geiriadur ei gynnwys yn y Porth Geiriaduron Ewropeaidd. Bydd perchnogion y wefan yn cael gwahoddiad i arddangos ein [nod cymeradwyaeth] ar eu gwefan.
+$error1	Gwall
+$error2	Ymddiheuriadau, mae gwall wedi digwydd. Os bydd y broblem hon yn parhau cofiwch [anfon e-bost at weinyddwr y wefan].
+$thanks	Diolch
+$backhome	Nôl i'r hafan
+$select	dewiswch
+$prop-name	ENW'R GEIRIADUR
+$prop-name-error	Ni chaiff yr enw fod yn wag.
+$prop-url	URL Y GEIRIADUR
+$prop-url-error	Ni chaiff yr URL fod yn wag ac mae'n rhaid iddo ddechrau â "http://" neu "https://".
+$objLang-error	Mae angen i chi ddewis iaith.
+$prop-email	EICH CYFEIRIAD E-BOST
+$prop-email-legend	Byddwn yn cysylltu â chi os byddwn angen rhagor o wybodaeth. Ni fyddwn yn rhannu eich cyfeiriad â neb. 
+$prop-email-error	Ni chaiff y cyfeiriad fod yn wag ac mae'n rhaid iddo fod yn gyfeiriad e-bost dilys.
+$prop-comments	SYLWADAU (DEWISOL)
+$prop-crit	Cyn i chi gyflwyno'r geiriadur cofiwch sicrhau ei fod yn cydymffurfio â [meini prawf cynnwys geiriadur] yn y Porth Geiriaduron Ewropeaidd.
+$submit	Cyflwyno
+$about-info	Amdanom ni
+$about-prop	Awgrymu geiriadur
+$about-crit	Meini prawf cynnwys geiriadur
+$about-crtr	Llawlyfr curaduron
+$about-stmp	Nod cymeradwyaeth
+$about-dnld	Lawrlwytho
+$gen-name	Geiriaduron cyffredinol
+$lrn-name	Geiriaduron i ddysgwyr
+$ety-name	Geiriaduron geirdarddol
+$spe-name	Geiriaduron ar bynciau penodol
+$his-name	Geiriaduron hanesyddol
+$por-name	Pyrth a chydgasglwyr
+$gen-legend	[Geiriaduron cyffredinol] yw geiriaduron sy'n cofnodi geirfa gyfoes ac sydd wedi eu bwriadu ar gyfer defnydd pob dydd gan siaradwyr brodorol a rhugl. 
+$lrn-legend	Mae [Geiriaduron dysgwyr] wedi eu bwriadu ar gyfer pobl sy'n dysgu'r iaith fel ail iaith.
+$ety-legend	Mae [Geiriaduron geirdarddol] yn eiriaduron sy'n egluro tarddiad geiriau. 
+$spe-legend	Mae [Geiriaduron ar bynciau penodol] yn eiriaduron sy'n canolbwyntio ar isgasgliadau penodol o'r eirfa (megis geiriau newydd neu briod-ddulliau) neu sy'n canolbwyntio ar dafodiaith benodol neu amrywiad ar yr iaith.
+$his-legend	Mae [Geiriaduron hanesyddol] yn eiriaduron sy'n cofnodi geirfa'r iaith ar wahanol gyfnodau hanesyddol.
+$por-legend	Mae [Pyrth a chydgasglwyr] yn wefannau sy'n rhoi mynediad i fwy nag un geiriadur ac yn caniatáu i chi chwilio drwyddynt i gyd ar yr un pryd.
+$lang-sq	Iaith Albania
+$lang-hy	Armeneg
+$lang-rup	Aromaneg
+$lang-ast	Astwrieg
+$lang-eu	Basgeg
+$lang-bg	Bwlgareg
+$lang-ca	Catalaneg
+$lang-kw	Cernyweg
+$lang-hr	Croateg
+$lang-cs	Tsieceg
+$lang-da	Daneg
+$lang-nl	Iseldireg
+$lang-en	Saesneg
+$lang-et	Estoneg
+$lang-fo	Ffaröeg
+$lang-fi	Ffinneg
+$lang-fr	Ffrangeg
+$lang-gl	Galiseg
+$lang-de	Almaeneg
+$lang-el	Groeg
+$lang-he	Hebraeg
+$lang-hu	Hwngareg
+$lang-is	Islandeg
+$lang-ga	Gwyddeleg
+$lang-it	Eidaleg
+$lang-krl	Careleg
+$lang-kom	Komi
+$lang-la	Lladin
+$lang-lv	Latfeg
+$lang-lt	Lithwaneg
+$lang-lb	Lwcsembwrgeg
+$lang-mk	Macedoneg
+$lang-mt	Malteg
+$lang-gv	Manaweg
+$lang-mord	Mordfineg
+$lang-no	Norwyeg
+$lang-pl	Pwyleg
+$lang-pt	Portiwgaleg
+$lang-ro	Rwmaneg
+$lang-rm	Románsh
+$lang-ru	Rwsieg
+$lang-smi	Iaith y Sami
+$lang-sc	Sardeg
+$lang-sco	Sgoteg
+$lang-gd	Gaeleg yr Alban
+$lang-sr	Serbeg
+$lang-sk	Slofaceg
+$lang-sl	Slofeneg
+$lang-wen	Sorbeg
+$lang-es	Sbaeneg
+$lang-sv	Swedeg
+$lang-tr	Twrceg
+$lang-uk	Wcreineg
+$lang-vep	Vepsian
+$lang-cy	Cymraeg
+$lang-fy	Ffriseg
+$lang-yi	Iddew-Almaeneg
+$lang-br	Llydaweg
+$lang-sqk	Iaith Arwyddion Albania
+$lang-aen	Iaith Arwyddion Armenia
+$lang-asq	Iaith Arwyddion Awstria
+$lang-bfi	Iaith Arwyddion Prydain
+$lang-bqn	Iaith Arwyddion Bwlgaria
+$lang-csc	Iaith Arwyddion Catalunya
+$lang-csq	Iaith Arwyddion Croatia
+$lang-cse	Iaith Arwyddion y Weriniaeth Tsiec
+$lang-dsl	Iaith Arwyddion Denmarc
+$lang-eso	Iaith Arwyddion Estonia
+$lang-fss	Iaith Arwyddion Swedaidd y Ffindir
+$lang-fse	Iaith Arwyddion y Ffindir
+$lang-vgt	Iaith Arwyddion Fflandrys
+$lang-sfb	Iaith Arwyddion Ffrengig Gwlad Belg
+$lang-fsl	Iaith Arwyddion Ffrainc
+$lang-gsg	Iaith Arwyddion yr Almaen
+$lang-gss	Iaith Arwyddion Groeg
+$lang-hsh	Iaith Arwyddion Hwngari
+$lang-icl	Iaith Arwyddion Gwlad yr Iâ
+$lang-isg	Iaith Arwyddion Iwerddon
+$lang-isr	Iaith Arwyddion Israel
+$lang-ise	Iaith Arwyddion yr Eidal
+$lang-lsl	Iaith Arwyddion Latvia
+$lang-lls	Iaith Arwyddion Lithuania
+$lang-mdl	Iaith Arwyddion Malta
+$lang-vsi	Iaith Arwyddion Moldova
+$lang-nsl	Iaith Arwyddion Norwy
+$lang-pso	Iaith Arwyddion Gwlad Pwyl 
+$lang-psr	Iaith Arwyddion Portiwgal
+$lang-rms	Iaith Arwyddion România
+$lang-rsl	Iaith Arwyddion Rwsia
+$lang-dse	Iaith Arwyddion yr Iseldiroedd
+$lang-svk	Iaith Arwyddion Slofacia
+$lang-ssp	Iaith Arwyddion Sbaen
+$lang-swl	Iaith Arwyddion Sweden
+$lang-ssr	Iaith Arwyddion Ffrengig y Swistir
+$lang-sgg	Iaith Arwyddion Almaenig y Swistir
+$lang-slf	Iaith Arwyddion Eidalaidd y Swistir
+$lang-tsm	Iaith Arwyddion Twrci
+$lang-ukl	Iaith Arwyddion Ukrain
+$lang-vsv	Iaith Arwyddion Valencia
+$lang-ysl	Iaith Arwyddion Iwgoslafia
