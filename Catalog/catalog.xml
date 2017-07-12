@@ -1,6 +1,6 @@
 <dictionaries>
 
-<!--Exported from the European Dictionary Portal on 2017-06-29
+<!--Exported from the European Dictionary Portal on 2017-07-12
 Available under Open Database Licence, http://opendatacommons.org/licenses/odbl/summary/
 If you use this, do not forget to attribute the European Dictionary Portal, http://www.dictionaryportal.eu/-->
 
@@ -290,6 +290,24 @@ If you use this, do not forget to attribute the European Dictionary Portal, http
   <search>http://www.duden.de/suchen/dudenonline?s=<word />&amp;scope=dudenonline</search>
 </dictionary>
 
+<dictionary prominence="3" loginRequired="0" tcRequired="0" id="55">
+  <objLang code="is" />
+  <dicType code="gen" />
+  <metaLang code="is" />
+  <metaLang code="da" />
+  <metaLang code="no" />
+  <metaLang code="sv" />
+  <metaLang code="fi" />
+  <metaLang code="fo" />
+  <title lang="is" xml:space="preserve">ISLEX-orðabókin</title>
+  <title lang="da" xml:space="preserve">ISLEX-ordbogen</title>
+  <title lang="no" xml:space="preserve">ISLEX-ordboka</title>
+  <title lang="sv" xml:space="preserve">ISLEX-projektet</title>
+  <title lang="fi" xml:space="preserve">ISLEX-sanakirja</title>
+  <title lang="en" xml:space="preserve">The ISLEX Dictionary</title>
+  <homepage xml:space="preserve">http://islex.is</homepage>
+</dictionary>
+
 <dictionary prominence="3" loginRequired="0" tcRequired="0" id="157">
   <objLang code="tr" />
   <dicType code="gen" />
@@ -538,13 +556,12 @@ If you use this, do not forget to attribute the European Dictionary Portal, http
   <homepage xml:space="preserve">http://islenskordabok.arnastofnun.is/islob</homepage>
 </dictionary>
 
-<dictionary prominence="5" loginRequired="0" tcRequired="0" id="55">
+<dictionary prominence="5" loginRequired="1" tcRequired="0" id="310">
   <objLang code="is" />
   <dicType code="gen" />
   <metaLang code="is" />
-  <title lang="is" xml:space="preserve">ISLEX-orðabókin</title>
-  <title lang="en" xml:space="preserve">The ISLEX Dictionary</title>
-  <homepage xml:space="preserve">http://islex.is</homepage>
+  <title lang="is" xml:space="preserve">Íslensk orðabók</title>
+  <homepage xml:space="preserve">https://snara.is/</homepage>
 </dictionary>
 
 <dictionary prominence="5" loginRequired="0" tcRequired="0" id="112">
@@ -881,15 +898,6 @@ If you use this, do not forget to attribute the European Dictionary Portal, http
   <title lang="pl">Słownik języka polskiego</title>
   <title lang="en">Dictionary of Polish</title>
   <homepage>http://sjpd.pwn.pl/</homepage>
-</dictionary>
-
-<dictionary prominence="5" loginRequired="0" tcRequired="0" id="57">
-  <objLang code="is" />
-  <dicType code="gen" />
-  <metaLang code="is" />
-  <title lang="is">Stóra orðabókin um íslenska málnotkun</title>
-  <title lang="en">The Big Dictionary of Icelandic Language Use</title>
-  <homepage>https://snara.is/</homepage>
 </dictionary>
 
 <dictionary prominence="5" loginRequired="0" tcRequired="0" id="107">
@@ -1382,6 +1390,16 @@ If you use this, do not forget to attribute the European Dictionary Portal, http
   <metaLang code="nl" />
   <title lang="nl" xml:space="preserve">Elektronische Woordenbank van de Nederlandse dialecten <abbrev xml:space="preserve">eWND</abbrev></title>
   <homepage xml:space="preserve">http://www.meertens.knaw.nl/ewnd/</homepage>
+</dictionary>
+
+<dictionary prominence="7" loginRequired="1" tcRequired="0" id="57">
+  <objLang code="is" />
+  <dicType code="spe" />
+  <dicType code="lrn" />
+  <metaLang code="is" />
+  <title lang="is" xml:space="preserve">Stóra orðabókin um íslenska málnotkun</title>
+  <title lang="en" xml:space="preserve">The Big Dictionary of Icelandic Language Use</title>
+  <homepage xml:space="preserve">https://snara.is/</homepage>
 </dictionary>
 
 <dictionary prominence="9" loginRequired="0" tcRequired="0" id="305">
