@@ -1,6 +1,6 @@
 <dictionaries>
 
-<!--Exported from the European Dictionary Portal on 2017-07-12
+<!--Exported from the European Dictionary Portal on 2017-08-29
 Available under Open Database Licence, http://opendatacommons.org/licenses/odbl/summary/
 If you use this, do not forget to attribute the European Dictionary Portal, http://www.dictionaryportal.eu/-->
 
@@ -146,6 +146,19 @@ If you use this, do not forget to attribute the European Dictionary Portal, http
   <search lang="ga">http://www.focloir.ie/en/search/ei/adv?q=<word /></search>
 </dictionary>
 
+<dictionary prominence="1" loginRequired="0" tcRequired="0" id="108">
+  <objLang code="cy" />
+  <dicType code="gen" />
+  <dicType code="his" />
+  <dicType code="ety" />
+  <metaLang code="cy" />
+  <metaLang code="en" />
+  <title lang="cy" xml:space="preserve">Geiriadur Prifysgol Cymru <abbrev xml:space="preserve">GPC</abbrev></title>
+  <title lang="en" xml:space="preserve">The University of Wales Dictionary of the Welsh Language <abbrev xml:space="preserve">GPC</abbrev></title>
+  <homepage xml:space="preserve">http://geiriadur.ac.uk/gpc/gpc.html</homepage>
+  <search xml:space="preserve">http://geiriadur.ac.uk/gpc/gpc.html?<word /></search>
+</dictionary>
+
 <dictionary prominence="1" loginRequired="0" tcRequired="0" id="155">
   <objLang code="tr" />
   <dicType code="gen" />
@@ -259,7 +272,7 @@ If you use this, do not forget to attribute the European Dictionary Portal, http
   <objLang code="cy" />
   <dicType code="gen" />
   <metaLang code="en" />
-  <title lang="cy" xml:space="preserve">Geiriadur yr Academi</title>
+  <title lang="cy" xml:space="preserve">Geiriadur yr Academi (Saes.-Cym.)</title>
   <title lang="en" xml:space="preserve">The Welsh Academy English-Welsh Dictionary Online</title>
   <homepage xml:space="preserve">http://www.geiriaduracademi.org/</homepage>
 </dictionary>
@@ -351,6 +364,24 @@ If you use this, do not forget to attribute the European Dictionary Portal, http
   <homepage xml:space="preserve">http://ordbok.uib.no/</homepage>
 </dictionary>
 
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="323">
+  <objLang code="bfi" />
+  <dicType code="gen" />
+  <metaLang code="en" />
+  <title lang="en" xml:space="preserve">BSL Signbank</title>
+  <homepage xml:space="preserve">http://bslsignbank.ucl.ac.uk/dictionary/</homepage>
+  <search xml:space="preserve">http://bslsignbank.ucl.ac.uk/dictionary/search/?query=<word /></search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="322">
+  <objLang code="pso" />
+  <dicType code="gen" />
+  <metaLang code="pl" />
+  <title lang="pso" xml:space="preserve">CDPSL</title>
+  <title lang="en" xml:space="preserve">The Corpus-based Dictionary of Polish Sign Language</title>
+  <homepage xml:space="preserve">http://www.slownikpjm.uw.edu.pl/en/</homepage>
+</dictionary>
+
 <dictionary prominence="5" loginRequired="0" tcRequired="0" id="186">
   <objLang code="fr" />
   <dicType code="gen" />
@@ -393,6 +424,14 @@ If you use this, do not forget to attribute the European Dictionary Portal, http
   <title lang="en">Dictionary of the Catalan language</title>
   <homepage>http://dlc.iec.cat/</homepage>
   <search>http://dlc.iec.cat/results.asp?txtEntrada=<word />&amp;operEntrada=0</search>
+</dictionary>
+
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="324">
+  <objLang code="ca" />
+  <dicType code="gen" />
+  <metaLang code="ca" />
+  <title lang="ca" xml:space="preserve">diccionari.cat</title>
+  <homepage xml:space="preserve">http://www.diccionari.cat/</homepage>
 </dictionary>
 
 <dictionary prominence="5" loginRequired="0" tcRequired="0" id="185">
@@ -529,6 +568,18 @@ If you use this, do not forget to attribute the European Dictionary Portal, http
   <homepage>http://houaiss.uol.com.br/</homepage>
 </dictionary>
 
+<dictionary prominence="5" loginRequired="1" tcRequired="0" id="312">
+  <objLang code="cy" />
+  <dicType code="gen" />
+  <dicType code="por" />
+  <metaLang code="cy" />
+  <metaLang code="en" />
+  <title lang="cy" xml:space="preserve">Gweiadur</title>
+  <title lang="en" xml:space="preserve">A Welsh-English / English-Welsh on-line dictionary</title>
+  <homepage xml:space="preserve">http://www.gweiadur.com</homepage>
+  <search xml:space="preserve">http://www.gweiadur.com/en/Pawb/<word /></search>
+</dictionary>
+
 <dictionary prominence="5" loginRequired="0" tcRequired="0" id="11">
   <objLang code="hr" />
   <dicType code="gen" />
@@ -577,9 +628,10 @@ If you use this, do not forget to attribute the European Dictionary Portal, http
   <objLang code="fi" />
   <dicType code="gen" />
   <metaLang code="fi" />
-  <title lang="fi">Kielitoimiston sanakirja</title>
-  <title lang="en">Dictionary of Contemporary Finnish</title>
-  <homepage>http://www.kielitoimistonsanakirja.fi</homepage>
+  <title lang="fi" xml:space="preserve">Kielitoimiston sanakirja</title>
+  <title lang="en" xml:space="preserve">Dictionary of Contemporary Finnish</title>
+  <homepage xml:space="preserve">http://www.kielitoimistonsanakirja.fi</homepage>
+  <search xml:space="preserve">http://www.kielitoimistonsanakirja.fi/netmot.exe?SearchWord=<word />&amp;dic=1&amp;page=results&amp;UI=fi80&amp;Opt=1</search>
 </dictionary>
 
 <dictionary prominence="5" loginRequired="0" tcRequired="0" id="91">
@@ -1042,6 +1094,27 @@ If you use this, do not forget to attribute the European Dictionary Portal, http
   <homepage xml:space="preserve">https://www.vandale.nl/inloggen</homepage>
 </dictionary>
 
+<dictionary prominence="7" loginRequired="0" tcRequired="0" id="320">
+  <objLang code="gl" />
+  <dicType code="gen" />
+  <metaLang code="gl" />
+  <title lang="gl" xml:space="preserve">Digalego</title>
+  <homepage xml:space="preserve">http://digalego.xunta.gal/digalego/Html/index.php</homepage>
+</dictionary>
+
+<dictionary prominence="7" loginRequired="0" tcRequired="0" id="311">
+  <objLang code="cy" />
+  <dicType code="por" />
+  <dicType code="gen" />
+  <dicType code="lrn" />
+  <metaLang code="cy" />
+  <metaLang code="en" />
+  <title lang="cy" xml:space="preserve">Geiriadur Bangor</title>
+  <title lang="en" xml:space="preserve">Online version of Cysgair and the Termiadur Addysg</title>
+  <homepage xml:space="preserve">http://geiriadur.bangor.ac.uk/</homepage>
+  <search xml:space="preserve">http://geiriadur.bangor.ac.uk/#<word /></search>
+</dictionary>
+
 <dictionary prominence="7" loginRequired="0" tcRequired="0" id="304">
   <objLang code="nl" />
   <dicType code="gen" />
@@ -1049,6 +1122,36 @@ If you use this, do not forget to attribute the European Dictionary Portal, http
   <title lang="nl" xml:space="preserve">Van Dale (free)</title>
   <homepage xml:space="preserve">http://www.vandale.nl/opzoeken</homepage>
   <search xml:space="preserve">http://www.vandale.nl/opzoeken?pattern=<word />&amp;lang=nn</search>
+</dictionary>
+
+<dictionary prominence="8" loginRequired="0" tcRequired="0" id="321">
+  <objLang code="pt" />
+  <dicType code="gen" />
+  <metaLang code="pt" />
+  <title lang="pt" xml:space="preserve">Dicionário Priberam da Língua Portuguesa</title>
+  <homepage xml:space="preserve">https://www.priberam.pt/dlpo/</homepage>
+  <search xml:space="preserve">https://www.priberam.pt/dlpo/<word /></search>
+</dictionary>
+
+<dictionary prominence="8" loginRequired="0" tcRequired="0" id="319">
+  <objLang code="nl" />
+  <dicType code="por" />
+  <metaLang code="nl" />
+  <title lang="nl" xml:space="preserve">ENSIE</title>
+  <homepage xml:space="preserve">https://www.ensie.nl</homepage>
+  <search xml:space="preserve">https://www.ensie.nl/betekenis/?q=<word /></search>
+</dictionary>
+
+<dictionary prominence="9" loginRequired="0" tcRequired="0" id="318">
+  <objLang code="cy" />
+  <dicType code="gen" />
+  <dicType code="lrn" />
+  <metaLang code="cy" />
+  <metaLang code="en" />
+  <title lang="cy" xml:space="preserve">Geiriadur PCYDDS <abbrev xml:space="preserve">Geiriadur Llambed</abbrev></title>
+  <title lang="en" xml:space="preserve">Welsh-English / English-Welsh On-line Dictionary</title>
+  <homepage xml:space="preserve">http://www.geiriadur.net</homepage>
+  <search xml:space="preserve">http://www.geiriadur.net/index.php?page=ateb&amp;term=<word />&amp;direction=we&amp;type=all&amp;whichpart=exact</search>
 </dictionary>
 
 <dictionary prominence="10" loginRequired="1" tcRequired="0" id="77">
@@ -1357,6 +1460,17 @@ If you use this, do not forget to attribute the European Dictionary Portal, http
   <homepage>http://kaino.kotus.fi/sms</homepage>
 </dictionary>
 
+<dictionary prominence="5" loginRequired="0" tcRequired="0" id="315">
+  <objLang code="cy" />
+  <dicType code="spe" />
+  <metaLang code="cy" />
+  <metaLang code="en" />
+  <title lang="cy" xml:space="preserve">Termau Addysg Uwch y Coleg Cymraeg Cenedlaethol</title>
+  <title lang="en" xml:space="preserve">Coleg Cymraeg Cenedlaethol Terms for Higher Education</title>
+  <homepage xml:space="preserve">http://www.colegcymraeg.ac.uk/cy/adnoddau/termau/</homepage>
+  <search xml:space="preserve">http://www.colegcymraeg.ac.uk/cy/adnoddau/termau/#<word /></search>
+</dictionary>
+
 <dictionary prominence="5" loginRequired="0" tcRequired="0" id="168">
   <objLang code="fr" />
   <dicType code="spe" />
@@ -1402,6 +1516,41 @@ If you use this, do not forget to attribute the European Dictionary Portal, http
   <homepage xml:space="preserve">https://snara.is/</homepage>
 </dictionary>
 
+<dictionary prominence="8" loginRequired="0" tcRequired="0" id="314">
+  <objLang code="cy" />
+  <dicType code="spe" />
+  <metaLang code="cy" />
+  <metaLang code="en" />
+  <title lang="cy" xml:space="preserve">BydTermCymru <abbrev xml:space="preserve">BTC</abbrev></title>
+  <title lang="en" xml:space="preserve">Y porth i adnoddau Gwasanaeth Cyfieithu Llywodraeth Cymru / Portal for the Welsh Government Translation Service’s resources</title>
+  <homepage xml:space="preserve">http://cymraeg.llyw.cymru/btc/?lang=cy</homepage>
+  <search xml:space="preserve">http://cymraeg.llyw.cymru/btc/searchresult?lang=cy&amp;term=<word />&amp;subj=all</search>
+</dictionary>
+
+<dictionary prominence="8" loginRequired="0" tcRequired="0" id="317">
+  <objLang code="cy" />
+  <dicType code="spe" />
+  <metaLang code="cy" />
+  <metaLang code="en" />
+  <title lang="cy" xml:space="preserve">Enwau Rhywogaethau Cymdeithas Edward Llwyd</title>
+  <title lang="en" xml:space="preserve">Names of Species (Cymdeithas Edward Llwyd)</title>
+  <title lang="fr" xml:space="preserve">Noms de species normales (Cymdeithas Edward Llwyd)</title>
+  <homepage xml:space="preserve">http://www.llennatur.com/Drupal7/llennatur/?q=node/6</homepage>
+  <search xml:space="preserve">http://www.llennatur.com/Drupal7/llennatur/?q=node/6#<word /></search>
+</dictionary>
+
+<dictionary prominence="9" loginRequired="0" tcRequired="0" id="313">
+  <objLang code="cy" />
+  <dicType code="spe" />
+  <dicType code="por" />
+  <metaLang code="cy" />
+  <metaLang code="en" />
+  <title lang="cy" xml:space="preserve">Porth Termau Cenedlaethol Cymru</title>
+  <title lang="en" xml:space="preserve">Welsh National Terminology Portal</title>
+  <homepage xml:space="preserve">http://termau.cymru</homepage>
+  <search xml:space="preserve">http://termau.cymru/#<word /></search>
+</dictionary>
+
 <dictionary prominence="9" loginRequired="0" tcRequired="0" id="305">
   <objLang code="nl" />
   <dicType code="spe" />
@@ -1427,6 +1576,17 @@ If you use this, do not forget to attribute the European Dictionary Portal, http
   <homepage>http://www.meertens.knaw.nl/uitleenwoordenbank/</homepage>
 </dictionary>
 
+<dictionary prominence="10" loginRequired="0" tcRequired="0" id="316">
+  <objLang code="cy" />
+  <dicType code="spe" />
+  <metaLang code="cy" />
+  <metaLang code="en" />
+  <title lang="cy" xml:space="preserve">Y Termiadur Addysg</title>
+  <title lang="en" xml:space="preserve">Standardized terminology for the field of education</title>
+  <homepage xml:space="preserve">http://www.termiaduraddysg.org/?page_id=4</homepage>
+  <search xml:space="preserve">http://www.termiaduraddysg.org/?page_id=4#<word /></search>
+</dictionary>
+
 <dictionary prominence="1" loginRequired="0" tcRequired="0" id="92">
   <objLang code="sco" />
   <dicType code="his" />
@@ -1436,18 +1596,6 @@ If you use this, do not forget to attribute the European Dictionary Portal, http
   <title lang="en" xml:space="preserve">Dictionary of the Scots Language <abbrev xml:space="preserve">DOST &amp; SND</abbrev></title>
   <homepage xml:space="preserve">http://www.dsl.ac.uk/</homepage>
   <search xml:space="preserve">http://www.dsl.ac.uk/results/<word /></search>
-</dictionary>
-
-<dictionary prominence="1" loginRequired="0" tcRequired="0" id="108">
-  <objLang code="cy" />
-  <dicType code="his" />
-  <dicType code="gen" />
-  <metaLang code="cy" />
-  <metaLang code="en" />
-  <title lang="cy" xml:space="preserve">Geiriadur Prifysgol Cymru <abbrev xml:space="preserve">GPC</abbrev></title>
-  <title lang="en" xml:space="preserve">The University of Wales Dictionary of the Welsh Language <abbrev xml:space="preserve">GPC</abbrev></title>
-  <homepage xml:space="preserve">http://geiriadur.ac.uk/gpc/gpc.html</homepage>
-  <search xml:space="preserve">http://geiriadur.ac.uk/gpc/gpc.html?<word /></search>
 </dictionary>
 
 <dictionary prominence="1" loginRequired="1" tcRequired="0" id="26">
@@ -1703,10 +1851,10 @@ from Celtic Sources <abbrev xml:space="preserve">DMLCS</abbrev></title>
   <objLang code="da" />
   <dicType code="his" />
   <metaLang code="da" />
-  <title lang="da">Ordbog til det ældre danske sprog</title>
-  <title lang="en">Dictionary of the older Danish Language (1300-1700)</title>
-  <year>1300–1700</year>
-  <homepage>http://www.hist.uib.no/kalkar/</homepage>
+  <title lang="da" xml:space="preserve">Ordbog til det ældre danske Sprog (1300-1700)</title>
+  <title lang="en" xml:space="preserve">Dictionary of the older Danish Language (1300-1700)</title>
+  <year xml:space="preserve">1300–1700</year>
+  <homepage xml:space="preserve">http://kalkarsordbog.dk/forside</homepage>
 </dictionary>
 
 <dictionary prominence="5" loginRequired="0" tcRequired="0" id="22">
