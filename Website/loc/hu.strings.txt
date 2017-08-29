@@ -173,3 +173,6 @@ $lang-tsm	török jelnyelv
 $lang-ukl	ukrán jelnyelv
 $lang-vsv	valenciai jelnyelv
 $lang-ysl	jugoszláv jelnyelv
+
+$lang-lmo	lombard
+$lang-oc	okcitán

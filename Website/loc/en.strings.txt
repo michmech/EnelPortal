@@ -173,3 +173,6 @@ $lang-tsm	Turkish Sign Language
 $lang-ukl	Ukrainian Sign Language
 $lang-vsv	Valencian Sign Language
 $lang-ysl	Yugoslavian Sign Language
+
+$lang-lmo	Lombard
+$lang-oc	Occitan

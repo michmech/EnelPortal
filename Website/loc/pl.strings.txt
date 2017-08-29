@@ -173,3 +173,6 @@ $lang-tsm	turecki język migowy
 $lang-ukl	ukraiński język migowy
 $lang-vsv	walencjański język migowy
 $lang-ysl	jugosłowiański język migowy
+
+$lang-lmo	lombardzki
+$lang-oc	oksytański

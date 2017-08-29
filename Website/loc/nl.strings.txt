@@ -173,3 +173,6 @@ $lang-tsm	Turkse gebarentaal
 $lang-ukl	Oekraïense gebarentaal
 $lang-vsv	Valenciaanse gebarentaal
 $lang-ysl	Joegoslavische gebarentaal
+
+$lang-lmo	Lombardisch
+$lang-oc	Occitaans

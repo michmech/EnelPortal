@@ -173,3 +173,6 @@ $lang-tsm	Langue des Signes de Turquie
 $lang-ukl	Langue des Signes d'Ukraine
 $lang-vsv	Langue des Signes de la Communauté valencienne
 $lang-ysl	Langue des Signes de Yougoslavie
+
+$lang-lmo	lombard
+$lang-oc	occitan

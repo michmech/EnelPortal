@@ -173,3 +173,6 @@ $lang-tsm	turecký znakový jazyk
 $lang-ukl	ukrajinský znakový jazyk
 $lang-vsv	valencijský znakový jazyk
 $lang-ysl	jugoslávský znakový jazyk
+
+$lang-lmo	lombardština
+$lang-oc	okcitánština

@@ -173,3 +173,6 @@ $lang-tsm	Iaith Arwyddion Twrci
 $lang-ukl	Iaith Arwyddion Ukrain
 $lang-vsv	Iaith Arwyddion Valencia
 $lang-ysl	Iaith Arwyddion Iwgoslafia
+
+$lang-lmo	Lombard
+$lang-oc	Ocsitaneg
