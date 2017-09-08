@@ -1,0 +1,178 @@
+$edp	Eurooppalainen sanakirjaportaali
+$home	Etusivu
+$find	Etsi sanakirja
+$blurb	Leksikografian asiantuntijoiden koostama [Eurooppalainen sanakirjaportaali] auttaa löytämään hyviä eurooppalaisten kielten verkkosanakirjoja. [[Lisää …]]
+$moment	Esittelyssä oleva sanakirja
+$filter	Suodatin
+$objLang	KOHDEKIELI
+$objLangBlurb	Kieli, jota sanakirja kuvaa.
+$metaLang	KUVAUSKIELI
+$metaLangBlurb	Kieli, jolla sanakirjan määritelmät ja selitykset on kirjoitettu. Jos tämä kieli on sama kuin kohdekieli, sanakirja on yksikielinen. Jos tämä kieli on eri kuin kohdekieli, sanakirja on kaksikielinen.
+$dicType	SANAKIRJAN TYYPPI
+$dicTypeBlurb	Millaista sanakirjaa etsitään?
+$anyLang	kaikenkielisiä
+$anyDicType	kaikentyyppisiä
+$search	Haku
+$notyet	Kielet joista toistaiseksi ei ole sanakirjaa
+$signlangs	viittomakielet
+$toomany	Hakusi tuloksena on yli 50 sanakirjaa. Listassa on näistä 50 ensimmäistä.
+$nojoy	Portaalissa ei ole hakuasi vastaavaa sanakirjaa.
+$anglo	Valitettvasti tämä tieto on saatavilla vain englanniksi.
+$about-more	Katso myös
+$top	Ylös
+$toc	Tällä sivustolla
+$foot1	Eurooppalainen sanakirjaportaali on syntynyt [European Network of e-Lexicography] &#8209;hankkeen aloitteesta. 
+$foot2	[COST] saa tukea EU:n puiteohjelmasta [[Horizon 2020]].
+$foot3	Onko sanakirjasi Eurooppalaisessa sanakirjaportaalissa? Jos on, lisää sanakirjaan [hyväksymisleimamme]
+$mbm	Sivuston tuottaja:
+$ivdnt	Sivuston ylläpitäjä:
+$shots	Ruutukaappaukset:
+$icons	Ikonit:
+$login	Sisältövastaavan kirjautuminen
+$moreDicts	Lisää tämän kielen sanakirjoja
+$loginRequired	VAATII KIRJAUTUMISEN
+$searchIn	HAKU SANAKIRJASTA
+$tsRequired	Kun käyt sivustolla ensimmäisen kerran, sinua pyydetään hyväksymään sivuston käyttöehdot.
+$language	kieli
+$searchbox	Haku useasta sanakirjasta
+$included	Hakuun valitut sanakirjat
+$about1	Sanakirjat muodostavat tärkeän osan nykyistä kansainvälistä ja monikielistä maailmaa. Eurooppalainen sanakirjaportaali on sivusto, josta voi etsiä laadukkaita eurooppalaisten kielten verkkosanakirjoja. Portaali palvelee niin tutkijoita, kääntäjiä, kieltenopettajia kuin kielten harrastajiakin. Portaalin sanakirjat on valinnut sanakirjantoimittajista koostuva [European Network of e-Lexicography] &#8209;hankkeen asiantuntijaryhmä, joka noudattaa selvästi määriteltyjä [[valintakriteereitä]].
+$prop1	Tiedätkö  sanakirjan, jonka pitäisi olla mukana portaalissa? [Kerro meille siitä!]
+$prop2	Portaalin sisältövastavat tarkistavat lähetetyt ehdotukset. Jos ehdottamasi sanakirja täyttää laatuvaatimukset, se sisällytetään Eurooppalaiseen sanakirjaportaaliin. Ilmoitamme siinä tapauksessa sanakirjasivuston omistajalle, että sivustolle voi lisätä [hyväksymisleimamme].
+$error1	Virhe
+$error2	On valitettavasti sattunut virhe. Jos ongelma toistuu, [ilmoita siitä verkkosivun ylläpitäjälle].
+$thanks	Kiitos!
+$backhome	Takaisin etusivulle
+$select	valitse
+$prop-name	SANAKIRJAN NIMI
+$prop-name-error	Nimikenttä ei saa jäädä tyhjäksi.
+$prop-url	SANAKIRJAN VERKKO-OSOITE
+$prop-url-error	Verkko-osoitekenttä ei saa jäädä tyhjäksi. Kentän alussa pitää olla "http://" tai "https://".
+$objLang-error	Valitse kieli.
+$prop-email	SÄHKÖPOSTIOSOITTEESI
+$prop-email-legend	Otamme yhteyttä, jos tarvitsemme lisätietoja. Sähköpostiosoitettasi ei välitetä kolmansille osapuolille.
+$prop-email-error	Osoitekenttä ei saa jäädä tyhjäksi. Osoitteen pitää olla toimiva.
+$prop-comments	KOMMENTTEJA (VAPAAEHTOISTA)
+$prop-crit	Varmista, että sanakirja täyttää [portaalin valintakriteerit], ennen kuin ehdotat sen lisäämistä Eurooppalaiseen sanakirjaportaaliin.
+$submit	Lähetä
+$about-info	Lisätietoa
+$about-prop	Ehdota sanakirjaa
+$about-crit	Valintakriteerit
+$about-crtr	Ohjeet sisältövastaaville
+$about-stmp	Hyväksymisleima
+$about-dnld	Lataus
+$gen-name	Yleissanakirjat
+$lrn-name	Oppijan sanakirjat
+$ety-name	Etymologiset sanakirjat
+$spe-name	Erikoissanakirjat
+$his-name	Historialliset sanakirjat
+$por-name	Portaalit ja kokoomasivut
+$gen-legend	[Yleissankirjat] kuvaavat nykykielen sanastoa. Yleissanakirjoja tehdään äidinkielisille ja kieltä sujuvasti hallitseville käyttäjille.
+$lrn-legend	[Oppijan sanakirjoja] tehdään henkilöille, jotka oppivat kieltä toisena tai vieraana kielenä.
+$ety-legend	[Etymologisissa sanakirjoissa] selitetään sanojen alkuperää.
+$spe-legend	[Erikoissanakirjat] sisältävät sanaston tietyn osan, esim. uudissanat tai fraasit, tai ne kuvaavat tietyn murteen tai kielivariantin sanastoa. 
+$his-legend	[Historialliset sanakirjat] kuvaavat tiettyjä aikaisempia vaiheita kielen kehityksessä.
+$por-legend	[Portaalit ja kokoomasivut] ovat verkkosivuja, joista on pääsy useampaan kuin yhteen sanakirjaan ja joiden kautta voi hakea yhtä aikaa eri sanakirjoista.
+$lang-sq	albania
+$lang-hy	armenia
+$lang-rup	aromania
+$lang-ast	asturia
+$lang-eu	baski
+$lang-bg	bulgaria
+$lang-ca	katalaani
+$lang-kw	korni
+$lang-hr	kroatia
+$lang-cs	tšekki
+$lang-da	tanska
+$lang-nl	hollanti
+$lang-en	englanti
+$lang-et	viro
+$lang-fo	fääri
+$lang-fi	suomi
+$lang-fr	ranska
+$lang-gl	galicia
+$lang-de	saksa
+$lang-el	kreikka
+$lang-he	heprea
+$lang-hu	unkari
+$lang-is	islanti
+$lang-ga	iiri
+$lang-it	italia
+$lang-krl	karjala
+$lang-kom	komi
+$lang-la	latina
+$lang-lv	latvia
+$lang-lt	liettua
+$lang-lb	luxemburg
+$lang-mk	makedonia
+$lang-mt	malta
+$lang-gv	manksi
+$lang-mord	mordva
+$lang-no	norja
+$lang-pl	puola
+$lang-pt	portugali
+$lang-ro	romania
+$lang-rm	retoromaani
+$lang-ru	venäjä
+$lang-smi	saame
+$lang-sc	sardi
+$lang-sco	skotti
+$lang-gd	gaeli
+$lang-sr	serbia
+$lang-sk	slovakki
+$lang-sl	sloveeni
+$lang-wen	sorbi
+$lang-es	espanja
+$lang-sv	ruotsi
+$lang-tr	turkki
+$lang-uk	ukraina
+$lang-vep	vepsä
+$lang-cy	kymri
+$lang-fy	friisi
+$lang-yi	jiddiš
+$lang-br	bretoni
+$lang-sqk	albanialainen viittomakieli
+$lang-aen	armenialainen viittomakieli
+$lang-asq	itävaltalainen viittomakieli
+$lang-bfi	brittiläinen viittomakieli
+$lang-bqn	bulgarialainen viittomakieli
+$lang-csc	katalonialainen viittomakieli
+$lang-csq	kroatialainen viittomakieli
+$lang-cse	tšekkiläinen viittomakieli
+$lang-dsl	tanskalainen viittomakieli
+$lang-eso	virolainen viittomakieli
+$lang-fss	suomenruotsalainen viittomakieli
+$lang-fse	suomalainen viittomakieli
+$lang-vgt	flaamilainen viittomakieli
+$lang-sfb	belgianranskalainen viittomakieli
+$lang-fsl	ranskalainen viittomakieli
+$lang-gsg	saksalainen viittomakieli
+$lang-gss	kreikkalainen viittomakieli
+$lang-hsh	unkarilainen viittomakieli
+$lang-icl	islantilainen viittomakieli
+$lang-isg	irlantilainen viittomakieli
+$lang-isr	israelilainen viittomakieli
+$lang-ise	italialainen viittomakieli
+$lang-lsl	latvialainen viittomakieli
+$lang-lls	liettualainen viittomakieli
+$lang-mdl	maltalainen viittomakieli
+$lang-vsi	moldovalainen viittomakieli
+$lang-nsl	norjalainen viittomakieli
+$lang-pso	puolalainen viittomakieli
+$lang-psr	portugalilainen viittomakieli
+$lang-rms	romanialainen viittomakieli
+$lang-rsl	venäläinen viittomakieli
+$lang-dse	alankomaalainen viittomakieli
+$lang-svk	slovakialainen viittomakieli
+$lang-ssp	espanjalainen viittomakieli
+$lang-swl	ruotsalainen viittomakieli
+$lang-ssr	sveitsinranskalainen viittomakieli
+$lang-sgg	sveitsinsaksalainen viittomakieli
+$lang-slf	sveitsinitalialainen viittomakieli
+$lang-tsm	turkkilainen viittomakieli
+$lang-ukl	ukrainalainen viittomakieli
+$lang-vsv	valencialainen viittomakieli
+$lang-ysl	jugoslavialainen viittomakieli
+
+$lang-lmo	lombardi
+$lang-oc	oksitaani

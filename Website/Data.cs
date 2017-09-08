@@ -88,6 +88,8 @@ namespace Website
 			this.languages.Add(new Language("hu", "Hungarian", "magyar", true));
 			this.languages.Add(new Language("nl", "Dutch", "Nederlands", true));
 			this.languages.Add(new Language("pl", "Polish", "polski", true));
+			this.languages.Add(new Language("sco", "Scots", "Scots", true));
+			this.languages.Add(new Language("fi", "Finnish", "suomi", true));
 
 			this.languages.Add(new Language("sq", "Albanian", "", false));
 			this.languages.Add(new Language("hy", "Armenian", "", false));
@@ -101,7 +103,6 @@ namespace Website
 			this.languages.Add(new Language("da", "Danish", "", false));
 			this.languages.Add(new Language("et", "Estonian", "", false));
 			this.languages.Add(new Language("fo", "Faroese", "", false));
-			this.languages.Add(new Language("fi", "Finnish", "", false));
 			this.languages.Add(new Language("gl", "Galician", "", false));
 			this.languages.Add(new Language("de", "German", "Deutsch", false));
 			this.languages.Add(new Language("he", "Hebrew", "", false));
@@ -124,7 +125,6 @@ namespace Website
 			this.languages.Add(new Language("ru", "Russian", "", false));
 			this.languages.Add(new Language("smi", "Sami", "", false));
 			this.languages.Add(new Language("sc", "Sardinian", "", false));
-			this.languages.Add(new Language("sco", "Scots", "", false));
 			this.languages.Add(new Language("gd", "Scottish Gaelic", "", false));
 			this.languages.Add(new Language("sr", "Serbian", "", false));
 			this.languages.Add(new Language("sk", "Slovak", "", false));

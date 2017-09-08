@@ -1,0 +1,178 @@
+$edp	European Dictionar Portal	
+$home	Hame	
+$find	Find a Dictionar	
+$blurb	The European Dictionar Portal, curated by expairts intae [European Network of e-Lexicography], is yer guide tae guid oanline dictionars o European languages 	
+$moment	Dictionars o the meenit	
+$filter	Filter	
+$objLang	Oabject Language	
+$objLangBlurb	The  language the dictionar describes; the language the dictionar is aboot	
+$metaLang	METALANGAUGE	
+$metaLangBlurb	The language in which the dictionar gies definitions an explanations. If the same as oabject language, then the dictionar is monolingual. If different the dictionar is bilingual	
+$dicType	GENRE	
+$dicTypeBlurb	Whit kinna dictionar are ye luikin fur?	
+$anyLang	ony language	
+$anyDicType	ony genre	
+$search	Luik fur	
+$notyet	Languages wi nae dictionars yet	
+$signlangs	Sign languages	
+$toomany	Ower 50 dictionars match yer criteria. Only the first 50 are listit here	
+$nojoy	Sorry, we hae nae dictionars that match yer criteria.	
+$anglo	Oor apologies, this content is only available in English.	
+$about-more	See also	
+$top	Tap	
+$toc	Oan this website	
+$foot1	The European Dictionar Portal is an initiative o the {European Network o e-Lexicography]	
+$foot2	[COST] is supportit by the EU Framework Programme [[Horizon 2020]]	
+$foot3	Is yer dictionar in the European Dictionar Portal? Display oor [stamp o approval]	
+$mbm	Website built by	
+$ivdnt	Hosted by	
+$shots	Screenshots provided by	
+$icons	Icons by	
+$login	Curator login	
+$moreDicts	Mair dictionars in this language	
+$loginRequired	LOGIN WANTIT	
+$searchIn	SEARCH IN	
+$tsRequired	This website will speir at ye tae accep thir terms an condeetions oan yer first veesit	
+$language	language	
+$searchbox	Luik in mair nor yin dictionars	
+$included	Included dictionars	
+$about1	Dictionars are an important pairt o life in the day's international, multilingual warld. The European Dictionar Portal is here tae help ye fin yer wey tae guid, sicker oanline dictionars o European languages, regairdless o whither yer an academic, translator, a language dominie or juist a language enthusiast. Aw dictionars listit here hae been haund picked by curators fae the [European Network o e-Lexicography] whae are expairt lexicographers thaimsels.	
+$prop1	Div ye ken a dictionar that suld be here? [Tell us aboot it!]	
+$prop2	Yer submission will be reviewed by yin o oor curators an, if thocht richt, the dictionar will be includit in the European Dictionar Portal. The website owner will be invitit tae display a [stamp o approval] oan thir website.	
+$error1	Error	
+$error2	Oor apologies, it seem that an error has occurred. If this problem persists please [e-mail the website administrator] tae report it.	
+$thanks	Thank you	
+$backhome	Back tae hame page	
+$select	select	
+$prop-name	DICTIONAR NAME	
+$prop-name-error	The name must no be empty.	
+$prop-url	DICTIONAR URL	
+$prop-url-error	The URL must no be empty an must stert wi "http://" or "https://"	
+$objLang-error	Ye need tae select a language.	
+$prop-email	YER E-MAIL ADDRESS	
+$prop-email-legend	We will contact ye if we want mair information. We'll no share yer address wi onybody.	
+$prop-email-error	The address must no be empty and must be a valid-email address.	
+$prop-comments	COMMENTS (OPTIONAL)	
+$prop-crit	Afore ye submit the dictionar please mak shair it complies wi the European Dictionar Portal's [criteria fur inclusion]	
+$submit	Submit	
+$about-info	Aboot	
+$about-prop	Suggest a dictionar	
+$about-crit	Criteria fur inclusion	
+$about-crtr	Curator's manual	
+$about-stmp	Stamp o approval	
+$about-dnld	Doonload	
+$gen-name	General dictionars	
+$lrn-name	Learner's dictionars	
+$ety-name	Etymological dictionars	
+$spe-name	Dictionars oan special topics	
+$his-name	Historical dictionars	
+$por-name	Portals an aggregators	
+$gen-legend	[General dictionars] are dictionars that document contemporary vocabulary an are intendit for everyday  reference by native and fluent speakers.	
+$lrn-legend	[Learner's dictionars] are intendit for folk whae are learning the language as a second language.	
+$ety-legend	[Etymological dictionars] are dictionars whit explain the origins o wirds.	
+$spe-legend	[Dictionars oan special topics] are dictionars whit focus oan a specific subset o the vocabulary [such as new wirds or phrasal verbs] or whit focus oan a specific dialect or variant o a language.	
+$his-legend	[Historical dictionars] are dictionars whit document previous historical states o the language.	
+$por-legend	[Portals an aggregators] are websites that provide access tae mair nor yin dictionar an allow ye tae luik at thaim aw at yince.	
+$lang-sq	Albanian	
+$lang-hy	Armenian	
+$lang-rup	Aromanian	
+$lang-ast	Asturian	
+$lang-eu	Basque	
+$lang-bg	Bulgarian	
+$lang-ca	Catalan	
+$lang-kw	Cornish	
+$lang-hr	Croatian	
+$lang-cs	Czech	
+$lang-da	Danish	
+$lang-nl	Dutch	
+$lang-en	English	
+$lang-et	Estonian	
+$lang-fo	Faroese	
+$lang-fi	Finnish	
+$lang-fr	French	
+$lang-gl	Galician	
+$lang-de	German	
+$lang-el	Greek	
+$lang-he	Hebrew	
+$lang-hu	Hungarian	
+$lang-is	Icelandic	
+$lang-ga	Irish	
+$lang-it	Italian	
+$lang-krl	Karelian	
+$lang-kom	Komi	
+$lang-la	Latin	
+$lang-lv	Latvian	
+$lang-lt	Lithuanian	
+$lang-lb	Luxembourgish	
+$lang-mk	Macedonian	
+$lang-mt	Maltese	
+$lang-gv	Manx	
+$lang-mord	Mordvinian	
+$lang-no	Norwegian	
+$lang-pl	Polish	
+$lang-pt	Portuguese	
+$lang-ro	Romanian	
+$lang-rm	Romansh	
+$lang-ru	Russian	
+$lang-smi	Sami	
+$lang-sc	Sardinian	
+$lang-sco	Scots	
+$lang-gd	Scottish Gaelic	
+$lang-sr	Serbian	
+$lang-sk	Slovak	
+$lang-sl	Slovene	
+$lang-wen	Sorbian	
+$lang-es	Spanish	
+$lang-sv	Swedish	
+$lang-tr	Turkish	
+$lang-uk	Ukrainian	
+$lang-vep	Vepsian	
+$lang-cy	Welsh	
+$lang-fy	Frisian	
+$lang-yi	Yiddish	
+$lang-br	Breton	
+$lang-sqk	Albanian Sign Language	
+$lang-aen	Armenian Sign Language	
+$lang-asq	Austrian Sign Language	
+$lang-bfi	British Sign Language	
+$lang-bqn	Bulgarian Sign Language	
+$lang-csc	Catalan Sign Language	
+$lang-csq	Croatia Sign Language	
+$lang-cse	Czech Sign Language	
+$lang-dsl	Danish Sign Language	
+$lang-eso	Estonian Sign Language	
+$lang-fss	Finland-Swedish Sign Language	
+$lang-fse	Finnish Sign Language	
+$lang-vgt	Flemish Sign Language	
+$lang-sfb	French Belgian Sign Language	
+$lang-fsl	French Sign Language	
+$lang-gsg	German Sign Language	
+$lang-gss	Greek Sign Language	
+$lang-hsh	Hungarian Sign Language	
+$lang-icl	Icelandic Sign Language	
+$lang-isg	Irish Sign Language	
+$lang-isr	Israeli Sign Language	
+$lang-ise	Italian Sign Language	
+$lang-lsl	Latvian Sign Language	
+$lang-lls	Lithuanian Sign Language	
+$lang-mdl	Maltese Sign Language	
+$lang-vsi	Moldova Sign Language	
+$lang-nsl	Norwegian Sign Language	
+$lang-pso	Polish Sign Language	
+$lang-psr	Portuguese Sign Language	
+$lang-rms	Romanian Sign Language	
+$lang-rsl	Russian Sign Language	
+$lang-dse	Sign Language of the Netherlands	
+$lang-svk	Slovak Sign Language	
+$lang-ssp	Spanish Sign Language	
+$lang-swl	Swedish Sign Language	
+$lang-ssr	Swiss-French Sign Language	
+$lang-sgg	Swiss-German Sign Language	
+$lang-slf	Swiss-Italian Sign Language	
+$lang-tsm	Turkish Sign Language	
+$lang-ukl	Ukrainian Sign Language	
+$lang-vsv	Valencian Sign Language	
+$lang-ysl	Yugoslavian Sign Language	
+
+$lang-lmo	Lombard
+$lang-oc	Occitan
