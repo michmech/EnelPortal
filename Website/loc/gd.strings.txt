@@ -1,0 +1,178 @@
+$edp	Portal nam Faclairean Eòrpach	
+$home	Dhachaigh	
+$find	Lorg faclair	
+$blurb	Tha Portal nam Faclairean Eòrpach air a ghleidheadh le eòlaichean ann an [Lìonra Eòrpach Faclaireachd-lìn]. Thèid do stiùireadh an seo tro dheagh fhaclairean lìn nan cànanan Eòrpach. [[Tuilleadh fios...]]	
+$moment	Faclair an latha	
+$filter	Sìolachan	
+$objLang	CÀNAN CUSPAIREACH	
+$objLangBlurb	An cànan a thathar a' mìneachadh san fhaclair; cànan an fhaclair.	
+$metaLang	MEATA-CHÀNAN	
+$metaLangBlurb	An cànan anns a bheilear a' mìneachadh nam faclan. 'S e faclair aon-chànanach a th' ann ma tha e co-ionnan ris a' chànan chuspaireach. 'S e faclair dà-chànanach a th' ann mas e cànan eile a th' ann.	
+$dicType	SEÒRSA	
+$dicTypeBlurb	Dè an seòrsa faclair a tha thu a' lorg?	
+$anyLang	cànan sam bith	
+$anyDicType	seòrsa sam bith	
+$search	Lorg	
+$notyet	Cànanan aig nach eil faclairean fhathast	
+$signlangs	Cànanan-soidhnidh	
+$toomany	Tha còrr is 50 faclair a' freagairt na tha thu a' lorg. Chan eil ach a' chiad 50 gan taisbeanadh an seo.	
+$nojoy	Tha sinn duilich ach chan eil faclair sam bith a' freagairt na tha thu a' sireadh.	
+$anglo	Tha sinn duilich ach chan eil an t-susbaint seo ri fhaighinn ach ann am Beurla a-mhàin.	
+$about-more	Faic cuideachd	
+$top	Bàrr	
+$toc	Air an làraich-lìn seo	
+$foot1	Tha Portal nam Faclairean Eòrpach na iomairt aig [Lìonra Eòrpach Faclaireachd-lìn].	
+$foot2	Tha Prògram Frèama an AE [[Horizon 2020]] a' cumail taic ri [COST].	
+$foot3	A bheil am faclair agadsa ann am Portal nam Faclairean Eòrpach? Taisbein [an suaicheantas againn]	
+$mbm	Làrach-lìn air a cruthachadh le	
+$ivdnt	Glèidhte le	
+$shots	Dealbhan-sgrìon le	
+$icons	Ìomhaighean le	
+$login	Login neach-gleidhidh	
+$moreDicts	Tuilleadh fhaclairean sa chànan seo	
+$loginRequired	FEUMAR LOGADH A-STEACH	
+$searchIn	RANNSAICH ANN AN	
+$tsRequired	Iarraidh an làrach-lìn seo ort gabhail ri an cuid riaghailtean air a' chiad tadhal agad.	
+$language	cànan	
+$searchbox	Lorg ann an caochladh fhaclairean	
+$included	Faclairean na lùib	
+$about1	Tha faclairean air leth cudromach ann an saoghal eadar-nàiseanta, ioma-cànanach an latha an-diugh. Tha Portal nam Faclairean Eòrpach ann airson do chuideachadh agus airson faclairean lìn math earbsach na h-Eòrpa a lorg, co-dhiù is e sgoilear, eadar-theangaire, tidsear cànain no cuideigin le dealas airson chànanan a th' annad. Chaidh gach faclair an seo a thaghadh le luchd-gleidhidh [Lìonra Eòrpach Faclaireachd-lìn] aig a bheil sàr eòlas air faclaireachd agus a bhios a' cumail ri [[prionnsapalan]] stèidhichte nuair a nithear co-dhùnadh air na faclairean a bhithear a' cleachdadh. 	
+$prop1	A bheil faclair nach eil ann a bu chòir a bhith ann? [Innis dhuinn mu dheidhinn!]	
+$prop2	Thèid am moladh agad a sgrùdadh le neach-gleidhidh agus, ma thathar ga mheas freagarrach, thèid a chur an lùib nam faclairean eile ann am Portal nam Faclairean Eòrpach. Thèid iarraidh air an neach leis a bheil an làrach-lìn [an suaicheantas againn] a chur air an làraich.	
+$error1	Mearachd	
+$error2	Tha sinn duilich ach tha e coltach gu bheil mearachd ann. Ma leanas a' mhearachd seo nach cuir thu [post-d gu riaghladair na làraich-lìn] airson a thogail.	
+$thanks	Tapadh leat	
+$backhome	Air ais don duilleig-dhachaigh	
+$select	tagh	
+$prop-name	AINM FACLAIR	
+$prop-name-error	Feumar ainm a chur a-steach.	
+$prop-url	URL FACLAIR	
+$prop-url-error	Feumar URL a chur a-steach agus e a' tòiseachadh le "http://" no "https://".	
+$objLang-error	Feumaidh tu cànan a thaghadh.	
+$prop-email	AN SEÒLADH PUIST-D AGAD	
+$prop-email-legend	Leigidh sinn fios ma bhios barrachd fiosrachaidh a dhìth oirnn. Cha sgaoil sinn an seòladh agad ann an dòigh sam bith. 	
+$prop-email-error	Feumar seòladh a chur a-steach a tha làithreach agus ag obrachadh. 	
+$prop-comments	BEACHDAN (ROGHAINNEIL)	
+$prop-crit	Mus cuir thu faclair thugainn, dèan cinnteach gu bheil e a' freagairt ri [prionnsapalan] Phortal nam Faclairean Eòrpach. 	
+$submit	Cuir thugainn	
+$about-info	Mu dheidhinn	
+$about-prop	Mol faclair	
+$about-crit	Prionnsapalan airson a chur ris a' phortal. 	
+$about-crtr	Leabhar-iùil an neach-gleidhidh	
+$about-stmp	Suaicheantas aonta	
+$about-dnld	Luchdaich a-nuas	
+$gen-name	Faclairean coitcheann	
+$lrn-name	Faclairean do luchd-ionnsachaidh	
+$ety-name	Faclair freumh-fhaclach	
+$spe-name	Faclairean air cuspairean sònraichte	
+$his-name	Faclairean eachdraidheil	
+$por-name	Portalan agus treudaichean	
+$gen-legend	 'S e [faclairean coitcheann] faclairean anns a bheil briathrachas an latha an-diugh ga chlàradh do luchd-labhairt dùthchasach agus luchd-ionnsachaidh fileanta.	
+$lrn-legend	Tha [faclairean luchd-ionnsachaidh] gan dealbhadh a dh'aona-ghnothach do dhaoine a tha ag ionnsachadh a' chànain mar dhàrna cànan.	
+$ety-legend	 'S e [faclairean freumh-fhaclach] faclairean anns a bheil tùsan fhaclan gam mìneachadh. 	
+$spe-legend	 'S e [faclairean air cuspairean sònraichte] faclairean a tha stèidhichte air fo-sheata sònraichte de bhriathrachas (leithid faclan ùra no gnìomhairean fràsail) no a tha stèidhichte air dualchainnt shònraichte.	
+$his-legend	 'S e [faclairean eachdraidheil] faclairean anns a bheil mìneachadh de staidean eachdraidheil a' chànain.	
+$por-legend	 'S e [portalan agus treudaichean] làraichean-lìn a leigeas leat còrr is aon fhaclair a chleachdadh agus a h-uile fear a rannsachadh mar-aon.	
+$lang-sq	Albàinis	
+$lang-hy	Airmeinis	
+$lang-rup	Aromànais	
+$lang-ast	Astùrais	
+$lang-eu	Basgais	
+$lang-bg	Bulgarais	
+$lang-ca	Catlanais	
+$lang-kw	Còrnais	
+$lang-hr	Cròthaisis	
+$lang-cs	Seicis	
+$lang-da	Dànais	
+$lang-nl	Duitsis	
+$lang-en	Beurla	
+$lang-et	Eastonais	
+$lang-fo	Fàrothais	
+$lang-fi	Fionnlannais	
+$lang-fr	Frangais	
+$lang-gl	Gailìsis 	
+$lang-de	Gearmailtis	
+$lang-el	Greugais	
+$lang-he	Eabhrais	
+$lang-hu	Ungairis	
+$lang-is	Innis Tìlis	
+$lang-ga	Gàidhlig na h-Èireann	
+$lang-it	Eadailtis	
+$lang-krl	Cairilianais	
+$lang-kom	Comais	
+$lang-la	Laideann	
+$lang-lv	Laitbheis	
+$lang-lt	Liotuainis	
+$lang-lb	Lugsamburgais	
+$lang-mk	Masadonais	
+$lang-mt	Maltais	
+$lang-gv	Gàidhlig Mhanainn	
+$lang-mord	Mordobhais	
+$lang-no	Nirribhis	
+$lang-pl	Pòlainnis	
+$lang-pt	Portagailis	
+$lang-ro	Romàinis	
+$lang-rm	Romains	
+$lang-ru	Ruisis	
+$lang-smi	Sàmais	
+$lang-sc	Sàrdais	
+$lang-sco	Albais	
+$lang-gd	Gàidhlig na h-Alba	
+$lang-sr	Sèirbis	
+$lang-sk	Slòbhaicis	
+$lang-sl	Slòbhainis	
+$lang-wen	Sòrbais	
+$lang-es	Spàinntis	
+$lang-sv	Suainis	
+$lang-tr	Turcais	
+$lang-uk	Ucràinis	
+$lang-vep	Bheapsais	
+$lang-cy	Cuimris	
+$lang-fy	Frìoslannais	
+$lang-yi	Giùdais	
+$lang-br	Breatnais	
+$lang-sqk	Cànan-soidhnidh Albàinia	
+$lang-aen	Cànan-soidhnidh Airmeinia	
+$lang-asq	Cànan-soidhnidh na h-Ostaire	
+$lang-bfi	Cànan-soidhnidh Bhreatainn	
+$lang-bqn	Cànan-soidhnidh na Bulgaire	
+$lang-csc	Cànan-soidhnidh Chatalòinia	
+$lang-csq	Cànan-soidhnidh na Cròthaise	
+$lang-cse	Cànan-soidhnidh na Seice	
+$lang-dsl	Cànan-soidhnidh na Danmhairge 	
+$lang-eso	Cànan-soidhnidh na h-Eastoine	
+$lang-fss	Cànan-soidhnidh Suaineach na Fionnlainn	
+$lang-fse	Cànan-soidhnidh na Fionnlainn	
+$lang-vgt	Cànan-soidhnidh na Flannraise	
+$lang-sfb	Cànan-soidhnidh Frangach na Beilge	
+$lang-fsl	Cànan-soidhnidh na Frainge	
+$lang-gsg	Cànan-soidhnidh na Gearmailte	
+$lang-gss	Cànan-soidhnidh na Grèige	
+$lang-hsh	Cànan-soidhnidh na h-Ungaire	
+$lang-icl	Cànan-soidhnidh Innis Tìle	
+$lang-isg	Cànan-soidhnidh na h-Èireann	
+$lang-isr	Cànan-soidhnidh Iosrael	
+$lang-ise	Cànan-soidhnidh na h-Èadailt	
+$lang-lsl	Cànan-soidhnidh na Laitbhe	
+$lang-lls	Cànan-soidhnidh na Liotuaine	
+$lang-mdl	Cànan-soidhnidh Mhalta	
+$lang-vsi	Cànan-soidhnidh na Moldobha	
+$lang-nsl	Cànan-soidhnidh Nirribhidh	
+$lang-pso	Cànan-soidhnidh na Pòlainne 	
+$lang-psr	Cànan-soidhnidh na Portagaile 	
+$lang-rms	Cànan-soidhnidh Romàinia	
+$lang-rsl	Cànan-soidhnidh na Ruise	
+$lang-dse	Cànan-soidhnidh nan Tìrean Ìsle	
+$lang-svk	Cànan-soidhnidh na Slòbhaice	
+$lang-ssp	Cànan-soidhnidh na Spàinne	
+$lang-swl	Cànan-soidhnidh na Suaine	
+$lang-ssr	Cànan-soidhnidh Frangach na h-Eilbhise	
+$lang-sgg	Cànan-soidhnidh Gearmailteach na h-Eilbhise	
+$lang-slf	Cànan-soidhnidh Eadailteach na h-Eilbhise	
+$lang-tsm	Cànan-soidhnidh na Tuirce	
+$lang-ukl	Cànan-soidhnidh na h-Ucràine	
+$lang-vsv	Cànan-soidhnidh Valencia	
+$lang-ysl	Cànan-soidhnidh na h-Iùgoslaibhe	
+
+$lang-lmo	Lombard
+$lang-oc	Ogsatanais
