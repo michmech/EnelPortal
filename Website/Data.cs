@@ -8,7 +8,7 @@ namespace Website
 	{
 		public static string GetConnectionString()
 		{
-			//return "";
+			//return @"";
 			return @"Data Source=(local)\SQLEXPRESS;Initial Catalog=enelportal;Integrated Security=true;";
 		}
 		public static string GetTrackingCode()
@@ -79,6 +79,7 @@ namespace Website
 			this.languages=new List<Language>();
 			this.languages.Add(new Language("cs", "Czech", "česky", true));
 			this.languages.Add(new Language("cy", "Welsh", "Cymraeg", true));
+			this.languages.Add(new Language("de", "German", "Deutsch", true));
 			this.languages.Add(new Language("el", "Greek", "ελληνικά", true));
 			this.languages.Add(new Language("en", "English", "English", true));
 			this.languages.Add(new Language("es", "Spanish", "español", true));
@@ -105,7 +106,6 @@ namespace Website
 			this.languages.Add(new Language("et", "Estonian", "", false));
 			this.languages.Add(new Language("fo", "Faroese", "", false));
 			this.languages.Add(new Language("gl", "Galician", "", false));
-			this.languages.Add(new Language("de", "German", "Deutsch", false));
 			this.languages.Add(new Language("he", "Hebrew", "", false));
 			this.languages.Add(new Language("is", "Icelandic", "", false));
 			this.languages.Add(new Language("it", "Italian", "", false));

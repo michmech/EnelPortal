@@ -1,0 +1,178 @@
+$edp	Europäisches Wörterbuchportal
+$home	Startseite
+$find	Finde ein Wörterbuch
+$blurb	Das Europäische Wörterbuchportal, kuratiert von Experten und Expertinnen des [Europäischen Netzwerks für e-Lexikographie], ist Ihr Wegweiser für gute Online-Wörterbücher zu europäischen Sprachen. [[Mehr Information …]]
+$moment	Wörterbuch des Augenblicks
+$filter	Filter
+$objLang	OBJEKTSPRACHE
+$objLangBlurb	Die Sprache, die das Wörterbuch beschreibt; die Sprache, von der das Wörterbuch handelt.
+$metaLang	METASPRACHE
+$metaLangBlurb	Die Sprache, in der das Wörterbüch Bedeutungen angibt und Erklärungen liefert. Falls sie dieselbe ist wie die Objektsprache, dann ist das Wörterbuch einsprachig. Falls sie anders ist, dann ist das Wörterbuch zweisprachig.
+$dicType	GENRE
+$dicTypeBlurb	Nach welcher Art Wörterbuch suchen Sie?
+$anyLang	jede Sprache
+$anyDicType	jedes Genre
+$search	Suche
+$notyet	Sprachen, zu denen es noch keine Wörterbücher gibt
+$signlangs	Gebärdensprachen
+$toomany	Mehr als 50 Wörterbücher entsprechen Ihren Kriterien. Nur die ersten 50 sind hier aufgeführt.
+$nojoy	Es tut uns leid, aber wir haben keine Wörterbücher, die Ihren Kriterien entsprechen.
+$anglo	Wir bedauern, aber dieser Inhalt ist nur in englischer Sprache verfügbar.
+$about-more	Weiteres siehe
+$top	zurück
+$toc	Auf dieser Website
+$foot1	Das Europäische Wörterbuchportal ist eine Initiative des [Europäischen Netzwerks für e-Lexikographie]
+$foot2	[COST] wird vom EU-Forschungsrahmenprogramm [[Horizon 2020]] gefördert.
+$foot3	Ist Ihr Wörterbuch über das Europäischen Wörterbuchportal zugänglich? Zeigen Sie unseren [Stamp of approval]
+$mbm	Website erstellt von
+$ivdnt	Hosted von
+$shots	Die Screenshots wurden zur Verfügung gestellt von
+$icons	Icons von
+$login	Kurator-Login
+$moreDicts	Weitere Wörterbücher in dieser Sprache
+$loginRequired	ANMELDUNG ERFORDERLICH
+$searchIn	SUCHE IN
+$tsRequired	Diese Website wird Sie bei Ihrem ersten Besuch auffordern ihren Geschäftsbedingungen zuzustimmen.
+$language	Sprache
+$searchbox	Suche in mehreren Wörterbüchern
+$included	beinhaltet
+$about1	Wörterbücher sind in der heutigen internationalen, mehrsprachigen Welt  ein wichtiger Teil des Lebens. Das Europäische Wörterbuchportal will Ihnen helfen, gute, vertrauenswürdige Online-Wörterbücher für europäische Sprachen zu finden, unabhängig davon, ob Sie Akademikerin, Übersetzer, Sprachlehrerin oder einfach ein Sprachenthusiast sind. Alle hier aufgeführten Wörterbücher wurden sorgfältig ausgewählt von Kuratoren und Kuratorinnen des [Europäischen Netzwerks für e-Lexikographie], selbst erfahrene Lexikographen, die bei ihrer Entscheidung klar festgelegten [[Kriterien]] folgen, welche Wörterbücher aufgenommen werden und welche nicht.
+$prop1	Kennen Sie ein Wörterbuch, das hier aufscheinen sollte? [Erzählen Sie uns davon!]
+$prop2	Ihre Einreichung wird von einem unserer Kuratoren überprüft und, falls als geeignet angesehen, das Wörterbuch in das Europäische Wörterbuchportal aufgenommen. Der Websitebetreiber wird eingeladen werden einen [Stamp of approval] auf seiner Website anzuzeigen.
+$error1	Fehler
+$error2	Wir entschuldigen uns, aber es scheint ein Fehler vorzuliegen. Falls dieses Problem weiterhin besteht, melden Sie es bitte [per E-Mail an den Website-Administrator].
+$thanks	Danke
+$backhome	Zurück zur Startseite
+$select	wählen Sie aus
+$prop-name	WÖRTERBUCHTITEL
+$prop-name-error	Das Feld für den Titel darf nicht leer sein.
+$prop-url	WÖRTERBUCH-URL
+$prop-url-error	Das Feld für die URL darf nicht leer sein und muss mit http:// or https:// beginnen.
+$objLang-error	Sie müssen eine Sprache auswählen.
+$prop-email	IHRE E-MAIL-ADRESSE
+$prop-email-legend	Wir werden mit Ihnen in Kontakt treten, falls wir weitere Informationen benötigen. Wir werden Ihre E-Mail-Adresse nicht an Dritte weitergeben.
+$prop-email-error	Das Feld für die E-Mail-Adresse darf nicht leer sein und muss eine gültige E-Mail-Adresse aufweisen.
+$prop-comments	KOMMENTARE (OPTIONAL)
+$prop-crit	Bevor Sie das Wörterbuch einreichen, überprüfen Sie bitte, ob es die [Aufnahmekriterien des Europäischen Wörterbuchportals] erfüllt.
+$submit	Einreichen
+$about-info	Über uns
+$about-prop	Schlagen Sie ein Wörterbuch vor
+$about-crit	Aufnahmekriterien
+$about-crtr	Handbuch für Kuratoren
+$about-stmp	Stamp of approval
+$about-dnld	Download
+$gen-name	Allgemeine Wörterbücher
+$lrn-name	Schülerwörterbücher
+$ety-name	Etymologische Wörterbücher
+$spe-name	Spezialwörterbücher
+$his-name	Historische Wörterbücher
+$por-name	Portale und Aggregatoren
+$gen-legend	[Allgemeine Wörterbücher] sind Wörterbücher, die den modernen Wortschatz dokumentieren und als Alltagshilfe für Muttersprachler und Personen, die eine Fremdsprache fließend sprechen, gedacht sind.
+$lrn-legend	[Schülerwörterbücher] sind für Personen gedacht, die die Sprache als Zweitsprache erlernen.
+$ety-legend	[Etymologische Wörterbücher] sind Wörterbücher, die die Herkunft von Wörtern erklären.
+$spe-legend	[Spezialwörterbücher] sind Wörterbücher, die einen Schwerpunkt auf eine spezifische Wortschatzgruppe legen (wie z. B. neue Wörter oder Partikelverben) oder die sich auf einen speziellen Dialekt oder eine Variante einer Sprache konzentrieren.
+$his-legend	[Historische Wörterbücher] sind Wörterbücher, die einen früheren historischen Zustand der Sprache dokumentieren.
+$por-legend	[Portale und Aggregatoren] sind Websites, die einen Zugang zu mehreren Wörterbüchern bereitstellen und die Möglichkeit bieten in allen gleichzeitig zu suchen.
+$lang-sq	Albanisch
+$lang-hy	Armenisch
+$lang-rup	Aromunisch
+$lang-ast	Asturisch
+$lang-eu	Baskisch
+$lang-bg	Bulgarisch
+$lang-ca	Katalanisch
+$lang-kw	Kornisch
+$lang-hr	Kroatisch
+$lang-cs	Tschechisch
+$lang-da	Dänisch
+$lang-nl	Niederländisch
+$lang-en	Englisch
+$lang-et	Estnisch
+$lang-fo	Färöisch
+$lang-fi	Finnisch
+$lang-fr	Französisch
+$lang-gl	Galicisch
+$lang-de	Deutsch
+$lang-el	Griechisch
+$lang-he	Hebräisch
+$lang-hu	Ungarisch
+$lang-is	Isländisch
+$lang-ga	Irisch
+$lang-it	Italienisch
+$lang-krl	Karelisch
+$lang-kom	Komi
+$lang-la	Lateinisch
+$lang-lv	Lettisch
+$lang-lt	Littauisch
+$lang-lb	Luxemburgisch
+$lang-mk	Mazedonisch
+$lang-mt	Maltesisch
+$lang-gv	Manx
+$lang-mord	Mordwinisch
+$lang-no	Norwegisch
+$lang-pl	Polnisch
+$lang-pt	Portugiesisch
+$lang-ro	Rumänisch
+$lang-rm	Rätoromanisch
+$lang-ru	Russisch
+$lang-smi	Samisch
+$lang-sc	Sardisch
+$lang-sco	Scots
+$lang-gd	Schottisch-Gälisch
+$lang-sr	Serbisch
+$lang-sk	Slowakisch
+$lang-sl	Slowenisch
+$lang-wen	Sorbisch
+$lang-es	Spanisch
+$lang-sv	Schwedisch
+$lang-tr	Türkisch
+$lang-uk	Ukrainisch
+$lang-vep	Wepsisch
+$lang-cy	Walisisch
+$lang-fy	Friesisch
+$lang-yi	Jiddisch
+$lang-br	Bretonisch
+$lang-sqk	Albanische Gebärdensprache
+$lang-aen	Armenische Gebärdensprache
+$lang-asq	Österreichische Gebärdensprache
+$lang-bfi	Britische Gebärdensprache
+$lang-bqn	Bulgarische Gebärdensprache
+$lang-csc	Katalanische Gebärdensprache
+$lang-csq	Kroatische Gebärdensprache
+$lang-cse	Tschechische Gebärdensprache
+$lang-dsl	Dänische Gebärdensprache
+$lang-eso	Estnische Gebärdensprache
+$lang-fss	Finnisch-Schwedische Gebärdensprache
+$lang-fse	Finnische Gebärdensprache
+$lang-vgt	Flämische Gebärdensprache
+$lang-sfb	Belgisch-Französische Gebärdensprache
+$lang-fsl	Französische Gebärdensprache
+$lang-gsg	Deutsche Gebärdensprache
+$lang-gss	Griechische Gebärdensprache
+$lang-hsh	Ungarische Gebärdensprache
+$lang-icl	Isländische Gebärdensprache
+$lang-isg	Irische Gebärdensprache
+$lang-isr	Israelische Gebärdensprache
+$lang-ise	Italienische Gebärdensprache
+$lang-lsl	Lettische Gebärdensprache
+$lang-lls	Littauische Gebärdensprache
+$lang-mdl	Maltesische Gebärdensprache
+$lang-vsi	Moldawische Gebärdensprache
+$lang-nsl	Norwegische Gebärdensprache
+$lang-pso	Polnische Gebärdensprache
+$lang-psr	Portugiesische Gebärdensprache
+$lang-rms	Rumänische Gebärdensprache
+$lang-rsl	Russische Gebärdensprache
+$lang-dse	Gebärdensprache der Niederlande
+$lang-svk	Slowakische Gebärdensprache
+$lang-ssp	Spanische Gebärdensprache
+$lang-swl	Schwedische Gebärdensprache
+$lang-ssr	Westschweizer Gebärdensprache
+$lang-sgg	Deutschschweizer Gebärdensprache
+$lang-slf	Tessiner Gebärdensprache
+$lang-tsm	Türkische Gebärdensprache
+$lang-ukl	Ukrainische Gebärdensprache
+$lang-vsv	Valencianische Gebärdensprache
+$lang-ysl	Jugoslawische Gebärdensprache
+
+$lang-lmo	Lombardisch
+$lang-oc	Okzitanisch
