@@ -199,6 +199,7 @@ namespace Website
 				ret+="<a class='screenshot' href='"+url+"' target='_blank'><img src='http://img.bitpixels.com/getthumbnail?code=78981&size=120&url="+Server.UrlEncode(url)+"' width='120' height='90'/></a>";
 				ret+="<a class='stamp' href='/"+uilang+"/stamp/'><img src='/stamp-tiny.gif' width='120' height='20'/></a>";
 			}
+			ret+="<div class='permalink'><a href='/"+uilang+"/"+id+"/'>DICTIONARYPORTAL.EU/"+id+"</a></div>";
 			ret+="<div class='titleContainer'><a class='title' target='_blank' href='"+url+"'>";
 			ret+=title.Replace("<abbrev>", "<span class='abbrev'>(").Replace("</abbrev>", ")</span>");
 			if(year!="") ret+=" <span class='year'>"+Server.HtmlEncode(year)+"</span>";
@@ -265,6 +266,15 @@ namespace Website
 			if(url!="") ret+="<span class='url'><a target='_blank' href='"+url+"'>"+url+"</a></span>";
 			if(this.getXmlValue(doc, "/dictionary/@tcRequired", "0")=="1") {
 				ret+="<div class='tcRequired'>"+L("tsRequired")+"</div>";
+			}
+
+			if(Session["email"]!=null && this.pageMode=="catalogListing") {
+				ret+="<div class='cms admininfo'>";
+				ret+="<table>";
+				ret+="<tr><td><span class='dot small'></span></td><td>created</td><td>2017-03-05</td><td>valselob@gmail.com</td></tr>";
+				ret+="<tr><td><span class='dot small'></span></td><td>updated</td><td>2017-03-05</td><td>valselob@gmail.com</td></tr>";
+				ret+="</table>";
+				ret+="</div>";
 			}
 
 			int subCount=doc.SelectNodes("/dictionary/dictionary").Count;

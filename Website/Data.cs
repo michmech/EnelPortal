@@ -185,7 +185,11 @@ namespace Website
 
 			
 			if(uilang!="") {
-				foreach(Language l in this.languages) l.name=this.getString("lang-"+l.code);
+				//Localize language names into the UI language:
+				foreach(Language l in this.languages) {
+					string locname=this.getString("lang-"+l.code);
+					if(!locname.StartsWith("$")) l.name=this.getString("lang-"+l.code); //use default name (= English name) if no localized name is available
+				}
 			}
 
 			//StreamWriter writer = new StreamWriter(server.MapPath("/loc/" + uilang + ".langs.txt"));
@@ -200,6 +204,7 @@ namespace Website
 			this.dicTypes.Add(new DicType("ety", "Etymological dictionaries", "[Etymological dictionaries] are dictionaries that explain the origins of words."));
 			this.dicTypes.Add(new DicType("spe", "Dictionaries on special topics", "[Dictionaries on special topics] are dictionaries that focus on a specific subset of the vocabulary (such as new words or phrasal verbs) or which focus on a specific dialect or variant of the language."));
 			this.dicTypes.Add(new DicType("his", "Historical dictionaries", "[Historical dictionaries] are dictionaries that document previous historical states of the language, or dictionaries that trace how the meanings and usage of words have evolved throughout history."));
+			this.dicTypes.Add(new DicType("ort", "Orthographic dictionaries", "[Orthographic dictionaries] are dictionaries which codify the correct spelling and other aspects of the writing of words."));
 			this.dicTypes.Add(new DicType("por", "Portals and aggregators", "[Portals and aggregators] are websites that provide access to more than one dictionary and allow you to search them all at once."));
 
 			this.aboutPages.Add(new AboutPage("info", "About"));

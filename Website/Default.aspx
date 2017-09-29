@@ -14,6 +14,9 @@
  		<script type="text/javascript" src="/furniture/jquery.pulse.js"></script>
 		<script type="text/javascript" src="/furniture/catalog.js?2017-07-12"></script>
 		<link type="text/css" rel="stylesheet" href="/furniture/template.css?2017-07-12" />
+		<%foreach(Website.Language l in this.metadata.languages) { if(l.isUI && l.code!=this.uilang) {%>
+            <link rel="alternate" hreflang="<%=l.code%>" href="https://www.dictionaryportal.eu/<%=l.code%>/<%if(this.pageMode=="catalogHome" || this.pageMode=="catalogListing"){%>ctlg/<%}%><%=this.getQueryString()%>" />
+		<%}}%>
 		<script type="text/javascript">
 		$(document).ready(function(){
 			$(document).keyup(function(e){

@@ -9,6 +9,7 @@ option { margin: 2px 0px; }
 a.cms:hover { color: #dd0000; }
 span.cms a:hover { color: #dd0000 !important; }
 .cms span.dot { width: 20px; height: 20px; display: block; border-radius: 10px; background-color: #dd9999; margin: -2px 0px 0px 0px; box-shadow: 1px 1px 0px #dddddd; }
+.cms span.dot.small {width: 10px; height: 10px; background-color: #cccccc; box-shadow: none;}
 a.cms:hover span.dot { background-color: #dd0000; }
 @media (max-width: 800px) {
 	.cms { display: none; }
@@ -178,12 +179,15 @@ div.orphans span.language a { white-space: nowrap; }
 div.orphans span.subtitle { color: #666666; margin-left: 0.75em; background-color: #f1f1f1; padding: 6px 8px; border-radius: 2px; }
 
 .dictionary span.clear { display: block; clear: left; }
-.dictionary a.editLink { float: right; margin-top: 5px; margin-left: 10px; }
+.dictionary a.editLink { float: right; margin-top: 22px; margin-left: 10px; }
 .dictionary { display: block; padding: 10px 10px 10px 160px; margin: 20px 300px -10px 0px; color: #333333; min-height: 150px; position: relative; }
 .dictionary a.screenshot { display: block; position: absolute; top: 15px; left: 5px; border: 5px solid #dddddd; border-radius: 5px; box-shadow: 0px 0px 5px #000000; }
 .dictionary a.stamp { display: block; position: absolute; top: 130px; left: 10px; }
 .dictionary a.screenshot:hover { border-color: #d3d3d3; }
 .dictionary a.screenshot img { display: block; }
+.dictionary .permalink {margin-bottom: 2px; color: #666666; font-size: 11px;}
+.dictionary .permalink a {color: inherit;}
+.dictionary .permalink a:hover {color: #2288bb;}
 .dictionary div.titleContainer { line-height: 1.25em; display: block; font-size: 20px; margin-bottom: 5px; } 
 .dictionary div.titleContainer a.title { color: #006699; font-weight: bold; } 
 .dictionary div.titleContainer a.title:hover { color: #2288bb; }
@@ -215,8 +219,14 @@ div.orphans span.subtitle { color: #666666; margin-left: 0.75em; background-colo
 .dictionary div.revealerContainer a.revealer.collapsed { background-image: url(plus.gif); }
 .dictionary div.revealerContainer a.revealer.expanded { background-image: url(minus.gif); }
 .dictionary .dictionary { display: block; padding: 0px 0px 0px 0px; margin: 30px 0px -10px 0px; min-height: 0px; position: relative; }
+.dictionary .dictionary .permalink {margin-bottom: 2px;}
 .dictionary .dictionary div.titleContainer { font-size: 15px; } 
 .dictionary .dictionary:last-child { margin-bottom: 30px; }
+.dictionary .admininfo {margin-top: 8px; margin-bottom: 5px; color: #999999; font-size: 11px;}
+.dictionary .admininfo table {margin: 0px; border-spacing: 0px;}
+.dictionary .admininfo table td {margin: 0px; padding: 0px 10px 2px 0px;}
+.dictionary .admininfo table td:last-child {padding-right: 0px;}
+.dictionary .admininfo table td .dot {margin-top: 2px;}
 
 @media (max-width: 800px) {
 	.dictionary { margin: 0px 0px 10px 0px; }

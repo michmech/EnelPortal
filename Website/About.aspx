@@ -13,6 +13,9 @@
 		<script type="text/javascript" src="/furniture/catalog.js?2017-07-12"></script>
 		<link type="text/css" rel="stylesheet" href="/furniture/template.css?2017-07-12" />
 		<link type="text/css" rel="stylesheet" href="/furniture/markdown.css?2017-07-12" />
+		<%foreach(Website.Language l in this.metadata.languages) { if(l.isUI && l.code!=this.uilang) {%>
+            <link rel="alternate" hreflang="<%=l.code%>" href="https://www.dictionaryportal.eu/<%=l.code%>/<%=this.pageMode%>/" />
+		<%}}%>
 		<script type="text/javascript">
 		$(document).ready(function(){
 			$("a[href='#']").click(function(){
@@ -85,7 +88,7 @@
             <%}%>
 			
 			<div class="markdown-body">
-				<%=this.html%>
+                <div <%if(this.noloc) {%>lang="en"<%}%>><%=this.html%></div>
                 <%if(this.pageMode=="prop") {%>
                     <script type="text/javascript">
                         function prop_validate(){
