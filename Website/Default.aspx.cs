@@ -130,16 +130,17 @@ namespace Website
 			reader.Close();
 			conn.Close();
 
-			if(this.pageMode=="catalogListing") {
-				//Remove dictionaries whose parent is also here:
-				this.dictionariesCount=this.dictionaries.Count;
-				List<XmlDocument> temp=new List<XmlDocument>();
-				foreach(XmlDocument xmlDic in this.dictionaries) {
-					int parentID=int.Parse(this.getXmlValue(xmlDic, "/dictionary/@parentID", "0"));
-					if(!ids.Contains(parentID)) temp.Add(xmlDic);
-				}
-				this.dictionaries=temp;
-			}
+			this.dictionariesCount = this.dictionaries.Count;
+			//if(this.pageMode == "catalogListing") {
+			//	//Remove dictionaries whose parent is also here:
+			//	this.dictionariesCount = this.dictionaries.Count;
+			//	List<XmlDocument> temp = new List<XmlDocument>();
+			//	foreach(XmlDocument xmlDic in this.dictionaries) {
+			//		int parentID = int.Parse(this.getXmlValue(xmlDic, "/dictionary/@parentID", "0"));
+			//		if(!ids.Contains(parentID)) temp.Add(xmlDic);
+			//	}
+			//	this.dictionaries = temp;
+			//}
 		}
 
 		protected string getQueryString()

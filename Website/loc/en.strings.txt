@@ -178,3 +178,5 @@ $lang-lmo	Lombard
 $lang-oc	Occitan
 $ort-name	Orthographic dictionaries
 $ort-legend	[Orthographic dictionaries] are dictionaries which codify the correct spelling and other aspects of the writing of words.
+$monoDicts	Monolingual dictionaries
+

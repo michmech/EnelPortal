@@ -131,7 +131,7 @@ form.filter div.moreTitle span { background-color: #eaedc8; padding: 5px 15px; p
 	form.filter { display: none; }
 }
 
-div.breadcrumbs { margin: 5px 310px 10px 0px; border-bottom: 1px dotted #cccccc; padding: 10px; }
+div.breadcrumbs { margin: 5px 310px 1px 0px; padding: 10px 0px 0px 10px; }
 div.breadcrumbs a { margin: 0px 0.5em; }
 div.breadcrumbs a:first-child { margin-left: 0px; }
 div.breadcrumbs span.count { color: #999999; margin-left: -0.5em; }
@@ -141,7 +141,7 @@ div.breadcrumbs span.count { color: #999999; margin-left: -0.5em; }
 	div.breadcrumbs span.count { margin-left: 0em; }
 }
 
-div.minihierarchy { margin: 0px 310px 10px 0px; border-bottom: 1px dotted #cccccc; padding: 1px 10px 15px 10px; }
+div.minihierarchy { margin: 12px 310px 0px 0px; border-top: 1px dotted #cccccc; padding: 10px 10px 0px 10px; }
 div.minihierarchy > div.block { float: left; width: 50%; }
 div.minihierarchy > div.clear { clear: left !important; }
 div.minihierarchy div.item { margin-top: 5px; }
@@ -152,14 +152,17 @@ div.minihierarchy div.item span.count { color: #999999; }
 	div.minihierarchy > div.block:nth-child(2) { margin-top: 15px; }
 }
 
-div.dicTypeLegend { background-image: url(information.png); background-position: 5px 2px; background-repeat: no-repeat; color: #777777; line-height: 1.5em; border-bottom: 1px dotted #cccccc; padding: 0px 0px 10px 30px; margin-right: 310px; }
+div.grouptitle {font-size: 14px; color: #333333; margin: 30px 310px 10px 0px; background-color: #eaedc8; border-left: 20px solid #d5d997; padding: 7px 0px 7px 10px; border-radius: 2px; text-shadow: 1px 1px 0px #ffffff; white-space: nowrap;}
+div.grouptitle.notfirst {margin-top: 30px;}
+div.dicTypeLegend { color: #888888; line-height: 1.5em; padding: 5px 0px 0px 5px; margin-right: 310px; }
 @media (max-width: 800px) {
 	div.dicTypeLegend { margin-right: 0px; padding-right: 5px; }
+	div.grouptitle { margin-right: 0px; padding-right: 5px; }
 }
 
 div.hierarchies { margin-top: -5px; margin-left: -5px; margin-right: -5px; }
 div.hierarchies div.hierarchy { background-color: #f3f3f3; margin: 10px 5px 0px 5px; padding: 10px 10px; width: 273px; float: left; height: 9em; border-radius: 4px; }
-div.hierarchies div.hierarchy div.title { font-size: 20px; font-weight: bold; }
+div.hierarchies div.hierarchy div.title { font-size: 17px; font-weight: bold; }
 div.hierarchies div.hierarchy div.body { margin-top: 5px; line-height: 1.5em; }
 div.hierarchies div.hierarchy span.count { color: #999999; font-size: 12px; font-weight: normal;}
 div.hierarchies.catalogHome { margin-right: 290px; }
@@ -180,7 +183,7 @@ div.orphans span.subtitle { color: #666666; margin-left: 0.75em; background-colo
 
 .dictionary span.clear { display: block; clear: left; }
 .dictionary a.editLink { float: right; margin-top: 22px; margin-left: 10px; }
-.dictionary { display: block; padding: 10px 10px 10px 160px; margin: 20px 300px -10px 0px; color: #333333; min-height: 150px; position: relative; }
+.dictionary { display: block; padding: 10px 10px 10px 160px; margin: 10px 300px -10px 0px; color: #333333; min-height: 150px; position: relative; }
 .dictionary a.screenshot { display: block; position: absolute; top: 15px; left: 5px; border: 5px solid #dddddd; border-radius: 5px; box-shadow: 0px 0px 5px #000000; }
 .dictionary a.stamp { display: block; position: absolute; top: 130px; left: 10px; }
 .dictionary a.screenshot:hover { border-color: #d3d3d3; }

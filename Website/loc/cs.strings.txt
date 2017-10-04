@@ -19,7 +19,7 @@ $toomany	Vaším kritériím odpovídá více než 50 slovníků. Zde se ukazuje
 $nojoy	Bohužel nemáme žádné slovníky, které by odpovídaly vaším kritériím.
 $anglo	Je nám líto, ale tento text je k dispozici jen v angličtině.
 $about-more	Vizte také
-$top	začátek
+$top	Začátek
 $toc	Obsah
 $foot1	Evropský slovníkový portál je iniciativa [Evropské sítě pro e-lexikografii].
 $foot2	[COST] je podporován rámcovým programem Evropské unie [[Horizont 2020]].
@@ -53,7 +53,7 @@ $prop-email	VAŠE E-MAILOVÁ ADRESA
 $prop-email-legend	Budeme-li potřebovat více informací, budeme vás kontaktovat. Adresu s nikým sdílet nebudeme.
 $prop-email-error	Adresa nesmí být prázdná a musí to být platná e-mailová adresa.
 $prop-comments	KOMENTÁŘ (VOLITELNÉ)
-$prop-crit	Před odesláním s ujistěte, že slovník vyhovuje [kritériím pro zařazení].
+$prop-crit	Před odesláním se ujistěte, že slovník vyhovuje [kritériím pro zařazení].
 $submit	Odeslat
 $about-info	Informace
 $about-prop	Doporučit slovník
@@ -61,12 +61,12 @@ $about-crit	Kritéria pro zařazení slovníku
 $about-crtr	Manuál kurátora
 $about-stmp	Odznak pro zařazené slovníky
 $about-dnld	Download
-$gen-name	všeobecné slovníky
-$lrn-name	pedagogické slovníky
-$ety-name	etymologické slovníky
-$spe-name	specializované slovníky
-$his-name	historické slovníky
-$por-name	portály a agregátory
+$gen-name	Všeobecné slovníky
+$lrn-name	Pedagogické slovníky
+$ety-name	Etymologické slovníky
+$spe-name	Specializované slovníky
+$his-name	Historické slovníky
+$por-name	Portály a agregátory
 $gen-legend	[Všeobecné slovníky] jsou takové slovníky, které dokumentují současnou slovní zásobu a jsou určeny pro každodenní potřeby rodilých mluvčích.
 $lrn-legend	[Pedagogické slovníky] jsou určeny těm, kdo se jazyk učí jako cizí jazyk.
 $ety-legend	[Etymologické slovníky] jsou takové slovníky, které vysvětlují původ slov.
