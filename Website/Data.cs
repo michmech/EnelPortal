@@ -200,12 +200,13 @@ namespace Website
 
 			this.dicTypes=new List<DicType>();
 			this.dicTypes.Add(new DicType("gen", "General dictionaries", "[General dictionaries] are dictionaries that document contemporary vocabulary and are intended for everyday reference by native and fluent speakers."));
-			this.dicTypes.Add(new DicType("lrn", "Learner's dictionaries", "[Learner's dictionaries] are intended for people who are learning the language as a second language."));
-			this.dicTypes.Add(new DicType("ety", "Etymological dictionaries", "[Etymological dictionaries] are dictionaries that explain the origins of words."));
-			this.dicTypes.Add(new DicType("spe", "Dictionaries on special topics", "[Dictionaries on special topics] are dictionaries that focus on a specific subset of the vocabulary (such as new words or phrasal verbs) or which focus on a specific dialect or variant of the language."));
-			this.dicTypes.Add(new DicType("his", "Historical dictionaries", "[Historical dictionaries] are dictionaries that document previous historical states of the language, or dictionaries that trace how the meanings and usage of words have evolved throughout history."));
-			this.dicTypes.Add(new DicType("ort", "Orthographic dictionaries", "[Orthographic dictionaries] are dictionaries which codify the correct spelling and other aspects of the writing of words."));
 			this.dicTypes.Add(new DicType("por", "Portals and aggregators", "[Portals and aggregators] are websites that provide access to more than one dictionary and allow you to search them all at once."));
+			this.dicTypes.Add(new DicType("lrn", "Learner's dictionaries", "[Learner's dictionaries] are intended for people who are learning the language as a second language."));
+			this.dicTypes.Add(new DicType("spe", "Dictionaries on special topics", "[Dictionaries on special topics] are dictionaries that focus on a specific subset of the vocabulary (such as new words or phrasal verbs) or which focus on a specific dialect or variant of the language."));
+			this.dicTypes.Add(new DicType("ort", "Orthographic dictionaries", "[Orthographic dictionaries] are dictionaries which codify the correct spelling and other aspects of the writing of words."));
+			this.dicTypes.Add(new DicType("ety", "Etymological dictionaries", "[Etymological dictionaries] are dictionaries that explain the origins of words."));
+			this.dicTypes.Add(new DicType("his", "Historical dictionaries", "[Historical dictionaries] are dictionaries that document previous historical states of the language, or dictionaries that trace how the meanings and usage of words have evolved throughout history."));
+			this.dicTypes.Add(new DicType("trm", "Terminological dictionaries", "[Terminological dictionaries] describe the vocabulary of specialized domains such as biology, mathematics or economics."));
 
 			this.aboutPages.Add(new AboutPage("info", "About"));
 			this.aboutPages.Add(new AboutPage("prop", "Suggest a dictionary"));

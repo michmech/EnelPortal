@@ -38,6 +38,13 @@ namespace Website
 				command.Parameters.Add(param);
 			}
 
+			param=new SqlParameter();
+			param.ParameterName="@email";
+			param.SqlDbType=SqlDbType.NVarChar;
+			param.Value=(string)Session["email"];
+			param.Direction=ParameterDirection.Input;
+			command.Parameters.Add(param);
+
 			command.ExecuteNonQuery();
 			conn.Close();
 		}
