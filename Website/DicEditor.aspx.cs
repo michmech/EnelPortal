@@ -37,6 +37,10 @@ namespace Website
 				SqlDataReader reader=command.ExecuteReader();
 				while(reader.Read()) {
 					this.dic.LoadXml((string)reader["Xml"]);
+					
+					//remove history:
+					XmlNodeList histNodes=this.dic.SelectNodes("//history");
+					foreach(XmlNode n in histNodes) n.ParentNode.RemoveChild(n);
 				}
 				reader.Close();
 				conn.Close();

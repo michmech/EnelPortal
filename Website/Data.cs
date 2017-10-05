@@ -87,6 +87,7 @@ namespace Website
 			this.languages.Add(new Language("fy", "Frisian", "Frysk", true));
 			this.languages.Add(new Language("ga", "Irish", "Gaeilge", true));
 			this.languages.Add(new Language("gd", "Scottish Gaelic", "Gàidhlig", true));
+			this.languages.Add(new Language("hr", "Croatian", "hrvatski", true));
 			this.languages.Add(new Language("hu", "Hungarian", "magyar", true));
 			this.languages.Add(new Language("nl", "Dutch", "Nederlands", true));
 			this.languages.Add(new Language("pl", "Polish", "polski", true));
@@ -101,7 +102,6 @@ namespace Website
 			this.languages.Add(new Language("bg", "Bulgarian", "", false));
 			this.languages.Add(new Language("ca", "Catalan", "", false));
 			this.languages.Add(new Language("kw", "Cornish", "", false));
-			this.languages.Add(new Language("hr", "Croatian", "", false));
 			this.languages.Add(new Language("da", "Danish", "", false));
 			this.languages.Add(new Language("et", "Estonian", "", false));
 			this.languages.Add(new Language("fo", "Faroese", "", false));

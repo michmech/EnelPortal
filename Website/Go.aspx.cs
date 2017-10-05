@@ -10,10 +10,14 @@ namespace Website
 	public partial class Go : System.Web.UI.Page
 	{
 		protected string uilang="en";
+		protected Metadata metadata=null;
+
 		protected string txt="";
 		protected int id=0;
 		protected int index=1;
 		protected XmlDocument dic=new XmlDocument();
+
+		protected string url="";
 
 		protected void Page_Load(object sender, EventArgs e)
 		{
@@ -43,15 +47,22 @@ namespace Website
 			reader.Close();
 			conn.Close();
 
-			string url=getXmlValue(this.dic, "/dictionary/homepage/text()", "");
+			this.url=getXmlValue(this.dic, "/dictionary/homepage/text()", "");
 			if(this.dic.SelectSingleNode("/dictionary/search["+index+"]")!=null) {
-				XmlElement el=(XmlElement)this.dic.SelectSingleNode("/dictionary/search["+index+"]/word");
-				XmlText nd=this.dic.CreateTextNode(Server.UrlEncode(this.txt));
-				el.ParentNode.ReplaceChild(nd, el);
-				url=nd.ParentNode.InnerText;
-				//Response.Write(url);
+				XmlElement url=(XmlElement)this.dic.SelectSingleNode("/dictionary/search["+index+"]/searchUrl");
+				XmlElement el=(XmlElement)url.SelectSingleNode("word");
+				if(el!=null) {
+					XmlText nd=this.dic.CreateTextNode(Server.UrlEncode(this.txt));
+					el.ParentNode.ReplaceChild(nd, el);
+				}
+				this.url=url.InnerText;
 			}
-			Response.Redirect(url);
+			if(false) { //this will be a GET request
+				Response.Redirect(url);
+			} else { //this will be a POST request
+				this.metadata=new Metadata(this.uilang, Server);
+
+			}
 		}
 
 		protected string getXmlValue(XmlDocument doc, string xpath, string ifNull)
@@ -63,6 +74,9 @@ namespace Website
 		protected bool hasXmlValue(XmlDocument doc, string xpath)
 		{
 			return (doc.SelectSingleNode(xpath)!=null);
+		}
+		protected string L(string code) {
+			return this.metadata.getString(code);
 		}
 	}
 

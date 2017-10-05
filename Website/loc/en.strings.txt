@@ -137,7 +137,7 @@ $lang-asq	Austrian Sign Language
 $lang-bfi	British Sign Language
 $lang-bqn	Bulgarian Sign Language
 $lang-csc	Catalan Sign Language
-$lang-csq	Croatia Sign Language
+$lang-csq	Croatian Sign Language
 $lang-cse	Czech Sign Language
 $lang-dsl	Danish Sign Language
 $lang-eso	Estonian Sign Language

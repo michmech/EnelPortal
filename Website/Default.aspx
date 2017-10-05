@@ -248,7 +248,7 @@
 					<%}%>
 					<span class="count">(<%=(this.dictionariesCount<=50 ? this.dictionariesCount.ToString() : "50+")%>)</span>
 				</div>
-				<%if(this.objLang!="x" && this.metaLang=="x" && this.dicType=="x") {%>
+				<%if(this.objLang!="x" && this.metaLang=="x" && this.dicType=="x" && this.dictionaries.Count>1) {%>
 					<%foreach(Website.Hierarchy h in this.hierarchies){%>
 						<%if(h.objLang==this.objLang) {%>
 							<%if(h.dicTypes.Count>1 || h.metaLangs.Count>1) {%>

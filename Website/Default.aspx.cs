@@ -269,11 +269,15 @@ namespace Website
 				ret+="<div class='tcRequired'>"+L("tsRequired")+"</div>";
 			}
 
-			if(Session["email"]!=null && this.pageMode=="catalogListing") {
+			if(Session["email"]!=null && this.pageMode=="catalogListing" && doc.SelectNodes("/dictionary/history/historyItem").Count>0) {
 				ret+="<div class='cms admininfo'>";
 				ret+="<table>";
-				ret+="<tr><td><span class='dot small'></span></td><td>created</td><td>2017-03-05</td><td>valselob@gmail.com</td></tr>";
-				ret+="<tr><td><span class='dot small'></span></td><td>updated</td><td>2017-03-05</td><td>valselob@gmail.com</td></tr>";
+				foreach(XmlElement el in doc.SelectNodes("/dictionary/history/historyItem")) {
+					string action=el.GetAttribute("action")+"d";
+					string when=el.GetAttribute("when").Substring(0, 10);
+					string email=el.GetAttribute("email");
+					ret+="<tr><td><span class='dot small'></span></td><td>"+action+"</td><td>"+when+"</td><td>"+email+"</td></tr>";
+				}
 				ret+="</table>";
 				ret+="</div>";
 			}

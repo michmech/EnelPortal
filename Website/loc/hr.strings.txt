@@ -1,0 +1,178 @@
+$edp	Europski rječnički portal
+$home	Početna
+$find	Pronađi rječnik
+$blurb	Europski rječnički portal, koji održavaju stručnjaci iz [Europske mreže za e-leksikografiju], vaš je vodič do dobrih mrežnih rječnika za europske jezike. [[Više informacija...]]
+$moment	Istaknuti rječnik
+$filter	Filtar
+$objLang	JEZIK
+$objLangBlurb	Jezik koji rječnik opisuje.
+$metaLang	METAJEZIK
+$metaLangBlurb	Jezik definicija i objašnjenja u rječniku. Ako je metajezik isti opisanome jeziku, riječ je o jednojezičnome rječniku. Ako je razlikuje, rječnik je višejezičan.
+$dicType	VRSTA
+$dicTypeBlurb	Koju vrstu rječnika želite pretražiti?
+$anyLang	bilo koji jezik
+$anyDicType	bilo koju vrstu
+$search	Pretraži
+$notyet	Jezici koji još nemaju uvrštenih rječnika
+$signlangs	Znakovni jezici
+$toomany	Vaši kriteriji pretraživanja pronalaze više od 50 rječnika. Prikazuju se samo prvih 50.
+$nojoy	Žao nam je, ne pronalazimo rječnike koji zadovoljavaju vašim kriterijima pretraživanja.
+$anglo	Oprostite, ovaj sadržaj dostupan je samo na engleskome jeziku.
+$about-more	Pogledajte također
+$top	Vrh
+$toc	Struktura portala
+$foot1	Europski rječnički portal proizišao je iz inicijative [Europske mreže za e-leksikografiju].
+$foot2	[COST] je financiran u sklopu Okvirnoga programa EU-a [[Obzor2020]].
+$foot3	Je li vaš rječnik uvršten u Europski rječnički portal? Prikažite naš [pečat potvrde]
+$mbm	Mrežnu stranicu izradio
+$ivdnt	Smješteno u
+$shots	Slikovne isječke napravio
+$icons	Ikone preuzete od
+$login	Ulaz za kuratore
+$moreDicts	Više rječnika za odabrani jezik
+$loginRequired	POTREBNA PRIJAVA
+$searchIn	TRAŽI U
+$tsRequired	Ova mrežna stranica zatražit će prihvaćanje svojih odredaba i uvjeta korištenja prigodom prvoga posjeta.
+$language	jezik
+$searchbox	Pretraži u više rječnika
+$included	Uvršteni rječnici
+$about1	Rječnici su važan dio današnjega međunarodnog i višejezičnog svijeta. Europski rječnički portal pomaže vam u pronalasku dobrih i provjerenih mrežnih rječnika europskih jezika, bez obzira na to jeste li član akademske zajednice, prevoditelj, nastavnik, đak ili jednostavno jezični entuzijast. Sve uvrštene rječnike odabrali su kuratori iz [Europske mreže za e-leksikografiju], koji su ujedno i stručnjaci iz područja leksikografije, a prema uspostavljenim [[kriterijima]] odabira rječnika.
+$prop1	Znate li za rječnik koji bi trebao biti uvršten? [Prijavite rječnik!]
+$prop2	Nakon vaše prijave i provjere kuratora za odabrani jezik, mrežni rječnik će se uvrstiti na Europski rječnik portal. Vlasnik rječnika bit će pozvan da prikaže [pečat potvrde] na svojoj mrežnoj stranici.
+$error1	Pogreška
+$error2	Ispričavamo se, čini se da se dogodila pogreška. Ako se problem ponavlja, molimo vas da ga prijavite na [e-adresu administratora].
+$thanks	Hvala vam
+$backhome	Povratak na početnu stranicu
+$select	odaberi
+$prop-name	NAZIV RJEČNIKA
+$prop-name-error	Polje za naziv rječnika ne smije biti prazno.
+$prop-url	MREŽNA ADRESA
+$prop-url-error	Polje za upis mrežne adrese rječnika ne smije biti prazno i mora započinjati s "http://" ili "https://".
+$objLang-error	Odaberite jezik.
+$prop-email	VAŠA E-ADRESA
+$prop-email-legend	Obratit ćemo vam se budemo li trebali više informacija. Vašu e-adresu nećemo dijeliti ni sa kime.
+$prop-email-error	Polje za e-adresu ne smije biti prazno. Molimo, provjerite jeste li upisali ispravnu e-adresu.
+$prop-comments	NAPOMENE (OPCIONALNO)
+$prop-crit	Prije nego prijavite rječnik molimo vas da provjerite zadovoljava li on [kriterije za uvrštavanje] Europskoga rječničkog portala.
+$submit	Pošalji
+$about-info	O nama
+$about-prop	Prijavi rječnik
+$about-crit	Kriteriji za uvrštavanje
+$about-crtr	Priručnik za kuratore
+$about-stmp	Pečat potvrde
+$about-dnld	Preuzimanje
+$gen-name	Opći rječnici
+$lrn-name	Školski rječnici
+$ety-name	Etimološki rječnici
+$spe-name	Rječnici za posebne namjene
+$his-name	Povijesni rječnici
+$por-name	Portali i agregatori
+$gen-legend	[Opći rječnici] su rječnici koji dokumentiraju vokabular suvremena jezika i namijenjeni su za svakodnevnu referenciju izvornih i tečnih govornika.
+$lrn-legend	[Školski rječnici] namijenjeni su za đake i studente ili za strance koji uče jezik.
+$ety-legend	[Etimološki rječnici] su rječnici koji objašnjavaju podrijetlo riječi.
+$spe-legend	[Rječnici za posebne namjene] su rječnici koji se fokusiraju na određenu skupinu riječi (novotvorenice, sinonimi i dr.), dijalekt ili neku drugu jezičnu inačicu.
+$his-legend	[Povijesni rječnici] su rječnici koji dokumentiraju stanje jezika u određenome povijesnom razdoblju.
+$por-legend	[Portali i agregatori] su mrežne stranice preko kojih se omogućuje pristup i pretraživanje više od jednoga rječnika.
+$lang-sq	albanski
+$lang-hy	armenski
+$lang-rup	arumunjski
+$lang-ast	asturski
+$lang-eu	baski
+$lang-bg	bugarski
+$lang-ca	katalonski
+$lang-kw	kornski
+$lang-hr	hrvatski
+$lang-cs	češki
+$lang-da	danski
+$lang-nl	nizozemski
+$lang-en	engleski
+$lang-et	estonski
+$lang-fo	farski
+$lang-fi	finski
+$lang-fr	francuski
+$lang-gl	galicijski
+$lang-de	njemački
+$lang-el	grčki
+$lang-he	hebrejski
+$lang-hu	mađarski
+$lang-is	islandski
+$lang-ga	irski
+$lang-it	talijanski
+$lang-krl	karelski
+$lang-kom	komski
+$lang-la	latinski
+$lang-lv	latvijski
+$lang-lt	litavski
+$lang-lb	luksemburški
+$lang-mk	makedonski
+$lang-mt	malteški
+$lang-gv	manski
+$lang-mord	mordvinski
+$lang-no	norveški
+$lang-pl	poljski
+$lang-pt	portugalski
+$lang-ro	rumunjski
+$lang-rm	retoromanski
+$lang-ru	ruski
+$lang-smi	samijski
+$lang-sc	sardinijski
+$lang-sco	škotski
+$lang-gd	gaelski
+$lang-sr	srpski
+$lang-sk	slovački
+$lang-sl	slovenski
+$lang-wen	lužičkosrpski
+$lang-es	španjolski
+$lang-sv	švedski
+$lang-tr	turski
+$lang-uk	ukrajinski
+$lang-vep	vepsijski
+$lang-cy	velški
+$lang-fy	frizijski
+$lang-yi	jidiš
+$lang-br	bretonski
+$lang-sqk	albanski znakovni jezik
+$lang-aen	armenski znakovni jezik
+$lang-asq	austrijski znakovni jezik
+$lang-bfi	britanski znakovni jezik
+$lang-bqn	bugarski znakovni jezik
+$lang-csc	katalonski znakovni jezik
+$lang-csq	hrvatski znakovni jezik
+$lang-cse	češki znakovni jezik
+$lang-dsl	danski znakovni jezik
+$lang-eso	estonski znakovni jezik
+$lang-fss	finsko-švedski znakovni jezik
+$lang-fse	finski znakovni jezik
+$lang-vgt	flamanski znakovni jezik
+$lang-sfb	francusko-belgijski znakovni jezik
+$lang-fsl	francuski znakovni jezik
+$lang-gsg	njemački znakovni jezik
+$lang-gss	grčki znakovni jezik
+$lang-hsh	mađarski znakovni jezik
+$lang-icl	islandski znakovni jezik
+$lang-isg	irski znakovni jezik
+$lang-isr	izraelski znakovni jezik
+$lang-ise	talijanski znakovni jezik
+$lang-lsl	latvijski znakovni jezik
+$lang-lls	litavski znakovni jezik
+$lang-mdl	malteški znakovni jezik
+$lang-vsi	moldavski znakovni jezik
+$lang-nsl	norveški znakovni jezik
+$lang-pso	poljski znakovni jezik
+$lang-psr	portugalski znakovni jezik
+$lang-rms	rumunjski znakovni jezik
+$lang-rsl	ruski znakovni jezik
+$lang-dse	znakovni jezik u Nizozemskoj
+$lang-svk	slovački znakovni jezik
+$lang-ssp	španjolski znakovni jezik
+$lang-swl	švedski znakovni jezik
+$lang-ssr	švicarsko-francuski znakovni jezik
+$lang-sgg	švicarsko-njemački znakovni jezik
+$lang-slf	švicarsko-talijanski znakovni jezik
+$lang-tsm	turski znakovni jezik
+$lang-ukl	ukrajinski znakovni jezik
+$lang-vsv	valencijski znakovni jezik
+$lang-ysl	jugoslavenski znakovni jezik
+
+$lang-lmo	lombardski
+$lang-oc	okcitanski

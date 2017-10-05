@@ -29,6 +29,10 @@ namespace Website
 				if(reader["ParentID"]!=DBNull.Value) doc.DocumentElement.SetAttribute("parentID", ((int)reader["ParentID"]).ToString());
 				this.dictionaries.Add(doc);
 				ids.Add((int)reader["ID"]);
+
+				//remove history:
+				XmlNodeList histNodes=doc.SelectNodes("//history");
+				foreach(XmlNode n in histNodes) n.ParentNode.RemoveChild(n);
 			}
 			reader.Close();
 			conn.Close();
