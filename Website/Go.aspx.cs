@@ -18,6 +18,7 @@ namespace Website
 		protected XmlDocument dic=new XmlDocument();
 
 		protected string url="";
+		protected Dictionary<string, string> postFields=new Dictionary<string, string>();
 
 		protected void Page_Load(object sender, EventArgs e)
 		{
@@ -56,8 +57,13 @@ namespace Website
 					el.ParentNode.ReplaceChild(nd, el);
 				}
 				this.url=url.InnerText;
+				foreach(XmlElement pf in this.dic.SelectNodes("/dictionary/search["+index+"]/postField")) {
+					string name=pf.GetAttribute("name");
+					string value=pf.GetAttribute("value");
+					if(!this.postFields.ContainsKey(name)) this.postFields.Add(name, value);
+				}
 			}
-			if(false) { //this will be a GET request
+			if(this.postFields.Count==0) { //this will be a GET request
 				Response.Redirect(url);
 			} else { //this will be a POST request
 				this.metadata=new Metadata(this.uilang, Server);

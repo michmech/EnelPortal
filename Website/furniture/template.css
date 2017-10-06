@@ -83,6 +83,13 @@ div.dow div.filter { width: 250px; float: right; margin-top: 0px; background-col
 	div.dow div.filter { display: none; }
 }
 
+div.permalink {  }
+div.permalink > .dictionary { margin-top: 10px; }
+div.permalink div.filter { width: 250px; float: right; margin-top: 0px; background-color: #eaedc8; padding: 20px 20px 20px 20px; border-radius: 4px; text-shadow: 1px 1px 0px #ffffff; line-height: 1.5em; }
+@media (max-width: 800px) {
+	div.permalink div.filter { display: none; }
+}
+
 
 div#logoContainer { margin: 75px auto 25px auto; text-align: center; }
 div#logoContainer img { max-width: 291px; width: 100%; }

@@ -1,4 +1,4 @@
-﻿var Xonomy={
+var Xonomy={
 	lang: "", //"en"|"de"|fr"| ...
 	mode: "nerd", //"nerd"|"laic"
 };
@@ -8,8 +8,14 @@ Xonomy.setMode=function(mode) {
 	if(mode=="laic") $(".xonomy").removeClass("nerd").addClass("laic");
 }
 
-Xonomy.xmlEscape=function(str) {
-    return String(str)
+Xonomy.jsEscape=function(str) {
+  return String(str)
+		.replace(/\"/g, '\\\"')
+		.replace(/\'/g, '\\\'')
+};
+Xonomy.xmlEscape=function(str, jsEscape) {
+	if(jsEscape) str=Xonomy.jsEscape(str);
+  return String(str)
 		.replace(/&/g, '&amp;')
 		.replace(/"/g, '&quot;')
 		.replace(/'/g, '&apos;')
@@ -127,16 +133,20 @@ Xonomy.enrichElement=function(jsElement) {
 	jsElement.getChildElements=function(name) {
 		var ret=[];
 		for(var i=0; i<this.children.length; i++) {
-			if(this.children[i].name==name) ret.push(this.children[i]);
+			if(this.children[i].type=="element") {
+				if(this.children[i].name==name) ret.push(this.children[i]);
+			}
 		}
 		return ret;
 	};
 	jsElement.getDescendantElements=function(name) {
 		var ret=[];
 		for(var i=0; i<this.children.length; i++) {
-			if(this.children[i].name==name) ret.push(this.children[i]);
-			var temp=this.children[i].getDescendantElements(name);
-			for(var t=0; t<temp.length; t++) ret.push(temp[t]);
+			if(this.children[i].type=="element") {
+				if(this.children[i].name==name) ret.push(this.children[i]);
+				var temp=this.children[i].getDescendantElements(name);
+				for(var t=0; t<temp.length; t++) ret.push(temp[t]);
+			}
 		}
 		return ret;
 	};
@@ -172,14 +182,23 @@ Xonomy.asFunction=function(specProperty, defaultValue){
 		return function() { return defaultValue };
 }
 Xonomy.verifyDocSpecElement=function(name) { //make sure the DocSpec object has such an element, that the element has everything it needs
-	if(!Xonomy.docSpec.elements[name] || typeof(Xonomy.docSpec.elements[name])!="object") Xonomy.docSpec.elements[name]={};
+	if(!Xonomy.docSpec.elements[name] || typeof(Xonomy.docSpec.elements[name])!="object") {
+		if(Xonomy.docSpec.unknownElement) {
+			Xonomy.docSpec.elements[name]=(typeof(Xonomy.docSpec.unknownElement)==="function")
+				? Xonomy.docSpec.unknownElement(name)
+				: Xonomy.docSpec.unknownElement;
+		}
+		else Xonomy.docSpec.elements[name]={};
+	}
 	var spec=Xonomy.docSpec.elements[name];
 	if(!spec.attributes || typeof(spec.attributes)!="object") spec.attributes={};
 	if(!spec.menu || typeof(spec.menu)!="object") spec.menu=[];
 	if(!spec.inlineMenu || typeof(spec.inlineMenu)!="object") spec.inlineMenu=[];
 	if(!spec.canDropTo || typeof(spec.canDropTo)!="object") spec.canDropTo=[];
-	if(!spec.mustBeAfter || typeof(spec.mustBeAfter)!="object") spec.mustBeAfter=[];
-	if(!spec.mustBeBefore || typeof(spec.mustBeBefore)!="object") spec.mustBeBefore=[];
+	//if(!spec.mustBeAfter || typeof(spec.mustBeAfter)!="object") spec.mustBeAfter=[];
+	//if(!spec.mustBeBefore || typeof(spec.mustBeBefore)!="object") spec.mustBeBefore=[];
+	spec.mustBeAfter=Xonomy.asFunction(spec.mustBeAfter, []);
+	spec.mustBeBefore=Xonomy.asFunction(spec.mustBeBefore, []);
 	spec.oneliner=Xonomy.asFunction(spec.oneliner, false);
 	spec.hasText=Xonomy.asFunction(spec.hasText, false);
 	spec.collapsible=Xonomy.asFunction(spec.collapsible, true);
@@ -188,12 +207,21 @@ Xonomy.verifyDocSpecElement=function(name) { //make sure the DocSpec object has 
 	spec.isReadOnly=Xonomy.asFunction(spec.isReadOnly, false);
 	spec.isInvisible=Xonomy.asFunction(spec.isInvisible, false);
 	if(spec.displayName) spec.displayName=Xonomy.asFunction(spec.displayName, "");
+	if(spec.title) spec.title=Xonomy.asFunction(spec.title, "");
 	for(var i=0; i<spec.menu.length; i++) Xonomy.verifyDocSpecMenuItem(spec.menu[i]);
 	for(var i=0; i<spec.inlineMenu.length; i++) Xonomy.verifyDocSpecMenuItem(spec.inlineMenu[i]);
+	for(var attributeName in spec.attributes) Xonomy.verifyDocSpecAttribute(name, attributeName);
 };
 Xonomy.verifyDocSpecAttribute=function(elementName, attributeName) { //make sure the DocSpec object has such an attribute, that the attribute has everything it needs
 	var elSpec=Xonomy.docSpec.elements[elementName];
-	if(!elSpec.attributes[attributeName] || typeof(elSpec.attributes[attributeName])!="object") elSpec.attributes[attributeName]={};
+	if(!elSpec.attributes[attributeName] || typeof(elSpec.attributes[attributeName])!="object") {
+		if(Xonomy.docSpec.unknownAttribute) {
+			elSpec.attributes[attributeName]=(typeof(Xonomy.docSpec.unknownAttribute)==="function")
+				? Xonomy.docSpec.unknownAttribute(elementName, attributeName)
+				: Xonomy.docSpec.unknownAttribute;
+		}
+		else elSpec.attributes[attributeName]={};
+	}
 	var spec=elSpec.attributes[attributeName];
 	if(!spec.asker || typeof(spec.asker)!="function") spec.asker=function(){return ""};
 	if(!spec.menu || typeof(spec.menu)!="object") spec.menu=[];
@@ -201,6 +229,7 @@ Xonomy.verifyDocSpecAttribute=function(elementName, attributeName) { //make sure
 	spec.isInvisible=Xonomy.asFunction(spec.isInvisible, false);
 	spec.shy=Xonomy.asFunction(spec.shy, false);
 	if(spec.displayName) spec.displayName=Xonomy.asFunction(spec.displayName, "");
+	if(spec.title) spec.title=Xonomy.asFunction(spec.title, "");
 	for(var i=0; i<spec.menu.length; i++) Xonomy.verifyDocSpecMenuItem(spec.menu[i]);
 };
 Xonomy.verifyDocSpecMenuItem=function(menuItem) { //make sure the menu item has all it needs
@@ -209,13 +238,22 @@ Xonomy.verifyDocSpecMenuItem=function(menuItem) { //make sure the menu item has 
 	if(!menuItem.hideIf) menuItem.hideIf=function(){return false;};
 };
 
-Xonomy.nextID=function() { 
+Xonomy.nextID=function() {
 	return "xonomy"+(++Xonomy.lastIDNum);
 };
 Xonomy.lastIDNum=0;
 
 Xonomy.docSpec=null;
 Xonomy.refresh=function() {
+	$(".xonomy .textnode[data-value='']").each(function(){ //delete empty text nodes if the parent element is not allowed to have text
+		var $this=$(this);
+		var $parent=$this.closest(".element");
+		var parentName=$parent.data("name");
+		var elSpec=Xonomy.docSpec.elements[parentName];
+		if(elSpec && !elSpec.hasText(Xonomy.harvestElement($parent.toArray()[0]))) {
+			$this.remove();
+		}
+	});
 	$(".xonomy .children ").each(function(){ //determine whether each element does or doesn't have children:
 		if(this.childNodes.length==0 && !$(this.parentNode).hasClass("hasText")) $(this.parentNode).addClass("noChildren");
 		else {
@@ -246,33 +284,6 @@ Xonomy.refresh=function() {
 			}
 		}
 	}
-	$(".xonomy .element ").each(function(){ //reorder elements if necessary
-		var elSpec=Xonomy.docSpec.elements[this.getAttribute("data-name")];
-		if(elSpec.mustBeBefore) { //is it after an element it cannot be after? then move it up until it's not!
-			var $this=$(this);
-			var ok; do {
-				ok=true;
-				for(var ii=0; ii<elSpec.mustBeBefore.length; ii++) {
-					if( $this.prevAll("*[data-name='"+elSpec.mustBeBefore[ii]+"']").toArray().length>0 ) {
-						$this.prev().before($this);
-						ok=false;
-					}
-				}
-			} while(!ok)
-		}
-		if(elSpec.mustBeAfter) { //is it before an element it cannot be before? then move it down until it's not!
-			var $this=$(this);
-			var ok; do {
-				ok=true;
-				for(var ii=0; ii<elSpec.mustBeAfter.length; ii++) {
-					if( $this.nextAll("*[data-name='"+elSpec.mustBeAfter[ii]+"']").toArray().length>0 ) {
-						$this.next().after($this);
-						ok=false;
-					}
-				}
-			} while(!ok)
-		}
-	});
 	$(".xonomy .attribute ").each(function(){ //reorder attributes if necessary
 		var atName=this.getAttribute("data-name");
 		var elName=this.parentNode.parentNode.parentNode.getAttribute("data-name");
@@ -321,7 +332,7 @@ Xonomy.refresh=function() {
 		if(elSpec.displayName) $(this).children(".tag").children(".name").html(Xonomy.textByLang(elSpec.displayName(Xonomy.harvestElement(this))));
 		if(elSpec.caption) {
 			var jsEl=Xonomy.harvestElement(this);
-			if(!jsEl.hasElements()) $(this).children(".inlinecaption").html(Xonomy.textByLang(elSpec.caption(jsEl)));
+			if(!jsEl.hasElements()) $(this).children(".inlinecaption").html("&nbsp;"+Xonomy.textByLang(elSpec.caption(jsEl))+"&nbsp;");
 		}
 		if(elSpec.displayValue) {
 			var jsEl=Xonomy.harvestElement(this);
@@ -331,7 +342,7 @@ Xonomy.refresh=function() {
 			var atSpec=elSpec.attributes[this.getAttribute("data-name")];
 			if(atSpec.displayName) $(this).children(".name").html(Xonomy.textByLang(atSpec.displayName(Xonomy.harvestAttribute(this))));
 			if(atSpec.displayValue) $(this).children(".value").html(Xonomy.textByLang(atSpec.displayValue(Xonomy.harvestAttribute(this))));
-			if(atSpec.caption) $(this).children(".inlinecaption").html(Xonomy.textByLang(atSpec.caption(Xonomy.harvestAttribute(this))));
+			if(atSpec.caption) $(this).children(".inlinecaption").html("&nbsp;"+Xonomy.textByLang(atSpec.caption(Xonomy.harvestAttribute(this)))+"&nbsp;");
 		});
 	});
 };
@@ -414,23 +425,23 @@ Xonomy.render=function(data, editor, docSpec) { //renders the contents of an edi
 	//The editor can be an HTML element, or the string ID of one.
 	Xonomy.docSpec=docSpec;
 	Xonomy.verifyDocSpec();
-	
+
 	//Clear namespace cache:
 	Xonomy.namespaces={};
-	
+
 	//Convert doc to a JavaScript object, if it isn't a JavaScript object already:
 	if(typeof(data)=="string") data=$.parseXML(data);
 	if(data.documentElement) data=Xonomy.xml2js(data);
-	
+
 	//Make sure editor refers to an HTML element, if it doesn't already:
 	if(typeof(editor)=="string") editor=document.getElementById(editor);
 	if(!$(editor).hasClass("xonomy")) $(editor).addClass("xonomy"); //make sure it has class "xonomy"
 	$(editor).addClass(Xonomy.mode);
-	
+
 	$(editor).hide();
 	editor.innerHTML=Xonomy.renderElement(data, editor);
 	$(editor).show();
-	
+
 	//Make sure the "click off" handler is attached:
 	$(document.body).off("click", Xonomy.clickoff);
 	$(document.body).on("click", Xonomy.clickoff);
@@ -438,7 +449,7 @@ Xonomy.render=function(data, editor, docSpec) { //renders the contents of an edi
 	//Make sure the "drag end" handler is attached:
 	$(document.body).off("dragend", Xonomy.dragend);
 	$(document.body).on("dragend", Xonomy.dragend);
-	
+
 	Xonomy.refresh();
 	Xonomy.validate();
 };
@@ -462,27 +473,29 @@ Xonomy.renderElement=function(element) {
 	if(spec.menu.length>0) classNames+=" hasMenu"; //not always accurate: whether an element has a menu is actually determined at runtime
 	var displayName=element.name;
 	if(spec.displayName) displayName=Xonomy.textByLang(spec.displayName(element));
+	var title="";
+	if(spec.title) title=Xonomy.textByLang(spec.title(element));
 	var html="";
 	html+='<div data-name="'+element.name+'" id="'+htmlID+'" class="'+classNames+'">';
 		html+='<span class="connector">';
 			html+='<span class="plusminus" onclick="Xonomy.plusminus(\''+htmlID+'\')"></span>';
 			html+='<span class="draghandle" draggable="true" ondragstart="Xonomy.drag(event)"></span>';
 		html+='</span>';
-		html+='<span class="tag opening" style="background-color: '+spec.backgroundColour+';">';
+		html+='<span class="tag opening focusable" style="background-color: '+spec.backgroundColour+';">';
 			html+='<span class="punc">&lt;</span>';
 			html+='<span class="warner"><span class="inside" onclick="Xonomy.click(\''+htmlID+'\', \'warner\')"></span></span>';
-			html+='<span class="name" onclick="Xonomy.click(\''+htmlID+'\', \'openingTagName\')">'+displayName+'</span>';
+			html+='<span class="name" title="'+title+'" onclick="Xonomy.click(\''+htmlID+'\', \'openingTagName\')">'+displayName+'</span>';
 			html+='<span class="attributes">';
 				for(var i=0; i<element.attributes.length; i++) {
 					Xonomy.verifyDocSpecAttribute(element.name, element.attributes[i].name);
 					html+=Xonomy.renderAttribute(element.attributes[i], element.name);
 				}
 			html+='</span>';
-			html+='<span class="rollouter" onclick="Xonomy.click(\''+htmlID+'\', \'rollouter\')"></span>';
+			html+='<span class="rollouter focusable" onclick="Xonomy.click(\''+htmlID+'\', \'rollouter\')"></span>';
 			html+='<span class="punc slash">/</span>';
 			html+='<span class="punc">&gt;</span>';
 		html+='</span>';
-		html+='<span class="childrenCollapsed" onclick="Xonomy.plusminus(\''+htmlID+'\', true)">&middot;&middot;&middot;</span>';
+		html+='<span class="childrenCollapsed focusable" onclick="Xonomy.plusminus(\''+htmlID+'\', true)">&middot;&middot;&middot;</span>';
 		html+='<div class="children">';
 			if(spec.displayValue && !element.hasElements()) {
 				html+=Xonomy.renderDisplayText(element.getText(), spec.displayValue(element));
@@ -496,7 +509,7 @@ Xonomy.renderElement=function(element) {
 					if(hasText && prevChildType=="element" && child.type=="element") {
 						html+=Xonomy.renderText({type: "text", value: ""}); //if inline layout, insert empty text node between two elements
 					}
-					if(child.type=="text") html+=Xonomy.renderText(child, !(spec.inlineMenu && spec.inlineMenu.length>0)); //text node
+					if(child.type=="text") html+=Xonomy.renderText(child); //text node
 					else if(child.type=="element") html+=Xonomy.renderElement(child); //element node
 					prevChildType=child.type;
 				}
@@ -505,7 +518,7 @@ Xonomy.renderElement=function(element) {
 				}
 			}
 		html+='</div>';
-		html+='<span class="tag closing" style="background-color: '+spec.backgroundColour+';">';
+		html+='<span class="tag closing focusable" style="background-color: '+spec.backgroundColour+';">';
 			html+='<span class="punc">&lt;</span>';
 			html+='<span class="punc">/</span>';
 			html+='<span class="name" onclick="Xonomy.click(\''+htmlID+'\', \'closingTagName\')">'+displayName+'</span>';
@@ -520,31 +533,33 @@ Xonomy.renderAttribute=function(attribute, optionalParentName) {
 	var htmlID=Xonomy.nextID();
 	classNames="attribute";
 	var readonly=false;
-	
+
 	var displayName=attribute.name;
 	var displayValue=Xonomy.xmlEscape(attribute.value);
 	var caption="";
+	var title="";
 	if(optionalParentName) {
 		var spec=Xonomy.docSpec.elements[optionalParentName].attributes[attribute.name];
 		if(spec) {
 			if(spec.displayName) displayName=Xonomy.textByLang(spec.displayName(attribute));
 			if(spec.displayValue) displayValue=Xonomy.textByLang(spec.displayValue(attribute));
+			if(spec.title) title=Xonomy.textByLang(spec.title(attribute));
 			if(spec.caption) caption=Xonomy.textByLang(spec.caption(attribute));
 			if(spec.isReadOnly && spec.isReadOnly(attribute)) { readonly=true; classNames+=" readonly"; }
 			if(spec.isInvisible && spec.isInvisible(attribute)) { classNames+=" invisible"; }
 			if(spec.shy && spec.shy(attribute)) { classNames+=" shy"; }
 		}
 	}
-	
+
 	var html="";
 	html+='<span data-name="'+attribute.name+'" data-value="'+Xonomy.xmlEscape(attribute.value)+'" id="'+htmlID+'" class="'+classNames+'">';
 		html+='<span class="punc"> </span>';
 		var onclick=''; if(!readonly) onclick=' onclick="Xonomy.click(\''+htmlID+'\', \'attributeName\')"';
 		html+='<span class="warner"><span class="inside" onclick="Xonomy.click(\''+htmlID+'\', \'warner\')"></span></span>';
-		html+='<span class="name"'+onclick+'>'+displayName+'</span>';
+		html+='<span class="name attributeName focusable" title="'+title+'"'+onclick+'>'+displayName+'</span>';
 		html+='<span class="punc">=</span>';
 		var onclick=''; if(!readonly) onclick=' onclick="Xonomy.click(\''+htmlID+'\', \'attributeValue\')"';
-		html+='<span class="valueContainer"'+onclick+'>';
+		html+='<span class="valueContainer attributeValue focusable"'+onclick+'>';
 			html+='<span class="punc">"</span>';
 			html+='<span class="value">'+displayValue+'</span>';
 			html+='<span class="punc">"</span>';
@@ -554,19 +569,15 @@ Xonomy.renderAttribute=function(attribute, optionalParentName) {
 	attribute.htmlID = htmlID;
 	return html;
 };
-Xonomy.renderText=function(text, dontchew) {
+Xonomy.renderText=function(text) {
 	var htmlID=Xonomy.nextID();
-	var classNames="textnode";
+	var classNames="textnode focusable";
 	if($.trim(text.value)=="") classNames+=" whitespace";
 	if(text.value=="") classNames+=" empty";
 	var html="";
 	html+='<div id="'+htmlID+'" data-value="'+Xonomy.xmlEscape(text.value)+'" class="'+classNames+'">';
 		html+='<span class="connector"></span>';
-		if(dontchew) {
-			var txt=Xonomy.xmlEscape(text.value);
-		} else {
-			var txt=Xonomy.chewText(text.value);
-		}
+		var txt=Xonomy.chewText(text.value);
 		html+='<span class="value" onclick="Xonomy.click(\''+htmlID+'\', \'text\')"><span class="insertionPoint"><span class="inside"></span></span><span class="dots"></span>'+txt+'</span>';
 	html+='</div>';
 	text.htmlID = htmlID;
@@ -592,8 +603,8 @@ Xonomy.chewText=function(txt) {
 	for(var i=0; i<txt.length; i++) {
 		if(txt[i]==" ") ret+="</span>"; //end word
 		var t=Xonomy.xmlEscape(txt[i])
-		if(i==0 && t==" ") t="&nbsp;"; //leading space
-		if(i==txt.length-1 && t==" ") t="&nbsp;"; //trailing space
+		if(i==0 && t==" ") t="<span class='space'>&middot;</span>"; //leading space
+		if(i==txt.length-1 && t==" ") t="<span class='space'>&middot;</span>"; //trailing space
 		ret+="<span class='char'>"+t+"<span class='selector'><span class='inside' onclick='Xonomy.charClick(this.parentNode.parentNode)'></span></span></span>";
 		if(txt[i]==" ") ret+="<span class='word'>"; //start word
 	}
@@ -640,6 +651,7 @@ Xonomy.wrap=function(htmlID, param) {
 	Xonomy.clickoff();
 	var xml=param.template;
 	var ph=param.placeholder;
+	var jsElement=Xonomy.harvestElement(document.getElementById(htmlID));
 	if(Xonomy.textFromID==Xonomy.textTillID) { //abc --> a<XYZ>b</XYZ>c
 		var jsOld=Xonomy.harvestText(document.getElementById(Xonomy.textFromID));
 		var txtOpen=jsOld.value.substring(0, Xonomy.textFromIndex);
@@ -648,7 +660,7 @@ Xonomy.wrap=function(htmlID, param) {
 		xml=xml.replace(ph, Xonomy.xmlEscape(txtMiddle));
 		var html="";
 		html+=Xonomy.renderText({type: "text", value: txtOpen});
-		html+=Xonomy.renderElement(Xonomy.xml2js(xml));
+		html+=Xonomy.renderElement(Xonomy.xml2js(xml, jsElement));
 		html+=Xonomy.renderText({type: "text", value: txtClose});
 		$("#"+Xonomy.textFromID).replaceWith(html);
 	} else { //ab<...>cd --> a<XYZ>b<...>c</XYZ>d
@@ -668,7 +680,7 @@ Xonomy.wrap=function(htmlID, param) {
 		$("#"+Xonomy.textTillID).remove();
 		var html="";
 		html+=Xonomy.renderText({type: "text", value: txtOpen});
-		html+=Xonomy.renderElement(Xonomy.xml2js(xml));
+		html+=Xonomy.renderElement(Xonomy.xml2js(xml, jsElement));
 		html+=Xonomy.renderText({type: "text", value: txtClose});
 		$("#"+Xonomy.textFromID).replaceWith(html);
 	}
@@ -692,6 +704,13 @@ Xonomy.plusminus=function(htmlID, forceExpand) {
 		if($element.hasClass("oneliner")) $children.fadeOut("fast", function(){ $element.addClass("collapsed"); });
 		else $children.slideUp("fast", function(){ $element.addClass("collapsed"); });
 	}
+	window.setTimeout(function(){
+		if($("#"+Xonomy.currentHtmlId+" .opening:visible").length>0) {
+			Xonomy.setFocus(Xonomy.currentHtmlId, "openingTagName");
+		} else {
+			Xonomy.setFocus(Xonomy.currentHtmlId, "childrenCollapsed");
+		}
+	}, 300);
 };
 Xonomy.updateCollapsoid=function(htmlID) {
 	var $element=$("#"+htmlID);
@@ -716,9 +735,13 @@ Xonomy.updateCollapsoid=function(htmlID) {
 	$element.children(".childrenCollapsed").html(whisper);
 };
 
+Xonomy.lastClickWhat="";
 Xonomy.click=function(htmlID, what) {
 	if(!Xonomy.notclick) {
 		Xonomy.clickoff();
+		Xonomy.lastClickWhat=what;
+		Xonomy.currentHtmlId=htmlID;
+		Xonomy.currentFocus=what;
 		$(".xonomy .char.on").removeClass("on");
 		var isReadOnly=( $("#"+htmlID).hasClass("readonly") || $("#"+htmlID).closest(".readonly").toArray().length>0 );
 		if(!isReadOnly && (what=="openingTagName" || what=="closingTagName") ) {
@@ -729,6 +752,8 @@ Xonomy.click=function(htmlID, what) {
 				if(what=="openingTagName") Xonomy.showBubble($("#"+htmlID+" > .tag.opening > .name")); //anchor bubble to opening tag
 				if(what=="closingTagName") Xonomy.showBubble($("#"+htmlID+" > .tag.closing > .name")); //anchor bubble to closing tag
 			}
+			var surrogateElem = Xonomy.harvestElement(document.getElementById(htmlID));
+			$("#"+htmlID).trigger("xonomy-click-element", [surrogateElem]);
 		}
 		if(!isReadOnly && what=="attributeName") {
 			$("#"+htmlID).addClass("current"); //make the attribute current
@@ -737,6 +762,8 @@ Xonomy.click=function(htmlID, what) {
 				document.body.appendChild(Xonomy.makeBubble(content)); //create bubble
 				Xonomy.showBubble($("#"+htmlID+" > .name")); //anchor bubble to attribute name
 			}
+			var surrogateAttr = Xonomy.harvestAttribute(document.getElementById(htmlID));
+			$("#"+htmlID).trigger("xonomy-click-attribute", [surrogateAttr]);
 		}
 		if(!isReadOnly && what=="attributeValue") {
 			$("#"+htmlID+" > .valueContainer").addClass("current"); //make attribute value current
@@ -753,8 +780,8 @@ Xonomy.click=function(htmlID, what) {
 					var obj=document.getElementById(htmlID);
 					var html=Xonomy.renderAttribute({type: "attribute", name: name, value: val}, elName);
 					$(obj).replaceWith(html);
-					Xonomy.clickoff();
 					Xonomy.changed();
+					window.setTimeout(function(){Xonomy.clickoff(); Xonomy.setFocus($(html).prop("id"), what)}, 100);
 				};
 			}
 		}
@@ -764,7 +791,7 @@ Xonomy.click=function(htmlID, what) {
 			var elName=$("#"+htmlID).closest(".element").attr("data-name");
 			var spec=Xonomy.docSpec.elements[elName];
 			if (typeof(spec.asker) != "function") {
-				var content=Xonomy.askLongString(value, null, Xonomy.harvestElement($("#"+htmlID).closest(".element").toArray()[0])); //compose bubble content  
+				var content=Xonomy.askLongString(value, null, Xonomy.harvestElement($("#"+htmlID).closest(".element").toArray()[0])); //compose bubble content
 			} else {
 				var content=spec.asker(value, spec.askerParameter, Xonomy.harvestElement($("#"+htmlID).closest(".element").toArray()[0])); //use specified asker
 			}
@@ -776,8 +803,8 @@ Xonomy.click=function(htmlID, what) {
 					var jsText = {type: "text", value: val};
 					var html=Xonomy.renderText(jsText);
 					$(obj).replaceWith(html);
-					Xonomy.clickoff();
 					Xonomy.changed(Xonomy.harvestText(document.getElementById(jsText.htmlID)));
+					window.setTimeout(function(){Xonomy.clickoff(); Xonomy.setFocus($(html).prop("id"), what)}, 100);
 				};
 			}
 		}
@@ -803,6 +830,7 @@ Xonomy.click=function(htmlID, what) {
 				$("#"+htmlID).children(".tag.opening").children(".rollouter").addClass("rolledout");
 				$("#"+htmlID).children(".tag.opening").children(".attributes").addClass("rolledout").hide().slideDown("fast");
 			}
+			window.setTimeout(function(){Xonomy.setFocus(htmlID, "rollouter")}, 100);
 		}
 		Xonomy.notclick=true;
 	}
@@ -811,8 +839,11 @@ Xonomy.notclick=false; //should the latest click-off event be ignored?
 Xonomy.clearChars=false; //if true, un-highlight any highlighted characters at the next click-off event
 Xonomy.clickoff=function() { //event handler for the document-wide click-off event.
 	if(!Xonomy.notclick) {
+		Xonomy.currentHtmlId=null;
+		Xonomy.currentFocus=null;
 		Xonomy.destroyBubble();
 		$(".xonomy .current").removeClass("current");
+		$(".xonomy .focused").removeClass("focused");
 		if(Xonomy.clearChars) {
 			$(".xonomy .char.on").removeClass("on");
 			Xonomy.clearChars=false;
@@ -824,7 +855,9 @@ Xonomy.clickoff=function() { //event handler for the document-wide click-off eve
 Xonomy.destroyBubble=function() {
 	if(document.getElementById("xonomyBubble")) {
 		var bubble=document.getElementById("xonomyBubble");
+		$(bubble).find(":focus").blur();
 		bubble.parentNode.removeChild(bubble);
+		if(Xonomy.keyboardEventCatcher) Xonomy.keyboardEventCatcher.focus();
 	}
 };
 Xonomy.makeBubble=function(content) {
@@ -839,37 +872,73 @@ Xonomy.makeBubble=function(content) {
 };
 Xonomy.showBubble=function($anchor) {
 	var $bubble=$("#xonomyBubble");
-	var offset=$anchor.offset(); var left=offset.left; var top=offset.top;
+	var offset=$anchor.offset();
 	var screenWidth = $("body").width();
-	var screenHeight = $(window).height();
+	var screenHeight = $(document).height();
 	var bubbleHeight = $bubble.outerHeight();
 	var width = $anchor.width(); if (width > 40) width = 40;
 	var height = $anchor.height(); if (height > 25) height = 25;
-	if(left<screenWidth/2) {
-		if (Xonomy.mode == "laic") { width = width - 25; height = height + 10; }
-		if (top + height + bubbleHeight > screenHeight) { // not enough room, open up
-			$bubble.css({ top: "", bottom: (screenHeight - top + 5) + "px", left: (left + width - 15) + "px" }); // 5px above for some padding. Anchor using bottom so animation opens upwards.
+	if (Xonomy.mode == "laic") { width = width - 25; height = height + 10; }
+
+	function verticalPlacement() {
+		var top = "";
+		var bottom = "";
+		if (offset.top + height + bubbleHeight <= screenHeight) {
+			// enough space - open down
+			top = (offset.top + height) + "px";
+		} else if (screenHeight - offset.top + 5 + bubbleHeight > 0) {
+			// 5px above for some padding. Anchor using bottom so animation opens upwards.
+			bottom = (screenHeight - offset.top + 5) + "px";
 		} else {
-			$bubble.css({ top: (top + height) + "px", bottom: "", left: (left + width - 15) + "px" });
+			// neither downwards nor upwards is enough space => center the bubble
+			top = (screenHeight - bubbleHeight)/2 + "px";
 		}
-	} else {
-		if(Xonomy.mode=="laic") { height=height+10; }
-		$bubble.addClass("rightAnchored");
-		if (top + height + bubbleHeight > screenHeight) { // not enough room, open up
-			$bubble.css({ top: "", bottom: (screenHeight - top + 5) + "px", right: (screenWidth - left) + "px" }); // 5px above for some padding. Anchor using bottom so animation opens upwards.
-		} else {
-			$bubble.css({ top: (top + height) + "px", bottom: "", right: (screenWidth - left) + "px" });
-		}
+		return { top: top, bottom: bottom };
 	}
+
+	var placement = verticalPlacement();
+	if(offset.left<screenWidth/2) {
+		placement.left = (offset.left + width - 15) + "px";
+	} else {
+		$bubble.addClass("rightAnchored");
+		placement.right = (screenWidth - offset.left) + "px";
+	}
+	$bubble.css(placement);
 	$bubble.slideDown("fast", function() {
-		$bubble.find(".focusme").first().focus(); //if the context menu contains anything with the class name 'focusme', focus it.
+		if(Xonomy.keyNav) $bubble.find(".focusme").first().focus(); //if the context menu contains anything with the class name 'focusme', focus it.
+		else $bubble.find("input.focusme, select.focusme, textarea.focusme").first().focus();
 	});
+
+	$bubble.on("keyup", function(event){
+		if(event.which==27) Xonomy.destroyBubble();
+	});
+
+	if(Xonomy.keyNav) {
+		$bubble.find("div.focusme").on("keyup", function(event){
+			if(event.which==40) { //down key
+				var $item=$(event.delegateTarget);
+				var $items=$bubble.find(".focusme:visible");
+				var $next=$items.eq( $items.index($item[0])+1 );
+				$next.focus();
+			}
+			if(event.which==38) { //up key
+				var $item=$(event.delegateTarget);
+				var $items=$bubble.find("div.focusme:visible");
+				var $next=$items.eq( $items.index($item[0])-1 );
+				$next.focus();
+			}
+			if(event.which==13) { //enter key
+				$(event.delegateTarget).click();
+				Xonomy.notclick=false;
+			}
+		});
+	}
 };
 
 Xonomy.askString=function(defaultString, askerParameter, jsMe) {
 	var html="";
 	html+="<form onsubmit='Xonomy.answer(this.val.value); return false'>";
-		html+="<input name='val' class='textbox focusme' value='"+Xonomy.xmlEscape(defaultString)+"'/>";
+		html+="<input name='val' class='textbox focusme' value='"+Xonomy.xmlEscape(defaultString)+"' onkeyup='Xonomy.notKeyUp=true'/>";
 		html+=" <input type='submit' value='OK'>";
 	html+="</form>";
 	return html;
@@ -884,75 +953,157 @@ Xonomy.askLongString=function(defaultString, askerParameter, jsMe) {
 };
 Xonomy.askPicklist=function(defaultString, picklist, jsMe) {
 	var html="";
+	html+=Xonomy.pickerMenu(picklist, defaultString);
+	return html;
+};
+Xonomy.askOpenPicklist=function(defaultString, picklist) {
+	var isInPicklist=false;
+    var html="";
+		html+=Xonomy.pickerMenu(picklist, defaultString);
+		html+="<form class='undermenu' onsubmit='Xonomy.answer(this.val.value); return false'>";
+		html+="<input name='val' class='textbox focusme' value='"+(!isInPicklist ? Xonomy.xmlEscape(defaultString) : "")+"' onkeyup='Xonomy.notKeyUp=true'/>";
+		html+=" <input type='submit' value='OK'>";
+		html+="</form>";
+    return html;
+};
+Xonomy.askRemote=function(defaultString, param, jsMe) {
+	var html="";
+	if(param.searchUrl || param.createUrl) {
+		html+="<form class='overmenu' onsubmit='return Xonomy.remoteSearch(\""+Xonomy.xmlEscape(param.searchUrl, true)+"\", \""+Xonomy.xmlEscape(param.urlPlaceholder, true)+"\", \""+Xonomy.xmlEscape(Xonomy.jsEscape(defaultString))+"\")'>";
+		html+="<input name='val' class='textbox focusme' value=''/>";
+		if(param.searchUrl) html+=" <button class='buttonSearch' onclick='return Xonomy.remoteSearch(\""+Xonomy.xmlEscape(param.searchUrl, true)+"\", \""+Xonomy.xmlEscape(param.urlPlaceholder, true)+"\", \""+Xonomy.xmlEscape(Xonomy.jsEscape(defaultString))+"\")'>&nbsp;</button>";
+		if(param.createUrl) html+=" <button class='buttonCreate' onclick='return Xonomy.remoteCreate(\""+Xonomy.xmlEscape(param.createUrl, true)+"\", \""+Xonomy.xmlEscape( (param.searchUrl?param.searchUrl:param.url) , true)+"\", \""+Xonomy.xmlEscape(param.urlPlaceholder, true)+"\", \""+Xonomy.xmlEscape(Xonomy.jsEscape(defaultString))+"\")'>&nbsp;</button>";
+		html+="</form>";
+	}
+	html+=Xonomy.wyc(param.url, function(picklist){
+		var items=[];
+		if(param.add) for(var i=0; i<param.add.length; i++) items.push(param.add[i]);
+		for(var i=0; i<picklist.length; i++) items.push(picklist[i]);
+		return Xonomy.pickerMenu(items, defaultString);
+	});
+	Xonomy.lastAskerParam=param;
+	return html;
+};
+Xonomy.lastAskerParam=null;
+Xonomy.remoteSearch=function(searchUrl, urlPlaceholder, defaultString){
+	var text=$("#xonomyBubble input.textbox").val();
+	searchUrl=searchUrl.replace(urlPlaceholder, encodeURIComponent(text));
+	$("#xonomyBubble .menu").replaceWith( Xonomy.wyc(searchUrl, function(picklist){
+		var items=[];
+		if(text=="" && Xonomy.lastAskerParam.add) for(var i=0; i<Xonomy.lastAskerParam.add.length; i++) items.push(Xonomy.lastAskerParam.add[i]);
+		for(var i=0; i<picklist.length; i++) items.push(picklist[i]);
+		return Xonomy.pickerMenu(items, defaultString);
+	}));
+	return false;
+};
+Xonomy.remoteCreate=function(createUrl, searchUrl, urlPlaceholder, defaultString){
+	var text=$.trim($("#xonomyBubble input.textbox").val());
+	if(text!="") {
+		createUrl=createUrl.replace(urlPlaceholder, encodeURIComponent(text));
+		searchUrl=searchUrl.replace(urlPlaceholder, encodeURIComponent(text));
+		$.ajax({url: createUrl, dataType: "text", method: "POST"}).done(function(data){
+			if(Xonomy.wycCache[searchUrl]) delete Xonomy.wycCache[searchUrl];
+			$("#xonomyBubble .menu").replaceWith( Xonomy.wyc(searchUrl, function(picklist){ return Xonomy.pickerMenu(picklist, defaultString); }) );
+		});
+	}
+	return false;
+};
+Xonomy.pickerMenu=function(picklist, defaultString){
+	var html="";
 	html+="<div class='menu'>";
 	for(var i=0; i<picklist.length; i++) {
 		var item=picklist[i];
 		if(typeof(item)=="string") item={value: item, caption: ""};
-		html+="<div class='menuItem techno"+(item.value==defaultString?" current":"")+"' onclick='Xonomy.answer(\""+Xonomy.xmlEscape(item.value)+"\")'>";
+		html+="<div class='menuItem focusme techno"+(item.value==defaultString?" current":"")+"' tabindex='1' onclick='Xonomy.answer(\""+Xonomy.xmlEscape(item.value)+"\")'>";
+		var alone=true;
 		html+="<span class='punc'>\"</span>";
-		if(item.displayValue) html+=Xonomy.textByLang(item.displayValue); else html+=Xonomy.xmlEscape(item.value);
+		if(item.displayValue) {
+			html+=Xonomy.textByLang(item.displayValue);
+			alone=false;
+		} else {
+			html+=Xonomy.xmlEscape(item.value);
+			if(item.value) alone=false;
+		}
 		html+="<span class='punc'>\"</span>";
-		if(item.caption!="") html+=" <span class='explainer'>"+Xonomy.xmlEscape(Xonomy.textByLang(item.caption))+"</span>";
+		if(item.caption!="") html+=" <span class='explainer "+(alone?"alone":"")+"'>"+Xonomy.xmlEscape(Xonomy.textByLang(item.caption))+"</span>";
 		html+="</div>";
 	}
 	html+="</div>";
 	return html;
 };
 
+Xonomy.wycLastID=0;
+Xonomy.wycCache={};
+Xonomy.wyc=function(url, callback){ //a "when-you-can" function for delayed rendering: gets json from url, passes it to callback, and delayed-returns html-as-string from callback
+	Xonomy.wycLastID++;
+	var wycID="xonomy_wyc_"+Xonomy.wycLastID;
+	if(Xonomy.wycCache[url]) return callback(Xonomy.wycCache[url]);
+	$.ajax({url: url, dataType: "json", method: "POST"}).done(function(data){
+			$("#"+wycID).replaceWith(callback(data));
+			Xonomy.wycCache[url]=data;
+	});
+	return "<span class='wyc' id='"+wycID+"'></span>";
+};
+
+Xonomy.toggleSubmenu=function(menuItem){
+	var $menuItem=$(menuItem);
+	if($menuItem.hasClass("expanded")){ $menuItem.removeClass("expanded"); $menuItem.find(".submenu").first().slideUp("fast"); }
+	else { $menuItem.addClass("expanded"); $menuItem.find(".submenu").first().slideDown("fast"); };
+}
+Xonomy.internalMenu=function(htmlID, items, harvest, getter, indices) {
+	indices = indices || [];
+	var fragments = items.map(function (item, i) {
+		Xonomy.verifyDocSpecMenuItem(item);
+		var jsMe=harvest(document.getElementById(htmlID));
+		var includeIt=!item.hideIf(jsMe);
+		var html="";
+		if(includeIt) {
+			indices.push(i);
+			var icon=""; if(item.icon) icon="<span class='icon'><img src='"+item.icon+"'/></span> ";
+			if (item.menu) {
+				html+="<div class='menuItem'>";
+				html+="<div class='menuLabel focusme' tabindex='0' onclick='Xonomy.toggleSubmenu(this.parentNode)'>"+icon+Xonomy.formatCaption(Xonomy.textByLang(item.caption(jsMe)))+"</div>";
+				html+=Xonomy.internalMenu(htmlID, item.menu, harvest, getter, indices);
+				html+="</div>";
+			} else {
+				html+="<div class='menuItem focusme' tabindex='0' onclick='Xonomy.callMenuFunction("+getter(indices)+", \""+htmlID+"\")'>";
+				html+=icon+Xonomy.formatCaption(Xonomy.textByLang(item.caption(jsMe)));
+				html+="</div>";
+			}
+			indices.pop();
+		}
+		return html;
+	});
+	var cls = !indices.length ? 'menu' : 'submenu';
+	return fragments.length
+		? "<div class='"+cls+"'>"+fragments.join("")+"</div>"
+		: "";
+};
 Xonomy.attributeMenu=function(htmlID) {
 	var name=$("#"+htmlID).attr("data-name"); //obtain attribute's name
 	var elName=$("#"+htmlID).closest(".element").attr("data-name"); //obtain element's name
 	Xonomy.verifyDocSpecAttribute(elName, name);
 	var spec=Xonomy.docSpec.elements[elName].attributes[name];
-	var html="";
-	for(var i=0; i<spec.menu.length; i++) {
-		var item=spec.menu[i];
-		Xonomy.verifyDocSpecMenuItem(item);
-		var jsMe=Xonomy.harvestAttribute(document.getElementById(htmlID));
-		var includeIt=!item.hideIf(jsMe);
-		if(includeIt) {
-			html+="<div class='menuItem' onclick='Xonomy.callMenuFunction(Xonomy.docSpec.elements[\""+elName+"\"].attributes[\""+name+"\"].menu["+i+"], \""+htmlID+"\")'>";
-			html+=Xonomy.formatCaption(Xonomy.textByLang(item.caption(jsMe)));
-			html+="</div>";
-		}
+	function getter(indices) {
+		return 'Xonomy.docSpec.elements["'+elName+'"].attributes["'+name+'"].menu['+indices.join('].menu[')+']';
 	}
-	if(html!="") html="<div class='menu'>"+html+"</div>";
-	return html;
+	return Xonomy.internalMenu(htmlID, spec.menu, Xonomy.harvestAttribute, getter);
 };
 Xonomy.elementMenu=function(htmlID) {
 	var elName=$("#"+htmlID).attr("data-name"); //obtain element's name
 	var spec=Xonomy.docSpec.elements[elName];
-	var html="";
-	for(var i=0; i<spec.menu.length; i++) {
-		var item=spec.menu[i];
-		Xonomy.verifyDocSpecMenuItem(item);
-		var jsMe=Xonomy.harvestElement(document.getElementById(htmlID));
-		var includeIt=!item.hideIf(jsMe);
-		if(includeIt) {
-			html+="<div class='menuItem' onclick='Xonomy.callMenuFunction(Xonomy.docSpec.elements[\""+elName+"\"].menu["+i+"], \""+htmlID+"\")'>";
-			html+=Xonomy.formatCaption(Xonomy.textByLang(item.caption(jsMe)));
-			html+="</div>";
-		}
+	function getter(indices) {
+		return 'Xonomy.docSpec.elements["'+elName+'"].menu['+indices.join('].menu[')+']';
 	}
-	if(html!="") html="<div class='menu'>"+html+"</div>";
-	return html;
+	return Xonomy.internalMenu(htmlID, spec.menu, Xonomy.harvestElement, getter);
 };
 Xonomy.inlineMenu=function(htmlID) {
 	var elName=$("#"+htmlID).attr("data-name"); //obtain element's name
 	var spec=Xonomy.docSpec.elements[elName];
-	var html="";
-	for(var i=0; i<spec.inlineMenu.length; i++) {
-		var item=spec.inlineMenu[i];
-		var jsMe=Xonomy.harvestElement(document.getElementById(htmlID));
-		var includeIt=!item.hideIf(Xonomy.harvestElement(document.getElementById(htmlID)));
-		if(includeIt) {
-			html+="<div class='menuItem' onclick='Xonomy.callMenuFunction(Xonomy.docSpec.elements[\""+elName+"\"].inlineMenu["+i+"], \""+htmlID+"\")'>";
-			html+=Xonomy.formatCaption(Xonomy.textByLang(item.caption(jsMe)));
-			html+="</div>";
-		}
+	function getter(indices) {
+		return 'Xonomy.docSpec.elements["'+elName+'"].inlineMenu['+indices.join('].menu[')+']';
 	}
-	if(html!="") html="<div class='menu'>"+html+"</div>";
-	return html;
+	return Xonomy.internalMenu(htmlID, spec.inlineMenu, Xonomy.harvestElement, getter);
 };
 Xonomy.callMenuFunction=function(menuItem, htmlID) {
 	menuItem.action(htmlID, menuItem.actionParameter);
@@ -969,15 +1120,19 @@ Xonomy.formatCaption=function(caption) {
 Xonomy.deleteAttribute=function(htmlID, parameter) {
 	Xonomy.clickoff();
 	var obj=document.getElementById(htmlID);
+	var parentID=obj.parentNode.parentNode.parentNode.id;
 	obj.parentNode.removeChild(obj);
 	Xonomy.changed();
+	window.setTimeout(function(){ Xonomy.setFocus(parentID, "openingTagName"); }, 100);
 };
 Xonomy.deleteElement=function(htmlID, parameter) {
 	Xonomy.clickoff();
 	var obj=document.getElementById(htmlID);
+	var parentID=obj.parentNode.parentNode.id;
 	$(obj).fadeOut(function(){
 		obj.parentNode.removeChild(obj);
 		Xonomy.changed();
+		window.setTimeout(function(){ Xonomy.setFocus(parentID, "openingTagName");  }, 100);
 	});
 };
 Xonomy.newAttribute=function(htmlID, parameter) {
@@ -986,34 +1141,82 @@ Xonomy.newAttribute=function(htmlID, parameter) {
 	var html=Xonomy.renderAttribute({type: "attribute", name: parameter.name, value: parameter.value}, $element.data("name"));
 	$("#"+htmlID+" > .tag.opening > .attributes").append(html);
 	Xonomy.changed();
-	Xonomy.click(htmlID, "rollouter");
+	//if the attribute we have just added is shy, force rollout:
+	if($("#"+htmlID+" > .tag.opening > .attributes").children("[data-name='"+parameter.name+"'].shy").toArray().length>0) {
+		if( !$("#"+htmlID).children(".tag.opening").children(".rollouter").hasClass("rolledout") ) {
+			$("#"+htmlID).children(".tag.opening").children(".rollouter").addClass("rolledout");
+			$("#"+htmlID).children(".tag.opening").children(".attributes").addClass("rolledout").hide().slideDown("fast");
+		}
+	}
+	if(parameter.value=="") Xonomy.click($(html).prop("id"), "attributeValue"); else Xonomy.focus($(html).prop("id"), "attributeValue");
 };
 Xonomy.newElementChild=function(htmlID, parameter) {
 	Xonomy.clickoff();
-	var html=Xonomy.renderElement(Xonomy.xml2js(parameter));
+	var jsElement=Xonomy.harvestElement(document.getElementById(htmlID));
+	var html=Xonomy.renderElement(Xonomy.xml2js(parameter, jsElement));
 	var $html=$(html).hide();
 	$("#"+htmlID+" > .children").append($html);
 	Xonomy.plusminus(htmlID, true);
+	Xonomy.elementReorder($html.attr("id"));
 	Xonomy.changed();
 	$html.fadeIn();
+	window.setTimeout(function(){ Xonomy.setFocus($html.prop("id"), "openingTagName"); }, 100);
+
+};
+Xonomy.elementReorder=function(htmlID){
+	var that=document.getElementById(htmlID);
+	var elSpec=Xonomy.docSpec.elements[that.getAttribute("data-name")];
+	if(elSpec.mustBeBefore) { //is it after an element it cannot be after? then move it up until it's not!
+		var $this=$(that);
+		var jsElement=Xonomy.harvestElement(that);
+		var mustBeBefore=elSpec.mustBeBefore(jsElement);
+		var ok; do {
+			ok=true;
+			for(var ii=0; ii<mustBeBefore.length; ii++) {
+				if( $this.prevAll("*[data-name='"+mustBeBefore[ii]+"']").toArray().length>0 ) {
+					$this.prev().before($this);
+					ok=false;
+				}
+			}
+		} while(!ok)
+	}
+	if(elSpec.mustBeAfter) { //is it before an element it cannot be before? then move it down until it's not!
+		var $this=$(that);
+		var jsElement=Xonomy.harvestElement(that);
+		var mustBeAfter=elSpec.mustBeAfter(jsElement);
+		var ok; do {
+			ok=true;
+			for(var ii=0; ii<mustBeAfter.length; ii++) {
+				if( $this.nextAll("*[data-name='"+mustBeAfter[ii]+"']").toArray().length>0 ) {
+					$this.next().after($this);
+					ok=false;
+				}
+			}
+		} while(!ok)
+	}
 };
 Xonomy.newElementBefore=function(htmlID, parameter) {
 	Xonomy.clickoff();
-	var html=Xonomy.renderElement(Xonomy.xml2js(parameter));
+	var jsElement=Xonomy.harvestElement(document.getElementById(htmlID));
+	var html=Xonomy.renderElement(Xonomy.xml2js(parameter, jsElement.parent()));
 	var $html=$(html).hide();
 	$("#"+htmlID).before($html);
 	Xonomy.changed();
 	$html.fadeIn();
+	window.setTimeout(function(){ Xonomy.setFocus($html.prop("id"), "openingTagName"); }, 100);
 };
 Xonomy.newElementAfter=function(htmlID, parameter) {
 	Xonomy.clickoff();
-	var html=Xonomy.renderElement(Xonomy.xml2js(parameter));
+	var jsElement=Xonomy.harvestElement(document.getElementById(htmlID));
+	var html=Xonomy.renderElement(Xonomy.xml2js(parameter, jsElement.parent()));
 	var $html=$(html).hide();
 	$("#"+htmlID).after($html);
 	Xonomy.changed();
 	$html.fadeIn();
+	window.setTimeout(function(){ Xonomy.setFocus($html.prop("id"), "openingTagName"); }, 100);
 };
 Xonomy.replace=function(htmlID, jsNode) {
+	var what=Xonomy.currentFocus;
 	Xonomy.clickoff();
 	var html="";
 	if(jsNode.type=="element") html=Xonomy.renderElement(jsNode);
@@ -1021,6 +1224,7 @@ Xonomy.replace=function(htmlID, jsNode) {
 	if(jsNode.type=="text") html=Xonomy.renderText(jsNode);
 	$("#"+htmlID).replaceWith(html);
 	Xonomy.changed();
+	window.setTimeout(function(){ Xonomy.setFocus($(html).prop("id"), what); }, 100);
 };
 Xonomy.editRaw=function(htmlID, parameter) {
 	var div=document.getElementById(htmlID);
@@ -1031,79 +1235,94 @@ Xonomy.editRaw=function(htmlID, parameter) {
 	document.body.appendChild(Xonomy.makeBubble(Xonomy.askLongString(txt))); //create bubble
 	Xonomy.showBubble($(div)); //anchor bubble to element
 	Xonomy.answer=function(val) {
-		if(parameter.toJs) var jsElement=parameter.toJs(val, jsElement);
-		else if(parameter.toXml) var jsElement=Xonomy.xml2js(parameter.toXml(val, jsElement));
-		else jsElement=Xonomy.xml2js(val);
-		
+		var jsNewElement;
+		if(parameter.toJs) jsNewElement=parameter.toJs(val, jsElement);
+		else if(parameter.toXml) jsNewElement=Xonomy.xml2js(parameter.toXml(val, jsElement), jsElement.parent());
+		else jsNewElement=Xonomy.xml2js(val, jsElement.parent());
+
 		var obj=document.getElementById(htmlID);
-		var html=Xonomy.renderElement(jsElement);
+		var html=Xonomy.renderElement(jsNewElement);
 		$(obj).replaceWith(html);
 		Xonomy.clickoff();
 		Xonomy.changed();
+		window.setTimeout(function(){ Xonomy.setFocus($(html).prop("id"), "openingTagName"); }, 100);
 	};
 };
 
 Xonomy.draggingID=null; //what are we dragging?
 Xonomy.drag=function(ev) { //called when dragging starts
-	Xonomy.clickoff();
+	// Wrapping all the code into a timeout handler is a workaround for a Chrome browser bug
+	// (if the DOM is manipulated in the 'dragStart' event then 'dragEnd' event is sometimes fired immediately)
+	//
+	// for more details @see:
+	//   http://stackoverflow.com/questions/19639969/html5-dragend-event-firing-immediately
 	var htmlID=ev.target.parentNode.parentNode.id;
-	var $element=$("#"+htmlID);
-	var elementName=$element.attr("data-name");
-	var elSpec=Xonomy.docSpec.elements[elementName];
-	$element.addClass("dragging");
-	$(".xonomy .children").append("<div class='elementDropper' ondragover='Xonomy.dragOver(event)' ondragleave='Xonomy.dragOut(event)' ondrop='Xonomy.drop(event)'><div class='inside'></div></div>")
-	$(".xonomy .children .element").before("<div class='elementDropper' ondragover='Xonomy.dragOver(event)' ondragleave='Xonomy.dragOut(event)' ondrop='Xonomy.drop(event)'><div class='inside'></div></div>")
-	$(".xonomy .children .text").before("<div class='elementDropper' ondragover='Xonomy.dragOver(event)' ondragleave='Xonomy.dragOut(event)' ondrop='Xonomy.drop(event)'><div class='inside'></div></div>")
-	$(".xonomy .dragging .elementDropper").remove(); //remove drop targets fom inside the element being dragged
-	$(".xonomy .dragging").prev(".elementDropper").remove(); //remove drop targets from immediately before the element being dragged
-	$(".xonomy .dragging").next(".elementDropper").remove(); //remove drop targets from immediately after the element being dragged
-	$(".xonomy .element.readonly .elementDropper").remove(); //remove drop targets from inside read-only elements
-	if(elSpec.localDropOnly(Xonomy.harvest(htmlID))) {
-		if(elSpec.canDropTo) { //remove the drop target from elements that are not the dragged element's parent
+	ev.dataTransfer.setData("text", htmlID);
+	setTimeout(function() {
+		Xonomy.clickoff();
+		var $element=$("#"+htmlID);
+		var elementName=$element.attr("data-name");
+		var elSpec=Xonomy.docSpec.elements[elementName];
+		$element.addClass("dragging");
+		$(".xonomy .children").append("<div class='elementDropper' ondragover='Xonomy.dragOver(event)' ondragleave='Xonomy.dragOut(event)' ondrop='Xonomy.drop(event)'><div class='inside'></div></div>")
+		$(".xonomy .children .element").before("<div class='elementDropper' ondragover='Xonomy.dragOver(event)' ondragleave='Xonomy.dragOut(event)' ondrop='Xonomy.drop(event)'><div class='inside'></div></div>")
+		$(".xonomy .children .text").before("<div class='elementDropper' ondragover='Xonomy.dragOver(event)' ondragleave='Xonomy.dragOut(event)' ondrop='Xonomy.drop(event)'><div class='inside'></div></div>")
+		$(".xonomy .dragging .elementDropper").remove(); //remove drop targets fom inside the element being dragged
+		$(".xonomy .dragging").prev(".elementDropper").remove(); //remove drop targets from immediately before the element being dragged
+		$(".xonomy .dragging").next(".elementDropper").remove(); //remove drop targets from immediately after the element being dragged
+		$(".xonomy .element.readonly .elementDropper").remove(); //remove drop targets from inside read-only elements
+		if(elSpec.localDropOnly(Xonomy.harvest(htmlID))) {
+			if(elSpec.canDropTo) { //remove the drop target from elements that are not the dragged element's parent
+				var droppers=$(".xonomy .elementDropper").toArray();
+				for(var i=0; i<droppers.length; i++) {
+					var dropper=droppers[i];
+					if(dropper.parentNode!=ev.target.parentNode.parentNode.parentNode) {
+						dropper.parentNode.removeChild(dropper);
+					}
+				}
+			}
+		}
+		if(elSpec.canDropTo) { //remove the drop target from elements it cannot be dropped into
 			var droppers=$(".xonomy .elementDropper").toArray();
 			for(var i=0; i<droppers.length; i++) {
 				var dropper=droppers[i];
-				if(dropper.parentNode!=ev.target.parentNode.parentNode.parentNode) {
+				var parentElementName=$(dropper.parentNode.parentNode).toArray()[0].getAttribute("data-name");
+				if($.inArray(parentElementName, elSpec.canDropTo)<0) {
 					dropper.parentNode.removeChild(dropper);
 				}
 			}
 		}
-	}
-	if(elSpec.canDropTo) { //remove the drop target from elements it cannot be dropped into
-		var droppers=$(".xonomy .elementDropper").toArray();
-		for(var i=0; i<droppers.length; i++) {
-			var dropper=droppers[i];
-			var parentElementName=$(dropper.parentNode.parentNode).toArray()[0].getAttribute("data-name");
-			if($.inArray(parentElementName, elSpec.canDropTo)<0) {
-				dropper.parentNode.removeChild(dropper);
-			}
-		}
-	}
-	if(elSpec.mustBeBefore) { //remove the drop target from after elements it cannot be after
-		var droppers=$(".xonomy .elementDropper").toArray();
-		for(var i=0; i<droppers.length; i++) {
-			var dropper=droppers[i];
-			for(var ii=0; ii<elSpec.mustBeBefore.length; ii++) {
-				if( $(dropper).prevAll("*[data-name='"+elSpec.mustBeBefore[ii]+"']").toArray().length>0 ) {
-					dropper.parentNode.removeChild(dropper);
+		if(elSpec.mustBeBefore) { //remove the drop target from after elements it cannot be after
+			var jsElement=Xonomy.harvestElement($element.toArray()[0]);
+			var droppers=$(".xonomy .elementDropper").toArray();
+			for(var i=0; i<droppers.length; i++) {
+				var dropper=droppers[i];
+				jsElement.internalParent=Xonomy.harvestElement(dropper.parentNode.parentNode); //pretend the element's parent is the dropper's parent
+				var mustBeBefore=elSpec.mustBeBefore(jsElement);
+				for(var ii=0; ii<mustBeBefore.length; ii++) {
+					if( $(dropper).prevAll("*[data-name='"+mustBeBefore[ii]+"']").toArray().length>0 ) {
+						dropper.parentNode.removeChild(dropper);
+					}
 				}
 			}
 		}
-	}
-	if(elSpec.mustBeAfter) { //remove the drop target from before elements it cannot be before
-		var droppers=$(".xonomy .elementDropper").toArray();
-		for(var i=0; i<droppers.length; i++) {
-			var dropper=droppers[i];
-			for(var ii=0; ii<elSpec.mustBeAfter.length; ii++) {
-				if( $(dropper).nextAll("*[data-name='"+elSpec.mustBeAfter[ii]+"']").toArray().length>0 ) {
-					dropper.parentNode.removeChild(dropper);
+		if(elSpec.mustBeAfter) { //remove the drop target from before elements it cannot be before
+			var jsElement=Xonomy.harvestElement($element.toArray()[0]);
+			var droppers=$(".xonomy .elementDropper").toArray();
+			for(var i=0; i<droppers.length; i++) {
+				var dropper=droppers[i];
+				jsElement.internalParent=Xonomy.harvestElement(dropper.parentNode.parentNode); //pretend the element's parent is the dropper's parent
+				var mustBeAfter=elSpec.mustBeAfter(jsElement);
+				for(var ii=0; ii<mustBeAfter.length; ii++) {
+					if( $(dropper).nextAll("*[data-name='"+mustBeAfter[ii]+"']").toArray().length>0 ) {
+						dropper.parentNode.removeChild(dropper);
+					}
 				}
 			}
 		}
-	}
-	Xonomy.draggingID=htmlID;
-	ev.dataTransfer.setData("text", htmlID);
-	Xonomy.refresh();
+		Xonomy.draggingID=htmlID;
+		Xonomy.refresh();
+	}, 10);
 };
 Xonomy.dragOver=function(ev) {
 	ev.preventDefault();
@@ -1161,3 +1380,172 @@ Xonomy.textByLang=function(str) {
 	return ret;
 };
 
+Xonomy.currentHtmlId=null;
+Xonomy.currentFocus=null;
+Xonomy.keyNav=false;
+Xonomy.startKeyNav=function(keyboardEventCatcher, scrollableContainer){
+	Xonomy.keyNav=true;
+	var $keyboardEventCatcher=$(keyboardEventCatcher); if(!keyboardEventCatcher) $keyboardEventCatcher=$(".xonomy");
+	$scrollableContainer=$(scrollableContainer); if(!scrollableContainer) $scrollableContainer=$keyboardEventCatcher;
+	$keyboardEventCatcher.attr("tabindex", "0");
+	$keyboardEventCatcher.on("keydown", Xonomy.key);
+	$(document).on("keydown", function(e) { if([32, 37, 38, 39, 40].indexOf(e.keyCode)>-1 && $("input:focus, select:focus, textarea:focus").length==0) e.preventDefault(); }); //prevent default browser scrolling on arrow keys
+	Xonomy.keyboardEventCatcher=$keyboardEventCatcher;
+	Xonomy.scrollableContainer=$scrollableContainer;
+};
+Xonomy.setFocus=function(htmlID, what){
+	if(Xonomy.keyNav) {
+		$(".xonomy .current").removeClass("current");
+		$(".xonomy .focused").removeClass("focused");
+		if(what=="attributeValue") $("#"+htmlID+" > .valueContainer").addClass("current").addClass("focused");
+		else $("#"+htmlID).addClass("current").addClass("focused");
+		Xonomy.currentHtmlId=htmlID;
+		Xonomy.currentFocus=what;
+		if(Xonomy.currentFocus=="openingTagName") $("#"+htmlID+" > .tag.opening").first().addClass("focused");
+		if(Xonomy.currentFocus=="closingTagName") $("#"+htmlID+" > .tag.closing").last().addClass("focused");
+		if(Xonomy.currentFocus=="childrenCollapsed") $("#"+htmlID+" > .childrenCollapsed").last().addClass("focused");
+		if(Xonomy.currentFocus=="rollouter") $("#"+htmlID+" > .tag.opening > .rollouter").last().addClass("focused");
+	}
+};
+Xonomy.key=function(event){
+	if(!Xonomy.notKeyUp && !$("#xonomyBubble").length>0 ) {
+		if(event.which==27) {
+			event.preventDefault();
+			event.stopImmediatePropagation();
+			Xonomy.destroyBubble(); //escape key
+		} else if(event.which==13){ //enter key
+			event.preventDefault();
+			event.stopImmediatePropagation();
+			if(Xonomy.currentFocus=="childrenCollapsed") Xonomy.plusminus(Xonomy.currentHtmlId, true);
+			Xonomy.click(Xonomy.currentHtmlId, Xonomy.currentFocus);
+			Xonomy.clickoff();
+		} else if((event.ctrlKey || event.metaKey) && event.which==40) { //down key with Ctrl or Cmd (Mac OS)
+			event.preventDefault();
+			event.stopImmediatePropagation();
+			Xonomy.scrollableContainer.scrollTop( Xonomy.scrollableContainer.scrollTop()+60 );
+		} else if((event.ctrlKey || event.metaKey) && event.which==38) { //up key with Ctrl or Cmd (Mac OS)
+			event.preventDefault();
+			event.stopImmediatePropagation();
+			Xonomy.scrollableContainer.scrollTop( Xonomy.scrollableContainer.scrollTop()-60 );
+		} else if((event.ctrlKey || event.metaKey) && [37, 39].indexOf(event.which)>-1) { //arrow keys with Ctrl or Cmd (Mac OS)
+			event.preventDefault();
+			event.stopImmediatePropagation();
+			var $el=$("#"+Xonomy.currentHtmlId);
+			if($el.hasClass("element") && !$el.hasClass("uncollapsible")){
+				if(event.which==39 && $el.hasClass("collapsed")) { //expand it!
+					Xonomy.plusminus(Xonomy.currentHtmlId);
+				}
+				if(event.which==37 && !$el.hasClass("collapsed")) { //collapse it!
+					Xonomy.plusminus(Xonomy.currentHtmlId);
+				}
+			}
+		} else if([37, 38, 39, 40].indexOf(event.which)>-1 && !event.altKey) { //arrow keys
+			event.preventDefault();
+			event.stopImmediatePropagation();
+			if(!Xonomy.currentHtmlId) { //nothing is current yet
+				Xonomy.setFocus($(".xonomy .element").first().prop("id"), "openingTagName");
+			} else if($(".xonomy .focused").length==0) { //something is current but nothing is focused yet
+				Xonomy.setFocus(Xonomy.currentHtmlId, Xonomy.currentFocus);
+			} else { //something is current, do arrow action
+				if(event.which==40) Xonomy.goDown(); //down key
+				if(event.which==38) Xonomy.goUp(); //up key
+				if(event.which==39) Xonomy.goRight(); //right key
+				if(event.which==37) Xonomy.goLeft(); //left key
+			}
+		}
+	}
+	Xonomy.notKeyUp=false;
+};
+
+Xonomy.goDown=function(){
+	if(Xonomy.currentFocus!="openingTagName" && Xonomy.currentFocus!="closingTagName" && Xonomy.currentFocus!="text") {
+		Xonomy.goRight();
+	} else {
+		var $el=$("#"+Xonomy.currentHtmlId);
+		var $me=$el;
+		if(Xonomy.currentFocus=="openingTagName") var $me=$el.find(".tag.opening").first();
+		if(Xonomy.currentFocus=="closingTagName") var $me=$el.find(".tag.closing").last();
+
+		var $candidates=$(".xonomy .focusable:visible").not(".attributeName").not(".attributeValue").not(".childrenCollapsed").not(".rollouter");
+		if(Xonomy.currentFocus=="openingTagName" && $el.hasClass("oneliner")) $candidates=$candidates.not("#"+Xonomy.currentHtmlId+" .tag.closing").not("#"+Xonomy.currentHtmlId+" .children *");
+		if(Xonomy.currentFocus=="openingTagName" && $el.hasClass("oneliner")) $candidates=$candidates.not("#"+Xonomy.currentHtmlId+" .textnode");
+		if($el.hasClass("collapsed")) $candidates=$candidates.not("#"+Xonomy.currentHtmlId+" .tag.closing");
+		if($el.hasClass("textnode") && $(".xonomy").hasClass("nerd")) var $candidates=$el.closest(".element").find(".tag.closing").last();
+		if($el.hasClass("textnode") && $(".xonomy").hasClass("laic")) var $candidates=$el.closest(".element").next().find(".focusable:visible").first();
+
+		var $next=$candidates.eq( $candidates.index($me[0])+1 );
+		if($next.hasClass("opening")) Xonomy.setFocus($next.closest(".element").prop("id"), "openingTagName");
+		if($next.hasClass("closing")) Xonomy.setFocus($next.closest(".element").prop("id"), "closingTagName");
+		if($next.hasClass("textnode")) Xonomy.setFocus($next.prop("id"), "text");
+	}
+};
+Xonomy.goUp=function(){
+	if(Xonomy.currentFocus!="openingTagName" && Xonomy.currentFocus!="closingTagName") {
+		Xonomy.goLeft();
+	} else {
+		var $el=$("#"+Xonomy.currentHtmlId);
+		var $me=$el;
+		if(Xonomy.currentFocus=="openingTagName") var $me=$el.find(".tag.opening").first();
+		if(Xonomy.currentFocus=="closingTagName") var $me=$el.find(".tag.closing").last();
+
+		var $candidates=$(".xonomy .focusable:visible").not(".attributeName").not(".attributeValue").not(".childrenCollapsed").not(".rollouter");
+		$candidates=$candidates.not(".element .oneliner .tag.closing");
+		$candidates=$candidates.not(".element .oneliner .textnode");
+		$candidates=$candidates.not(".element .collapsed .tag.closing");
+		if($el.hasClass("textnode")) var $candidates=$el.closest(".element").find(".tag.opening").first().add($el);
+		if($me.hasClass("closing") && $el.hasClass("hasText")) $candidates=$candidates.not("#"+Xonomy.currentHtmlId+" .children *:not(:first-child)");
+		if($me.hasClass("opening") && $el.closest(".element").prev().hasClass("hasText")) {
+			var siblingID=$el.closest(".element").prev().prop("id");
+			$candidates=$candidates.not("#"+siblingID+" .children *:not(:first-child)");
+		}
+
+		if($candidates.index($me[0])>0) {
+			var $next=$candidates.eq( $candidates.index($me[0])-1 );
+			if($next.hasClass("opening")) Xonomy.setFocus($next.closest(".element").prop("id"), "openingTagName");
+			if($next.hasClass("closing")) Xonomy.setFocus($next.closest(".element").prop("id"), "closingTagName");
+			if($next.hasClass("textnode")) Xonomy.setFocus($next.prop("id"), "text");
+		}
+	}
+};
+Xonomy.goRight=function(){
+	var $el=$("#"+Xonomy.currentHtmlId);
+	var $me=$el;
+	if(Xonomy.currentFocus=="openingTagName") var $me=$el.find(".tag.opening").first();
+	if(Xonomy.currentFocus=="closingTagName") var $me=$el.find(".tag.closing").last();
+	if(Xonomy.currentFocus=="attributeName") var $me=$el.find(".attributeName").first();
+	if(Xonomy.currentFocus=="attributeValue") var $me=$el.find(".attributeValue").first();
+	if(Xonomy.currentFocus=="childrenCollapsed") var $me=$el.find(".childrenCollapsed").first();
+	if(Xonomy.currentFocus=="rollouter") var $me=$el.find(".rollouter").first();
+
+	var $candidates=$(".xonomy .focusable:visible");
+
+	var $next=$candidates.eq( $candidates.index($me[0])+1 );
+	if($next.hasClass("attributeName")) Xonomy.setFocus($next.closest(".attribute").prop("id"), "attributeName");
+	if($next.hasClass("attributeValue")) Xonomy.setFocus($next.closest(".attribute").prop("id"), "attributeValue");
+	if($next.hasClass("opening")) Xonomy.setFocus($next.closest(".element").prop("id"), "openingTagName");
+	if($next.hasClass("closing")) Xonomy.setFocus($next.closest(".element").prop("id"), "closingTagName");
+	if($next.hasClass("textnode")) Xonomy.setFocus($next.prop("id"), "text");
+	if($next.hasClass("childrenCollapsed")) Xonomy.setFocus($next.closest(".element").prop("id"), "childrenCollapsed");
+	if($next.hasClass("rollouter")) Xonomy.setFocus($next.closest(".element").prop("id"), "rollouter");
+};
+Xonomy.goLeft=function(){
+	var $el=$("#"+Xonomy.currentHtmlId);
+	var $me=$el;
+	if(Xonomy.currentFocus=="openingTagName") var $me=$el.find(".tag.opening").first();
+	if(Xonomy.currentFocus=="closingTagName") var $me=$el.find(".tag.closing").last();
+	if(Xonomy.currentFocus=="attributeName") var $me=$el.find(".attributeName").first();
+	if(Xonomy.currentFocus=="attributeValue") var $me=$el.find(".attributeValue").first();
+	if(Xonomy.currentFocus=="childrenCollapsed") var $me=$el.find(".childrenCollapsed").first();
+	if(Xonomy.currentFocus=="rollouter") var $me=$el.find(".rollouter").first();
+
+	var $candidates=$(".xonomy .focusable:visible");
+
+	var $next=$candidates.eq( $candidates.index($me[0])-1 );
+	if($next.hasClass("attributeName")) Xonomy.setFocus($next.closest(".attribute").prop("id"), "attributeName");
+	if($next.hasClass("attributeValue")) Xonomy.setFocus($next.closest(".attribute").prop("id"), "attributeValue");
+	if($next.hasClass("opening")) Xonomy.setFocus($next.closest(".element").prop("id"), "openingTagName");
+	if($next.hasClass("closing")) Xonomy.setFocus($next.closest(".element").prop("id"), "closingTagName");
+	if($next.hasClass("textnode")) Xonomy.setFocus($next.prop("id"), "text");
+	if($next.hasClass("childrenCollapsed")) Xonomy.setFocus($next.closest(".element").prop("id"), "childrenCollapsed");
+	if($next.hasClass("rollouter")) Xonomy.setFocus($next.closest(".element").prop("id"), "rollouter");
+};

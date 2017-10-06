@@ -11,7 +11,7 @@ namespace Website
 	{
 		protected string uilang="en";
 		protected Metadata metadata;
-		protected string pageMode="home"; //home|catalog, later: home|catalogHome|catalogListing
+		protected string pageMode="home"; //home|catalog|permalink, later: home|catalogHome|catalogListing|permalink
 
 		protected string objLang="x";
 		protected string metaLang="x";
@@ -25,6 +25,8 @@ namespace Website
 		public List<string> objLangs=new List<string>();
 		public List<string> searchableObjLangs=new List<string>();
 		public List<string> metaLangs=new List<string>();
+
+		protected string permalinkTitle="";
 
 		protected void Page_Load(object sender, EventArgs e)
 		{
@@ -79,6 +81,15 @@ namespace Website
 			param.Value=this.metaLang;
 			param.Direction=ParameterDirection.Input;
 			command.Parameters.Add(param);
+
+			if(this.pageMode=="permalink") {
+				param=new SqlParameter();
+				param.ParameterName="@dictID";
+				param.SqlDbType=SqlDbType.Int;
+				param.Value=(int)Context.Items["dictID"];
+				param.Direction=ParameterDirection.Input;
+				command.Parameters.Add(param);
+			}
 
 			SqlDataReader reader=command.ExecuteReader();
 			while(reader.Read()) { //read objLangs:
@@ -141,6 +152,15 @@ namespace Website
 			//	}
 			//	this.dictionaries = temp;
 			//}
+
+			if(this.pageMode=="permalink" && this.dictionaries.Count==0) {
+				Response.Redirect("/"+this.uilang+"/");
+			}
+			if(this.pageMode=="permalink" && this.dictionaries.Count>0) {
+				this.permalinkTitle=this.getInnerXml(this.dictionaries[0], "/dictionary/title", "");
+				this.permalinkTitle=System.Text.RegularExpressions.Regex.Replace(this.permalinkTitle, @"\</[^\>]+\>", ")");
+				this.permalinkTitle=System.Text.RegularExpressions.Regex.Replace(this.permalinkTitle, @"\<[^\>]+\>", "(");
+			}
 		}
 
 		protected string getQueryString()
@@ -195,7 +215,9 @@ namespace Website
 			string year=this.getXmlValue(doc, "/dictionary/year/text()", "");
 			string style=""; if(!isTopLevel) style="display: none";
 			ret+="<div class='dictionary' style='"+style+"' data-sortkey='"+Server.UrlEncode(title)+"'>";
-			if(Session["email"]!=null && this.pageMode=="catalogListing") ret+="<a class='cms editLink' href='javascript:openDicEditor("+id+")'><span class='dot'></span></a>";
+			if(Session["email"]!=null && (this.pageMode=="catalogListing" || this.pageMode=="permalink")) {
+				ret+="<a class='cms editLink' href='javascript:openDicEditor("+id+")'><span class='dot'></span></a>";
+			}
 			if(isTopLevel) {
 				ret+="<a class='screenshot' href='"+url+"' target='_blank'><img src='http://img.bitpixels.com/getthumbnail?code=78981&size=120&url="+Server.UrlEncode(url)+"' width='120' height='90'/></a>";
 				ret+="<a class='stamp' href='/"+uilang+"/stamp/'><img src='/stamp-tiny.gif' width='120' height='20'/></a>";
@@ -283,7 +305,7 @@ namespace Website
 			}
 
 			int subCount=doc.SelectNodes("/dictionary/dictionary").Count;
-			if(subCount>0 && this.pageMode=="catalogListing") {
+			if(subCount>0 && (this.pageMode=="catalogListing" || this.pageMode=="permalink")) {
 				ret+="<div class='subdictionaries'>";
 				ret+="<div class='revealerContainer'><a class='revealer collapsed' href='javascript:void(null)' onclick='toggleSubdictionaries(this)'>"+L("included")+" ("+subCount+")</a></div>";
 				foreach(XmlElement el in doc.SelectNodes("/dictionary/dictionary")) {

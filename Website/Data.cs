@@ -16,6 +16,28 @@ namespace Website
 			//return "<!-- Start of StatCounter Code for Default Guide--><script type=\"text/javascript\"> var sc_project=10391388; var sc_invisible=1; var sc_security=\"51c01d0b\"; var scJsHost = ((\"https:\" == document.location.protocol) ? \"https://secure.\" : \"http://www.\"); document.write(\"<sc\"+\"ript type='text/javascript' src='\" + scJsHost + \"statcounter.com/counter/counter.js'></\"+\"script>\"); </script><noscript><div class=\"statcounter\"><a title=\"site stats\" href=\"http://statcounter.com/free-web-stats/\" target=\"_blank\"><img class=\"statcounter\" src=\"http://c.statcounter.com/10391388/0/51c01d0b/1/\" alt=\"site stats\"></a></div></noscript><!-- End of StatCounter Code for Default Guide -->";
 			return "";
 		}
+		public static string DetectUILang(System.Web.HttpRequest request, Metadata metadata)
+		{
+			string uilang="";
+			if(uilang=="" && request.Cookies["uilang"]!=null) { //try detecting uilang from cookie
+				uilang=request.Cookies["uilang"].Value.ToLower();
+				if(!metadata.isLangUI(uilang)) uilang="";
+			}
+			if(uilang=="" && request.UserLanguages!=null) { //try detecting uilang from browser setting
+				foreach(string acceptlang in request.UserLanguages) {
+					foreach(Language lang in metadata.languages) {
+						if(lang.isUI) {
+							if(acceptlang.ToLower()==lang.code || acceptlang.ToLower().StartsWith(lang.code+"-") || acceptlang.ToLower().StartsWith(lang.code+";")) {
+								uilang=lang.code;
+								break;
+							}
+						}
+						if(uilang!="") break;
+					}
+				}
+			} if(uilang=="") uilang="en";
+			return uilang;
+		}
 	}
 	
 	public class Language
@@ -203,7 +225,7 @@ namespace Website
 			this.dicTypes.Add(new DicType("por", "Portals and aggregators", "[Portals and aggregators] are websites that provide access to more than one dictionary and allow you to search them all at once."));
 			this.dicTypes.Add(new DicType("lrn", "Learner's dictionaries", "[Learner's dictionaries] are intended for people who are learning the language as a second language."));
 			this.dicTypes.Add(new DicType("spe", "Dictionaries on special topics", "[Dictionaries on special topics] are dictionaries that focus on a specific subset of the vocabulary (such as new words or phrasal verbs) or which focus on a specific dialect or variant of the language."));
-			this.dicTypes.Add(new DicType("ort", "Orthographic dictionaries", "[Orthographic dictionaries] are dictionaries which codify the correct spelling and other aspects of the writing of words."));
+			this.dicTypes.Add(new DicType("ort", "Spelling dictionaries", "[Spelling dictionaries] are dictionaries which codify the correct spelling and other aspects of the orthography of words."));
 			this.dicTypes.Add(new DicType("ety", "Etymological dictionaries", "[Etymological dictionaries] are dictionaries that explain the origins of words."));
 			this.dicTypes.Add(new DicType("his", "Historical dictionaries", "[Historical dictionaries] are dictionaries that document previous historical states of the language, or dictionaries that trace how the meanings and usage of words have evolved throughout history."));
 			this.dicTypes.Add(new DicType("trm", "Terminological dictionaries", "[Terminological dictionaries] describe the vocabulary of specialized domains such as biology, mathematics or economics."));
@@ -217,8 +239,10 @@ namespace Website
 
 			if(uilang!="") {
 				foreach(DicType dt in this.dicTypes) {
-					dt.name=this.getString(dt.code+"-name");
-					dt.legend=this.getString(dt.code+"-legend");
+					string locName=this.getString(dt.code+"-name");
+					string locLegend=this.getString(dt.code+"-legend");
+					if(!locName.StartsWith("$")) dt.name=locName;
+					if(!locLegend.StartsWith("$"))dt.legend=locLegend;
 				}
 
 				foreach(AboutPage ap in this.aboutPages) {
@@ -254,7 +278,9 @@ namespace Website
 		public Dictionary<string, string> strings=new Dictionary<string, string>();
 		public string getString(string code) {
 			string ret="$"+code;
-			if(this.strings.ContainsKey(code)) ret=this.strings[code];
+			if(this.strings.ContainsKey(code)) ret=this.strings[code]; else {
+				if(code=="monoDicts") ret="Monolingual dictionaries";
+			}
 			return ret;
 		}
 

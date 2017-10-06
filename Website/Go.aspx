@@ -8,10 +8,12 @@
 		<title><%=L("edp")%></title>
 		<link rel="icon" href="/favicon.ico" />
     </head>
-    <body>
-        <form action="<%=this.url%>" method="post">
-            <input type="text" name="keyword" value="<%=this.txt%>"/>
-            <input type="text" name="type" value="1"/>
+    <body onload="document.forms[0].submit()">
+        <form action="<%=Server.HtmlEncode(this.url)%>" method="post" style="visibility: hidden">
+            <%foreach(string name in this.postFields.Keys) {%>
+                <%string value=this.postFields[name]; if(value=="") value=this.txt;%>
+                <input type="text" name="<%=Server.HtmlEncode(name)%>" value="<%=Server.HtmlEncode(value)%>"/>
+            <%}%>
             <input type="submit">
         </form>
     </body>

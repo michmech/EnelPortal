@@ -62,6 +62,12 @@ namespace Website
                 if(Request.Url.Host!="localhost") Response.Cookies["uilang"].Domain=Request.Url.Host;
 			}
 
+			//Make sure URL always ends in slash:
+			if(!Regex.IsMatch(reqPath, @"/$", RegexOptions.IgnoreCase) && !reqPath.ToLower().EndsWith(".aspx")) {
+				Response.Redirect(reqPath+"/");
+				return;
+			}
+
 			//UILang + An about page:
 			match=Regex.Match(reqPath, @"^/("+uilangStamp+@")/(info|prop|prop-ok|prop-ko|crit|crtr|stmp|dnld)/?$", RegexOptions.IgnoreCase);
 			if(match.Success) {
@@ -90,6 +96,27 @@ namespace Website
 				return;
 			}
 
+			//UILang + DictID:
+			match=Regex.Match(reqPath, @"^/("+uilangStamp+@")/([0-9]+)/?$", RegexOptions.IgnoreCase);
+			if(match.Success) {
+				string uilang=match.Groups[1].ToString().ToLower();
+				int dictID=int.Parse(match.Groups[2].ToString());
+				HttpContext.Current.Items.Add("pageMode", "permalink");
+				HttpContext.Current.Items.Add("dictID", dictID);
+				HttpContext.Current.Items.Add("uilang", uilang);
+				HttpContext.Current.RewritePath("/Default.aspx");
+				return;
+			}
+
+			//no UILang + DictID:
+			match=Regex.Match(reqPath, @"^/([0-9]+)/?$", RegexOptions.IgnoreCase);
+			if(match.Success) {
+				int dictID=int.Parse(match.Groups[1].ToString());
+				string uilang=Connfigger.DetectUILang(HttpContext.Current.Request, metadata);
+				Response.Redirect("/"+uilang+"/"+dictID+"/");
+				return;
+			}
+
 			//Home page + language code:
 			match=Regex.Match(reqPath, @"^/("+uilangStamp+@")/?$", RegexOptions.IgnoreCase);
 			if(match.Success) {
@@ -103,24 +130,7 @@ namespace Website
 			//Home page + no language code:
 			match=Regex.Match(reqPath, @"^/(default\.aspx)?/?$", RegexOptions.IgnoreCase);
 			if(match.Success) {
-                string uilang="";
-				if(uilang=="" && HttpContext.Current.Request.Cookies["uilang"]!=null) { //try detecting uilang from cookie
-					uilang=HttpContext.Current.Request.Cookies["uilang"].Value.ToLower();
-					if(!metadata.isLangUI(uilang)) uilang="";
-				}
-                if(uilang=="" && HttpContext.Current.Request.UserLanguages!=null) { //try detecting uilang from browser setting
-                    foreach(string acceptlang in HttpContext.Current.Request.UserLanguages) {
-                        foreach(Language lang in metadata.languages) {
-							if(lang.isUI) {
-								if(acceptlang.ToLower()==lang.code || acceptlang.ToLower().StartsWith(lang.code+"-") || acceptlang.ToLower().StartsWith(lang.code+";")) {
-									uilang=lang.code;
-									break;
-								}
-							}
-                            if(uilang!="") break;
-                        }
-                    }
-                } if(uilang=="") uilang="en";
+                string uilang=Connfigger.DetectUILang(HttpContext.Current.Request, metadata);
 				Response.Redirect("/"+uilang+"/");
 				return;
 			}

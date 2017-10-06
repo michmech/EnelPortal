@@ -5,7 +5,20 @@
 		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
 		<meta name="MobileOptimized" content="300" />
 		<meta name="HandheldFriendly" content="true" />
-		<title><%=L("edp")%></title>
+		<title>
+            <%if(this.pageMode=="catalog" || this.pageMode=="catalogHome" || this.pageMode=="catalogListing") {%>
+                <%=L("edp")%>:
+                <%if(this.objLang=="x"){%>
+	                <%=L("find")%>
+                <%} else {%>
+	                <%=this.metadata.getLanguage(this.objLang).name%>
+                <%}%>
+            <%} else if(this.pageMode=="permalink") {%>
+                <%=L("edp")%>: <%=this.permalinkTitle%>
+            <%} else {%>
+                <%=L("edp")%>
+            <%}%>
+		</title>
 		<link rel="icon" href="/favicon.ico" />
 		<link rel="image_src" href="http://www.dictionaryportal.eu/preview.gif" />
 		<meta property="og:image" content="http://www.dictionaryportal.eu/preview.gif" />
@@ -15,7 +28,11 @@
 		<script type="text/javascript" src="/furniture/catalog.js?2017-07-12"></script>
 		<link type="text/css" rel="stylesheet" href="/furniture/template.css?2017-07-12" />
 		<%foreach(Website.Language l in this.metadata.languages) { if(l.isUI && l.code!=this.uilang) {%>
-            <link rel="alternate" hreflang="<%=l.code%>" href="https://www.dictionaryportal.eu/<%=l.code%>/<%if(this.pageMode=="catalogHome" || this.pageMode=="catalogListing"){%>ctlg/<%}%><%=this.getQueryString()%>" />
+            <%if(this.pageMode=="permalink") {%>
+                <link rel="alternate" hreflang="<%=l.code%>" href="https://www.dictionaryportal.eu/<%=l.code%>/<%=(int)Context.Items["dictID"]%>/" />
+            <%} else {%>
+                <link rel="alternate" hreflang="<%=l.code%>" href="https://www.dictionaryportal.eu/<%=l.code%>/<%if(this.pageMode=="catalogHome" || this.pageMode=="catalogListing"){%>ctlg/<%}%><%=this.getQueryString()%>" />
+            <%}%>
 		<%}}%>
 		<script type="text/javascript">
 		$(document).ready(function(){
@@ -66,10 +83,17 @@
 					<li class=""><a href="/<%=this.uilang%>/info/"><%=L("about-info")%></a></li>
 				</ul>
 				<ul id="uilang">
-					<li lang="<%=this.uilang%>" class="<%=this.uilang%> current"><a href="/<%=this.uilang%>/<%=this.getQueryString()%>"><%=this.metadata.getNativeName(this.uilang)%> <span class="arrow">▼</span></a></li>
-					<%foreach(Website.Language l in this.metadata.languages) { if(l.isUI && l.code!=this.uilang) {%>
-						<li lang="<%=l.code%>" class="<%=l.code%> more"><a href="/<%=l.code%>/<%if(this.pageMode=="catalogHome" || this.pageMode=="catalogListing"){%>ctlg/<%}%><%=this.getQueryString()%>"><%=l.nativeName%></a></li>
-					<%}}%>
+                    <%if(this.pageMode=="permalink") {%>
+					    <li lang="<%=this.uilang%>" class="<%=this.uilang%> current"><a href="/<%=this.uilang%>/<%=(int)Context.Items["dictID"]%>/"><%=this.metadata.getNativeName(this.uilang)%> <span class="arrow">▼</span></a></li>
+					    <%foreach(Website.Language l in this.metadata.languages) { if(l.isUI && l.code!=this.uilang) {%>
+						    <li lang="<%=l.code%>" class="<%=l.code%> more"><a href="/<%=l.code%>/<%=(int)Context.Items["dictID"]%>/"><%=l.nativeName%></a></li>
+					    <%}}%>
+                    <%} else {%>
+					    <li lang="<%=this.uilang%>" class="<%=this.uilang%> current"><a href="/<%=this.uilang%>/<%=this.getQueryString()%>"><%=this.metadata.getNativeName(this.uilang)%> <span class="arrow">▼</span></a></li>
+					    <%foreach(Website.Language l in this.metadata.languages) { if(l.isUI && l.code!=this.uilang) {%>
+						    <li lang="<%=l.code%>" class="<%=l.code%> more"><a href="/<%=l.code%>/<%if(this.pageMode=="catalogHome" || this.pageMode=="catalogListing"){%>ctlg/<%}%><%=this.getQueryString()%>"><%=l.nativeName%></a></li>
+					    <%}}%>
+                    <%}%>
 				</ul>
 			</div>
 			
@@ -120,21 +144,43 @@
 			<%}%>
 			
 			<h1 class="tab directory">
-				<span>
-                    <%if(this.objLang=="x"){%>
-                        <%=L("find")%>
-                    <%} else {%>
-                        <%=this.metadata.getLanguage(this.objLang).name%>
-                    <%}%>
-				</span>
+                <%if(this.pageMode!="permalink") {%>
+				    <span>
+                        <%if(this.objLang=="x"){%>
+                            <%=L("find")%>
+                        <%} else {%>
+                            <%=this.metadata.getLanguage(this.objLang).name%>
+                        <%}%>
+				    </span>
+                <%}%>
 				<%if(this.pageMode!="home") {%>
-					<div class="socials">
-						<a target="_blank" href="https://plus.google.com/share?url=<%=Server.UrlEncode("http://www.dictionaryportal.eu/"+uilang+"/ctlg/"+getQueryString(objLang, metaLang, dicType))%>" class="gplus"></a>
-						<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<%=Server.UrlEncode("http://www.dictionaryportal.eu/"+uilang+"/ctlg/"+getQueryString(objLang, metaLang, dicType))%>" class="facebook"></a>
-						<a target="_blank" href="https://twitter.com/intent/tweet?url=<%=Server.UrlEncode("http://www.dictionaryportal.eu/"+uilang+"/ctlg/"+getQueryString(objLang, metaLang, dicType))%>" class="twitter"></a>
-					</div>
+                    <%if(this.pageMode=="permalink") {%>
+					    <div class="socials">
+						    <a target="_blank" href="https://plus.google.com/share?url=<%=Server.UrlEncode("http://www.dictionaryportal.eu/"+uilang+"/"+(int)Context.Items["dictID"]+"/")%>" class="gplus"></a>
+						    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<%=Server.UrlEncode("http://www.dictionaryportal.eu/"+uilang+"/"+(int)Context.Items["dictID"]+"/")%>" class="facebook"></a>
+						    <a target="_blank" href="https://twitter.com/intent/tweet?url=<%=Server.UrlEncode("http://www.dictionaryportal.eu/"+uilang+"/"+(int)Context.Items["dictID"]+"/")%>" class="twitter"></a>
+					    </div>
+                    <%} else {%>
+					    <div class="socials">
+						    <a target="_blank" href="https://plus.google.com/share?url=<%=Server.UrlEncode("http://www.dictionaryportal.eu/"+uilang+"/ctlg/"+getQueryString(objLang, metaLang, dicType))%>" class="gplus"></a>
+						    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<%=Server.UrlEncode("http://www.dictionaryportal.eu/"+uilang+"/ctlg/"+getQueryString(objLang, metaLang, dicType))%>" class="facebook"></a>
+						    <a target="_blank" href="https://twitter.com/intent/tweet?url=<%=Server.UrlEncode("http://www.dictionaryportal.eu/"+uilang+"/ctlg/"+getQueryString(objLang, metaLang, dicType))%>" class="twitter"></a>
+					    </div>
+                    <%}%>
 				<%}%>
 			</h1>
+			<%if(this.pageMode=="permalink") {%>
+				<div class="permalink">
+					<%
+						System.Xml.XmlDocument dow=this.dictionaries[0];
+						string dowObjLang=this.getXmlValue(dow, "/dictionary/objLang/@code", "");
+					%>
+					<div class="filter">
+						<a class="more" href="/<%=uilang%>/ctlg/<%=getQueryString(dowObjLang, "x", "x")%>"><%=L("moreDicts")%>&nbsp;(<%=this.metadata.getLanguage(dowObjLang).name%>)&nbsp;»</a>
+					</div>
+					<%=this.printDictionary(dow)%>
+				</div>
+			<%}%>
 			<%if(this.pageMode=="catalogHome" || this.pageMode=="catalogListing") {%>
 				<form name="catalogFilter" class="filter" action="/<%=uilang%>/ctlg/" method="GET" onsubmit="return submitFilter()">
 					<div class="title"><%=L("filter")%></div>
