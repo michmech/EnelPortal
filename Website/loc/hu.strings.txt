@@ -176,3 +176,8 @@ $lang-ysl	jugoszláv jelnyelv
 
 $lang-lmo	lombard
 $lang-oc	okcitán
+$ort-name	Helyesírási szótárak
+$ort-legend	[Helyesírási szótárak] olyan szótárak, amelyek szabályok által rögzítik a szavak helyes írásmódját.
+$trm-name	Terminológiai szótárak
+$trm-legend	[Terminológiai szótárak] az egyes szakterületek, mint például a biológia, matematika vagy közgazdaságtan szókincsét írják le.
+$monoDicts	Egynyelvű szótárak

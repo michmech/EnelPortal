@@ -176,3 +176,9 @@ $lang-ysl	jugoslávský znakový jazyk
 
 $lang-lmo	lombardština
 $lang-oc	okcitánština
+$ort-name	Pravopisné slovníky
+$ort-legend	[Pravopisné slovníky] jsou takové slovníky, které upravují pravopis slov a ostatní ortografické otázky.
+$trm-name	Terminologické slovníky
+$trm-legend	[Terminologické slovníky] popisují slovní zásobu specializovaných oblastí, například biologie, matematiky a ekonomiky.
+$monoDicts	Jednojazyčné slovníky
+

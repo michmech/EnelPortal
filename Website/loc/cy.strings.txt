@@ -7,7 +7,7 @@ $filter	Hidlydd
 $objLang	IAITH I'W CHWILIO
 $objLangBlurb	Yr iaith y mae'r geiriadur yn ei disgrifio; yr iaith y mae'r geiriadur yn ymwneud â hi.
 $metaLang	IAITH Y DIFFINIAD
-$metaLangBlurb	Yr iaith y mae'r geiriadur yn ei defnyddio i ddiffinio ac egluro. Os yw'r un fath â'r  iaith I'w chwilio, mae'r geiriadur yn unieithog. Os yw'n wahanol, mae'r geiriadur yn ddwyieithog.
+$metaLangBlurb	Yr iaith y mae'r geiriadur yn ei defnyddio i ddiffinio ac egluro. Os yw'r un fath â'r iaith i'w chwilio, mae'r geiriadur yn unieithog. Os yw'n wahanol, mae'r geiriadur yn ddwyieithog.
 $dicType	MATH
 $dicTypeBlurb	Pa fath o eiriadur ydych chi'n chwilio amdano?
 $anyLang	unrhyw iaith
@@ -174,5 +174,10 @@ $lang-ukl	Iaith Arwyddion Ukrain
 $lang-vsv	Iaith Arwyddion Valencia
 $lang-ysl	Iaith Arwyddion Iwgoslafia
 
-$lang-lmo	Lombard
+$lang-lmo	Lombardeg
 $lang-oc	Ocsitaneg
+$ort-name	Geiriaduron sillafu
+$ort-legend	Mae [geiriaduron sillafu] yn eiriaduron sy'n pennu rheolau sillafiad cywir ac agweddau eraill ar orgraff geiriau.
+$trm-name	Geiriaduron termau
+$trm-legend	Mae [geiriaduron termau] yn disgrifio geirfa meysydd arbenigol fel bioleg, mathemateg neu economeg.
+$monoDicts	Geiriaduron uniaith

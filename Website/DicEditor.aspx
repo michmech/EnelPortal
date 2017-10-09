@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-		<link type="text/css" rel="stylesheet" href="/xonomy/xonomy.css?2016-04-07" />
-		<script type="text/javascript" src="/xonomy/xonomy.js?2016-04-07"></script>
-		<link type="text/css" rel="stylesheet" href="/furniture/templateEditor.css?2016-04-07" />
-		<script type="text/javascript" src="/furniture/DicEditor.js?2016-04-07"></script>
+		<link type="text/css" rel="stylesheet" href="/xonomy/xonomy.css?2017-10-09" />
+		<script type="text/javascript" src="/xonomy/xonomy.js?2017-10-09"></script>
+		<link type="text/css" rel="stylesheet" href="/furniture/templateEditor.css?2017-10-09" />
+		<script type="text/javascript" src="/furniture/DicEditor.js?2017-10-09"></script>
 	</head>
 	<body onload="start()">
 		<%if(this.id!=0){%>

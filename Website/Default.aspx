@@ -25,8 +25,8 @@
 		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 		<script src="http://code.jquery.com/ui/1.8.19/jquery-ui.min.js"></script>
  		<script type="text/javascript" src="/furniture/jquery.pulse.js"></script>
-		<script type="text/javascript" src="/furniture/catalog.js?2017-07-12"></script>
-		<link type="text/css" rel="stylesheet" href="/furniture/template.css?2017-07-12" />
+		<script type="text/javascript" src="/furniture/catalog.js?2017-10-09"></script>
+		<link type="text/css" rel="stylesheet" href="/furniture/template.css?2017-10-09" />
 		<%foreach(Website.Language l in this.metadata.languages) { if(l.isUI && l.code!=this.uilang) {%>
             <%if(this.pageMode=="permalink") {%>
                 <link rel="alternate" hreflang="<%=l.code%>" href="https://www.dictionaryportal.eu/<%=l.code%>/<%=(int)Context.Items["dictID"]%>/" />
@@ -325,7 +325,7 @@
 				<%}%>
 				<%if(this.dicType!="x" && this.dictionaries.Count>0) {%>
                     <div class="grouptitle"><%=this.metadata.getDicType(this.dicType).name%></div>
-					<div class="dicTypeLegend"><%=this.metadata.getDicType(this.dicType).legend.Replace("[", "<strong>").Replace("]", "</strong>")%></div>
+					<div class="dicTypeLegend"><%=this.metadata.getDicType(this.dicType).legend.Replace("[", "").Replace("]", "")%></div>
 				<%} else if(this.objLang!="x" && this.metaLang!="x") {%>
                     <div class="grouptitle">
                         <%if(this.metaLang==this.objLang) {%>

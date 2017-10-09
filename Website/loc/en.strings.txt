@@ -176,8 +176,8 @@ $lang-ysl	Yugoslavian Sign Language
 
 $lang-lmo	Lombard
 $lang-oc	Occitan
-$ort-name	Orthographic dictionaries
-$ort-legend	[Orthographic dictionaries] are dictionaries which codify the correct spelling and other aspects of the writing of words.
+$ort-name	Spelling dictionaries
+$ort-legend	[Spelling dictionaries] are dictionaries which codify the correct spelling and other aspects of the orthography of words.
 $trm-name	Terminological dictionaries
 $trm-legend	[Terminological dictionaries] describe the vocabulary of specialized domains such as biology, mathematics or economics.
 $monoDicts	Monolingual dictionaries

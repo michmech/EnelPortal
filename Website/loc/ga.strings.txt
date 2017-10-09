@@ -182,3 +182,9 @@ $lang-ysl	TC Iúgslavach
 
 $lang-lmo	Lombairdis
 $lang-oc	Ocsatáinis
+$ort-name	Foclóirí ortagrafaíochta
+$ort-legend	Foclóir é [foclóirí ortagrafaíochta] a thugann treoir maidir le ceartlitriú na bhfocal sa teanga.
+$trm-name	Foclóirí téarmaíochta
+$trm-legend	Déanann [foclóirí téarmaíochta] cur síos ar an stór focal i réimsí speisialaithe, mar shampla sa bhitheolaíocht, sa mhatamaitic agus san eacnamaíocht.
+$monoDicts	Foclóirí aonteangacha
+
