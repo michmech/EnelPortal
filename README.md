@@ -8,7 +8,7 @@ This is the source code for the [European Dictonary Portal](http://www.dictionar
 
 - The list of dictionaries can be found in the `Catalog` folder, but this is only an occasional backup and is not necessarily up to date. The most recent version can always be [downloaded](http://www.dictionaryportal.eu/en/dnld/) from the portal itself.
 
-Some [technical documentation](/michmech/EnelPortal/wiki/Technical-Documentation) is available in this GitHub repository's wiki.
+Some [technical documentation](https://github.com/michmech/EnelPortal/wiki/Technical-Documentation) is available in this GitHub repository's wiki.
 
 If you are referring to the European Dictionary Portal from an academic publication, it is recommended that you cite this paper.
 
