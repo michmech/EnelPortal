@@ -14,7 +14,7 @@ If you are referring to the European Dictionary Portal from an academic publicat
 
 Měchura, Michal Boleslav (2017) ‘[How (not) to build a European Dictionary Portal](http://www.lexiconista.com/edp-2017.pdf)’, Final Conference of the European Network for e-Lexicography, Leiden, September 2017.
 
-	@inproceedings{mechura_edp-2017,
+	@inproceedings{mechura_edp_2017,
 		title = {How (not) to build a {European} {Dictionary} {Portal}},
 		url = {http://www.lexiconista.com/edp-2017.pdf},
 		booktitle = {Final Conference of the {European} {Network} of {e-Lexicography}},
