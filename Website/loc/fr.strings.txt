@@ -176,3 +176,8 @@ $lang-ysl	Langue des Signes de Yougoslavie
 
 $lang-lmo	lombard
 $lang-oc	occitan
+$ort-name	Dictionnaires d'ortographe
+$ort-legend	[Les dictionnaires d'ortographe] sont des dictionnaires qui recensent l'orthographe correcte ainsi que d'autres aspects graphiques des mots.
+$trm-name	Dictionnaires terminologiques
+$trm-legend	[Les dictionnaires terminologiques] décrivent le vocabulaire de domaines spécialisés tels que la biologie, les mathématiques ou l'économie.
+$monoDicts	Dictionnaires monolingues

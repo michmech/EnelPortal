@@ -282,11 +282,7 @@
 						<%} else if(this.objLang=="x" && this.metaLang!="x") {%>
 							<a href="/<%=uilang%>/ctlg/<%=getQueryString("x", this.metaLang, "x")%>">(<%=L("anyLang")%>)/<%=this.metadata.getLanguage(this.metaLang).name%></a>
 						<%} else {%>
-                            <%if(this.objLang==this.metaLang) {%>
-							    <a href="/<%=uilang%>/ctlg/<%=getQueryString(this.objLang, "x", "x")%>"><%=this.metadata.getLanguage(this.objLang).name%></a> » <a href="/<%=uilang%>/ctlg/?<%=getQueryString(this.objLang, this.metaLang, "x")%>"><%=L("monoDicts")%></a>
-                            <%} else {%>
-                                <a href="/<%=uilang%>/ctlg/<%=getQueryString(this.objLang, "x", "x")%>"><%=this.metadata.getLanguage(this.objLang).name%></a> » <a href="/<%=uilang%>/ctlg/?<%=getQueryString(this.objLang, this.metaLang, "x")%>"><%=this.metadata.getLanguage(this.objLang).name%>/<%=this.metadata.getLanguage(this.metaLang).name%></a>
-                            <%}%>
+                            <a href="/<%=uilang%>/ctlg/<%=getQueryString(this.objLang, "x", "x")%>"><%=this.metadata.getLanguage(this.objLang).name%></a> » <a href="/<%=uilang%>/ctlg/?<%=getQueryString(this.objLang, this.metaLang, "x")%>"><%=this.metadata.getLanguage(this.objLang).name%>/<%=this.metadata.getLanguage(this.metaLang).name%></a>
 						<%}%>
 					<%}%>
 					<%if(this.dicType!="x") {%>
@@ -309,12 +305,8 @@
 									<%if(h.metaLangs.Count>1) {%>
 										<div class="block">
 											<%foreach(string metaLang in h.metaLangs.Keys) {%>
-                                                <%if(metaLang==this.objLang) {%>
-                                                    <div class="item">&middot; <a href="/<%=uilang%>/ctlg/<%=getQueryString(h.objLang, metaLang, "x")%>"><%=L("monoDicts")%> <span class="count">(<%=h.metaLangs[metaLang]%>)</span></a></div>
-                                                <%} else {%>
-												    <div class="item">&middot; <a href="/<%=uilang%>/ctlg/<%=getQueryString(h.objLang, metaLang, "x")%>"><%=this.metadata.getLanguage(objLang).name%>/<%=this.metadata.getLanguage(metaLang).name%> <span class="count">(<%=h.metaLangs[metaLang]%>)</span></a></div>
-                                                <%}%>
-											<%}%>
+        									    <div class="item">&middot; <a href="/<%=uilang%>/ctlg/<%=getQueryString(h.objLang, metaLang, "x")%>"><%=this.metadata.getLanguage(objLang).name%>/<%=this.metadata.getLanguage(metaLang).name%> <span class="count">(<%=h.metaLangs[metaLang]%>)</span></a></div>
+        									<%}%>
 										</div>
 									<%}%>
 									<div class="clear"></div>
@@ -328,11 +320,7 @@
 					<div class="dicTypeLegend"><%=this.metadata.getDicType(this.dicType).legend.Replace("[", "").Replace("]", "")%></div>
 				<%} else if(this.objLang!="x" && this.metaLang!="x") {%>
                     <div class="grouptitle">
-                        <%if(this.metaLang==this.objLang) {%>
-                            <%=L("monoDicts")%>
-                        <%} else {%>
-						    <%=this.metadata.getLanguage(this.objLang).name%>/<%=this.metadata.getLanguage(this.metaLang).name%>
-                        <%}%>
+					    <%=this.metadata.getLanguage(this.objLang).name%>/<%=this.metadata.getLanguage(this.metaLang).name%>
                     </div>
                 <%}%>
 				<div>

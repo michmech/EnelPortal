@@ -176,3 +176,8 @@ $lang-ysl	jugosłowiański język migowy
 
 $lang-lmo	lombardzki
 $lang-oc	oksytański
+$ort-name	Słowniki ortograficzne
+$ort-legend	[Słowniki ortograficzne] to słowniki, które notują poprawną pisownię wyrazów.
+$trm-name	Słowniki terminologiczne
+$trm-legend	[Słowniki terminologiczne] opisują słownictwo specjalistyczne, na przykład chemiczne, matematyczne, czy ekonomiczne.
+$monoDicts	Słowniki jednojęzyczne

@@ -176,3 +176,8 @@ $lang-ysl	Joegoslavische gebarentaal
 
 $lang-lmo	Lombardisch
 $lang-oc	Occitaans
+$ort-name	Spellingwoordenboek
+$ort-legend	[Spellingwoordenboek] zijn woordenboeken waarin de juiste spelling van woorden is vastgelegd alsmede andere aspecten van de orthografie.
+$trm-name	Terminologische woordenboeken
+$trm-legend	[Terminologische woordenboeken] beschrijven de woordenschat van een bepaald domein zoals biologie, wiskunde of economie.
+$monoDicts	Monolinguale woordenboeken

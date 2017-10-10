@@ -176,3 +176,9 @@ $lang-ysl	Lengua de Signos de Yugoslavia
 
 $lang-lmo	lombardo
 $lang-oc	occitano
+$ort-name	Diccionarios ortográficos
+$ort-legend	[Los diccionarios ortográficos] son diccionarios que regulan la ortografía correcta así como otros aspectos gráficos de las palabras.
+$trm-name	Diccionarios terminológicos
+$trm-legend	[Los diccionarios terminológicos] describen el vocabulario de campos especializados tales como la biología, las matemáticas o la economía.
+$monoDicts	Diccionarios monolingües
+
