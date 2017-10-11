@@ -23,7 +23,7 @@ $top	Vrh
 $toc	Struktura portala
 $foot1	Europski rječnički portal proizišao je iz inicijative [Europske mreže za e-leksikografiju].
 $foot2	[COST] je financiran u sklopu Okvirnoga programa EU-a [[Obzor2020]].
-$foot3	Je li vaš rječnik uvršten u Europski rječnički portal? Prikažite naš [pečat potvrde]
+$foot3	Je li vaš rječnik uvršten u Europski rječnički portal? Prikažite naš [pečat priznanja]
 $mbm	Mrežnu stranicu izradio
 $ivdnt	Smješteno u
 $shots	Slikovne isječke napravio
@@ -59,16 +59,16 @@ $about-info	O nama
 $about-prop	Prijavi rječnik
 $about-crit	Kriteriji za uvrštavanje
 $about-crtr	Priručnik za kuratore
-$about-stmp	Pečat potvrde
+$about-stmp	Pečat priznanja
 $about-dnld	Preuzimanje
 $gen-name	Opći rječnici
-$lrn-name	Školski rječnici
+$lrn-name	Rječnici za strance
 $ety-name	Etimološki rječnici
 $spe-name	Rječnici za posebne namjene
 $his-name	Povijesni rječnici
 $por-name	Portali i agregatori
 $gen-legend	[Opći rječnici] su rječnici koji dokumentiraju vokabular suvremena jezika i namijenjeni su za svakodnevnu referenciju izvornih i tečnih govornika.
-$lrn-legend	[Školski rječnici] namijenjeni su za đake i studente ili za strance koji uče jezik.
+$lrn-legend	[Rječnici za strance] namijenjeni su za one koji jezik uče kao ini jezik.
 $ety-legend	[Etimološki rječnici] su rječnici koji objašnjavaju podrijetlo riječi.
 $spe-legend	[Rječnici za posebne namjene] su rječnici koji se fokusiraju na određenu skupinu riječi (novotvorenice, sinonimi i dr.), dijalekt ili neku drugu jezičnu inačicu.
 $his-legend	[Povijesni rječnici] su rječnici koji dokumentiraju stanje jezika u određenome povijesnom razdoblju.
@@ -176,3 +176,8 @@ $lang-ysl	jugoslavenski znakovni jezik
 
 $lang-lmo	lombardski
 $lang-oc	okcitanski
+$ort-name	Pravopisni rječnici
+$ort-legend	[Pravopisni rječnici] su rječnici koji kodificiraju ispravno pisanje i druge pravopisne aspekte riječi.
+$trm-name	Terminološki rječnici
+$trm-legend	[Terminološki rječnici] opisuju nazive određenih disciplina kao što su biologija, matematika ili ekonomija.
+$monoDicts	Jednojezični rječnici

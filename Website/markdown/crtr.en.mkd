@@ -5,61 +5,72 @@ Logging in
 
 You will find a link titled *Curator login* at the bottom of every page on this website.
 
-<img class="curpic" src="/curpics/login-1.gif" />
+<img class="curpic" src="/curpics/login-1.gif?2017-10-11" />
 
 Clicking it will bring up a dialog box. Type your email address and password and click the *Login* button.
 
-<img class="curpic" src="/curpics/login-2.gif" />
+<img class="curpic" src="/curpics/login-2.gif?2017-10-11" />
 
 Once you have logged in succesfully, the dialog box will disappear and the page you were on will reload. You will see that, at the bottom of the page, the *Curator login* link has changed: it now indicates you that you are logged in a curator and gives you an option to log out. You can now continue browsing the website as normal.
 
-<img class="curpic" src="/curpics/login-3.gif" />
+<img class="curpic" src="/curpics/login-3.gif?2017-10-11" />
 
 Editing dictionaries
 --------------------
 
 When you are logged in as a curator, you will see a **red dot** beside every dictionary in the dictionary catalog.
 
-<img class="curpic" src="/curpics/editing-1.gif" />
+<img class="curpic" src="/curpics/editing-1.gif?2017-10-11" />
 
 Click this dot to edit the dictionary. Clicking it will open the dictionary in a dialog box. You will see that each dictionary is represented by a small XML document which contains some metadata about the dictionary: its name, its URL, what language it is, and so on. You can edit the metadata by clicking on various elements and attributes in the XML document.
 
-<img class="curpic" src="/curpics/editing-2.gif" />
+<img class="curpic" src="/curpics/editing-2.gif?2017-10-11" />
 
 For example, `dicType` tells us what type (or "genre") of dictionary it is. You can change it by clicking on the three-letter abbreviation after `code` and selecting a different one from the menu that appears.
 
-<img class="curpic" src="/curpics/editing-3.gif" />
+<img class="curpic" src="/curpics/editing-3.gif?2017-10-11" />
 
 It is possible for a dictionary to have more than one type. If you want to add another type to the dictionary, click on the `dicType` element and select *Add another `<dicType>`*.
 
-<img class="curpic" src="/curpics/editing-4.gif" />
+<img class="curpic" src="/curpics/editing-4.gif?2017-10-11" />
 
 You will see that an additional `dicType` element has been added to the XML document. You will also see that there is a warning triangle just before the `code` attribute: this tells you that there is something wrong: in this case, what's wrong is that you haven't selected a dictionary type yet. Clicking on the triangle will tell you exactly that.
 
-<img class="curpic" src="/curpics/editing-5.gif" />
+<img class="curpic" src="/curpics/editing-5.gif?2017-10-11" />
 
 You can fix the problem by clicking on the empty quotation marks just after `code` and selecting a dictionary type from the menu that appears. The warning triangle will then disappear.
 
-<img class="curpic" src="/curpics/editing-6.gif" />
+<img class="curpic" src="/curpics/editing-6.gif?2017-10-11" />
 
 Finally, if you want to remove a type from a dictionary, click on the `dicType` element and select *Delete* from the menu.
 
-<img class="curpic" src="/curpics/editing-7.gif" />
+<img class="curpic" src="/curpics/editing-7.gif?2017-10-11" />
 
 Notice that the *Delete* option is only available if there are two or more `dicType` elements in the dictionary. If there is only one then the *Delete* option is not available. This is how we make sure that each dictionary will always have at least one type.
 
 This has been only a short demonstration of how editing dictionary metadata works in the European Dictionary Portal. We will explain later in this document what all the different elements and attributes mean and what information you are supposed to put in them. For now, it is important that you understand that each dictionary is represented by a small XML file which you can edit by clicking on the various elements and attributes and making selections from menus.
+
+Editing history
+---------------
+
+When you are logged in to the portal as a curator, you will see the editing history of each dictionary underneath the entry in grey. This shows you who created the entry and when, who updated it and when, and so on. This information is only visible to curators; the public cannot see this.
+
+<img class="curpic" src="/curpics/history-1.gif?2017-10-11" />
+
+Internally, the portal keeps a log of who created, updated or deleted each entry and when, and keeps copies of the previous versions. So, if you accidentally delete or overwrite something, it is possible to bring the old version back &mdash; but you will need to contact the administrators for that.
+
+This features was only added into the portal in October 2017 when many dictinaries had already been entered. So, unfortunately, the history record does not go all the way back to the very beginning if history and shows only things have happened since October 2017.
 
 Adding new dictionaries
 -----------------------
 
 You already know that, while browsing the dictionary catalog, you see red dots beside each dictionary and you can click them to edit the dictionary's metadata. In addition to those, there is another red dot at the end of the list titled *Add a dictionary* which you can use to add a brand new dictionary to the catalog.
 
-<img class="curpic" src="/curpics/adding-1.gif" />
+<img class="curpic" src="/curpics/adding-1.gif?2017-10-11" />
 
 Clicking it will bring up a dialog box with a blank new entry which you need to fill in. Notice that there are a lot of warning triangles: these will all disappear once you have filled in all the necessary details.
 
-<img class="curpic" src="/curpics/adding-2.gif" />
+<img class="curpic" src="/curpics/adding-2.gif?2017-10-11" />
 
 Saving dictionaries
 -------------------
@@ -78,7 +89,7 @@ Now that you know how to go about editing, adding and deleting dictionaries, we'
 Dictionary prominence
 ---------------------
 
-<img class="curpic" src="/curpics/prominence-1.gif" />
+<img class="curpic" src="/curpics/prominence-1.gif?2017-10-11" />
 
 The attribute `prominence`, which you'll find in the `dictionary` element, is a number from `1` to `10` which determines the dictionary's listing order among other dictionaries. The higher the prominence (= the closer to `1` the number is), the closer to the top this dictionary will be listed. However, the actual listing order is more complicated that just a number: the sorting algorithm takes other things into consideration as well. In particular, it looks at the dictionary's type and "pushes" general dictionaries (`gen`) to the top.
 
@@ -87,26 +98,26 @@ The default prominence for newly created dictionaries is `5`. You can think of t
 Login required
 --------------
 
-<img class="curpic" src="/curpics/loginRequired-1.gif" />
+<img class="curpic" src="/curpics/loginRequired-1.gif?2017-10-11" />
 
 The `loginRequired` attribute should be set to `1` (meaning "yes") if the dictionary website is not freely accessible. This includes websites that require a subscription (individual or institutional) and websites that for whatever reason cannot be freely and openly accessed by everybody from everywhere. Dictionaries thay have `loginRequired` set to `1` are displayed to users with a *login required* label in the dictionary catalog.
 
-<img class="curpic" src="/curpics/loginRequired-2.gif" />
+<img class="curpic" src="/curpics/loginRequired-2.gif?2017-10-11" />
 
 Terms and conditions required
 -----------------------------
 
-<img class="curpic" src="/curpics/tcRequired-1.gif" />
+<img class="curpic" src="/curpics/tcRequired-1.gif?2017-10-11" />
 
 Some dictionary websites, while not requiring login, do ask users to agree to terms and conditions upon first visiting the dictionary. When this is the case, set the `tcRequired` attribute to 1 (= "yes"). Dictionaries that have this are displayed to the user with a label saying *this website will ask you to accept their terms and conditions on your first visit.*
 
-<img class="curpic" src="/curpics/tcRequired-2.gif" />
+<img class="curpic" src="/curpics/tcRequired-2.gif?2017-10-11" />
 
 
 Dictionary languages
 --------------------
 
-<img class="curpic" src="/curpics/langs-1.gif" />
+<img class="curpic" src="/curpics/langs-1.gif?2017-10-11" />
 
 There are two elements that describe the language (or languages) of the dictionary.
 
@@ -118,67 +129,67 @@ Each dictionary can have more than one of each of these. Each dictionary must ha
 Dictionary type
 ---------------
 
-<img class="curpic" src="/curpics/dicType-1.gif" />
+<img class="curpic" src="/curpics/dicType-1.gif?2017-10-11" />
 
 You already know that the type (or "genre") of the dictionary is recorded in the `dicType` element, and that each dictionary must have at least one type (but can have more nmore than one).
 
 Dictionary title
 ----------------
 
-<img class="curpic" src="/curpics/title-1.gif" />
+<img class="curpic" src="/curpics/title-1.gif?2017-10-11" />
 
 Every dictionary must have a title, and this is recorded in the `title` element. Notice that each title has a `lang` attribute which tells us which language the title is in. It is possible for a dictionary to have more than title, each in a different language. You can add more titles to a dictionary by clicking on the `title` element and then selecting *Add another `<title>`*.
 
 Whe you have added a new title, click on the grey vertical line between the opening and closing tags (just before `</title>`) and a textbox will come up where you can type the title. 
 
-<img class="curpic" src="/curpics/title-2.gif" />
+<img class="curpic" src="/curpics/title-2.gif?2017-10-11" />
 
 To change an existing title, simply click the text between the opening and closing tags.
 
-<img class="curpic" src="/curpics/title-3.gif" />
+<img class="curpic" src="/curpics/title-3.gif?2017-10-11" />
 
 Abbreviations
 -------------
 
 Some dictionaries are better known by abbreviation rather than by their full title. In that case, you can include the abbreviation in the title and then **mark it up**. We'll explain what we mean by marking up. First of all, notice that there is a thin grey line underneath the text of the title (between the opening and closing tags). When you move your mouse over this line, a "marker" will slide along this line, indicating which letter you are currently underneath.
 
-<img class="curpic" src="/curpics/abbrev-1.gif" />
+<img class="curpic" src="/curpics/abbrev-1.gif?2017-10-11" />
 
 Now, to mark up the abbreviation, position the marker underneath the first letter of the abbreviaton and click it.
 
-<img class="curpic" src="/curpics/abbrev-2.gif" />
+<img class="curpic" src="/curpics/abbrev-2.gif?2017-10-11" />
 
 This highlights the first letter of the abbreviation. Now position the marker underneath the last letter of the abbreviation and click it too.
 
-<img class="curpic" src="/curpics/abbrev-3.gif" />
+<img class="curpic" src="/curpics/abbrev-3.gif?2017-10-11" />
 
 This has now highlighted a stretch of text within the title and a menu has come up giving you the option to mark this stretch of text as an `abbrev`, and element which stands for *abbreviation*. Click this option.
 
-<img class="curpic" src="/curpics/abbrev-4.gif" />
+<img class="curpic" src="/curpics/abbrev-4.gif?2017-10-11" />
 
 You see that the text has now been marked with an `abbrev` element, consisting of the opening tag `<abbrev>`, the closing tag `</abbrev>`, and the text between them. The catalog now knows that this part of the title is an abbreviation and will format it accordingly when displaying the dictionary to users.
 
-<img class="curpic" src="/curpics/abbrev-5.gif" />
+<img class="curpic" src="/curpics/abbrev-5.gif?2017-10-11" />
 
 Dictionary year
 ---------------
 
 It is sometimes useful to identify a dictionary not just by its title and abbreviation but also by the year it was published. To do this, you need to add a `year` element to the XML document: click the `dictionary` element and select the option *Add `<year>`*.
 
-<img class="curpic" src="/curpics/year-1.gif" />
+<img class="curpic" src="/curpics/year-1.gif?2017-10-11" />
 
 This will add an empty `year` element just underneath the `title` element. You can now click between the opening and closing tag and enter the year.
 
-<img class="curpic" src="/curpics/year-2.gif" />
+<img class="curpic" src="/curpics/year-2.gif?2017-10-11" />
 
 It is in fact possible to enter other things than just a single year here, such as a range of years (`1970-1975`), an approximate indication (`c.1920`) and so on. The text you enter here will appear beside the dictionary's title when the dictionary is being displayed to users.
 
-<img class="curpic" src="/curpics/year-3.gif" />
+<img class="curpic" src="/curpics/year-3.gif?2017-10-11" />
 
 Dictionary homepage
 -------------------
 
-<img class="curpic" src="/curpics/homepage-1.gif" />
+<img class="curpic" src="/curpics/homepage-1.gif?2017-10-11" />
 
 Probably the most important piece of metadata about a dictionary website is its URL. Enter it in the `homepage` element.
 
@@ -193,42 +204,55 @@ On many dictionary websites it is possible to link straight to a page with searc
 	
 On the European Dictionary Portal, we make it possible for our users to go straight to the search results in a dictionary, bypassing its homepage: we provide a miniature search box underneath the dictionary in our catalog when the dictionary allows it.
 
-<img class="curpic" src="/curpics/search-1.gif" />
+<img class="curpic" src="/curpics/search-1.gif?2017-10-11" />
 
 Dictionaries that allow such direct linking have a `search` element. To insert a `search` element into a dictionary that doesn't have it yet, click on the `dictionary` element and select *Add `<search>`*.
 
-<img class="curpic" src="/curpics/search-2.gif" />
+<img class="curpic" src="/curpics/search-2.gif?2017-10-11" />
 
-Then take one of the website's search URLs and insert it between the opening and closing tags.
+Then take one of the website's search URLs and insert it between the opening and closing `<searchUrl>` tags.
 
-<img class="curpic" src="/curpics/search-3.gif" />
+<img class="curpic" src="/curpics/search-3.gif?2017-10-11" />
 
 Finally, the place in the URL where the search word is supposed to be inserted needs to be marked up with the `word` element. So, mark up the search word (such as `cat`) and replace it with the `word` element.
 
-<img class="curpic" src="/curpics/search-4.gif" />
+<img class="curpic" src="/curpics/search-4.gif?2017-10-11" />
 
 From now on, our portal knows how to link directly to search results on this dictionary website and will provide a miniature search box beside the dictionary when displaying it to users.
 
-<img class="curpic" src="/curpics/search-5.gif" />
+<img class="curpic" src="/curpics/search-5.gif?2017-10-11" />
+
+Dealing with POST requests
+--------------------------
+
+In some online dictionaries, the search word is not part of the URL and is sent to the server "behind the scenes", invisibly to the user. This is a called a "POST request". The request which is sent to the server contains one or more hidden fields, called "POST fields", and one of these fields contains the search word.
+
+If you know that the dictinoary you're entering into the portal expects to be sent a POST request, you can include the POST fields in the XML. Click the `<search>` element and add a new `<postField>` element.
+
+<img class="curpic" src="/curpics/post-1.gif?2017-10-11" />
+
+Every POST field needs a name and a value. You need to fill the name in, and optionally you can also add a value. If you don't add a value then the search word will become the field's value when the request is actually sent to the dictionary. So, if the dictionary expects a POST request, you must make sure that your the `<search>` element has at least one `<postField>` element with no `value` attribute.
+
+<img class="curpic" src="/curpics/post-2.gif?2017-10-11" />
 
 Multiple search URLs
 --------------------
 
 Some dictionary websites can be searched in more than one way. For example, bilingual dictionaries often provide a reverse-search feature in addition to their "normal" search. When this is the case, you can include more than one `search` element in the dictionary metadata and add a `lang` attribute to each to indicate the language of the search word.
 
-<img class="curpic" src="/curpics/searchMulti-1.gif" />
+<img class="curpic" src="/curpics/searchMulti-1.gif?2017-10-11" />
 
 When a dictionary has more than one `search` URL, the miniature search box will let users choose which one they want.
 
-<img class="curpic" src="/curpics/searchMulti-2.gif" />
+<img class="curpic" src="/curpics/searchMulti-2.gif?2017-10-11" />
 
 Dictionaries within dictionaries
 --------------------------------
 
 Dictionary websites can often be described as "portals" or "aggregators". These are websites that contain more than one dictionary. In such cases, we often want our portal to have information about website as a whole but also about each individual dictionary in it. This is possible by including a `dictionary` element inside another `dictionary` element: simply click on the top-most `dictionary` element and select *Add an included `<dictionary>`*.
 
-<img class="curpic" src="/curpics/within-1.gif" />
+<img class="curpic" src="/curpics/within-1.gif?2017-10-11" />
 
 Dictionaries that have other dictionaries inside them are shown users with an *Included dictionaries* box which the user can expand to see the included dictionaries individually.
 
-<img class="curpic" src="/curpics/within-2.gif" />
+<img class="curpic" src="/curpics/within-2.gif?2017-10-11" />

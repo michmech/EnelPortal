@@ -176,3 +176,8 @@ $lang-ysl	jugoslavialainen viittomakieli
 
 $lang-lmo	lombardi
 $lang-oc	oksitaani
+$ort-name	Oikeinkirjoitussanakirjat
+$ort-legend	[Oikeinkirjoitussanakirjat] ovat sanakirjoja, joissa osoitetaan sanojen norminmukainen oikeinkirjoitus.
+$trm-name	Erikoisalan sanakirjat
+$trm-legend	[Erikoisalan sanakirjat] kuvaavat jonkin erikoisalan (esim. biologian, matematiikan tai taloustieteen) sanastoa.
+$monoDicts	Yksikieliset sanakirjat
