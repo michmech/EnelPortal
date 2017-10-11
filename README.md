@@ -10,7 +10,7 @@ This is the source code for the [European Dictonary Portal](http://www.dictionar
 
 ## Documentation
 
-- The structure of the potal's dictionary catalog is explained in the [Curator's manual](http://www.dictionaryportal.eu/en/crtr/).
+- The structure of the portal's dictionary catalog is explained in the [Curator's manual](http://www.dictionaryportal.eu/en/crtr/).
 
 - Some [technical documentation](https://github.com/michmech/EnelPortal/wiki/Technical-Documentation) is available in this GitHub repository's wiki.
 
