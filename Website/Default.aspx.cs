@@ -229,11 +229,15 @@ namespace Website
 			ret+="</a></div> ";
 
 			List<string> langs=new List<string>();
-			foreach(XmlElement el in doc.SelectNodes("/dictionary/metaLang")) {
-				string lang=el.GetAttribute("code");
+			if(!langs.Contains(uilang)) langs.Add(uilang);
+			foreach(XmlElement el in doc.SelectNodes("/dictionary/title[@lang]")) {
+				string lang=el.GetAttribute("lang");
 				if(!langs.Contains(lang)) langs.Add(lang);
 			}
-			if(!langs.Contains(uilang)) langs.Add(uilang);
+			//foreach(XmlElement el in doc.SelectNodes("/dictionary/metaLang")) {
+			//	string lang=el.GetAttribute("code");
+			//	if(!langs.Contains(lang)) langs.Add(lang);
+			//}
 			foreach(string lang in langs) {
 				string subtitle=this.getInnerXml(doc, "/dictionary/title[@lang='"+lang+"']", "");
 				if(subtitle==title) subtitle="";
