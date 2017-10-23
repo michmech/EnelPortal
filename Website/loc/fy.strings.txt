@@ -174,5 +174,10 @@ $lang-ukl	Oekraynske gebeartetaal
 $lang-vsv	Falensiaanske gebeartetaal
 $lang-ysl	Joegoslavyske gebeartetaal
 
-$lang-lmo	Lombard
+$lang-lmo	Lombardysk
 $lang-oc	Oksitaansk
+$ort-name	Staveringswurdboeken
+$ort-legend	[Staveringswurdboeken] binne wurdboeken dêr’t de goede stavering fan wurden yn fêstlein is mei oare aspekten oangeande de skriuwwize fan wurden.
+$trm-name	Terminologyske wurdboeken
+$trm-legend	[Terminologyske wurdboeken] beskriuwe de wurdskat fan in beskaat domein, lykas as biology, wiskunde of ekonomy.
+$monoDicts	Eentalige woordenboeken
