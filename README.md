@@ -18,15 +18,14 @@ This is the source code for the [European Dictonary Portal](http://www.dictionar
 
 If you are referring to the European Dictionary Portal from an academic publication, it is recommended that you cite this presentation.
 
-- Michal Boleslav Měchura (2017) ‘How (not) to build a European Dictionary Portal’, Final Conference of the European Network for e-Lexicography, Leiden, September 2017.
+- Michal Boleslav Měchura (2017) ‘How (not) to build a European Dictionary Portal’, Final Conference of the European Network for e-Lexicography, Leiden, September 2017 ([video recording](https://www.youtube.com/watch?v=ORrGelo9ytU)).
 
-A video recording of the presentation will be online soon and will be linked from here when available.
-
-	@conference{mechura_edp_2017,
+	@misc{mechura_edp_2017,
 		title = {How (not) to build a {European} {Dictionary} {Portal}},
 		booktitle = {Final Conference of the {European} {Network} of {e-Lexicography}},
 		author = {Měchura, Michal Boleslav},
-		year = {2017}
+		year = {2017},
+		url = {https://www.youtube.com/watch?v=ORrGelo9ytU}
 	}
 
 ### Other relevant publications
