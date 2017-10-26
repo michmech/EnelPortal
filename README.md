@@ -20,13 +20,12 @@ If you are referring to the European Dictionary Portal from an academic publicat
 
 - Michal Boleslav Měchura (2017) ‘How (not) to build a European Dictionary Portal’, Final Conference of the European Network for e-Lexicography, Leiden, September 2017 ([video recording](https://www.youtube.com/watch?v=ORrGelo9ytU)).
 
-	@misc{mechura_edp_2017,
-		title = {How (not) to build a {European} {Dictionary} {Portal}},
-		booktitle = {Final Conference of the {European} {Network} of {e-Lexicography}},
-		author = {Měchura, Michal Boleslav},
-		year = {2017},
-		url = {https://www.youtube.com/watch?v=ORrGelo9ytU}
-	}
+  @misc{mechura_edp_2017,
+    title = {How (not) to build a {European} {Dictionary} {Portal}},
+    booktitle = {Final Conference of the {European} {Network} of {e-Lexicography}},
+    author = {Měchura, Michal Boleslav},
+    year = {2017}
+  }
 
 ### Other relevant publications
 
