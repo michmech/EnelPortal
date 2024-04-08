@@ -127,7 +127,7 @@
                         }
                     </script>
                     <form method="post" action="http://mailer.lexiconista.com/Send.aspx" onsubmit="return prop_validate()">
-                        <input type="hidden" name="_to" value="Bob.Boelhouwer@ivdnt.org" />
+                        <input type="hidden" name="_to" value="Griet.Depoorter@ivdnt.org" />
                         <input type="hidden" name="_subject" value="European Dictionary Portal - suggestion" />
                         <%string url="http://www.dictionaryportal.eu"; if(Request.Url.Host=="localhost") url="http://localhost:49901";%>
                         <input type="hidden" name="_successUrl" value="<%=url%>/<%=uilang%>/prop-ok/" />
