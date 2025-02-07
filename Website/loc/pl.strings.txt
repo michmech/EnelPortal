@@ -181,3 +181,5 @@ $ort-legend	[Słowniki ortograficzne] to słowniki, które notują poprawną pis
 $trm-name	Słowniki terminologiczne
 $trm-legend	[Słowniki terminologiczne] opisują słownictwo specjalistyczne, na przykład chemiczne, matematyczne, czy ekonomiczne.
 $monoDicts	Słowniki jednojęzyczne
+
+$lang-be	białoruski

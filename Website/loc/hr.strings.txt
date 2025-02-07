@@ -181,3 +181,5 @@ $ort-legend	[Pravopisni rječnici] su rječnici koji kodificiraju ispravno pisan
 $trm-name	Terminološki rječnici
 $trm-legend	[Terminološki rječnici] opisuju nazive određenih disciplina kao što su biologija, matematika ili ekonomija.
 $monoDicts	Jednojezični rječnici
+
+$lang-be	bjeloruski

@@ -181,3 +181,6 @@ $ort-legend	[Staveringswurdboeken] binne wurdboeken dêr’t de goede stavering 
 $trm-name	Terminologyske wurdboeken
 $trm-legend	[Terminologyske wurdboeken] beskriuwe de wurdskat fan in beskaat domein, lykas as biology, wiskunde of ekonomy.
 $monoDicts	Eentalige woordenboeken
+
+$lang-be	Belarussysk
+

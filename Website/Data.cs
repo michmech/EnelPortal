@@ -10,8 +10,8 @@ namespace Website
 		{
 			//return @"";
 			return @"Data Source=(local)\SQLEXPRESS;Initial Catalog=enelportal;Integrated Security=true;";
-		}
-		public static string GetTrackingCode()
+        }
+        public static string GetTrackingCode()
 		{
 			//return "";
 			return "";
@@ -161,6 +161,7 @@ namespace Website
 
 			this.languages.Add(new Language("lmo", "Lombard", "", false));
 			this.languages.Add(new Language("oc", "Occitan", "", false));
+			this.languages.Add(new Language("be", "Belarusian", "", false));
 
 			this.languages.Add(new Language("sqk", "Albanian Sign Language", "", false, true));
 			this.languages.Add(new Language("aen", "Armenian Sign Language", "", false, true));

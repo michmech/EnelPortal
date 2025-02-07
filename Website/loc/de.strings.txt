@@ -181,3 +181,5 @@ $ort-legend	[Rechtschreibwörterbücher] sind Wörterbücher, die die korrekte S
 $trm-name	Fachwörterbücher
 $trm-legend	[Fachwörterbücher] beschreiben den Wortschatz eines speziellen Fachgebiets wie z. B. Biologie, Mathematik oder Wirtschaft.
 $monoDicts	Einsprachige Wörterbücher
+
+$lang-be	Belarussisch

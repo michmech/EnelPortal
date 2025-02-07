@@ -181,3 +181,5 @@ $ort-legend	[Les dictionnaires d'ortographe] sont des dictionnaires qui recensen
 $trm-name	Dictionnaires terminologiques
 $trm-legend	[Les dictionnaires terminologiques] décrivent le vocabulaire de domaines spécialisés tels que la biologie, les mathématiques ou l'économie.
 $monoDicts	Dictionnaires monolingues
+
+$lang-be	biélorusse

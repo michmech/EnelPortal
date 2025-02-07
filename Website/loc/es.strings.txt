@@ -182,3 +182,4 @@ $trm-name	Diccionarios terminológicos
 $trm-legend	[Los diccionarios terminológicos] describen el vocabulario de campos especializados tales como la biología, las matemáticas o la economía.
 $monoDicts	Diccionarios monolingües
 
+$lang-be	bielorruso

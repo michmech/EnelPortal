@@ -181,3 +181,5 @@ $ort-legend	[Spellingwoordenboek] zijn woordenboeken waarin de juiste spelling v
 $trm-name	Terminologische woordenboeken
 $trm-legend	[Terminologische woordenboeken] beschrijven de woordenschat van een bepaald domein zoals biologie, wiskunde of economie.
 $monoDicts	Monolinguale woordenboeken
+
+$lang-be	Belarussisch

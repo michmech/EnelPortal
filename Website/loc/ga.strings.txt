@@ -188,3 +188,5 @@ $trm-name	Foclóirí téarmaíochta
 $trm-legend	Déanann [foclóirí téarmaíochta] cur síos ar an stór focal i réimsí speisialaithe, mar shampla sa bhitheolaíocht, sa mhatamaitic agus san eacnamaíocht.
 $monoDicts	Foclóirí aonteangacha
 
+$lang-be	Bealarúisis
+

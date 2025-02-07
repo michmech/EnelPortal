@@ -182,3 +182,4 @@ $trm-name	Terminologické slovníky
 $trm-legend	[Terminologické slovníky] popisují slovní zásobu specializovaných oblastí, například biologie, matematiky a ekonomiky.
 $monoDicts	Jednojazyčné slovníky
 
+$lang-be	běloruština

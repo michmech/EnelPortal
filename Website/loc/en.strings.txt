@@ -182,3 +182,4 @@ $trm-name	Terminological dictionaries
 $trm-legend	[Terminological dictionaries] describe the vocabulary of specialized domains such as biology, mathematics or economics.
 $monoDicts	Monolingual dictionaries
 
+$lang-be	Belarusian

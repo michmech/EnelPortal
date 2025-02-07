@@ -181,3 +181,5 @@ $ort-legend	Mae [geiriaduron sillafu] yn eiriaduron sy'n pennu rheolau sillafiad
 $trm-name	Geiriaduron termau
 $trm-legend	Mae [geiriaduron termau] yn disgrifio geirfa meysydd arbenigol fel bioleg, mathemateg neu economeg.
 $monoDicts	Geiriaduron uniaith
+
+$lang-be	Belarwseg

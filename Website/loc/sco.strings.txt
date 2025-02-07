@@ -176,3 +176,5 @@ $lang-ysl	Yugoslavian Sign Language
 
 $lang-lmo	Lombard
 $lang-oc	Occitan
+
+$lang-be	Belarusian

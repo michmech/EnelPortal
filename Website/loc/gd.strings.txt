@@ -181,3 +181,5 @@ $ort-legend	‘S e faclairean a tha a’ cur rian air litreachadh ceart agus tao
 $trm-name	Faclairean briathrachais
 $trm-legend	Tha [faclairean briathrachais] a’ mìneachadh a’ bhriathrachais an lùib chuspairean sònraichte a leithid bith-eòlas, matamataig no eaconamas.
 $monoDicts	Faclairean aona-chànanach
+
+$lang-be	Bealaruisis

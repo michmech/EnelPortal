@@ -181,3 +181,5 @@ $ort-legend	[Oikeinkirjoitussanakirjat] ovat sanakirjoja, joissa osoitetaan sano
 $trm-name	Erikoisalan sanakirjat
 $trm-legend	[Erikoisalan sanakirjat] kuvaavat jonkin erikoisalan (esim. biologian, matematiikan tai taloustieteen) sanastoa.
 $monoDicts	Yksikieliset sanakirjat
+
+$lang-be	valkovenäjä
