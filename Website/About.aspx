@@ -224,7 +224,7 @@
 				<div class="credits">
 				    <%=L("mbm").Replace(" ", "&nbsp;")%>&nbsp;<a target="_blank" href="http://www.lexiconista.com/">Michal Boleslav Měchura</a><br/>
 				    <%=L("ivdnt").Replace(" ", "&nbsp;")%>&nbsp;<a target="_blank" href="http://www.ivdnt.org/">Instituut voor de Nederlandse Taal</a><br/>
-					<%=L("shots").Replace(" ", "&nbsp;")%>&nbsp;<a href="http://www.bitpixels.com/" target="_blank">BitPixels</a><br/>
+					<%--<%=L("shots").Replace(" ", "&nbsp;")%>&nbsp;<a href="http://www.bitpixels.com/" target="_blank">BitPixels</a><br/>--%>
 					<%=L("icons").Replace(" ", "&nbsp;")%>&nbsp;<a href="http://famfamfam.com/lab/icons/" target="_blank">FamFamFam</a>
 				</div>
 				<div class="stamp">

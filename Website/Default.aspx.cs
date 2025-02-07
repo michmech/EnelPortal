@@ -219,7 +219,8 @@ namespace Website
 				ret+="<a class='cms editLink' href='javascript:openDicEditor("+id+")'><span class='dot'></span></a>";
 			}
 			if(isTopLevel) {
-				ret+="<a class='screenshot' href='"+url+"' target='_blank'><img src='http://img.bitpixels.com/getthumbnail?code=78981&size=120&url="+Server.UrlEncode(url)+"' width='120' height='90'/></a>";
+				//ret+="<a class='screenshot' href='"+url+"' target='_blank'><img src='http://img.bitpixels.com/getthumbnail?code=78981&size=120&url="+Server.UrlEncode(url)+"' width='120' height='90'/></a>";
+				ret+="<a class='screenshot' href='"+url+"' target='_blank'><img src='/furniture/website.jpg' width='120' height='90'/></a>";
 				ret+="<a class='stamp' href='/"+uilang+"/stamp/'><img src='/stamp-tiny.gif' width='120' height='20'/></a>";
 			}
 			ret+="<div class='permalink'><a href='/"+uilang+"/"+id+"/'>DICTIONARYPORTAL.EU/"+id+"</a></div>";
