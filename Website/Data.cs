@@ -8,9 +8,8 @@ namespace Website
 	{
 		public static string GetConnectionString()
 		{
-			//return @"";
-			return @"Data Source=(local)\SQLEXPRESS;Initial Catalog=enelportal;Integrated Security=true;";
-        }
+			return @"Server=localhost;Database=enelportal;Trusted_Connection=True;TrustServerCertificate=True;";
+		}
         public static string GetTrackingCode()
 		{
 			//return "";

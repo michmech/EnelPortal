@@ -22,7 +22,7 @@ namespace Website
 		{
 			//Canonize the URL:
 			string domain=Request.Url.Host;
-			if(domain!="localhost" && domain!="www.dictionaryportal.eu") {
+			if(domain!="localhost" && domain!="www.dictionaryportal.eu" && domain!="test.lexiconista.com") {
 				Response.Redirect("http://www.dictionaryportal.eu"+HttpContext.Current.Request.Url.PathAndQuery, false);
 				Response.StatusCode=301;
 				Response.End();
